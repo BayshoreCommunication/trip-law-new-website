@@ -1,13 +1,11 @@
-import CardSection from "@/components/about-us/CardSection";
+import AboutSection from "@/components/about-us/AboutSection";
 import HeroSection from "@/components/about-us/HeroSection";
-import WhatSection from "@/components/about-us/WhatSection";
 
 const page = () => {
   return (
     <div>
       <HeroSection />
-      <CardSection />
-      <WhatSection />
+      <AboutSection />
     </div>
   );
 };

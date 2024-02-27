@@ -60,141 +60,6 @@ export const BlogData = [
   },
 ];
 
-export const SERVICE_DATA = [
-  {
-    id: 1,
-    heading: "Production;Management",
-    title: "Production Management",
-    image: "/service/dxg-agency-production-management.png",
-    excerpt: `DXG excels in comprehensive production management, overseeing every aspect of your event's execution. From meticulous planning to seamless coordination on-site or virtually, our experienced team ensures that your event runs flawlessly, leaving you free to focus on the content and experience.
-`,
-    url: "/services/production-management",
-  },
-  {
-    id: 2,
-    heading: "Audio;Visual Technology",
-    title: "Audio Visual Technology",
-    image: "/service/dxg-agency-audiovisual-technology.png",
-    excerpt: `Harnessing the latest in audiovisual technology, DXG elevates your event's sensory experience. Our expert technicians and producers bring cutting-edge solutions to the forefront, ensuring immersive visuals, crystal-clear sound, and seamless technical execution for both in-person and virtual events.
-`,
-    url: "/services/audiovisual-technology",
-  },
-  {
-    id: 3,
-    heading: "Event;Platform Services",
-    title: "Event Platform Services",
-    image: "/service/dxg-agency-event-platform-service.png",
-    excerpt: `DXG specializes in crafting dynamic event platforms tailored to your needs. Whether it's a virtual space, a hybrid platform, or a customized digital environment, we design and optimize platforms to enhance engagement, foster networking, and create a seamless digital extension of your event.
-`,
-    url: "/services/virtual-hybrid-events",
-  },
-  {
-    id: 4,
-    heading: "Event;Experience Design",
-    title: "Event Experience Design",
-    image: "/service/dxg-agency-event-experience-design.png",
-    excerpt: `At the core of DXG's offerings is event experience design. We work closely with you to understand your objectives and craft immersive experiences that resonate with your audience. From interactive elements to spatial design, our focus is on creating events that leave a lasting impact on attendees.`,
-    url: "/services/event-experience-design",
-  },
-  {
-    id: 5,
-    heading: "Graphics &;Animation",
-    title: "Graphics & Animation",
-    image: "/service/dxg-agency-graphics-and-animation.png",
-    excerpt: `DXG brings visuals to life with captivating graphics and animations. Our creative team combines artistic flair with technical expertise to deliver stunning visual elements that enhance presentations, engage audiences, and contribute to the overall aesthetic appeal of your event.`,
-    url: "/services/graphics-animation",
-  },
-  {
-    id: 6,
-    heading: "Video Production &;Photography",
-    title: "Video Production Photography",
-    image: "/service/dxg-agency-video-production-and-photography.png",
-    excerpt: `DXG's Photography and Videography services excel in capturing the unique story of your event. Our professionals, with a keen eye for detail, document the emotions and defining moments, creating stunning visuals and high-definition videos that endure as timeless memories.`,
-    url: "/services/video-production-photography",
-  },
-];
-
-export const SERVICES_PAGE_DATA = [
-  {
-    id: 0,
-    image: Service1,
-    caption: "PRODUCTION MANAGEMENT",
-    captionPosition: "top",
-    url: "/services/production-management",
-  },
-  {
-    id: 1,
-    image: Service2,
-    caption: "AUDIOVISUAL TECHNOLOGY",
-    captionPosition: "top",
-    url: "/services/audiovisual-technology",
-  },
-
-  {
-    id: 2,
-    image: Service3,
-    captionPosition: "top",
-    caption: "Virtual & Hybrid Events",
-    url: "/services/virtual-hybrid-events",
-  },
-  {
-    id: 3,
-    image: Service4,
-    captionPosition: "bottom",
-    caption: "EVENT EXPERIENCE DESIGN",
-    url: "/services/event-experience-design",
-  },
-  {
-    id: 4,
-    image: Service5,
-    captionPosition: "bottom",
-    caption: "GRAPHICS & ANIMATION",
-    url: "/services/graphics-animation",
-  },
-  {
-    id: 5,
-    captionPosition: "bottom",
-    image: Service6,
-    caption: "VIDEO EDITING & PRODUCTION",
-    url: "/services/video-production-photography",
-  },
-];
-
-export const OurMethods = [
-  {
-    index: 1,
-    title: "OUR PROCESS",
-    icon: "repeat",
-    description:
-      "The process of choosing a partner to work with is challenging however clients recognize that we view them as more than just another customer. Our client management tools allows for transparency in task management.",
-    image: "/why-dxg/process.png",
-  },
-  {
-    index: 2,
-    title: "OUR SERVICE",
-    icon: "happyFace",
-    description:
-      "Our approach is service with a smile. We love what we do, the people who help us do it and the purpose of why we do it. We focus on making our clients raving fans of their investment in us.",
-    image: "/why-dxg/service.png",
-  },
-  {
-    index: 3,
-    title: "OUR MISSION",
-    icon: "group",
-    description:
-      'Our missions is simple. To help your event be a success. With this we focus on your goals and manage them through "The Success Process" methodology.',
-    image: "/why-dxg/mission.png",
-  },
-  {
-    index: 4,
-    title: "OUR EXPERIENCE",
-    icon: "mechanics",
-    description:
-      'Though established in 2018. Our core team has worked together since 2006. We have done thousands of live events and hundreds of digital events in our careers which is why the "pivot" or evolution as we like to say was not a challenge for us and helped our company grow during what for most was a challenging time.',
-    image: "/why-dxg/experience.png",
-  },
-];
-
 export const RECENT_BLOG_POST = [
   {
     id: 0,
@@ -1542,84 +1407,6 @@ export const SPECIAL_OFFER = [
   },
 ];
 
-export const MULTIPLE_SERVICE = [
-  {
-    id: 0,
-    title: "Create a beautiful website for any device.",
-    image: "https://picsum.photos/523/430",
-    description:
-      "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on.",
-  },
-  {
-    id: 1,
-    title: "Create a beautiful website for any device.",
-    image: "https://picsum.photos/523/430",
-    description:
-      "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on.",
-  },
-  {
-    id: 2,
-    title: "Create a beautiful website for any device.",
-    image: "https://picsum.photos/523/430",
-    description:
-      "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on.",
-  },
-];
-
-export const exploreDXG = [
-  {
-    id: 1,
-    title: "Production",
-    imgUrl: "/support/production2.png",
-    description:
-      "With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.",
-  },
-  {
-    id: 2,
-    title: "Production",
-    imgUrl: "/support/production2.png",
-    description:
-      "With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.",
-  },
-  {
-    id: 3,
-    title: "Production",
-    imgUrl: "/support/production2.png",
-    description:
-      "With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.",
-  },
-  {
-    id: 4,
-    title: "Production",
-    imgUrl: "/support/production2.png",
-    description:
-      "With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.",
-  },
-];
-export const exploreWorlds = [
-  {
-    id: 1,
-    imgUrl: "/support/dxg-agency-event-planner.png",
-    title: "Planners",
-    description: `Event planners are the architects of memorable experiences, and at DXG, we understand the intricate details that go into bringing a vision to life. Our support for planners goes beyond execution – we collaborate intimately, providing insights, creative solutions, and leveraging our extensive experience to ensure your event exceeds expectations. From conceptualization to execution, DXG is your dedicated partner in turning ideas into impactful realities.
-`,
-  },
-  {
-    id: 2,
-    imgUrl: "/support/dxg-agency-event-production.png",
-    title: "Production",
-    description: `The heart of any successful event lies in its production, and DXG stands as the beating pulse that brings events to life. With our core teams having a rich background in live events, broadcast, and entertainment, we understand the nuances of flawless production. From audiovisual wizardry to seamless execution, DXG is here to elevate the production quality of your event, making it an unforgettable spectacle for attendees.
-`,
-  },
-  {
-    id: 3,
-    imgUrl: "/support/dxg-agency-event-production-platform.png",
-    title: "Platforms",
-    description: `In the digital age, events span beyond physical spaces, extending into virtual and hybrid platforms. DXG recognizes the significance of a robust and engaging platform. Whether it's a virtual event space or a hybrid platform connecting in-person and remote attendees, we have the expertise to navigate and optimize these environments. DXG ensures that the platform serves as an immersive stage for your event, fostering connection and interaction irrespective of the format.
-`,
-  },
-];
-
 export const articlesInfo = [
   {
     date: "NOVEMBER 22, 2023",
@@ -1671,8 +1458,47 @@ export const blogData = {
       url: "/assets/blogs/blog-post1.svg",
       link: "/",
     },
+    {
+      date: "20 Jan, 2014",
+      title: "Microsoft Event Planning",
+      dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.",
+      url: "/assets/blogs/blog-post1.svg",
+      link: "/",
+    },
+    {
+      date: "20 Jan, 2014",
+      title: "Microsoft Event Planning",
+      dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.",
+      url: "/assets/blogs/blog-post1.svg",
+      link: "/",
+    },
+    {
+      date: "20 Jan, 2014",
+      title: "Microsoft Event Planning",
+      dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences.",
+      url: "/assets/blogs/blog-post1.svg",
+      link: "/",
+    },
   ],
   others: [
+    {
+      title: "Create a beautiful website for any device.",
+      dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly.",
+      url: "/assets/blogs/blog1.png",
+      link: "/",
+    },
+    {
+      title: "Create a beautiful website for any device.",
+      dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry.",
+      url: "/assets/blogs/blog2.png",
+      link: "/",
+    },
+    {
+      title: "Create a beautiful website for any device.",
+      dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry.",
+      url: "/assets/blogs/blog3.png",
+      link: "/",
+    },
     {
       title: "Create a beautiful website for any device.",
       dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly.",
@@ -1694,27 +1520,449 @@ export const blogData = {
   ],
 };
 
-export const aboutInfo = {
-  cardInfo: [
-    {
-      title: "Our Founding Philosophy",
-      dec: "In a world where tax services were traditionally seen as mere seasonal necessities, we saw an untapped potential for growth and innovation. Our founding philosophy was simple yet revolutionary: equip tax professionals with the tools, strategies, and insights they need to scale their businesses beyond the conventional boundaries. we saw an untapped potential for growth and innovation. Our founding philosophy was simple yet revolutionary: equip tax professionals with the tools, strategies, and insights they need to scale their businesses beyond the conventional boundaries.",
-      url: "/assets/services/politics.svg",
-    },
-    {
-      title: "Our Mission",
-      dec: "Our mission is to empower tax preparation firms to realize their full potential. We believe that by providing the right combination of custom and innovative strategies, cutting-edge technology, and personalized consultancy, we can help tax businesses not just to grow but to thrive and dominate in their market. cutting-edge technology, and personalized consultancy, we can help tax businesses not just to grow but to thrive and dominate in their market to grow but to thrive and dominate in their market",
-      url: "/assets/services/politics.svg",
-    },
-    {
-      title: "Our Achievements",
-      dec: "Over the years, we've been privileged to witness the transformation of numerous tax businesses. Our clients' successes, ranging from increased revenue and client base to enhanced market reputation, stand as a testament to our effective methodologies and unwavering dedication.ranging from increased revenue and client base to enhanced market reputation, stand as a testament to our effective methodologies and unwavering dedication.",
-      url: "/assets/services/solution.svg",
-    },
-    {
-      title: "Our Vision for the Future",
-      dec: "As we look to the future, our vision is to continue being the catalyst for change in the tax preparation industry. We aspire to foster a community of tax professionals who are not only successful in their businesses but are also trailblazers in the industry. We aspire to foster a community of tax professionals who are not only successful in their businesses but are also trailblazers in the industry.",
-      url: "/assets/services/solution.svg",
-    },
-  ],
-};
+export const servicesData = [
+  {
+    title: "Green Card Through Marriage",
+    dece: `<div>
+  <img
+  src="/assets/services/service-image-one.jpg"} alt="server-image"
+  alt="the-failed-rescue"
+  className="w-full h-full mb-10"
+  />
+  <p>The US H-1B visa is a non-immigrant visa that allows US companies to employ graduate-level workers in specialty occupations that require theoretical or technical expertise in specialized fields such as IT, finance, accounting, architecture, engineering, mathematics, science, medicine, etc. Any professional level job requires you to have a bachelor’s degree or higher. If you do not have a bachelor’s degree or higher you may be able to show degree equivalence through work experience and/or other qualifications.
+  </p>
+  </br>
+  <p>
+  However, because of the visa cap it is unlikely that an H-1B visa petition will be successful. The US employer petitions for the H-1B Visa in the US which has a duration of up to 6 years.
+  </p>
+  </br>
+  <p>
+  Applying for a non-immigrant visa is generally quicker than applying for a US Green Card, therefore the H-1B visa is popular for companies wishing to bring in staff for long-term assignment in the US.
+  Please note that individuals cannot apply directly for an H-1B visa. Instead the employer must petition for entry of the employee.
+  </p>
+  </br>
+  <h2>Eligibility: Specialty Occupation</h2>
+  </br>
+  <p>
+  Eligibility: Specialty Occupation
+  The US H1-B visa is designed to be used for staff in specialty occupations. The job must meet one of the following criteria to qualify as a specialty occupation:
+
+  </p>
+  </br>
+  <p>
+
+  Have a minimum entry requirement of a Bachelor’s or higher degree or its equivalent.
+  The degree requirement for the job is common to the industry or the job is so complex or unique that it can be performed only by an individual with a degree.
+  </p>
+  </br>
+  <p>
+  The employer normally requires a degree or its equivalent for the position.
+  </p>
+  </br>
+  <p>
+  The nature of the specific duties is so specialized and complex that the knowledge required to perform the duties is usually associated with the attainment of a bachelor’s or higher degree.
+  </p>
+  </br>
+  <p>
+  Length of stay
+  </p>
+  </br>
+  <p>
+
+  The H-1B visa is initially granted for up to three years, but may then be extended to a maximum of six years.
+  </p>
+  </br>
+  <p>
+  Even though the H-1B visa is a non-immigrant visa, it is one of the few US visa categories recognized as dual intent, meaning the H-1B visa holder can apply for and obtain a US Green Card while in the US on an H-1B visa. If you are still in the US on an H-1B visa and wish to remain in the US for more than six years, you can apply for permanent residency in the US to receive a Green Card. If you do not gain permanent residency prior to the expiration of your H-1B visa, then you must live outside the US for at least one year before reapplying for another H or L visa.
+  </p>
+  </div>`,
+  },
+  {
+    title: "Green Card Through ",
+    dece: `<div>
+  <img
+  src="/assets/services/service-image-one.jpg"} alt="server-image"
+  alt="the-failed-rescue"
+  className="w-full h-full mb-10"
+  />
+  <p>The US H-1B visa is a non-immigrant visa that allows US companies to employ graduate-level workers in specialty occupations that require theoretical or technical expertise in specialized fields such as IT, finance, accounting, architecture, engineering, mathematics, science, medicine, etc. Any professional level job requires you to have a bachelor’s degree or higher. If you do not have a bachelor’s degree or higher you may be able to show degree equivalence through work experience and/or other qualifications.
+  </p>
+  </br>
+  <p>
+  However, because of the visa cap it is unlikely that an H-1B visa petition will be successful. The US employer petitions for the H-1B Visa in the US which has a duration of up to 6 years.
+  </p>
+  </br>
+  <p>
+  Applying for a non-immigrant visa is generally quicker than applying for a US Green Card, therefore the H-1B visa is popular for companies wishing to bring in staff for long-term assignment in the US.
+  Please note that individuals cannot apply directly for an H-1B visa. Instead the employer must petition for entry of the employee.
+  </p>
+  </br>
+  <h2>Eligibility: Specialty Occupation</h2>
+  </br>
+  <p>
+  Eligibility: Specialty Occupation
+  The US H1-B visa is designed to be used for staff in specialty occupations. The job must meet one of the following criteria to qualify as a specialty occupation:
+
+  </p>
+  </br>
+  <p>
+
+  Have a minimum entry requirement of a Bachelor’s or higher degree or its equivalent.
+  The degree requirement for the job is common to the industry or the job is so complex or unique that it can be performed only by an individual with a degree.
+  </p>
+  </br>
+  <p>
+  The employer normally requires a degree or its equivalent for the position.
+  </p>
+  </br>
+  <p>
+  The nature of the specific duties is so specialized and complex that the knowledge required to perform the duties is usually associated with the attainment of a bachelor’s or higher degree.
+  </p>
+  </br>
+  <p>
+  Length of stay
+  </p>
+  </br>
+  <p>
+
+  The H-1B visa is initially granted for up to three years, but may then be extended to a maximum of six years.
+  </p>
+  </br>
+  <p>
+  Even though the H-1B visa is a non-immigrant visa, it is one of the few US visa categories recognized as dual intent, meaning the H-1B visa holder can apply for and obtain a US Green Card while in the US on an H-1B visa. If you are still in the US on an H-1B visa and wish to remain in the US for more than six years, you can apply for permanent residency in the US to receive a Green Card. If you do not gain permanent residency prior to the expiration of your H-1B visa, then you must live outside the US for at least one year before reapplying for another H or L visa.
+  </p>
+  </div>`,
+  },
+  {
+    title: "H1B Visa",
+    dece: `<div>
+  <img
+  src="/assets/services/service-image-one.jpg"} alt="server-image"
+  alt="the-failed-rescue"
+  className="w-full h-full mb-10"
+  />
+  <p>The US H-1B visa is a non-immigrant visa that allows US companies to employ graduate-level workers in specialty occupations that require theoretical or technical expertise in specialized fields such as IT, finance, accounting, architecture, engineering, mathematics, science, medicine, etc. Any professional level job requires you to have a bachelor’s degree or higher. If you do not have a bachelor’s degree or higher you may be able to show degree equivalence through work experience and/or other qualifications.
+  </p>
+  </br>
+  <p>
+  However, because of the visa cap it is unlikely that an H-1B visa petition will be successful. The US employer petitions for the H-1B Visa in the US which has a duration of up to 6 years.
+  </p>
+  </br>
+  <p>
+  Applying for a non-immigrant visa is generally quicker than applying for a US Green Card, therefore the H-1B visa is popular for companies wishing to bring in staff for long-term assignment in the US.
+  Please note that individuals cannot apply directly for an H-1B visa. Instead the employer must petition for entry of the employee.
+  </p>
+  </br>
+  <h2>Eligibility: Specialty Occupation</h2>
+  </br>
+  <p>
+  Eligibility: Specialty Occupation
+  The US H1-B visa is designed to be used for staff in specialty occupations. The job must meet one of the following criteria to qualify as a specialty occupation:
+
+  </p>
+  </br>
+  <p>
+
+  Have a minimum entry requirement of a Bachelor’s or higher degree or its equivalent.
+  The degree requirement for the job is common to the industry or the job is so complex or unique that it can be performed only by an individual with a degree.
+  </p>
+  </br>
+  <p>
+  The employer normally requires a degree or its equivalent for the position.
+  </p>
+  </br>
+  <p>
+  The nature of the specific duties is so specialized and complex that the knowledge required to perform the duties is usually associated with the attainment of a bachelor’s or higher degree.
+  </p>
+  </br>
+  <p>
+  Length of stay
+  </p>
+  </br>
+  <p>
+
+  The H-1B visa is initially granted for up to three years, but may then be extended to a maximum of six years.
+  </p>
+  </br>
+  <p>
+  Even though the H-1B visa is a non-immigrant visa, it is one of the few US visa categories recognized as dual intent, meaning the H-1B visa holder can apply for and obtain a US Green Card while in the US on an H-1B visa. If you are still in the US on an H-1B visa and wish to remain in the US for more than six years, you can apply for permanent residency in the US to receive a Green Card. If you do not gain permanent residency prior to the expiration of your H-1B visa, then you must live outside the US for at least one year before reapplying for another H or L visa.
+  </p>
+  </div>`,
+  },
+  {
+    title: "L-1 Visa",
+    dece: `<div>
+  <img
+  src="/assets/services/service-image-one.jpg"} alt="server-image"
+  alt="the-failed-rescue"
+  className="w-full h-full mb-10"
+  />
+  <p>The US H-1B visa is a non-immigrant visa that allows US companies to employ graduate-level workers in specialty occupations that require theoretical or technical expertise in specialized fields such as IT, finance, accounting, architecture, engineering, mathematics, science, medicine, etc. Any professional level job requires you to have a bachelor’s degree or higher. If you do not have a bachelor’s degree or higher you may be able to show degree equivalence through work experience and/or other qualifications.
+  </p>
+  </br>
+  <p>
+  However, because of the visa cap it is unlikely that an H-1B visa petition will be successful. The US employer petitions for the H-1B Visa in the US which has a duration of up to 6 years.
+  </p>
+  </br>
+  <p>
+  Applying for a non-immigrant visa is generally quicker than applying for a US Green Card, therefore the H-1B visa is popular for companies wishing to bring in staff for long-term assignment in the US.
+  Please note that individuals cannot apply directly for an H-1B visa. Instead the employer must petition for entry of the employee.
+  </p>
+  </br>
+  <h2>Eligibility: Specialty Occupation</h2>
+  </br>
+  <p>
+  Eligibility: Specialty Occupation
+  The US H1-B visa is designed to be used for staff in specialty occupations. The job must meet one of the following criteria to qualify as a specialty occupation:
+
+  </p>
+  </br>
+  <p>
+
+  Have a minimum entry requirement of a Bachelor’s or higher degree or its equivalent.
+  The degree requirement for the job is common to the industry or the job is so complex or unique that it can be performed only by an individual with a degree.
+  </p>
+  </br>
+  <p>
+  The employer normally requires a degree or its equivalent for the position.
+  </p>
+  </br>
+  <p>
+  The nature of the specific duties is so specialized and complex that the knowledge required to perform the duties is usually associated with the attainment of a bachelor’s or higher degree.
+  </p>
+  </br>
+  <p>
+  Length of stay
+  </p>
+  </br>
+  <p>
+
+  The H-1B visa is initially granted for up to three years, but may then be extended to a maximum of six years.
+  </p>
+  </br>
+  <p>
+  Even though the H-1B visa is a non-immigrant visa, it is one of the few US visa categories recognized as dual intent, meaning the H-1B visa holder can apply for and obtain a US Green Card while in the US on an H-1B visa. If you are still in the US on an H-1B visa and wish to remain in the US for more than six years, you can apply for permanent residency in the US to receive a Green Card. If you do not gain permanent residency prior to the expiration of your H-1B visa, then you must live outside the US for at least one year before reapplying for another H or L visa.
+  </p>
+  </div>`,
+  },
+  {
+    title: "O-1 Visa",
+    dece: `<div>
+  <img
+  src="/assets/services/service-image-one.jpg"} alt="server-image"
+  alt="the-failed-rescue"
+  className="w-full h-full mb-10"
+  />
+  <p>The US H-1B visa is a non-immigrant visa that allows US companies to employ graduate-level workers in specialty occupations that require theoretical or technical expertise in specialized fields such as IT, finance, accounting, architecture, engineering, mathematics, science, medicine, etc. Any professional level job requires you to have a bachelor’s degree or higher. If you do not have a bachelor’s degree or higher you may be able to show degree equivalence through work experience and/or other qualifications.
+  </p>
+  </br>
+  <p>
+  However, because of the visa cap it is unlikely that an H-1B visa petition will be successful. The US employer petitions for the H-1B Visa in the US which has a duration of up to 6 years.
+  </p>
+  </br>
+  <p>
+  Applying for a non-immigrant visa is generally quicker than applying for a US Green Card, therefore the H-1B visa is popular for companies wishing to bring in staff for long-term assignment in the US.
+  Please note that individuals cannot apply directly for an H-1B visa. Instead the employer must petition for entry of the employee.
+  </p>
+  </br>
+  <h2>Eligibility: Specialty Occupation</h2>
+  </br>
+  <p>
+  Eligibility: Specialty Occupation
+  The US H1-B visa is designed to be used for staff in specialty occupations. The job must meet one of the following criteria to qualify as a specialty occupation:
+
+  </p>
+  </br>
+  <p>
+
+  Have a minimum entry requirement of a Bachelor’s or higher degree or its equivalent.
+  The degree requirement for the job is common to the industry or the job is so complex or unique that it can be performed only by an individual with a degree.
+  </p>
+  </br>
+  <p>
+  The employer normally requires a degree or its equivalent for the position.
+  </p>
+  </br>
+  <p>
+  The nature of the specific duties is so specialized and complex that the knowledge required to perform the duties is usually associated with the attainment of a bachelor’s or higher degree.
+  </p>
+  </br>
+  <p>
+  Length of stay
+  </p>
+  </br>
+  <p>
+
+  The H-1B visa is initially granted for up to three years, but may then be extended to a maximum of six years.
+  </p>
+  </br>
+  <p>
+  Even though the H-1B visa is a non-immigrant visa, it is one of the few US visa categories recognized as dual intent, meaning the H-1B visa holder can apply for and obtain a US Green Card while in the US on an H-1B visa. If you are still in the US on an H-1B visa and wish to remain in the US for more than six years, you can apply for permanent residency in the US to receive a Green Card. If you do not gain permanent residency prior to the expiration of your H-1B visa, then you must live outside the US for at least one year before reapplying for another H or L visa.
+  </p>
+  </div>`,
+  },
+  {
+    title: "EB-1 Visa",
+    dece: `<div>
+  <img
+  src="/assets/services/service-image-one.jpg"} alt="server-image"
+  alt="the-failed-rescue"
+  className="w-full h-full mb-10"
+  />
+  <p>The US H-1B visa is a non-immigrant visa that allows US companies to employ graduate-level workers in specialty occupations that require theoretical or technical expertise in specialized fields such as IT, finance, accounting, architecture, engineering, mathematics, science, medicine, etc. Any professional level job requires you to have a bachelor’s degree or higher. If you do not have a bachelor’s degree or higher you may be able to show degree equivalence through work experience and/or other qualifications.
+  </p>
+  </br>
+  <p>
+  However, because of the visa cap it is unlikely that an H-1B visa petition will be successful. The US employer petitions for the H-1B Visa in the US which has a duration of up to 6 years.
+  </p>
+  </br>
+  <p>
+  Applying for a non-immigrant visa is generally quicker than applying for a US Green Card, therefore the H-1B visa is popular for companies wishing to bring in staff for long-term assignment in the US.
+  Please note that individuals cannot apply directly for an H-1B visa. Instead the employer must petition for entry of the employee.
+  </p>
+  </br>
+  <h2>Eligibility: Specialty Occupation</h2>
+  </br>
+  <p>
+  Eligibility: Specialty Occupation
+  The US H1-B visa is designed to be used for staff in specialty occupations. The job must meet one of the following criteria to qualify as a specialty occupation:
+
+  </p>
+  </br>
+  <p>
+
+  Have a minimum entry requirement of a Bachelor’s or higher degree or its equivalent.
+  The degree requirement for the job is common to the industry or the job is so complex or unique that it can be performed only by an individual with a degree.
+  </p>
+  </br>
+  <p>
+  The employer normally requires a degree or its equivalent for the position.
+  </p>
+  </br>
+  <p>
+  The nature of the specific duties is so specialized and complex that the knowledge required to perform the duties is usually associated with the attainment of a bachelor’s or higher degree.
+  </p>
+  </br>
+  <p>
+  Length of stay
+  </p>
+  </br>
+  <p>
+
+  The H-1B visa is initially granted for up to three years, but may then be extended to a maximum of six years.
+  </p>
+  </br>
+  <p>
+  Even though the H-1B visa is a non-immigrant visa, it is one of the few US visa categories recognized as dual intent, meaning the H-1B visa holder can apply for and obtain a US Green Card while in the US on an H-1B visa. If you are still in the US on an H-1B visa and wish to remain in the US for more than six years, you can apply for permanent residency in the US to receive a Green Card. If you do not gain permanent residency prior to the expiration of your H-1B visa, then you must live outside the US for at least one year before reapplying for another H or L visa.
+  </p>
+  </div>`,
+  },
+  {
+    title: "EB-2 Visa",
+    dece: `<div>
+  <img
+  src="/assets/services/service-image-one.jpg"} alt="server-image"
+  alt="the-failed-rescue"
+  className="w-full h-full mb-10"
+  />
+  <p>The US H-1B visa is a non-immigrant visa that allows US companies to employ graduate-level workers in specialty occupations that require theoretical or technical expertise in specialized fields such as IT, finance, accounting, architecture, engineering, mathematics, science, medicine, etc. Any professional level job requires you to have a bachelor’s degree or higher. If you do not have a bachelor’s degree or higher you may be able to show degree equivalence through work experience and/or other qualifications.
+  </p>
+  </br>
+  <p>
+  However, because of the visa cap it is unlikely that an H-1B visa petition will be successful. The US employer petitions for the H-1B Visa in the US which has a duration of up to 6 years.
+  </p>
+  </br>
+  <p>
+  Applying for a non-immigrant visa is generally quicker than applying for a US Green Card, therefore the H-1B visa is popular for companies wishing to bring in staff for long-term assignment in the US.
+  Please note that individuals cannot apply directly for an H-1B visa. Instead the employer must petition for entry of the employee.
+  </p>
+  </br>
+  <h2>Eligibility: Specialty Occupation</h2>
+  </br>
+  <p>
+  Eligibility: Specialty Occupation
+  The US H1-B visa is designed to be used for staff in specialty occupations. The job must meet one of the following criteria to qualify as a specialty occupation:
+
+  </p>
+  </br>
+  <p>
+
+  Have a minimum entry requirement of a Bachelor’s or higher degree or its equivalent.
+  The degree requirement for the job is common to the industry or the job is so complex or unique that it can be performed only by an individual with a degree.
+  </p>
+  </br>
+  <p>
+  The employer normally requires a degree or its equivalent for the position.
+  </p>
+  </br>
+  <p>
+  The nature of the specific duties is so specialized and complex that the knowledge required to perform the duties is usually associated with the attainment of a bachelor’s or higher degree.
+  </p>
+  </br>
+  <p>
+  Length of stay
+  </p>
+  </br>
+  <p>
+
+  The H-1B visa is initially granted for up to three years, but may then be extended to a maximum of six years.
+  </p>
+  </br>
+  <p>
+  Even though the H-1B visa is a non-immigrant visa, it is one of the few US visa categories recognized as dual intent, meaning the H-1B visa holder can apply for and obtain a US Green Card while in the US on an H-1B visa. If you are still in the US on an H-1B visa and wish to remain in the US for more than six years, you can apply for permanent residency in the US to receive a Green Card. If you do not gain permanent residency prior to the expiration of your H-1B visa, then you must live outside the US for at least one year before reapplying for another H or L visa.
+  </p>
+  </div>`,
+  },
+  {
+    title: "EB-3 Visa",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "VAWA",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "U Visa",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "Asylum",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "T Visa",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "Bond Hearing",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "Master Calendar Hearing",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "Individual Hearing",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "Waivers",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "E2 Treaty Visas",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "Citizenship",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "Naturalization & Citizenship",
+    dece: `<div>demo</div>`,
+  },
+  {
+    title: "Green Card",
+    dece: `<div>demo</div>`,
+  },
+];
