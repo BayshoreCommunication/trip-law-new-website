@@ -1,11 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
   NavbarMenu,
   NavbarMenuItem,
@@ -13,20 +12,18 @@ import {
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import { SITECONFIG } from "@/config/site";
+import { useScroll } from "framer-motion";
 import Image from "next/image";
-import NavbarLogo from "./shared/NavbarLogo";
+import Link from "next/link";
 
 const MainNavbar = () => {
   const pathname = usePathname();
 
-  console.log("check data 28", pathname);
-
   return (
     <Navbar
-      // shouldHideOnScroll
       shouldHideOnScroll
       maxWidth="2xl"
-      className="flex !justify-center bg-cover my-2"
+      className="flex !justify-center bg-cover my-1"
     >
       <NavbarContent className="md:hidden" justify="start">
         <NavbarMenuToggle className="text-slate-900" />
@@ -34,7 +31,7 @@ const MainNavbar = () => {
 
       <NavbarContent className="pr-3 md:hidden" justify="end">
         <Image
-          width={300}
+          width={280}
           height={130}
           src={"/assets/site-logo/trip-law-logo.svg"}
           alt="Trip Law"
@@ -58,15 +55,26 @@ const MainNavbar = () => {
           );
         })}
 
-        <Image
-          width={180}
+        <NavbarItem>
+          <Link href="/">
+            <Image
+              width={170}
+              height={60}
+              src={"/assets/site-logo/trip-law-logo.svg"}
+              alt="Trip Low"
+              className="object-cover cursor-pointer !max-w-[170px]"
+            />
+          </Link>
+        </NavbarItem>
+
+        {/* <Image
+          width={170}
           height={60}
           src={"/assets/site-logo/trip-law-logo.svg"}
           alt="Trip Low"
-          // layout="fill"
-          // objectFit="contain"
           className="object-cover cursor-pointer"
-        />
+          // onClick={() => router.push("/")}
+        /> */}
 
         {SITECONFIG?.mainNav?.right?.map((nav, index) => {
           return (

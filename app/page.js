@@ -7,8 +7,9 @@ import HumanitarianImmigration from "@/components/home/HumanitarianImmigration";
 import NewsSection from "@/components/home/NewsSection";
 import ScheduleSection from "@/components/home/ScheduleSection";
 import ServiceSection from "@/components/home/ServiceSection";
+import { TestTab } from "@/components/home/TestTab";
 import TestimonialSection from "@/components/home/TestimonialSection";
-import TripLawObligation from "@/components/home/TripLawObligation";
+import TripLawObligation from "@/components/shared/TripLawObligation";
 
 export default function Home() {
   return (

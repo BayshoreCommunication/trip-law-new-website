@@ -2,7 +2,7 @@
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaQuoteRight } from "react-icons/fa";
-
+import { Mulish, Bitter } from "next/font/google";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -11,6 +11,9 @@ import Image from "next/image";
 
 import { TESTIMONIAL_DATA } from "@/config/data";
 import { useState } from "react";
+const bitter = Bitter({ subsets: ["latin"] });
+const mulish = Mulish({ subsets: ["latin"] });
+
 export default function TestimonialSlider() {
   const [bgImage, setBgImage] = useState(`/testimonial/client-2.png`);
 
@@ -26,7 +29,7 @@ export default function TestimonialSlider() {
 
   return (
     <div className="relative mt-2 sm:mt-6 mb-2 sm:mb-6">
-      <div className="relative mx-auto lg:max-w-7xl">
+      <div className="relative mx-auto lg:max-w-8xl ">
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -41,7 +44,7 @@ export default function TestimonialSlider() {
           {TESTIMONIAL_DATA.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <div className="grid grid-cols-1 sm:grid-cols-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 mx-0 md:mx-24 items-center">
                   <div className="p-5">
                     <Image
                       src={item.image}
@@ -51,7 +54,7 @@ export default function TestimonialSlider() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="p-5 leading-6 space-y-4 sm:mr-32 mb-32">
+                  <div className="p-5 leading-6 space-y-4 mb-28">
                     <div className="flex justify-center sm:justify-start">
                       <FaQuoteRight className="text-[#223555] text-3xl" />
                     </div>
@@ -61,7 +64,9 @@ export default function TestimonialSlider() {
                       experience. I like to read, I like to write; I like to
                       think, I like to dream; I like to talk, I like to listen.
                     </p>
-                    <h1 className="my-1 text-2xl font-semibold text-slate-900 text-center sm:text-left">
+                    <h1
+                      className={`my-1 text-2xl font-semibold text-slate-900 text-center sm:text-left ${bitter.className}`}
+                    >
                       {item.name}
                     </h1>
                     <h2 className="font-normal text-slate-900 text-center sm:text-left">
@@ -79,7 +84,7 @@ export default function TestimonialSlider() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-12 h-12 text-slate-900 border border-slate-900 rounded-full p-3 sm:rotate-180 hover:bg-slate-900 hover:text-slate-50"
+            className="w-12 h-12 text-slate-900 border border-slate-900 rounded-full p-3 hover:bg-slate-900 rotate-180 sm:rotate-0 hover:text-slate-50"
           >
             <path
               fillRule="evenodd"
@@ -93,7 +98,7 @@ export default function TestimonialSlider() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-12 h-12 text-slate-900 border border-slate-900 rounded-full p-3 hover:bg-slate-900 rotate-180 sm:rotate-0 hover:text-slate-50"
+            className="w-12 h-12 text-slate-900 border border-slate-900 rounded-full p-3 sm:rotate-180 hover:bg-slate-900 hover:text-slate-50"
           >
             <path
               fillRule="evenodd"

@@ -13,10 +13,6 @@ import MotionEffect from "./motion/MotionEffect";
 import { SITECONFIG } from "@/config/site";
 
 const Footer = () => {
-  console.log("====================================");
-  console.log("check data vlaue 19", SITECONFIG?.footer?.footer_logo);
-  console.log("====================================");
-
   return (
     <footer className="bg-[#1B2639] py-5 px-5 lg-px-0">
       <div className="mx-auto w-full max-w-screen-2xl py-6 lg:py-8">
@@ -35,7 +31,7 @@ const Footer = () => {
                   className="object-cover"
                 />
               </a>
-              <p className="text-gray-300 font-thin text-base py-5 max-w-96">
+              <p className="text-gray-300 font-thin text-base py-5 max-w-96 text-center md:text-left">
                 {SITECONFIG?.footer?.description}
               </p>
             </div>
@@ -132,7 +128,7 @@ const Footer = () => {
 
                   <p>(863)-599-6735</p>
                 </li>
-                <li className="flex items-center gap-3">
+                <li className="flex items-center justify-center md:justify-start mt-[-20px] md:mt-0 gap-3">
                   <div className="flex mt-10 sm:justify-center sm:mt-4 gap-3">
                     <Link
                       href="#"

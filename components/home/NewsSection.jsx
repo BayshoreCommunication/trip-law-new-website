@@ -7,6 +7,7 @@ import MotionEffect from "../motion/MotionEffect";
 import { Mulish, Bitter } from "next/font/google";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { articlesInfo } from "@/config/data";
+import BlackButton from "../shared/BlackButton";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -32,24 +33,20 @@ const NewsSection = () => {
     <SectionLayout bg="bg-slate-50 ">
       <div className="space-y-14">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <MotionEffect effect="fade-right" duration="2000">
-            <div className="">
-              <h2 className="text-stone-950 font-bold text-base">News</h2>
-              <hr class="h-[2px] my-0 bg-stone-950 border-0 w-4"></hr>
-              <h2
-                className={`text-stone-950 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
-              >
-                News
-              </h2>
-            </div>
-          </MotionEffect>
-          <div className="flex justify-end">
-            <button
-              type="button"
-              class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-8 py-2 focus:outline-none"
+          {/* <MotionEffect effect="fade-right" duration="2000"> */}
+          <div className="">
+            <h2 className="text-stone-950 font-bold text-base">News</h2>
+            <hr class="h-[2px] my-0 bg-stone-950 border-0 w-4"></hr>
+            <h2
+              className={`text-stone-950 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
             >
-              View All
-            </button>
+              News
+            </h2>
+          </div>
+          {/* </MotionEffect> */}
+
+          <div className="flex justify-end">
+            <BlackButton title={"View All"} link={"/"} style={"rounded-none"} />
           </div>
         </div>
         <div className="gap-2 grid grid-cols-1 sm:grid-cols-3">

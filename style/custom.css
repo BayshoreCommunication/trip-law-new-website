@@ -10,14 +10,14 @@ body {
   height: 50px;
   width: 50px;
   cursor: pointer;
-  right: 0;
+  right: 0px;
 }
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: auto !important;
+  right: auto !important;
   right: 0 !important;
-  top: 30%;
+  top: 50%;
 }
 
 /* Remove default content for all screen sizes */

@@ -5,6 +5,7 @@ import CardMotion from "../motion/CardMotion";
 import ImageMotion from "../motion/ImageMotion";
 import MotionEffect from "../motion/MotionEffect";
 import { Mulish, Bitter } from "next/font/google";
+import BlackButton from "../shared/BlackButton";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -46,12 +47,11 @@ const AboutSection = () => {
                 vidit choro “
               </h2>
               <div className="flex justify-center md:justify-start">
-                <button
-                  type="button"
-                  class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-8 py-2.5 me-6 mb-2 focus:outline-none uppercase rounded-md"
-                >
-                  Our Services
-                </button>
+                <BlackButton
+                  title={"Our Services"}
+                  link={"/"}
+                  style={"rounded-md"}
+                />
               </div>
             </div>
           </MotionEffect>
@@ -113,12 +113,11 @@ const AboutSection = () => {
                 vidit choro “
               </h2>
               <div className="flex justify-center md:justify-start">
-                <button
-                  type="button"
-                  class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-8 py-2.5 me-6 mb-2 focus:outline-none uppercase rounded-md"
-                >
-                  Our Services
-                </button>
+                <BlackButton
+                  title={"Our Services"}
+                  link={"/"}
+                  style={"rounded-md"}
+                />
               </div>
             </div>
           </MotionEffect>
