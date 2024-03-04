@@ -12,7 +12,6 @@ import {
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import { SITECONFIG } from "@/config/site";
-import { useScroll } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 

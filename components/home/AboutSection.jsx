@@ -7,6 +7,7 @@ import MotionEffect from "../motion/MotionEffect";
 import { motion } from "framer-motion";
 import { Mulish, Bitter } from "next/font/google";
 import BlackButton from "../shared/BlackButton";
+import RevealMotion from "../motion/RevealMotion";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });

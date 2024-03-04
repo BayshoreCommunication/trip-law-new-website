@@ -15,7 +15,7 @@ const CardMotion = ({ children, initial, whileInView }) => {
 
   return (
     <div ref={ref}>
-      <motion.div initial={initial} whileInView={whileInView}>
+      <motion.div initial={initial} whileInView={whileInView} viewport={{}}>
         {children}
       </motion.div>
     </div>
