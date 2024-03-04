@@ -54,6 +54,7 @@ const page = async ({ params }) => {
   return (
     <>
       <style>{css}</style>
+      <HeroSection />
       <SectionLayout bg="bg-white">
         <MotionEffect effect="fade-down" duration="2000">
           <h2 className="mb-4 text-3xl font-bold tracking-normal text-left text-[#1B2639]">

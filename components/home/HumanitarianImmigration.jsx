@@ -67,6 +67,7 @@ const HumanitarianImmigration = () => {
       >
         Humanitarian Immigration
       </h2>
+
       <div className="flex justify-center">
         <div className="flex w-full flex-col mt-10">
           <DoubleOneTabSection tabsData={tabsData} />

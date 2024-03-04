@@ -31,52 +31,113 @@ const NewsSection = () => {
   ];
   return (
     <SectionLayout bg="bg-slate-50 ">
-      <div className="space-y-14">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          {/* <MotionEffect effect="fade-right" duration="2000"> */}
-          <div className="">
-            <h2 className="text-stone-950 font-bold text-base">News</h2>
-            <hr class="h-[2px] my-0 bg-stone-950 border-0 w-4"></hr>
-            <h2
-              className={`text-stone-950 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
-            >
-              News
-            </h2>
+          <CardMotion
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1.1,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: 100,
+            }}
+          >
+            <div className="">
+              <h2 className="text-stone-950 font-bold text-base ">News</h2>
+              <hr class="h-[2px] my-0 bg-stone-950 border-0 w-4"></hr>
+              <h2
+                className={`text-stone-950 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+              >
+                News
+              </h2>
+            </div>
+          </CardMotion>
+          <CardMotion
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1.1,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: 100,
+            }}
+          >
+            <div className="flex justify-end invisible md:visible">
+              <BlackButton
+                title={"View All"}
+                link={"/"}
+                style={"rounded-none"}
+              />
+            </div>
+          </CardMotion>
+        </div>
+        <CardMotion
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1.1,
+            },
+          }}
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+        >
+          <div className="gap-4 grid grid-cols-1 sm:grid-cols-3 mt-0 md:mt-12">
+            {list.map((item, index) => (
+              <Card
+                shadow="sm"
+                radius="none"
+                key={index}
+                isPressable
+                onPress={() => console.log("item pressed")}
+              >
+                <CardBody className=" p-0">
+                  <Image
+                    shadow="none"
+                    radius="none"
+                    width="100%"
+                    alt={item.title}
+                    className="w-full object-cover h-[300px]"
+                    src={item.img}
+                  />
+                </CardBody>
+                <CardFooter className="text-small block text-left">
+                  <h2 className="text-default-500 text-lg font-bold block line-clamp-1">
+                    {item.title}
+                  </h2>
+                  <p className="text-default-500 block">{item.price}</p>
+                </CardFooter>
+              </Card>
+            ))}
           </div>
-          {/* </MotionEffect> */}
+        </CardMotion>
 
-          <div className="flex justify-end">
+        <CardMotion
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1.1,
+            },
+          }}
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+        >
+          <div className="flex justify-center visible md:invisible mt-12 md:mt-[-60px]">
             <BlackButton title={"View All"} link={"/"} style={"rounded-none"} />
           </div>
-        </div>
-        <div className="gap-2 grid grid-cols-1 sm:grid-cols-3">
-          {list.map((item, index) => (
-            <Card
-              shadow="sm"
-              radius="none"
-              key={index}
-              isPressable
-              onPress={() => console.log("item pressed")}
-            >
-              <CardBody className=" p-0">
-                <Image
-                  shadow="none"
-                  radius="none"
-                  width="100%"
-                  alt={item.title}
-                  className="w-full object-cover h-[300px]"
-                  src={item.img}
-                />
-              </CardBody>
-              <CardFooter className="text-small block text-left">
-                <h2 className="text-default-500 text-lg font-bold block line-clamp-1">
-                  {item.title}
-                </h2>
-                <p className="text-default-500 block">{item.price}</p>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+        </CardMotion>
       </div>
     </SectionLayout>
   );

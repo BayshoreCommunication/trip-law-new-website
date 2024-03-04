@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
 import SectionLayout from "../shared/SectionLayout";
-import CardMotion from "../motion/CardMotion";
-import ImageMotion from "../motion/ImageMotion";
-import MotionEffect from "../motion/MotionEffect";
 import { Mulish, Bitter } from "next/font/google";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { articlesInfo } from "@/config/data";
 import WhiteButton from "../shared/WhiteButton";
+import MotionEffect from "../motion/MotionEffect";
+import CardMotion from "../motion/CardMotion";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -52,49 +51,112 @@ const ServiceSection = () => {
   ];
   return (
     <SectionLayout bg="bg-[#1B2639]">
-      <div className="space-y-14">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className="">
-            <h2 className="text-stone-50 font-bold text-base">Services</h2>
-            <hr class="h-[2px] my-0 bg-stone-50 border-0 w-4"></hr>
-            <h2
-              className={`text-stone-50 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
-            >
-              Additional Services
-            </h2>
-          </div>
-
-          <div className="flex justify-end">
-            <WhiteButton title={"View All"} link={"/"} style={"rounded-none"} />
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-          {serviceData.map((item, index) => (
-            <div
-              className={`flex text-center bg-cover h-[300px] items-center ${item.bg}`}
-            >
-              <div class="p-6">
-                <div className="bg-[#1B2639] p-3 rounded-full bg-opacity-25 flex justify-center items-center mx-auto w-[60px] h-[60px]">
-                  <Image
-                    width={45}
-                    height={45}
-                    src={item.icon}
-                    alt="about img"
-                    className="flex justify-center mx-auto"
-                  />
-                </div>
-                <h2
-                  className={`text-stone-50 font-semibold text-xl mt-5 mb-4 text-center ${bitter.className}`}
-                >
-                  {item.title}
-                </h2>
-                <p className="font-thin text-[1rem] text-white text-center">
-                  {item.dec}
-                </p>
-              </div>
+          <CardMotion
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1.1,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: 100,
+            }}
+          >
+            <div className="">
+              <h2 className="text-stone-50 font-bold text-base">Services</h2>
+              <hr class="h-[2px] my-0 bg-stone-50 border-0 w-4"></hr>
+              <h2
+                className={`text-stone-50 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+              >
+                Additional Services
+              </h2>
             </div>
+          </CardMotion>
+          <CardMotion
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1.1,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: 100,
+            }}
+          >
+            <div className="flex justify-end invisible md:visible">
+              <WhiteButton
+                title={"View All"}
+                link={"/"}
+                style={"rounded-none"}
+              />
+            </div>
+          </CardMotion>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center mt-[-20px] md:mt-12">
+          {serviceData.map((item, index) => (
+            <CardMotion
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 1.1,
+                },
+              }}
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+            >
+              <div
+                className={`flex text-center bg-cover h-[300px] items-center ${item.bg}`}
+              >
+                <div class="p-6">
+                  <div className="bg-[#1B2639] p-3 rounded-full bg-opacity-25 flex justify-center items-center mx-auto w-[60px] h-[60px]">
+                    <Image
+                      width={45}
+                      height={45}
+                      src={item.icon}
+                      alt="about img"
+                      className="flex justify-center mx-auto"
+                    />
+                  </div>
+                  <h2
+                    className={`text-stone-50 font-semibold text-xl mt-5 mb-4 text-center ${bitter.className}`}
+                  >
+                    {item.title}
+                  </h2>
+                  <p className="font-thin text-[1rem] text-white text-center">
+                    {item.dec}
+                  </p>
+                </div>
+              </div>
+            </CardMotion>
           ))}
         </div>
+
+        <CardMotion
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1.1,
+            },
+          }}
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+        >
+          <div className="flex justify-center visible md:invisible mt-12 md:mt-[-60px]">
+            <WhiteButton title={"View All"} link={"/"} style={"rounded-none"} />
+          </div>
+        </CardMotion>
       </div>
     </SectionLayout>
   );

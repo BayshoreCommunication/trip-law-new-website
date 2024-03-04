@@ -214,10 +214,12 @@ const ContactSection = () => {
                 </button>
               </MotionEffect>
 
-              <p className="mt-8 text-lg text-stone-950 text-center md:text-left">
-                *I understand that the use of this form for communication with
-                Digital Xperience Group (DXG).
-              </p>
+              <MotionEffect effect="fade-up" duration="2000">
+                <p className="mt-8 text-lg text-stone-950 text-center md:text-left">
+                  *I understand that the use of this form for communication with
+                  Digital Xperience Group (DXG).
+                </p>
+              </MotionEffect>
             </form>
           </div>
         </div>

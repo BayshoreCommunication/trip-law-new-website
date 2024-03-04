@@ -35,7 +35,7 @@ const HeroSection = () => {
                   hidden: { opacity: 0, y: -20 },
                   visible,
                 }}
-                className="text-red-700 font-black text-3xl"
+                className="text-red-700 font-black text-2xl md:text-3xl"
               >
                 Giving You Advices That Matters
               </motion.h2>
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 class="h-[2px] my-2 bg-red-700 border-0 w-20"
               ></motion.hr>
               <h1
-                className={`text-[70px] md:text-[100px]  font-[800] text-white text-left leading-tight tracking-normal ${bitter.className}`}
+                className={`text-[50px] md:text-[100px] font-[800] text-white md:text-left leading-tight tracking-normal ${bitter.className}`}
               >
                 {text.map((el, i) => (
                   <motion.span
@@ -65,24 +65,24 @@ const HeroSection = () => {
               </h1>
               <motion.p
                 variants={itemVariants}
-                className="text-white text-base max-w-[450px]"
+                className="text-white text-sm md:text-base max-w-[450px]"
               >
                 Malesuada felis facilisis diam sed volutpat sociis nibh enim
                 arcu Ac diam eget faucibus pulvinar nunc porttitor sit. Quam.
               </motion.p>
               <motion.div
                 variants={itemVariants}
-                className="mt-5 flex justify-center md:justify-start"
+                className="mt-8 flex justify-center md:justify-start"
               >
                 <button
                   type="button"
-                  class="text-white bg-red-700 hover:bg-red-800 font-medium  text-lg px-3 md:px-8 py-2.5 me-3 md:me-6 mb-2 uppercase"
+                  class="text-white bg-red-700 hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-3 md:me-6 mb-2 uppercase"
                 >
                   Consultation
                 </button>
                 <button
                   type="button"
-                  class="text-white bg-none hover:bg-red-800 font-medium  text-lg px-3 md:px-8 py-2.5 me-0 md:me-6 mb-2 border border-white "
+                  class="text-white bg-none hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-0 md:me-6 mb-2 border border-white "
                 >
                   (863)-599-6735
                 </button>
