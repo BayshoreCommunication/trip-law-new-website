@@ -4,7 +4,7 @@ import HeroSection from "@/components/appointment/HeroSection";
 
 const page = () => {
   return (
-    <div className="">
+    <div>
       <HeroSection />
       <AppointmentSection />
       <Calendly />

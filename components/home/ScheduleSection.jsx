@@ -1,11 +1,14 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { Suspense } from "react";
 import SectionLayout from "../shared/SectionLayout";
 import CardMotion from "../motion/CardMotion";
 import ImageMotion from "../motion/ImageMotion";
 import MotionEffect from "../motion/MotionEffect";
 import { Mulish, Bitter } from "next/font/google";
 import BlackButton from "../shared/BlackButton";
+import ScondayButton from "../shared/ScondayButton";
+import VideoPlayer from "../shared/Video/VideoPlayer";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -45,10 +48,11 @@ const ScheduleSection = () => {
                 journey abroad.
               </p>
               <div className="flex justify-center mt-8 md:justify-start">
-                <BlackButton
+                <ScondayButton
                   title={"Schedule Free Consultation"}
-                  link={"/"}
-                  style={"rounded-md"}
+                  link={"/appointment"}
+                  style={"bg-[#1B2639] text-white"}
+                  radius={"sm"}
                 />
               </div>
             </div>
@@ -68,12 +72,11 @@ const ScheduleSection = () => {
               }}
             >
               <div className="flex justify-center items-center">
-                <Image
-                  width={1200}
-                  height={500}
-                  src={"/assets/home/video-thum.jpg"}
-                  alt="about img"
-                />
+                <div>
+                  <Suspense fallback={<p>Loading video...</p>}>
+                    <VideoPlayer src={"/assets/video/trip-law.mp4"} />
+                  </Suspense>
+                </div>
               </div>
             </CardMotion>
           </div>

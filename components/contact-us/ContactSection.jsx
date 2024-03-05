@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import SectionLayout from "../shared/SectionLayout";
-import Image from "next/image";
+import { Button } from "@nextui-org/react";
 import MotionEffect from "../motion/MotionEffect";
 import axios from "axios";
 
@@ -10,9 +10,9 @@ const ContactSection = () => {
     name: "",
     email: "",
     phone: "",
-    massage: "",
+    message: "",
   };
-
+  const [loading, setLoading] = useState(false);
   const [contactInfo, setContactInfo] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
@@ -28,10 +28,27 @@ const ContactSection = () => {
     setIsSubmit(true);
   };
 
+  const handlePostRequest = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.post(
+        "https://backend-triplaw.vercel.app/user/messages",
+        contactInfo
+      );
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      console.log("Response:", response.data);
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(contactInfo);
+      handlePostRequest();
+      setContactInfo(initialValues);
     }
   }, [formErrors]);
 
@@ -49,22 +66,10 @@ const ContactSection = () => {
     if (!values.phone) {
       errors.phone = "Phone number is required!";
     }
-    if (!values.massage) {
-      errors.massage = "Question is required!";
+    if (!values.message) {
+      errors.message = "Question is required!";
     }
     return errors;
-  };
-
-  const handlePostRequest = async () => {
-    try {
-      const response = await axios.post(
-        "https://backend-bayshore.vercel.app/user/messages",
-        postData
-      );
-      console.log("Response:", response.data);
-    } catch (error) {
-      console.error("Error:", error);
-    }
   };
 
   return (
@@ -193,25 +198,38 @@ const ContactSection = () => {
                 <div class="mb-6">
                   <textarea
                     rows={4}
-                    id="massage"
+                    id="message"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-4 placeholder:text-lg pl-5"
                     placeholder="Your question....."
                     required
-                    name="massage"
-                    value={contactInfo.massage}
+                    name="message"
+                    value={contactInfo.message}
                     onChange={handleChange}
                   />
-                  <span className="text-orange-600">{formErrors.massage}</span>
+                  <span className="text-orange-600">{formErrors.message}</span>
                 </div>
               </MotionEffect>
 
               <MotionEffect effect="fade-up" duration="2000">
-                <button
-                  type="submit"
-                  class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:outline-none focus:ring-[#1B2639] font-medium rounded-md text-xl w-full px-5 py-3 text-center"
-                >
-                  Submit
-                </button>
+                {loading ? (
+                  <Button
+                    isLoading
+                    className="text-white bg-[#1B2639] text-xl w-full px-5 py-3 text-center"
+                    radius="sm"
+                    size="lg"
+                  >
+                    Sending
+                  </Button>
+                ) : (
+                  <Button
+                    className="text-white bg-[#1B2639] text-xl w-full px-5 py-3 text-center"
+                    radius="sm"
+                    size="lg"
+                    onClick={handleSubmit}
+                  >
+                    Submit
+                  </Button>
+                )}
               </MotionEffect>
 
               <MotionEffect effect="fade-up" duration="2000">

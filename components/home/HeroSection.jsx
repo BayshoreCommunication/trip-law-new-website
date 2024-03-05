@@ -5,6 +5,7 @@ import SectionLayout from "../shared/SectionLayout";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { Mulish, Bitter } from "next/font/google";
+import { Link } from "@nextui-org/react";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -74,12 +75,13 @@ const HeroSection = () => {
                 variants={itemVariants}
                 className="mt-8 flex justify-center md:justify-start"
               >
-                <button
+                <a
                   type="button"
                   class="text-white bg-red-700 hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-3 md:me-6 mb-2 uppercase"
+                  href="/appointment"
                 >
                   Consultation
-                </button>
+                </a>
                 <button
                   type="button"
                   class="text-white bg-none hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-0 md:me-6 mb-2 border border-white "

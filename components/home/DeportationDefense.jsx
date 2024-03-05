@@ -9,7 +9,6 @@ import {
   Image,
 } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
-
 import { Mulish, Bitter } from "next/font/google";
 import MotionEffect from "../motion/MotionEffect";
 import { DoubleOneTabSection } from "../shared/DoubleOneTabSection";

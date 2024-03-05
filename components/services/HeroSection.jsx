@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <PageHeroSection
       image={"bg-[url('/assets/services/hero-banner.png')] bg-cover bg-center"}
-      title={"About Us"}
+      title={"Services"}
     />
   );
 };

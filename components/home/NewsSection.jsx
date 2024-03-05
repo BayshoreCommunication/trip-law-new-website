@@ -8,6 +8,7 @@ import { Mulish, Bitter } from "next/font/google";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { articlesInfo } from "@/config/data";
 import BlackButton from "../shared/BlackButton";
+import ScondayButton from "../shared/ScondayButton";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -70,10 +71,11 @@ const NewsSection = () => {
             }}
           >
             <div className="flex justify-end invisible md:visible">
-              <BlackButton
+              <ScondayButton
                 title={"View All"}
                 link={"/"}
-                style={"rounded-none"}
+                style={"bg-[#1B2639] text-white"}
+                radius={"none"}
               />
             </div>
           </CardMotion>
@@ -135,7 +137,12 @@ const NewsSection = () => {
           }}
         >
           <div className="flex justify-center visible md:invisible mt-12 md:mt-[-60px]">
-            <BlackButton title={"View All"} link={"/"} style={"rounded-none"} />
+            <ScondayButton
+              title={"View All"}
+              link={"/"}
+              style={"bg-[#1B2639] text-white"}
+              radius={"none"}
+            />
           </div>
         </CardMotion>
       </div>

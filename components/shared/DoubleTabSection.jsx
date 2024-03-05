@@ -13,6 +13,8 @@ import { Mulish, Bitter } from "next/font/google";
 import BlackButton from "./BlackButton";
 import MotionEffect from "../motion/MotionEffect";
 import CardMotion from "../motion/CardMotion";
+import ScondayButton from "./ScondayButton";
+import ServicesButton from "./ServicesButton";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -98,7 +100,7 @@ export function DoubleTabSection({ tabsData }) {
         }}
       >
         <TabsBody>
-          {tabsData?.details.map(({ content, value, img }) => (
+          {tabsData?.details.map(({ label, content, value, img, slug }) => (
             <TabPanel key={value} value={value}>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center mt-14">
                 <div className="">
@@ -108,10 +110,11 @@ export function DoubleTabSection({ tabsData }) {
                     {content}
                   </p>
                   <div className="flex justify-center mt-8 md:justify-start">
-                    <BlackButton
+                    <ServicesButton
                       title={"Learn more"}
-                      link={"/"}
-                      style={"rounded-md"}
+                      link={"/slug"}
+                      style={"bg-[#1B2639] text-white"}
+                      radius={"sm"}
                     />
                   </div>
                 </div>

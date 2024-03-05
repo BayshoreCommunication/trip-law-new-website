@@ -11,23 +11,23 @@ import {
   NavbarMenuToggle,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 import { SITECONFIG } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
 
 const MainNavbar = () => {
   const pathname = usePathname();
-
   return (
     <Navbar
       shouldHideOnScroll
       maxWidth="2xl"
       className="flex !justify-center bg-cover my-1"
     >
-      <NavbarContent className="md:hidden" justify="start">
+      <NavbarContent className="md:hidden ml-0" justify="start">
         <NavbarMenuToggle className="text-slate-900" />
       </NavbarContent>
-
+      {/* 
       <NavbarContent className="pr-3 md:hidden" justify="end">
         <Image
           width={280}
@@ -36,17 +36,28 @@ const MainNavbar = () => {
           alt="Trip Law"
           className="object-cover cursor-pointer"
         />
+      </NavbarContent> */}
+      <NavbarContent>
+        <Link href="/">
+          <Image
+            width={170}
+            height={60}
+            src={"/assets/site-logo/trip-law-logo.svg"}
+            alt="Trip Low"
+            className="object-cover cursor-pointer !max-w-[170px] md:hidden"
+            justify="end"
+          />
+        </Link>
       </NavbarContent>
 
-      <NavbarContent className="justify-center hidden gap-10 md:flex ml-[-130px]"></NavbarContent>
+      <NavbarContent className="justify-center hidden gap-10 md:flex ml-[-200px]"></NavbarContent>
       <NavbarContent className="justify-center hidden gap-14 md:flex">
         {SITECONFIG?.mainNav?.left?.map((nav, index) => {
           return (
             <NavbarItem key={index}>
               <Link
                 href={nav.slug}
-                className={`text-slate-900 font-semibold
-                text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? "border-b-2 border-solid border-black" : ""}`}
+                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? "border-b-2 border-solid border-black" : ""}`}
               >
                 {nav.title}
               </Link>
@@ -90,11 +101,11 @@ const MainNavbar = () => {
       </NavbarContent>
       <NavbarContent className="justify-center hidden gap-x-14 md:flex"></NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="ml-0">
         {SITECONFIG?.mobileNav?.map((nav, index) => (
-          <NavbarMenuItem key={`${nav}-${index}`}>
+          <NavbarMenuItem key={`${nav}-${index}`} className="list-none ml-0">
             <Link
-              className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? "border-b-2 border-solid border-black" : ""}`}
+              className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none	 ${pathname === nav.slug ? "border-b-2 border-solid border-black" : ""}`}
               href={nav.slug}
               size="lg"
             >

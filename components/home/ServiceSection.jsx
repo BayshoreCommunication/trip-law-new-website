@@ -7,6 +7,7 @@ import { articlesInfo } from "@/config/data";
 import WhiteButton from "../shared/WhiteButton";
 import MotionEffect from "../motion/MotionEffect";
 import CardMotion from "../motion/CardMotion";
+import ScondayButton from "../shared/ScondayButton";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -89,11 +90,12 @@ const ServiceSection = () => {
               y: 100,
             }}
           >
-            <div className="flex justify-end invisible md:visible">
-              <WhiteButton
+            <div className="flex justify-end invisible md:visible ">
+              <ScondayButton
                 title={"View All"}
-                link={"/"}
-                style={"rounded-none"}
+                link={"/services"}
+                style={"bg-slate-50 text-black"}
+                radius={"none"}
               />
             </div>
           </CardMotion>
@@ -154,7 +156,12 @@ const ServiceSection = () => {
           }}
         >
           <div className="flex justify-center visible md:invisible mt-12 md:mt-[-60px]">
-            <WhiteButton title={"View All"} link={"/"} style={"rounded-none"} />
+            <ScondayButton
+              title={"View All"}
+              link={"/services"}
+              style={"bg-slate-50 text-black"}
+              radius={"none"}
+            />
           </div>
         </CardMotion>
       </div>

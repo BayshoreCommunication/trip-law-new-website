@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import SectionLayout from "../shared/SectionLayout";
@@ -8,6 +9,9 @@ import { motion } from "framer-motion";
 import { Mulish, Bitter } from "next/font/google";
 import BlackButton from "../shared/BlackButton";
 import RevealMotion from "../motion/RevealMotion";
+import ScondayButton from "../shared/ScondayButton";
+import { Suspense } from "react";
+import VideoPlayer from "../shared/Video/VideoPlayer";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -40,14 +44,11 @@ const AboutSection = () => {
                 duis sit tellus adipiscing. Cursus amet
               </p>
               <div className="flex justify-center mt-8 md:justify-start">
-                {/* <button
-                  type="button"
-                  class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-8 py-2.5 me-6 mb-2 focus:outline-none uppercase rounded-md"
-                ></button> */}
-                <BlackButton
+                <ScondayButton
                   title={"READ MORE"}
-                  link={"/"}
-                  style={"rounded-md"}
+                  link={"/about-us"}
+                  style={"bg-[#1B2639] text-white"}
+                  radius={"sm"}
                 />
               </div>
             </div>
@@ -55,12 +56,9 @@ const AboutSection = () => {
           <div className="">
             <MotionEffect effect="fade-left" duration="2000">
               <div className="flex justify-center items-center">
-                <Image
-                  width={1200}
-                  height={500}
-                  src={"/assets/home/video-thum.jpg"}
-                  alt="about img"
-                />
+                <Suspense fallback={<p>Loading video...</p>}>
+                  <VideoPlayer src={"/assets/video/trip-law.mp4"} />
+                </Suspense>
               </div>
             </MotionEffect>
           </div>

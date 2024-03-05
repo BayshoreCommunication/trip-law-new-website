@@ -6,6 +6,7 @@ import ImageMotion from "../motion/ImageMotion";
 import MotionEffect from "../motion/MotionEffect";
 import { Mulish, Bitter } from "next/font/google";
 import BlackButton from "../shared/BlackButton";
+import ScondayButton from "../shared/ScondayButton";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -47,10 +48,11 @@ const AboutSection = () => {
                 vidit choro “
               </h2>
               <div className="flex justify-center md:justify-start">
-                <BlackButton
+                <ScondayButton
                   title={"Our Services"}
                   link={"/"}
-                  style={"rounded-md"}
+                  style={"bg-[#1B2639] text-white"}
+                  radius={"sm"}
                 />
               </div>
             </div>
@@ -113,10 +115,11 @@ const AboutSection = () => {
                 vidit choro “
               </h2>
               <div className="flex justify-center md:justify-start">
-                <BlackButton
+                <ScondayButton
                   title={"Our Services"}
                   link={"/"}
-                  style={"rounded-md"}
+                  style={"bg-[#1B2639] text-white"}
+                  radius={"sm"}
                 />
               </div>
             </div>

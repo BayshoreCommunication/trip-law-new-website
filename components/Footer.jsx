@@ -37,12 +37,12 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="mb-6 text-lg font-semibold text-white">Company</h2>
-              <ul className="text-gray-300 font-thin text-base">
+              <ul className="text-gray-300 font-thin text-base list-none ml-0">
                 {SITECONFIG?.footer?.company?.map((el, index) => (
                   <li className="mb-4" key={index}>
-                    <a href="#" className="hover:underline">
+                    <Link href={el.slug} className="hover:underline">
                       {el.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -51,19 +51,19 @@ const Footer = () => {
               <h2 className="mb-6 text-lg font-semibold text-white">
                 Quick Links
               </h2>
-              <ul className="text-gray-300 font-thin text-base">
+              <ul className="text-gray-300 font-thin text-base list-none ml-0">
                 {SITECONFIG?.footer?.quick_links?.map((el, index) => (
                   <li className="mb-4" key={index}>
-                    <a href="#" className="hover:underline">
+                    <Link href={el.slug} className="hover:underline">
                       {el.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="col-span-2 md:col-span-1 ">
               <h2 className="mb-6 text-lg font-semibold text-white">Contact</h2>
-              <ul className="text-gray-300 font-thin text-base">
+              <ul className="text-gray-300 font-thin text-base list-none ml-0">
                 <li className="mb-4 flex items-center gap-3">
                   <div className="w-4 h-4">
                     <svg
@@ -131,7 +131,7 @@ const Footer = () => {
                 <li className="flex items-center justify-center md:justify-start mt-[-20px] md:mt-0 gap-3">
                   <div className="flex mt-10 sm:justify-center sm:mt-4 gap-3">
                     <Link
-                      href="#"
+                      href="https://www.facebook.com/TripLawPA"
                       className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
                     >
                       <svg
@@ -150,7 +150,7 @@ const Footer = () => {
                       <span className="sr-only">Facebook page</span>
                     </Link>
                     <Link
-                      href="#"
+                      href="https://www.instagram.com/trip_law_/"
                       className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
                     >
                       <svg
@@ -183,7 +183,7 @@ const Footer = () => {
                       <span className="sr-only">Facebook page</span>
                     </Link>
                     <Link
-                      href="#"
+                      href="https://www.youtube.com/@triplawpa"
                       className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
                     >
                       <svg

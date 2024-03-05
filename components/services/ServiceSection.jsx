@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import parse from "html-react-parser";
 import SectionLayout from "../shared/SectionLayout";
 import { motion, AnimatePresence } from "framer-motion";
@@ -42,6 +42,15 @@ const variants = {
 const ServiceSection = () => {
   const [selected, setSelected] = useState(servicesData[0].title);
 
+  useEffect(() => {
+    const storedData = localStorage.getItem("select-service-catagory");
+    if (storedData) {
+      setSelected(storedData);
+    } else {
+      setSelected(servicesData[0].title);
+    }
+  }, []);
+
   return (
     <>
       <style>{css}</style>
@@ -57,7 +66,9 @@ const ServiceSection = () => {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       key={index}
-                      onClick={() => setSelected(el.title)}
+                      onClick={() => {
+                        setSelected(el.title);
+                      }}
                     >
                       <a
                         href="#"

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import SectionLayout from "../shared/SectionLayout";
@@ -6,6 +7,24 @@ import ImageMotion from "../motion/ImageMotion";
 import MotionEffect from "../motion/MotionEffect";
 import { Avatar } from "@nextui-org/react";
 import { Mulish, Bitter } from "next/font/google";
+import { motion, AnimatePresence } from "framer-motion";
+
+const variants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
+  },
+};
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -54,14 +73,19 @@ const TripLawObligation = () => {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center mt-16">
             <div className="">
-              <div className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto">
+              <motion.div
+                variants={variants}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto"
+              >
                 <Image
                   width={100}
                   height={50}
                   src={"/assets/home/one.png"}
                   alt="about img"
                 />
-              </div>
+              </motion.div>
               <h2
                 className={`text-stone-950 font-bold text-xl mt-5 mb-0 text-center ${bitter.className}`}
               >
@@ -69,15 +93,20 @@ const TripLawObligation = () => {
                 CONSULTATION
               </h2>
             </div>
-            <div className="">
-              <div className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto">
+            <div>
+              <motion.div
+                variants={variants}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto"
+              >
                 <Image
                   width={100}
                   height={50}
                   src={"/assets/home/two.png"}
                   alt="about img"
                 />
-              </div>
+              </motion.div>
               <h2
                 className={`text-stone-950 font-bold text-xl mt-5 mb-0 text-center ${bitter.className}`}
               >
@@ -86,14 +115,19 @@ const TripLawObligation = () => {
               </h2>
             </div>
             <div className="">
-              <div className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto">
+              <motion.div
+                variants={variants}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto"
+              >
                 <Image
                   width={100}
                   height={50}
                   src={"/assets/home/three.png"}
                   alt="about img"
                 />
-              </div>
+              </motion.div>
               <h2
                 className={`text-stone-950 font-bold text-xl mt-5 mb-0 text-center ${bitter.className}`}
               >
@@ -103,14 +137,19 @@ const TripLawObligation = () => {
               </h2>
             </div>
             <div className="">
-              <div className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto">
+              <motion.div
+                variants={variants}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto"
+              >
                 <Image
                   width={100}
                   height={50}
                   src={"/assets/home/four.png"}
                   alt="about img"
                 />
-              </div>
+              </motion.div>
               <h2
                 className={`text-stone-950 font-bold text-xl mt-5 mb-0 text-center ${bitter.className}`}
               >

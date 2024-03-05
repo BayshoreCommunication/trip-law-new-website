@@ -4,7 +4,6 @@ import { Mulish, Bitter } from "next/font/google";
 import MotionEffect from "../motion/MotionEffect";
 import { SingleTabSection } from "../shared/SingleTabSection";
 import { DoubleTabSection } from "../shared/DoubleTabSection";
-import { Tabs } from "../shared/CustomTab/Tabs";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -14,6 +13,7 @@ const FamilyBasedImmigration = () => {
     {
       value: "1",
       label: `<p>Green Card </br>Through Marriage</p>`,
+      slug: "green-card-through-marriage",
       content:
         "1 Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
       img: "",
@@ -21,6 +21,7 @@ const FamilyBasedImmigration = () => {
     {
       value: "2",
       label: `<p>Green Card </br>Immediate Relative</p>`,
+      slug: "green-card-immediate-relative",
       content:
         "2 Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
       img: "",
@@ -28,30 +29,7 @@ const FamilyBasedImmigration = () => {
     {
       value: "3",
       label: `<p>Green Card Through </br>Consular Processing</p>`,
-      content:
-        "3 Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
-      img: `/assets/home/familyImmigration.png`,
-    },
-  ];
-
-  let tabsData2 = [
-    {
-      value: "4",
-      label: `<p>Green Card </br>Through Marriage 4</p>`,
-      content:
-        "1 Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
-      img: "",
-    },
-    {
-      value: "5",
-      label: `<p>Green Card </br>Immediate Relative 5</p>`,
-      content:
-        "2 Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
-      img: "",
-    },
-    {
-      value: "6",
-      label: `<p>Green Card </br>Through Consular Processing 6</p>`,
+      slug: "green-card-thrugh-consular-processing",
       content:
         "3 Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
       img: `/assets/home/familyImmigration.png`,

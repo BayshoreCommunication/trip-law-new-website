@@ -1522,6 +1522,8 @@ export const blogData = {
 
 export const servicesData = [
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "green-card-through-marriage",
     title: "Green Card Through Marriage",
     dece: `<div>
   <img
@@ -1578,7 +1580,9 @@ export const servicesData = [
   </div>`,
   },
   {
-    title: "Green Card Through ",
+    icon: "/assets/services/services-icon2.png",
+    slug: "green-card-immediate-relative",
+    title: "Green Card Immediate Relative",
     dece: `<div>
   <img
   src="/assets/services/service-image-one.jpg"} alt="server-image"
@@ -1634,6 +1638,8 @@ export const servicesData = [
   </div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "h1b-visa",
     title: "H1B Visa",
     dece: `<div>
   <img
@@ -1690,6 +1696,8 @@ export const servicesData = [
   </div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "h1-visa",
     title: "L-1 Visa",
     dece: `<div>
   <img
@@ -1746,6 +1754,8 @@ export const servicesData = [
   </div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "01-visa",
     title: "O-1 Visa",
     dece: `<div>
   <img
@@ -1802,6 +1812,8 @@ export const servicesData = [
   </div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "eb1-visa",
     title: "EB-1 Visa",
     dece: `<div>
   <img
@@ -1858,6 +1870,8 @@ export const servicesData = [
   </div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "eb2-visa",
     title: "EB-2 Visa",
     dece: `<div>
   <img
@@ -1914,54 +1928,80 @@ export const servicesData = [
   </div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "eb3-visa",
     title: "EB-3 Visa",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "vawa",
     title: "VAWA",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "u-visa",
     title: "U Visa",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "asylum-visa",
     title: "Asylum",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "t-visa",
     title: "T Visa",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "bond-hearing",
     title: "Bond Hearing",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "master-celender-hearing",
     title: "Master Calendar Hearing",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "individual-hearing",
     title: "Individual Hearing",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "waivers",
     title: "Waivers",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "e2-treaty-visas",
     title: "E2 Treaty Visas",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "citizenship",
     title: "Citizenship",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "naturalization-and-citizenship",
     title: "Naturalization & Citizenship",
     dece: `<div>demo</div>`,
   },
   {
+    icon: "/assets/services/services-icon2.png",
+    slug: "green-card",
     title: "Green Card",
     dece: `<div>demo</div>`,
   },
