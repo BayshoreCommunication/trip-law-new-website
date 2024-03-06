@@ -73,7 +73,7 @@ const NewsSection = () => {
             <div className="flex justify-end invisible md:visible">
               <ScondayButton
                 title={"View All"}
-                link={"/"}
+                link={"/blog"}
                 style={"bg-[#1B2639] text-white"}
                 radius={"none"}
               />
@@ -139,7 +139,7 @@ const NewsSection = () => {
           <div className="flex justify-center visible md:invisible mt-12 md:mt-[-60px]">
             <ScondayButton
               title={"View All"}
-              link={"/"}
+              link={"/blog"}
               style={"bg-[#1B2639] text-white"}
               radius={"none"}
             />

@@ -144,7 +144,7 @@ const ContactSection = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col col-span-1 lg:col-span-2">
+          <div className="flex flex-col col-span-1 lg:col-span-2 mt-12 md:mt-0">
             <form className="w-full" onSubmit={handleSubmit}>
               <MotionEffect effect="fade-up" duration="2000">
                 <div class="mb-6 w-full">

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Mulish, Bitter } from "next/font/google";
 import MotionEffect from "../motion/MotionEffect";
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
+import Link from "next/link";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
@@ -23,12 +24,12 @@ const PageHeroSection = ({ image, title }) => {
           >
             <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
               <li className="inline-flex items-center">
-                <a
-                  href="#"
-                  className="inline-flex items-center text-sm font-medium text-stone-200 hover:text-[#1B2639] "
+                <Link
+                  href="/"
+                  className="inline-flex items-center text-sm font-medium text-stone-200 hover:text-red-700"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <div className="flex items-center">
@@ -47,12 +48,12 @@ const PageHeroSection = ({ image, title }) => {
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
-                  <a
+                  <Link
                     href="#"
-                    className="ms-1 text-sm font-medium text-white hover:text-[#1B2639] md:ms-2"
+                    className="ms-1 text-sm font-medium text-white md:ms-2"
                   >
                     {title}
-                  </a>
+                  </Link>
                 </div>
               </li>
             </ol>

@@ -32,7 +32,7 @@ const mulish = Mulish({ subsets: ["latin"] });
 const TripLawObligation = () => {
   return (
     <SectionLayout bg="bg-[#F1F5FA]">
-      <div className="my-12">
+      <div className="">
         <CardMotion
           whileInView={{
             opacity: 1,
@@ -47,7 +47,7 @@ const TripLawObligation = () => {
           }}
         >
           <h2
-            className={`text-stone-950 font-bold text-6xl mt-5 mb-5 text-center ${bitter.className}`}
+            className={`text-stone-950 font-bold text-6xl mt-0 mb-5 text-center ${bitter.className}`}
           >
             TRIP LAW OBLIGATION TO YOU
           </h2>

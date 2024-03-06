@@ -102,7 +102,7 @@ export const SITECONFIG = {
       },
       {
         title: "News",
-        slug: "/news",
+        slug: "/blog",
       },
       {
         title: "Contact Us",

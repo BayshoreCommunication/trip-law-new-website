@@ -37,14 +37,6 @@ h1 {
   filter: grayscale(100%) invert(92%) contrast(83%);
 }
 
-.social-icon {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
 .newsletter-bg {
   height: 100%;

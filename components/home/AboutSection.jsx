@@ -20,7 +20,7 @@ const AboutSection = () => {
   return (
     <SectionLayout bg="bg-slate-50 ">
       <div className="space-y-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
           <MotionEffect effect="fade-right" duration="2000">
             <div className="">
               <h2 className="text-stone-950 font-bold text-base">About</h2>
@@ -53,7 +53,7 @@ const AboutSection = () => {
               </div>
             </div>
           </MotionEffect>
-          <div className="">
+          <div className="w-[100%]">
             <MotionEffect effect="fade-left" duration="2000">
               <div className="flex justify-center items-center">
                 <Suspense fallback={<p>Loading video...</p>}>

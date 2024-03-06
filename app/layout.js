@@ -1,11 +1,8 @@
 import { Mulish, Bitter } from "next/font/google";
 import "./globals.css";
-
 import { Providers } from "./providers";
 import MainNavbar from "@/components/MainNavbar";
 import Footer from "@/components/Footer";
-import SocialIconBar from "@/components/SocialIconBar";
-import HeroSection from "@/components/about-us/HeroSection";
 
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });

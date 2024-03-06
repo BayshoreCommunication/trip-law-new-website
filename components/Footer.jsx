@@ -132,6 +132,7 @@ const Footer = () => {
                   <div className="flex mt-10 sm:justify-center sm:mt-4 gap-3">
                     <Link
                       href="https://www.facebook.com/TripLawPA"
+                      target="_blank"
                       className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
                     >
                       <svg
@@ -149,27 +150,10 @@ const Footer = () => {
                       </svg>
                       <span className="sr-only">Facebook page</span>
                     </Link>
+
                     <Link
                       href="https://www.instagram.com/trip_law_/"
-                      className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
-                    >
-                      <svg
-                        className="w-3 h-3"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 17"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <span className="sr-only">Facebook page</span>
-                    </Link>
-                    <Link
-                      href="#"
+                      target="_blank"
                       className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
                     >
                       <svg
@@ -184,17 +168,17 @@ const Footer = () => {
                     </Link>
                     <Link
                       href="https://www.youtube.com/@triplawpa"
+                      target="_blank"
                       className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
                     >
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-3 w-3"
+                        viewBox="0 0 1024 1024"
                         fill="currentColor"
-                        viewBox="0 0 24 24"
+                        class="h-3 w-3"
                       >
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        <path d="M941.3 296.1a112.3 112.3 0 00-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0082.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z" />
                       </svg>
-                      <span className="sr-only">Facebook page</span>
+                      <span className="sr-only">Youtube</span>
                     </Link>
                   </div>
                 </li>

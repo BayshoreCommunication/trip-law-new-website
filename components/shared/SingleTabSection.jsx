@@ -74,11 +74,11 @@ export function SingleTabSection({ tabsData }) {
           y: 100,
         }}
       >
-        <TabsBody>
+        <TabsBody className="p-0 m-0">
           {tabsData?.map(({ label, content, value, slug }) => (
-            <TabPanel key={value} value={value} className="">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center mt-16">
-                <div className="">
+            <TabPanel key={value} value={value} className="p-0 m-0">
+              <div className="flex flex-col-reverse md:flex-row gap-5 items-center mt-0 md:mt-14">
+                <div className="w-[100%] md:w-[75%]">
                   <p
                     className={`mb-4 text-lg text-stone-950 text-center md:text-left ${mulish.className}`}
                   >
@@ -94,7 +94,7 @@ export function SingleTabSection({ tabsData }) {
                   </div>
                 </div>
 
-                <div className="col-span-2">
+                <div className="w-[100%]">
                   <div className="flex justify-center items-center mt-8 md:mt-0">
                     <Image
                       width={1000}

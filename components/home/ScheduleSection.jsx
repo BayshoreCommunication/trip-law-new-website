@@ -17,7 +17,7 @@ const ScheduleSection = () => {
   return (
     <SectionLayout bg="bg-[#F1F5FA] ">
       <div className="space-y-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
           <CardMotion
             whileInView={{
               opacity: 1,
@@ -38,7 +38,7 @@ const ScheduleSection = () => {
                 You Can Get A Free Consultation <br /> From Hardam Tripathi ESQ
               </h2>
               <div className="flex justify-center items-center md:justify-start">
-                <hr className="h-[2px] my-0 bg-stone-950 border-0 w-28 mb-4 "></hr>
+                <hr className="h-[2px] my-0 bg-stone-950 border-0 w-28 mt-2 mb-4 "></hr>
               </div>
 
               <p className="mb-4 text-lg text-stone-950 text-center md:text-left">
@@ -57,7 +57,7 @@ const ScheduleSection = () => {
               </div>
             </div>
           </CardMotion>
-          <div className="">
+          <div className="w-[100%]">
             <CardMotion
               whileInView={{
                 opacity: 1,
