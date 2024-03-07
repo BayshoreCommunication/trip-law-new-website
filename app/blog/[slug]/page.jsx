@@ -111,7 +111,10 @@ const page = async ({ params }) => {
                       <div className="font-normal text-[.8rem] text-black mb-4 text-justify sm:line-clamp-1 line-clamp-1 h-6">
                         {parse(blogs?.body)}
                       </div>
-                      <button className="px-4 py-2 font-medium tracking-wider text-white border border-white rounded-full text-normal focus:outline-none hover:bg-white hover:text-black focus:ring-1 focus:ring-gray-200">
+                      <button
+                        type="button"
+                        class="text-white bg-[#1B2639] hover:bg-[#162030] font-medium text-base px-3 py-1.5 me-2 mb-2 focus:outline-none rounded-md"
+                      >
                         Read More
                       </button>
                     </div>

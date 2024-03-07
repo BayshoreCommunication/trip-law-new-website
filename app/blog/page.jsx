@@ -7,6 +7,7 @@ import MotionEffect from "@/components/motion/MotionEffect";
 import parse from "html-react-parser";
 import { Link } from "@nextui-org/react";
 import HeroSection from "@/components/blog/HeroSection";
+import ScondayButton from "@/components/shared/ScondayButton";
 
 const page = async () => {
   const blogPostData = await GetAllPostData();
@@ -60,16 +61,16 @@ const page = async () => {
                       <div className="flex justify-center md:justify-start">
                         <button
                           type="button"
-                          class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
+                          class="text-white bg-[#1B2639] hover:bg-[#162030] font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
                         >
-                          Design
+                          Read More
                         </button>
-                        <button
+                        {/* <button
                           type="button"
                           class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
                         >
                           Research
-                        </button>
+                        </button> */}
                       </div>
                     </MotionEffect>
                   </div>
@@ -107,16 +108,16 @@ const page = async () => {
                       <div className="flex justify-center md:justify-start">
                         <button
                           type="button"
-                          class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
+                          class="text-white bg-[#1B2639] hover:bg-[#162030] font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
                         >
-                          Design
+                          Read More
                         </button>
-                        <button
+                        {/* <button
                           type="button"
                           class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
                         >
                           Research
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </Link>
@@ -125,12 +126,12 @@ const page = async () => {
           </div>
         </div>
         <MotionEffect effect="fade-right" duration="2000">
-          <hr className="w-full h-[1px] mx-auto my-2 bg-gray-200 border-0 rounded md:my-5" />
+          <hr className="w-full h-[1px] mx-auto my-2 bg-[#1B2639] border-0 rounded md:my-5" />
         </MotionEffect>
-
-        <div className="grid items-start justify-between grid-cols-1 gap-16 mt-16 lg:grid-cols-2">
-          <MotionEffect effect="fade-right" duration="2000">
-            <div>
+        {/* <div className="grid items-start justify-between grid-cols-1 gap-16 mt-16 lg:grid-cols-2"> */}
+        <div className="flex flex-col-reverse lg:flex-row gap-16 mt-10 mb-10">
+          <div className="flex-1">
+            <MotionEffect effect="fade-right" duration="2000">
               <h2 className="mb-4 text-4xl font-bold tracking-normal text-slate-900 text-center md:text-left">
                 Create a beautiful event platform <br /> services
               </h2>
@@ -157,35 +158,36 @@ const page = async () => {
                 </p>
               </div>
               <div className="flex justify-center md:justify-start">
-                <button
-                  type="button"
-                  class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
-                >
-                  Design
-                </button>
-                <button
+                <ScondayButton
+                  title={"Read More"}
+                  link={""}
+                  style={"bg-[#1B2639] text-white"}
+                  radius={"sm"}
+                />
+                {/* <button
                   type="button"
                   class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
                 >
                   Research
-                </button>
+                </button> */}
               </div>
-            </div>
-          </MotionEffect>
-          <MotionEffect effect="fade-left" duration="2000">
-            <div className="">
+            </MotionEffect>
+          </div>
+
+          <div className="flex-1">
+            <MotionEffect effect="fade-left" duration="2000">
               <Image
-                width={800}
-                height={300}
+                width={1000}
+                height={500}
                 src={"/assets/blogs/live.svg"}
                 alt="about img"
-                className=""
+                className="bg-cover"
               />
-            </div>
-          </MotionEffect>
+            </MotionEffect>
+          </div>
         </div>
         <MotionEffect effect="fade-right" duration="2000">
-          <hr className="w-full h-[1px] mx-auto my-2 bg-gray-200 border-0 rounded md:my-5" />
+          <hr className="w-full h-[1px] mx-auto my-2 bg-[#1B2639] border-0 rounded md:my-5" />
         </MotionEffect>
 
         <div className="grid grid-cols-1 gap-10 mt-10 sm:grid-cols-3">
@@ -199,25 +201,31 @@ const page = async () => {
                   alt="about img"
                   className=""
                 />
-                <h2 className="text-2xl tracking-normal font-bold text-[#1B2639] mb-2  text-center md:text-left">
+                <h2 className="text-2xl tracking-normal font-bold text-[#1B2639] mb-2 mt-2 text-center md:text-left">
                   {item.title}
                 </h2>
                 <p className="font-normal text-[1rem] text-black mb-8 text-center md:text-left line-clamp-6">
                   {item.dec}
                 </p>
                 <div className="flex justify-center md:justify-start">
-                  <button
+                  {/* <button
                     type="button"
-                    class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
+                    class="text-white bg-[#1B2639] hover:bg-[#162030] font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
                   >
-                    Design
-                  </button>
-                  <button
+                    Read More
+                  </button> */}
+                  <ScondayButton
+                    title={"Read More"}
+                    link={""}
+                    style={"bg-[#1B2639] text-white"}
+                    radius={"sm"}
+                  />
+                  {/* <button
                     type="button"
                     class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
                   >
                     Research
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </MotionEffect>

@@ -16,10 +16,10 @@ const Footer = () => {
   return (
     <footer className="bg-[#1B2639] py-5 px-5 lg-px-0">
       <div className="mx-auto w-full max-w-screen-2xl py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 md:grid-cols-5 justify-center">
-            <div className="mb-6 md:mb-0 col-span-2">
-              <a
+        <div className="md:flex md:justify-center">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 md:grid-cols-5 justify-center ">
+            <div className="mb-6 md:mb-0 col-span-2 mx-auto md:mx-0">
+              <Link
                 href="https://trip-law.com"
                 className="flex items-center cursor-pointer"
               >
@@ -30,12 +30,12 @@ const Footer = () => {
                   alt="Trip Low"
                   className="object-cover"
                 />
-              </a>
+              </Link>
               <p className="text-gray-300 font-thin text-base py-5 max-w-96 text-center md:text-left">
                 {SITECONFIG?.footer?.description}
               </p>
             </div>
-            <div>
+            <div className="">
               <h2 className="mb-6 text-lg font-semibold text-white">Company</h2>
               <ul className="text-gray-300 font-thin text-base list-none ml-0">
                 {SITECONFIG?.footer?.company?.map((el, index) => (
@@ -47,7 +47,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div>
+            <div className="">
               <h2 className="mb-6 text-lg font-semibold text-white">
                 Quick Links
               </h2>
@@ -61,7 +61,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="col-span-2 md:col-span-1 ">
+            <div className="col-span-2 md:col-span-1">
               <h2 className="mb-6 text-lg font-semibold text-white">Contact</h2>
               <ul className="text-gray-300 font-thin text-base list-none ml-0">
                 <li className="mb-4 flex items-center gap-3">
@@ -136,7 +136,7 @@ const Footer = () => {
                       className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
                     >
                       <svg
-                        className="w-3 h-3"
+                        class="h-3.5 w-3.5"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -158,7 +158,7 @@ const Footer = () => {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-3 w-3"
+                        class="h-3.5 w-3.5"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -172,11 +172,12 @@ const Footer = () => {
                       className="text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2"
                     >
                       <svg
-                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
-                        class="h-3 w-3"
+                        viewBox="0 0 576 512"
+                        class="h-3.5 w-3.5"
                       >
-                        <path d="M941.3 296.1a112.3 112.3 0 00-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0082.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z" />
+                        <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
                       </svg>
                       <span className="sr-only">Youtube</span>
                     </Link>

@@ -8,6 +8,7 @@ import NewsSection from "@/components/home/NewsSection";
 import ScheduleSection from "@/components/home/ScheduleSection";
 import ServiceSection from "@/components/home/ServiceSection";
 import TestimonialSection from "@/components/home/TestimonialSection";
+import ScrollMotionComponent from "@/components/motion/Top";
 import TripLawObligation from "@/components/shared/TripLawObligation";
 
 export default function Home() {
