@@ -12,30 +12,31 @@ import PageHeroSection from "@/components/shared/PageHeroSection";
 
 const css = `
   h1{
-    padding-top: 10px;
     font-size: 40px;
-    padding-bottom: 10px;
-    line-height: 100px;
+    font-weight: 900;
+    padding-top: 10px;
   }
   h2{
     padding-top: 10px;
-    font-size: 25px;
-    padding-bottom: 10px;
-    line-height: 100px;
-
+    font-size: 26px;
+    font-weight: 700;
   }
   p{
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
   ul{
     list-style-type: disc;
     margin-left: 30px;
-
+    
+  }
+  li{
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   br{
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 `;

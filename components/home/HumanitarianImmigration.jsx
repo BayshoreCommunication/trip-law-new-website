@@ -11,52 +11,52 @@ const HumanitarianImmigration = () => {
     top: [
       {
         value: "1",
-        label: "H1B Visa",
+        label: "Vawa",
       },
       {
         value: "2",
-        label: "L-1 Visa",
+        label: "U Visa",
       },
       {
         value: "3",
-        label: "O-1 Visa",
+        label: "Asylum",
       },
     ],
     bottom: [
       {
         value: "4",
-        label: "EB-1 Visa",
+        label: "T Visa",
       },
     ],
     details: [
       {
         value: "1",
         content:
-          "H1B Visa Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
+          "Have you experienced domestic violence, dating violence, sexual assault, or stalking, either in the United States or abroad? The Violence Against Women Act (VAWA) offers legal protections and pathways to safety and justice for individuals like you. We're here to offer caring and skilled legal help to guide you through the ins and outs of VAWA and make sure you get the protection you need.",
         img: `/assets/home/deportation-defense.png`,
-        url: "#",
+        slug: "vawa",
       },
       {
         value: "2",
         content:
-          "L-1 Visa Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
+          "Have you been a victim of a serious crime in the United States, such as human trafficking, violent assault, or domestic violence? Did you cooperate with law enforcement in investigating or prosecuting the crime? The U visa program offers a unique pathway to lawful status for victims who meet certain criteria. We're here to give you all the legal advice and support you need to navigate the U visa process and make sure you get the safety and justice you deserve.",
         img: `/assets/home/deportation-defense.png`,
-        url: "#",
+        slug: "u-visa",
       },
       {
         value: "3",
         content:
-          "O-1 Visa Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
+          "Did you flee from your home country due to a well-founded fear of persecution based on your race, religion, nationality, political opinion, or membership in a particular social group? The asylum process offers a pathway to protection and safety in the United States for individuals like you. We're here to lend a hand and offer all the support you need to navigate through the sometimes confusing asylum process. Our goal is to ensure you find the safety and sanctuary you're seeking.",
         img: `/assets/home/deportation-defense.png`,
-        url: "#",
+        slug: "asylum",
       },
 
       {
         value: "4",
         content:
-          "EB-1 Visa Introducing international opportunities & strategic investment solutions, we specialize in empowering businesses and individuals to explore the vast potential of foreign markets. With deep expertise, tailored strategies, and unwavering commitment, we facilitate your journey to expand investment horizons across borders. TurnAbroad will diversify your business portfolio and help you navigate the intricate world of foreign investment.",
+          "Have you experienced severe forms of human trafficking—forced labor, debt bondage, sex trafficking, or domestic servitude—in the United States or abroad? Are you unsure where to turn for help and how to build a secure future? The T visa program offers a beacon of hope, providing temporary residency and protection to victims like you. We walk alongside you every step of the T visa journey, ensuring your voice is heard and your rights are protected.",
         img: `/assets/home/deportation-defense.png`,
-        url: "#",
+        slug: "#",
       },
     ],
   };

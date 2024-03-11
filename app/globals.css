@@ -17,7 +17,7 @@ h1 {
 ::-webkit-scrollbar {
   height: 12px;
   width: 6px;
-  background: #000;
+  background: rgb(199, 199, 199);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -26,7 +26,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-corner {
-  background: #000;
+  background: rgb(199, 199, 199);
 }
 
 /* .overflow-hidden::-webkit-scrollbar {
@@ -36,7 +36,6 @@ h1 {
 .map-iframe {
   filter: grayscale(100%) invert(92%) contrast(83%);
 }
-
 
 .newsletter-bg {
   height: 100%;
