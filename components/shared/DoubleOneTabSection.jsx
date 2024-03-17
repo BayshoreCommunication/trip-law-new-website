@@ -10,10 +10,7 @@ import {
 import parse from "html-react-parser";
 import Image from "next/image";
 import { Mulish, Bitter } from "next/font/google";
-import BlackButton from "./BlackButton";
-import MotionEffect from "../motion/MotionEffect";
 import CardMotion from "../motion/CardMotion";
-import ScondayButton from "./ScondayButton";
 import ServicesButton from "./ServicesButton";
 
 const bitter = Bitter({ subsets: ["latin"] });
@@ -122,7 +119,7 @@ export function DoubleOneTabSection({ tabsData }) {
                     <Image
                       width={1000}
                       height={400}
-                      src={`${img}`}
+                      src={img}
                       alt="about img"
                     />
                   </div>

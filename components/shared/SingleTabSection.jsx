@@ -75,7 +75,7 @@ export function SingleTabSection({ tabsData }) {
         }}
       >
         <TabsBody className="p-0 m-0">
-          {tabsData?.map(({ label, content, value, slug }) => (
+          {tabsData?.map(({ label, content, value, slug, img }) => (
             <TabPanel key={value} value={value} className="p-0 m-0">
               <div className="flex flex-col-reverse md:flex-row gap-5 items-center mt-0 md:mt-14">
                 <div className="w-[100%] md:w-[75%]">
@@ -99,7 +99,7 @@ export function SingleTabSection({ tabsData }) {
                     <Image
                       width={1000}
                       height={400}
-                      src={"/assets/home/familyImmigration.png"}
+                      src={img}
                       alt="about img"
                     />
                   </div>
