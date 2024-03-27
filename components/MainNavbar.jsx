@@ -55,13 +55,13 @@ const MainNavbar = () => {
 
         <NavbarItem>
           <Link href="/">
-            {/* <Image
+            <Image
               width={170}
               height={60}
               src={"/assets/site-logo/trip-law-logo.svg"}
               alt="Trip Low"
               className="object-cover cursor-pointer !max-w-[170px]"
-            /> */}
+            />
           </Link>
         </NavbarItem>
 
