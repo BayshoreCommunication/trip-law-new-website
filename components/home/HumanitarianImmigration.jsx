@@ -56,10 +56,11 @@ const HumanitarianImmigration = () => {
         content:
           "Have you experienced severe forms of human trafficking—forced labor, debt bondage, sex trafficking, or domestic servitude—in the United States or abroad? Are you unsure where to turn for help and how to build a secure future? The T visa program offers a beacon of hope, providing temporary residency and protection to victims like you. We walk alongside you every step of the T visa journey, ensuring your voice is heard and your rights are protected.",
         img: `/assets/home/Humanitarian-Based-Immigration/t-visa.png`,
-        slug: "#",
+        slug: "t-visa",
       },
     ],
   };
+  
   return (
     <SectionLayout bg="bg-white">
       <h2

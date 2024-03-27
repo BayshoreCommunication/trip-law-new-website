@@ -14,7 +14,7 @@ const page = () => {
     <div>
       <PageHeroSection
         image={
-          "bg-[url('/assets/services/hero-banner.png')] bg-cover bg-center"
+          "bg-[url('/assets/hero-img/services.jpg')] bg-cover bg-center"
         }
         title={"Services"}
       />

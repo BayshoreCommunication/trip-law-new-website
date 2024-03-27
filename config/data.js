@@ -83,96 +83,99 @@ export const servicesData = [
     <br/>
     
     <ul class="space-y-1">
-        <li class="flex items-center">
-              <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <li class="flex items-start">
+              <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
               </svg></span>
-           <>
+             <p>Married to a U.S. citizen or green card holder</p>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
           </svg></span>
-            Seeking lawful permanent residency in the U.S.
+          <p>Seeking lawful permanent residency in the U.S.</p>
         </li>
-        <li class="flex items-center">
-            <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <li class="flex items-start">
+            <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
             </svg></span>
-            Dealing with the headaches of figuring out the immigration system.
+            <p>Dealing with the headaches of figuring out the immigration system.</p>
         </li>
-        <li class="flex items-center">
-            <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <li class="flex items-start">
+            <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
             </svg></span>
-        Concerned about proving the bona fides of their marriage
+        <p>Concerned about proving the bona fides of their marriage</p>
       </li>
-      <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
           </svg></span>
-      Wanting to minimize stress and maximize their chances of success
+      <p>Wanting to minimize stress and maximize their chances of success</p>
     </li>
     </ul>
-    
     
     <br/>
     
     <h2>Problems You'll Face:</h2>
-    
+
     <br/>
     
     <ul class="space-y-1">
-        <li class="flex items-center">
-        <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+        <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
           <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
           </svg>
         </span>
-          Understanding complex eligibility requirements and application procedures
+          <p>Understanding complex eligibility requirements and application procedures</p>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
           <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
           </svg>
           </span>
-           Gathering and organizing necessary documentation
+           <p>Gathering and organizing necessary documentation</p>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+      <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
           <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
           </svg>
           </span>
-            Demonstrating a genuine marriage to overcome scrutiny
-        </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
-          <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
-          </svg>
-          </span>
-          Communicating effectively with USCIS officials
+          <p>Demonstrating a genuine marriage to overcome scrutiny</p>
       </li>
-      <li class="flex items-center">
-      <span className="w-1.5 h-1.5 me-3">
+
+      <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
+          <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
+          </svg>
+          </span>
+          <p>Communicating effectively with USCIS officials</p>
+      </li>
+
+      <li class="flex items-start">
+      <span className="w-1.5 h-1.5 me-3 mt-2">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
         <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
         </svg>
         </span>
-        Navigating potential delays and complications
-      </li> <li class="flex items-center">
-        <span className="w-1.5 h-1.5 me-3">
+        <p>Navigating potential delays and complications.</p>
+      </li> <li class="flex items-start">
+      <li class="flex items-start">
+        <span className="w-1.5 h-1.5 me-3 mt-2">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
         <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
         </svg>
         </span>
-          Feeling overwhelmed and unsure of next steps
+          <p>Feeling overwhelmed and unsure of next steps.</p>
       </li>
     </ul>
-    
-    
     
     <h2>Problems You'll Face:</h2>
     
@@ -183,56 +186,63 @@ export const servicesData = [
     </br>
     
     <ul class="space-y-1">
-        <li class="flex items-center">
-        <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+        <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
         </svg>
         </span>
-          Understanding complex eligibility requirements and application procedures
+          <p>Understanding complex eligibility requirements and application procedures.</p>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
           </svg>
           </span>
+          <p>
           We're here to help with the paperwork to get your spouse a green card using Form I-130. Once that's sorted, we'll handle the Adjustment of Status with Form I-485.
+          </p>
         </li>
-        <li class="flex items-center">
-        <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+        <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
           </svg>
           </span>
-          No need to stress about gathering proof and getting everything ready; we've got that covered. Interviews? Yep, we'll prepare you and represent you there.
-    
+          <p>No need to stress about gathering proof and getting everything ready; we've got that covered. Interviews? Yep, we'll prepare you and represent you there.</p>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
           </svg>
           </span>
-          If there are any hiccups, like needing a waiver or going through appeals, we'll take care of those too.
-    
+          <p>If there are any hiccups, like needing a waiver or going through appeals, we'll take care of those too.</p> 
       </li>
-      <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+      <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
           </svg>
           </span>
-          We'll be the middleman with USCIS, keeping you in the loop, and making sure you know about any changes in the law.
-    
+         <p> We'll be the middleman with USCIS, keeping you in the loop, and making sure you know about any changes in the law.</p>
       </li> 
+
     </ul>
+
     <br/>
+
     <p>
     Choose TripLaw not just because we're good at what we do, but because we're all about making your dream of building a life in the U.S. with your loved one a reality.
     </p>
@@ -264,29 +274,33 @@ export const servicesData = [
     <br/>
     
     <ul class="space-y-1">
-        <li class="flex items-center">
-              <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+
+        <li class="flex items-start">
+              <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
               </svg></span>
-              Parents, unmarried children under 21, or spouses of U.S. citizens
+              <P>Parents, unmarried children under 21, or spouses of U.S. citizens</P>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-2 mt-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
           </svg></span>
           Seeking lawful permanent residency in the U.S.
         </li>
-        <li class="flex items-center">
-            <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+
+        <li class="flex items-start">
+            <span className="w-1.5 h-1.5 me-2 mt-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
             </svg></span>
-            Uncertain about eligibility requirements and application procedures
+            <p>Uncertain about eligibility requirements and application procedures</p>
         </li>
-        <li class="flex items-center">
-            <span className="w-1.5 h-1.5 me-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+
+        <li class="flex items-start">
+            <span className="w-1.5 h-1.5 me-2 mt-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
             </svg></span>
-            Concerned about navigating the complexities of family-based immigration
+            <p>Concerned about navigating the complexities of family-based immigration</p>
       </li>
       
     </ul>
@@ -299,29 +313,32 @@ export const servicesData = [
     <br/>
     
     <ul class="space-y-1">
-        <li class="flex items-center">
-        <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+        <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
           <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
           </svg>
         </span>
-        Understanding complex eligibility requirements and family relationships
+        <p>Understanding complex eligibility requirements and family relationships</p>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
           <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
           </svg>
           </span>
-           Gathering and organizing necessary documentation
+           <p>Gathering and organizing necessary documentation</p>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3 h-3 me-2 text-black"">
           <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
           </svg>
           </span>
-          Overcoming potential visa backlogs and wait times
+          <p>Overcoming potential visa backlogs and wait times</p>
 
         </li>
         <li class="flex items-center">
@@ -355,58 +372,59 @@ export const servicesData = [
     </br>
     
     <ul class="space-y-1">
-        <li class="flex items-center">
-        <span className="w-1.5 h-1.5 me-3">
+        <li class="flex items-start">
+        <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
         </svg>
         </span>
-        We'll help you with the paperwork for getting your family a green card through Form I-130. Once that's done, we'll handle the Adjustment of Status application with Form I-485.
+        <p>We'll help you with the paperwork for getting your family a green card through Form I-130. Once that's done, we'll handle the Adjustment of Status application with Form I-485.</p>
 
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
           </svg>
           </span>
-          We won't leave you hanging when it comes to gathering all the proof and getting things ready. Interviews? We've got you covered—prep and all
+          <p>We won't leave you hanging when it comes to gathering all the proof and getting things ready. Interviews? We've got you covered—prep and all</p>
         </li>
-        <li class="flex items-center">
-        <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+        <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
           </svg>
           </span>
+          <p>
           Worried about money and age stuff? We'll break it down for you, making sure everything's good with the financial sponsorship and checking if your unmarried kid qualifies
-    
+          </p>
         </li>
-        <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+        <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
           </svg>
           </span>
-          If there are any hiccups, like needing a waiver or going through appeals, we'll tackle those too.
-
-
-    
+         
+          <p>If there are any hiccups, like needing a waiver or going through appeals, we'll tackle those too.</p>
       </li>
-      <li class="flex items-center">
-          <span className="w-1.5 h-1.5 me-3">
+
+      <li class="flex items-start">
+          <span className="w-1.5 h-1.5 me-3 mt-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 me-2 text-black">
           <path d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 0 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65Z" />
           <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
           </svg>
           </span>
-          And we'll be the go-between with USCIS, keeping you in the loop and on top of any legal changes.
-
-
-    
+          <p>And we'll be the go-between with USCIS, keeping you in the loop and on top of any legal changes.
+          </p>
       </li> 
     </ul>
     <br/>
