@@ -117,7 +117,7 @@ const ContactSection = () => {
                 </svg>
               </div>
               <h1 className="mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black">
-                (813) 560-3005
+                (863)-599-6735
               </h1>
               <p className="text-lg text-stone-950 text-center md:text-left">
                 Let’s Talk
@@ -137,7 +137,7 @@ const ContactSection = () => {
                 </svg>
               </div>
               <h1 className="mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black">
-                sabbirnasir@gmail.com
+                info@trip-law.com
               </h1>
               <p className="text-base text-stone-950 text-center md:text-left">
                 Drop a Line
@@ -234,8 +234,7 @@ const ContactSection = () => {
 
               <MotionEffect effect="fade-up" duration="2000">
                 <p className="mt-8 text-lg text-stone-950 text-center md:text-left">
-                  *I understand that the use of this form for communication with
-                  Digital Xperience Group (DXG).
+                  *I understand that the use of this form for communication with Trip Law, P.A
                 </p>
               </MotionEffect>
             </form>

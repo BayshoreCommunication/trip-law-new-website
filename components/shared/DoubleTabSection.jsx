@@ -109,7 +109,7 @@ export function DoubleTabSection({ tabsData }) {
                   <div className="flex justify-center mt-8 md:justify-start">
                     <ServicesButton
                       title={"Learn more"}
-                      link={"/slug"}
+                      link={slug}
                       style={"bg-[#1B2639] text-white"}
                       radius={"sm"}
                     />

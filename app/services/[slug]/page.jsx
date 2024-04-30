@@ -1,12 +1,9 @@
 import React from "react";
-import Image from "next/image";
-import { blogData, servicesData } from "@/config/data";
-import GetAllPostData from "@/lib/GetAllPostData";
+import { servicesData } from "@/config/data";
 import parse from "html-react-parser";
 import { Link } from "@nextui-org/react";
 import MotionEffect from "@/components/motion/MotionEffect";
 import SectionLayout from "@/components/shared/SectionLayout";
-import HeroSection from "@/components/blog/HeroSection";
 import SideServicesCard from "@/components/services/SideServicesCard";
 import PageHeroSection from "@/components/shared/PageHeroSection";
 
@@ -73,15 +70,16 @@ const page = async ({ params }) => {
             </div>
           ))}
 
-          <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[700px] overflow-y-scroll overflow-x-hidden">
-            {servicesData?.map((el, index) => (
-              <Link href={`/services/${el?.slug}`}>
-                <MotionEffect effect={"fade-up"} duration={"2000"}>
+          <MotionEffect effect={"fade-left"} duration={"2000"}>
+            <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1600px] overflow-y-scroll overflow-x-hidden hidden md:block">
+              {servicesData?.map((el, index) => (
+                <Link href={`/services/${el?.slug}`}>
                   <SideServicesCard serversData={el} />
-                </MotionEffect>
-              </Link>
-            ))}
-          </div>
+                </Link>
+              ))}
+            </div>
+          </MotionEffect>
+
         </div>
       </SectionLayout>
     </>

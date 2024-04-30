@@ -201,7 +201,7 @@ const Footer = () => {
             <a
               href="https://www.bayshorecommunication.com//"
               target="_blank"
-              className="hover:underline"
+              className="hover:underline font-medium"
             >
               BayShore Communication
             </a>

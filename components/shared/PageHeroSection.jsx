@@ -19,7 +19,7 @@ const PageHeroSection = ({ image, title }) => {
           </h2>
 
           <nav
-            className="flex justify-center mt-4 md:mt-0"
+            className="flex justify-center mt-8 md:mt-1 items-center"
             aria-label="Breadcrumb"
           >
             <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -29,8 +29,8 @@ const PageHeroSection = ({ image, title }) => {
                   className="inline-flex items-center text-sm font-medium text-stone-200 hover:text-red-700"
                 >
                   Home
-                </Link>
-              </li>
+                </Link >
+              </li >
               <li>
                 <div className="flex items-center">
                   <svg
@@ -48,6 +48,7 @@ const PageHeroSection = ({ image, title }) => {
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
+
                   <Link
                     href="#"
                     className="ms-1 text-sm font-medium text-white md:ms-2"
@@ -56,11 +57,11 @@ const PageHeroSection = ({ image, title }) => {
                   </Link>
                 </div>
               </li>
-            </ol>
-          </nav>
-        </div>
-      </MotionEffect>
-    </SectionLayout>
+            </ol >
+          </nav >
+        </div >
+      </MotionEffect >
+    </SectionLayout >
   );
 };
 
