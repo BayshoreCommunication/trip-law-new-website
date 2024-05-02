@@ -32,6 +32,9 @@ const css = `
     padding-top: 6px;
     padding-bottom: 6px;
 }
+nav{
+  padding-top: 12px;
+}
 
 `;
 

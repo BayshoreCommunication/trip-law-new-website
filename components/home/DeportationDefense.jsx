@@ -50,23 +50,23 @@ const DeportationDefense = () => {
         value: "2",
         content:
           "Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the U.S. legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.",
-          img: `/assets/home/Deportation-Defense/Master-Calendar-Hearing.png`,
-          slug: "bond-hearing",
+        img: `/assets/home/Deportation-Defense/Master-Calendar-Hearing.png`,
+        slug: "master-celender-hearing",
       },
       {
         value: "3",
         content:
           "Facing removal proceedings can be stressful, and the Individual Hearing is where your case stands on trial. Whether you're seeking asylum, battling inadmissibility, or pursuing another form of relief, having experienced legal representation is crucial. We equip you with the knowledge, confidence, and advocacy you need to present your best case before the immigration judge.",
-          img: `/assets/home/Deportation-Defense/Individual-Hearing.png`,
-          slug: "indiviadual-hearing",
+        img: `/assets/home/Deportation-Defense/Individual-Hearing.png`,
+        slug: "individual-hearing",
       },
 
       {
         value: "4",
         content:
           "Immigration pathways can be complex, and sometimes unforeseen circumstances or past decisions may create hurdles. However, with the right legal guidance, you can overcome these obstacles and achieve your immigration goals. Our experienced attorneys specialize in navigating the intricacies of immigration waivers, helping you clear the path towards a secure future in the United States.",
-          img: `/assets/home/Deportation-Defense/Waiver.png`,
-          slug: "waiver",
+        img: `/assets/home/Deportation-Defense/Waiver.png`,
+        slug: "waivers",
       },
     ],
   };

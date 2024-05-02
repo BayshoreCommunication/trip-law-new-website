@@ -9,27 +9,24 @@ import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { articlesInfo } from "@/config/data";
 import BlackButton from "../shared/BlackButton";
 import ScondayButton from "../shared/ScondayButton";
+import GetAllPostData from "@/lib/GetAllPostData";
+import Link from "next/link";
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
-const NewsSection = () => {
-  const list = [
-    {
-      title: "Waivers",
-      img: "/assets/home/blogone.png",
-      price: "April 28, 2021",
-    },
-    {
-      title: "Do You Need an Immigration Lawyer for naturalization",
-      img: "/assets/home/blogtwo.png",
-      price: "April 28, 2021",
-    },
-    {
-      title: "How can i contact an immigration lawyer for free",
-      img: "/assets/home/blogthree.png",
-      price: "April 28, 2021",
-    },
-  ];
+const NewsSection = async () => {
+  const blogPostData = await GetAllPostData();
+
+  const postDate = (date) => {
+    const formattedDate = new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    return formattedDate;
+  };
+
+
   return (
     <SectionLayout bg="bg-slate-50 ">
       <div className="">
@@ -94,32 +91,38 @@ const NewsSection = () => {
           }}
         >
           <div className="gap-4 grid grid-cols-1 sm:grid-cols-3 mt-0 md:mt-12">
-            {list.map((item, index) => (
-              <Card
-                shadow="sm"
-                radius="none"
-                key={index}
-                isPressable
-                onPress={() => console.log("item pressed")}
-              >
-                <CardBody className=" p-0">
-                  <Image
-                    shadow="none"
+            {blogPostData?.data
+              ?.filter((pub, no) => pub.published === true && no < 3)
+              ?.map((blogs, index) =>
+
+                <Link href={`/blog/${blogs?.slug}`}>
+                  <Card
+                    shadow="sm"
                     radius="none"
-                    width="100%"
-                    alt={item.title}
-                    className="w-full object-cover h-[300px]"
-                    src={item.img}
-                  />
-                </CardBody>
-                <CardFooter className="text-small block text-left">
-                  <h2 className="text-default-500 text-lg font-bold block line-clamp-1">
-                    {item.title}
-                  </h2>
-                  <p className="text-default-500 block">{item.price}</p>
-                </CardFooter>
-              </Card>
-            ))}
+                    key={index}
+                    isPressable
+                    onPress={() => console.log("item pressed")}
+
+                  >
+                    <CardBody className=" p-0">
+                      <Image
+                        shadow="none"
+                        radius="none"
+                        width="100%"
+                        className="w-full object-cover h-[300px]"
+                        src={blogs?.featuredImage?.image?.url}
+                        alt={blogs?.featuredImage?.altText}
+                      />
+                    </CardBody>
+                    <CardFooter className="text-small block text-left">
+                      <h2 className="text-default-500 text-lg font-bold block line-clamp-1">
+                        {blogs?.title}
+                      </h2>
+                      <p className="text-default-500 block">{postDate(blogs?.createdAt)}</p>
+                    </CardFooter>
+                  </Card>
+                </Link>
+              )}
           </div>
         </CardMotion>
 
@@ -145,8 +148,8 @@ const NewsSection = () => {
             />
           </div>
         </CardMotion>
-      </div>
-    </SectionLayout>
+      </div >
+    </SectionLayout >
   );
 };
 
