@@ -93,8 +93,8 @@ const ContactSection = () => {
                 </svg>
               </div>
               <h1 className="mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black">
-                1543 Lakeland Hills Blvd, Ste. 17, <br />
-                Lakeland, FL 33805
+              231 N. Kentucky Ave. Ste. 213, <br />
+              Lakeland, Florida 33801
               </h1>
               <p className="text-base text-stone-950 text-center md:text-left">
                 Our Location

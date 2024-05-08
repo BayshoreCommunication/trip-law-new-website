@@ -1,14 +1,9 @@
 "use client";
-import MotionEffect from "../motion/MotionEffect";
-import HeadingText from "../shared/HeadingText";
 import SectionLayout from "../shared/SectionLayout";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { Mulish, Bitter } from "next/font/google";
-import { Link } from "@nextui-org/react";
+import { Bitter } from "next/font/google";
 
 const bitter = Bitter({ subsets: ["latin"] });
-const mulish = Mulish({ subsets: ["latin"] });
 
 const HeroSection = () => {
   const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };

@@ -86,7 +86,7 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <p>1543 Lakeland Hills Blvd, Ste. 17, Lakeland, FL 33805</p>
+                  <p>231 N. Kentucky Ave. Ste. 213, Lakeland, Florida 33801</p>
                 </li>
                 <li className="mb-4 flex items-center gap-3">
                   <div className="w-4 h-4">

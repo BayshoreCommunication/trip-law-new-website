@@ -6,11 +6,11 @@ import ImageMotion from "../motion/ImageMotion";
 import MotionEffect from "../motion/MotionEffect";
 import { Mulish, Bitter } from "next/font/google";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import { articlesInfo } from "@/config/data";
 import BlackButton from "../shared/BlackButton";
 import ScondayButton from "../shared/ScondayButton";
 import GetAllPostData from "@/lib/GetAllPostData";
 import Link from "next/link";
+
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 

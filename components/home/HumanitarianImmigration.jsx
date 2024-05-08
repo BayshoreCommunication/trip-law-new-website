@@ -3,6 +3,7 @@ import SectionLayout from "../shared/SectionLayout";
 import { Mulish, Bitter } from "next/font/google";
 import MotionEffect from "../motion/MotionEffect";
 import { DoubleOneTabSection } from "../shared/DoubleOneTabSection";
+
 const bitter = Bitter({ subsets: ["latin"] });
 const mulish = Mulish({ subsets: ["latin"] });
 
@@ -60,7 +61,7 @@ const HumanitarianImmigration = () => {
       },
     ],
   };
-  
+
   return (
     <SectionLayout bg="bg-white">
       <h2
