@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import parse from "html-react-parser";
 
 const variants = {
   open: {
@@ -37,13 +38,12 @@ const ServiceCard = ({ serversData }) => {
         height={100}
       />
       <div>
-        <h5 class="mb-2 text-lg font-bold tracking-wide text-gray-900 dark:text-white">
-          {serversData.title}
+        <h5 class="mb-2 text-md md:text-md  lg:text-lg  xl:text-lg  2xl:text-lg font-bold tracking-wide text-gray-900 dark:text-white ">
+          {serversData?.title}
         </h5>
-        <p class="font-normal text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology
+        <p class="font-normal text-gray-700 dark:text-gray-400 line-clamp-2">
+          {serversData?.sortTitle}
         </p>
-        {/* <div className="mt-5 text-base">{parse(services?.dece)}</div> */}
       </div>
     </motion.div>
   );
