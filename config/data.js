@@ -1971,7 +1971,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 </div>`,
   },
   {
-    icon: '/assets/services/services-icon/VAWA-VISA.png',
+    icon: '/assets/services/services-icon/VAWA-Visa.png',
     slug: 'vawa',
     title: 'VAWA',
     sortTitle: `Have you experienced domestic violence, dating violence, sexual assault, or stalking, either in the United States or abroad? The Violence Against Women Act (VAWA) offers legal protections and pathways to safety and justice for individuals like you. We're here to offer caring and skilled legal help to guide you through the ins and outs of VAWA and make sure you get the protection you need.`,
@@ -2243,7 +2243,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 </div>`,
   },
   {
-    icon: '/assets/services/services-icon/U-VISA.png',
+    icon: '/assets/services/services-icon/U-Visa.png',
     slug: 'u-visa',
     title: 'U Visa',
     sortTitle: `Did you flee from your home country due to a well-founded fear of persecution based on your race, religion, nationality, political opinion, or membership in a particular social group? The asylum process offers a pathway to protection and safety in the United States for individuals like you. We're here to lend a hand and offer all the support you need to navigate through the sometimes confusing asylum process. Our goal is to ensure you find the safety and sanctuary you're seeking.`,
