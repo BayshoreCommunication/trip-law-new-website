@@ -674,8 +674,7 @@ export const servicesData = [
     dece: `
           <div>
                   <img
-                      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
-                    alt="the-failed-rescue"
+                    src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-1-Visa-Feature-Image.jpg"
                     className="w-full h-full mb-10"
                     />
                     
@@ -900,7 +899,7 @@ export const servicesData = [
     dece: `
           <div>
                   <img
-                      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+                      src="/assets/services/Employment-Based-Immigration-Feature-Images/L-1-Visa-Feature-Image.jpg"
                     alt="the-failed-rescue"
                     className="w-full h-full mb-10"
                     />
@@ -1137,7 +1136,7 @@ export const servicesData = [
     sortTitle: ` Want to build a solid future in the US, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
-        src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+        src="/assets/services/Employment-Based-Immigration-Feature-Images/O-1-Visa-Feature-Image.jpg"} alt="server-image"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -1328,7 +1327,8 @@ Today, set a free consultation with us to talk about your O-1 visa options. Disc
     sortTitle: ` Want to build a solid future in the US, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
-        src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-1-Visa-Feature-Image.jpg"
+      alt="server-image"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -1537,7 +1537,7 @@ Schedule a consultation today to discuss your EB-1 visa options and learn how Tr
     sortTitle: ` Want to build a solid future in the US, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
-        src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+        src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-2-Visa-Feature-Image.jpg" alt="server-image"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -1800,7 +1800,7 @@ Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and 
     sortTitle: ` Want to build a solid future in the US, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
-        src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-3-Visa-Feature-Image.jpg" alt="server-image"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -1978,7 +1978,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Humanitarian-Based-Immigration-Feature-image/Vawa-Feature-Image.jpg" alt="server-image"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -2250,7 +2250,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Humanitarian-Based-Immigration-Feature-image/u-visa-Feature-Image.jpg" alt="server-image"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -2434,7 +2434,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     sortTitle: `Did you flee from your home country due to a well-founded fear of persecution based on your race, religion, nationality, political opinion, or membership in a particular social group? The asylum process offers a pathway to protection and safety in the United States for individuals like you. We're here to lend a hand and offer all the support you need to navigate through the sometimes confusing asylum process. Our goal is to ensure you find the safety and sanctuary you're seeking.`,
     dece: `<div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Humanitarian-Based-Immigration-Feature-image/asylum-Feature-Image.jpg" alt="server-image"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -2622,7 +2622,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Humanitarian-Based-Immigration-Feature-image/t-visa-Feature-Image.jpg"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -2802,7 +2802,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Deportation-Defense-Feature-image/Bond-Hearing-Feature-image.jpg"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -2991,7 +2991,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Deportation-Defense-Feature-image/Master-Calendar-Hearing-Feature-image.jpg"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -3190,7 +3190,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
+      src="/assets/services/Deportation-Defense-Feature-image/Individual-Hearing-Feature-image.jpg"
       alt="the-failed-rescue"
       className="w-full h-full mb-10"
       />
@@ -3415,8 +3415,8 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
-      alt="the-failed-rescue"
+      src="/assets/services/Deportation-Defense-Feature-image/Waiver-Feature-image.jpg"
+      alt="Waiver-Feature-image"
       className="w-full h-full mb-10"
       />
       
@@ -3617,8 +3617,8 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: ` 
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
-      alt="the-failed-rescue"
+      src="/assets/services/E2-Treaty-Visas-feature-image.jpg"
+      alt="E2-Treaty-Visas-feature-image"
       className="w-full h-full mb-10"
       />
       
@@ -3826,8 +3826,8 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
-      alt="the-failed-rescue"
+      src="/assets/services/Citizenship-feature-image.jpg"
+      alt="Citizenship-feature-image"
       className="w-full h-full mb-10"
       />
       
@@ -4039,8 +4039,8 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
-      alt="the-failed-rescue"
+      src="/assets/services/Naturalization-&-Citizenship-feature-image.jpg"
+      alt="Naturalization-&-Citizenship-feature-image"
       className="w-full h-full mb-10"
       />
       
@@ -4242,8 +4242,8 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
     dece: `
     <div>
     <img
-      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
-      alt="the-failed-rescue"
+      src="/assets/services/Green-Card-feature-image.jpg"
+      alt="Green-Card-feature-image"
       className="w-full h-full mb-10"
       />
       

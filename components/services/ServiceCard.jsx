@@ -29,7 +29,7 @@ const ServiceCard = ({ serversData }) => {
       whileHover={{ scale: 0.99 }}
       whileTap={{ scale: 0.95 }}
       href="#"
-      class="flex max-w-sm p-6 bg-white border border-gray-200 rounded-md shadow hover:bg-gray-100 items-center gap-6"
+      class="flex max-w-sm p-6 bg-white border border-gray-200 rounded-md shadow hover:bg-gray-100 items-center gap-6 min-h-[170px]"
     >
       <Image
         src={serversData.icon}

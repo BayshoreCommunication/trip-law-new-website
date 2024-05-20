@@ -115,7 +115,7 @@ const NewsSection = async () => {
                       />
                     </CardBody>
                     <CardFooter className="text-small block text-left">
-                      <h2 className="text-default-500 text-lg font-bold block line-clamp-1">
+                      <h2 className="text-default-500 text-lg font-bold line-clamp-1">
                         {blogs?.title}
                       </h2>
                       <p className="text-default-500 block">{postDate(blogs?.createdAt)}</p>
