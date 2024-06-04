@@ -1,25 +1,25 @@
-"use client";
-import React from "react";
-import SectionLayout from "../shared/SectionLayout";
-import { InlineWidget } from "react-calendly";
+'use client';
+import React from 'react';
+import SectionLayout from '../shared/SectionLayout';
+import { InlineWidget } from 'react-calendly';
 
 const Calendly = () => {
   return (
-    <SectionLayout bg="bg-white">
-      <div className="">
-        <div className="h-800 mt-[-70px]">
+    <SectionLayout bg='bg-white'>
+      <div className=''>
+        <div className='h-800 mt-0 md:mt-[-70px]'>
           <InlineWidget
-            className="inline-widget"
-            url="https://calendly.com/arsahak-bayshore/30min"
+            className='inline-widget'
+            url='https://calendly.com/arsahak-bayshore/30min'
             styles={{
-              height: "750px",
+              height: '750px',
             }}
             pageSettings={{
-              backgroundColor: "ffffff",
+              backgroundColor: 'ffffff',
               hideEventTypeDetails: false,
               hideLandingPageDetails: false,
-              primaryColor: "#132841",
-              textColor: "#132841",
+              primaryColor: '#132841',
+              textColor: '#132841',
             }}
           />
         </div>

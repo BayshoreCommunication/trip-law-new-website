@@ -1,11 +1,11 @@
-import React from "react";
-import { servicesData } from "@/config/data";
-import parse from "html-react-parser";
-import { Link } from "@nextui-org/react";
-import MotionEffect from "@/components/motion/MotionEffect";
-import SectionLayout from "@/components/shared/SectionLayout";
-import SideServicesCard from "@/components/services/SideServicesCard";
-import PageHeroSection from "@/components/shared/PageHeroSection";
+import React from 'react';
+import { servicesData } from '@/config/data';
+import parse from 'html-react-parser';
+import { Link } from '@nextui-org/react';
+import SectionLayout from '@/components/shared/SectionLayout';
+import SideServicesCard from '@/components/services/SideServicesCard';
+import PageHeroSection from '@/components/shared/PageHeroSection';
+import CardMotion from '@/components/motion/CardMotion';
 
 const css = `
   h1{
@@ -43,7 +43,7 @@ nav{
 
 const page = async ({ params }) => {
   const servicesDetails = servicesData?.filter(
-    (service) => service.slug === params.slug
+    (service) => service.slug === params.slug,
   );
 
   return (
@@ -53,37 +53,44 @@ const page = async ({ params }) => {
         image={
           "bg-[url('/assets/services/hero-banner.png')] bg-cover bg-center"
         }
-        title={"Services"}
+        title={'Services'}
       />
-      <SectionLayout bg="bg-white">
-        <MotionEffect effect="fade-right" duration="2000">
-          <h2 className="mb-4 text-3xl font-bold tracking-normal text-left text-[#1B2639]">
+      <SectionLayout bg='bg-white'>
+        <CardMotion
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1.1,
+            },
+          }}
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+        >
+          <h2 className='mb-4 text-3xl font-bold tracking-normal text-left text-[#1B2639]'>
             {servicesDetails[0]?.title}
           </h2>
-        </MotionEffect>
-        <MotionEffect effect="fade-right" duration="2000">
-          <hr className="w-full h-[1px] mx-auto my-8 bg-[#1B2639] border-0 rounded md:my-5" />
-        </MotionEffect>
-        <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3">
-          {servicesDetails?.map((services, index) => (
-            <div className="col-span-2">
-              <MotionEffect effect="fade-right" duration="2000">
-                <div className="mt-5 text-base">{parse(services?.dece)}</div>
-              </MotionEffect>
-            </div>
-          ))}
 
-          <MotionEffect effect={"fade-left"} duration={"2000"}>
-            <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1600px] overflow-y-scroll overflow-x-hidden hidden md:block">
+          <hr className='w-full h-[1px] mx-auto my-8 bg-[#1B2639] border-0 rounded md:my-5' />
+
+          <div className='grid gap-12 mb-10 gird-col-1 sm:grid-cols-3'>
+            {servicesDetails?.map((services, index) => (
+              <div className='col-span-2'>
+                <div className='mt-5 text-base'>{parse(services?.dece)}</div>
+              </div>
+            ))}
+
+            <div className='col-span-2 sm:col-span-1 h-[100%] md:h-[1600px] overflow-y-scroll overflow-x-hidden hidden md:block'>
               {servicesData?.map((el, index) => (
                 <Link href={`/services/${el?.slug}`}>
                   <SideServicesCard serversData={el} />
                 </Link>
               ))}
             </div>
-          </MotionEffect>
-
-        </div>
+          </div>
+        </CardMotion>
       </SectionLayout>
     </>
   );
