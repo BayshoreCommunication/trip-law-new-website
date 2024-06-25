@@ -10,7 +10,7 @@ const HumanitarianImmigration = () => {
     top: [
       {
         value: '1',
-        label: 'Vawa',
+        label: 'VAWA',
       },
       {
         value: '2',

@@ -1,13 +1,10 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import SectionLayout from "../shared/SectionLayout";
-import CardMotion from "../motion/CardMotion";
-import ImageMotion from "../motion/ImageMotion";
-import MotionEffect from "../motion/MotionEffect";
-import { Avatar } from "@nextui-org/react";
-import { Mulish, Bitter } from "next/font/google";
-import { motion, AnimatePresence } from "framer-motion";
+'use client';
+import Image from 'next/image';
+import React from 'react';
+import SectionLayout from '../shared/SectionLayout';
+import CardMotion from '../motion/CardMotion';
+import { Mulish, Bitter } from 'next/font/google';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const variants = {
   open: {
@@ -26,13 +23,12 @@ const variants = {
   },
 };
 
-const bitter = Bitter({ subsets: ["latin"] });
-const mulish = Mulish({ subsets: ["latin"] });
+const bitter = Bitter({ subsets: ['latin'] });
 
 const TripLawObligation = () => {
   return (
-    <SectionLayout bg="bg-[#F1F5FA]">
-      <div className="">
+    <SectionLayout bg='bg-[#F1F5FA]'>
+      <div className=''>
         <CardMotion
           whileInView={{
             opacity: 1,
@@ -47,12 +43,12 @@ const TripLawObligation = () => {
           }}
         >
           <h2
-            className={`text-stone-950 font-bold text-6xl mt-0 mb-5 text-center ${bitter.className}`}
+            className={`text-stone-950 font-bold text-3xl md:text-5xl mt-0 mb-5 text-center ${bitter.className}`}
           >
             TRIP LAW OBLIGATION TO YOU
           </h2>
 
-          <p className="text-base text-stone-950 text-center">
+          <p className='text-base text-stone-950 text-center'>
             Our firm is focused on the client's demands for an exceptional legal
             service <br />
             model that provides value, quality, and exemplary client service.
@@ -71,19 +67,19 @@ const TripLawObligation = () => {
             y: 100,
           }}
         >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center mt-16">
-            <div className="">
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-8 items-start mt-16'>
+            <div className=''>
               <motion.div
                 variants={variants}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto"
+                className='bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto'
               >
                 <Image
                   width={100}
                   height={50}
-                  src={"/assets/home/one.png"}
-                  alt="about img"
+                  src={'/assets/home/one.png'}
+                  alt='about img'
                 />
               </motion.div>
               <h2
@@ -98,13 +94,13 @@ const TripLawObligation = () => {
                 variants={variants}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto"
+                className='bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto'
               >
                 <Image
                   width={100}
                   height={50}
-                  src={"/assets/home/two.png"}
-                  alt="about img"
+                  src={'/assets/home/two.png'}
+                  alt='about img'
                 />
               </motion.div>
               <h2
@@ -114,18 +110,18 @@ const TripLawObligation = () => {
                 CONSULTATION
               </h2>
             </div>
-            <div className="">
+            <div className=''>
               <motion.div
                 variants={variants}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto"
+                className='bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto'
               >
                 <Image
                   width={100}
                   height={50}
-                  src={"/assets/home/three.png"}
-                  alt="about img"
+                  src={'/assets/home/three.png'}
+                  alt='about img'
                 />
               </motion.div>
               <h2
@@ -136,18 +132,18 @@ const TripLawObligation = () => {
                 ADVOCACY
               </h2>
             </div>
-            <div className="">
+            <div className=''>
               <motion.div
                 variants={variants}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto"
+                className='bg-[#1B2639] p-6 rounded-xl w-[120px] mx-auto'
               >
                 <Image
                   width={100}
                   height={50}
-                  src={"/assets/home/four.png"}
-                  alt="about img"
+                  src={'/assets/home/four.png'}
+                  alt='about img'
                 />
               </motion.div>
               <h2

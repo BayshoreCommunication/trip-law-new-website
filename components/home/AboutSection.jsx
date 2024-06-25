@@ -1,65 +1,65 @@
-'use client';
-
 import React from 'react';
 import SectionLayout from '../shared/SectionLayout';
 import CardMotion from '../motion/CardMotion';
 import { Bitter } from 'next/font/google';
 import ScondayButton from '../shared/ScondayButton';
-import { Suspense } from 'react';
-import VideoPlayer from '../shared/Video/VideoPlayer';
+import Image from 'next/image';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
 const AboutSection = () => {
   return (
-    <SectionLayout bg='bg-slate-50 '>
+    <SectionLayout>
       <div className='space-y-14'>
         <div className='flex flex-col-reverse md:flex-row gap-8 items-center'>
-          <CardMotion
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 1.1,
-              },
-            }}
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-          >
-            <div className=''>
-              <h2 className='text-stone-950 font-bold text-base'>About</h2>
-              <hr class='h-[2px] my-0 bg-stone-950 border-0 w-4'></hr>
-              <h2
-                className={`text-stone-950 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
-              >
-                About Us
-              </h2>
+          <div className='flex-1'>
+            <CardMotion
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1.1,
+                },
+              }}
+              initial={{
+                opacity: 0,
+                x: -100,
+              }}
+            >
+              <div className=''>
+                {/* <h2 className='text-stone-950 font-bold text-base'>About</h2>
+              <hr class='h-[2px] my-0 bg-stone-950 border-0 w-4'></hr> */}
+                <h2
+                  className={`text-stone-950 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                >
+                  About Us
+                </h2>
 
-              <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-                Accumsan volutpat ocurreret id nam, solet numquam accommodare
-                quo et. Et vidit choro aliquid pro, ad inani eirmod vituperata
-                duo. Ut ludus vulputate qui, movartem accom modare eos no, vix
-                error percipitur.
-              </p>
-              <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-                Nunc, blandit libero, blandit nunc diam rhoncus viverra. Et nec
-                tellus nulla erisque ultricies massa sagittis dictum malesuada.
-                Urna id velit, quis morbi nibh duis massa odio. Iaculis massa
-                duis sit tellus adipiscing. Cursus amet
-              </p>
-              <div className='flex justify-center mt-8 md:justify-start'>
-                <ScondayButton
-                  title={'READ MORE'}
-                  link={'/about-us'}
-                  style={'bg-[#1B2639] text-white'}
-                  radius={'sm'}
-                />
+                <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
+                  At Trip Law we set out to create a unique law firm where
+                  outstanding immigration representation and a deep commitment
+                  to humanity go hand in hand. Hardam H. Tripathi was a former
+                  legal professional in the federal government.
+                </p>
+                <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
+                  Trip Law at this moment is the home to some of the most
+                  experienced lawyers. Trip Law has turned into a leader in the
+                  field of immigration law. The growth of Trip Law was fueled by
+                  excellence, integrity, and a hard-earned reputation for
+                  quality.
+                </p>
+                <div className='flex justify-center mt-8 md:justify-start'>
+                  <ScondayButton
+                    title={'READ MORE'}
+                    link={'/about-us'}
+                    style={'bg-[#1B2639] text-white'}
+                    radius={'sm'}
+                  />
+                </div>
               </div>
-            </div>
-          </CardMotion>
-          <div className='w-[100%]'>
+            </CardMotion>
+          </div>
+          <div className='flex-1'>
             <CardMotion
               whileInView={{
                 opacity: 1,
@@ -73,10 +73,15 @@ const AboutSection = () => {
                 x: 100,
               }}
             >
-              <div className='flex justify-center items-center'>
-                <Suspense fallback={<p>Loading video...</p>}>
-                  <VideoPlayer src={'/assets/video/trip-law.mp4'} />
-                </Suspense>
+              <div className=' justify-center items-center'>
+                <Image
+                  src='/assets/home/about-image.jpg'
+                  alt='about-image'
+                  className=''
+                  rel='preload'
+                  height={300}
+                  width={1200}
+                />
               </div>
             </CardMotion>
           </div>

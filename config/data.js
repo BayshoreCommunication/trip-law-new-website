@@ -72,9 +72,9 @@ export const servicesData = [
     dece: `
     <div>
         <img
-                      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"}
-                    alt="the-failed-rescue"
-                    className="w-full h-full mb-10"
+        src="/assets/home/Family-Based-Immigration/green-card-through-marriage-(inner-image).jpg"
+        alt="the-failed-rescue"
+        className="w-full h-full mb-10"
     />
                     <p>
                       Are you married to a U.S. citizen or lawful permanent resident and dreaming of building a life together in the United States? Obtaining a green card through marriage can be a complex and emotionally charged process. We understand the challenges you face and are dedicated to providing comprehensive legal guidance throughout your journey.
@@ -184,7 +184,7 @@ export const servicesData = [
 
         <br />
         <p>
-          Beyond just experienced attorneys, TripLaw boasts a team with proven track records of success in securing Green Cards through Marriage. We have extensive experience navigating the nuances of each case, understanding the specific concerns of different couples, and adapting our strategies accordingly.
+          Beyond just experienced attorneys, Trip Law boasts a team with proven track records of success in securing Green Cards through Marriage. We have extensive experience navigating the nuances of each case, understanding the specific concerns of different couples, and adapting our strategies accordingly.
         </p>
       </br>
 
@@ -247,7 +247,7 @@ export const servicesData = [
       <br />
 
       <p>
-        Choose TripLaw not just because we're good at what we do, but because we're all about making your dream of building a life in the U.S. with your loved one a reality.
+        Choose Trip Law not just because we're good at what we do, but because we're all about making your dream of building a life in the U.S. with your loved one a reality.
       </p>
 
     </div>
@@ -262,8 +262,7 @@ export const servicesData = [
     <div>
 
     <img
-    src="/assets/home/Family-Based-Immigration/Green-Card-Immediate-Relative's-Inner Image.png"} alt="server-image"
-    alt="the-failed-rescue"
+    src="/assets/home/Family-Based-Immigration/green-card-immediate-relative's-(inner-image).jpg" alt="server-image"
     className="w-full h-full mb-10"
     />
     
@@ -366,7 +365,7 @@ export const servicesData = [
     
     
     <br/>
-    <h2>How TripLaw can help:</h2>
+    <h2>How Trip Law can help:</h2>
     
     <br/>
     <p>
@@ -448,11 +447,11 @@ export const servicesData = [
     sortTitle: ` You're hoping to get that great job in the United States, where your specialist skills are in high demand, right? Well, the H-1B visa program is your ladder to making it happen! But let's be real – the whole application process and all those legal hoops you gotta jump through can be pretty overwhelming. We're here to make it simple, guiding you through every step and making sure you've got everything you need to snag that H-1B visa and start your American adventure.`,
     dece: `
     <div>
-                  <img
-                      src="/assets/home/Family-Based-Immigration/Green-Card-Through-Marriage-Bg.png"} alt="server-image"
-                    alt="the-failed-rescue"
-                    className="w-full h-full mb-10"
-                    />
+      <img
+      src="/assets/home/Family-Based-Immigration/green-card-through-consular-processing-feature-image.jpg"
+      alt="Green-Card-Through-Consular-Processing-Inner-Image"
+      className="w-full h-full mb-10"
+      />
                     
                     <p>
                     You're hoping to get that great job in the United States, where your specialist skills are in high demand, right? Well, the H-1B visa program is your ladder to making it happen! But let's be real – the whole application process and all those legal hoops you gotta jump through can be pretty overwhelming. We're here to make it simple, guiding you through every step and making sure you've got everything you need to snag that H-1B visa and start your American adventure.
@@ -578,7 +577,7 @@ export const servicesData = [
 
         <br />
 
-        <h2>How TripLaw can help:</h2>
+        <h2>How Trip Law can help:</h2>
 
         <br />
         <p>
@@ -661,7 +660,7 @@ export const servicesData = [
       <br />
 
       <p>
-      Schedule a consultation today to discuss your H-1B visa options and learn how TripLaw can help you achieve your dreams of working and contributing your talents to the United States.
+      Schedule a consultation today to discuss your H-1B visa options and learn how Trip Law can help you achieve your dreams of working and contributing your talents to the United States.
       </p>
 
     </div>`,
@@ -802,7 +801,7 @@ export const servicesData = [
 
         <br />
 
-        <h2>How TripLaw can help:</h2>
+        <h2>How Trip Law can help:</h2>
 
         <br />
         <p>
@@ -885,7 +884,7 @@ export const servicesData = [
       <br />
 
       <p>
-      Schedule a consultation today to discuss your H-1B visa options and learn how TripLaw can help you achieve your dreams of working and contributing your talents to the United States.
+      Schedule a consultation today to discuss your H-1B visa options and learn how Trip Law can help you achieve your dreams of working and contributing your talents to the United States.
       </p>
 
     </div>
@@ -1040,7 +1039,7 @@ export const servicesData = [
 
         <br />
 
-        <h2>How TripLaw can help:</h2>
+        <h2>How Trip Law can help:</h2>
 
         <br />
         <p>
@@ -1123,7 +1122,7 @@ export const servicesData = [
       <br />
 
       <p>
-      Book a free consultation today to discuss your L-1 visa needs and learn how TripLaw can help your international business achieve its goals with ease and legal certainty.
+      Book a free consultation today to discuss your L-1 visa needs and learn how Trip Law can help your international business achieve its goals with ease and legal certainty.
       </p>
 
     </div>
@@ -1252,7 +1251,7 @@ export const servicesData = [
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
 <br />
 <p>
@@ -1314,7 +1313,7 @@ We'll fill out and send in the I-129 form to get the ball rolling.
 <br />
 
 <p>
-Today, set a free consultation with us to talk about your O-1 visa options. Discover how TripLaw can assist you in showcasing your extraordinary talents and leaving a lasting impression in the United States.
+Today, set a free consultation with us to talk about your O-1 visa options. Discover how Trip Law can assist you in showcasing your extraordinary talents and leaving a lasting impression in the United States.
 
 </p>
 
@@ -1453,11 +1452,11 @@ Today, set a free consultation with us to talk about your O-1 visa options. Disc
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
 <br />
 <p>
-Recognizing the distinctive journey of individuals with extraordinary abilities and the transformative impact they can have in the U.S., TripLaw is dedicated to offering you:
+Recognizing the distinctive journey of individuals with extraordinary abilities and the transformative impact they can have in the U.S., Trip Law is dedicated to offering you:
 </p>
 </br>
 
@@ -1524,7 +1523,7 @@ Once we figure that out, we'll gather up the proof to show everyone how awesome 
 <br />
 
 <p>
-Schedule a consultation today to discuss your EB-1 visa options and learn how TripLaw can help you unlock the fast track to permanent residency and make your lasting mark on the United States.
+Schedule a consultation today to discuss your EB-1 visa options and learn how Trip Law can help you unlock the fast track to permanent residency and make your lasting mark on the United States.
 
 </p>
 
@@ -1688,11 +1687,11 @@ Schedule a consultation today to discuss your EB-1 visa options and learn how Tr
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
 <br />
 <p>
-We know how massive it is to lock down your EB-2 visa to reach your professional goals and set up a permanent life in the United States. Here at TripLaw, we're all about making sure you get:
+We know how massive it is to lock down your EB-2 visa to reach your professional goals and set up a permanent life in the United States. Here at Trip Law, we're all about making sure you get:
 
 </p>
 </br>
@@ -1787,7 +1786,7 @@ Once we've got that sorted, we're going to fill out and send in the I-140 form t
 <br />
 
 <p>
-Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and discuss how TripLaw can help you make your way to permanent residency in the U.S. and start sharing your skills here.
+Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and discuss how Trip Law can help you make your way to permanent residency in the U.S. and start sharing your skills here.
 
 </p>
 
@@ -1902,7 +1901,7 @@ Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and 
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
 <br />
 <p>
@@ -1964,7 +1963,7 @@ Once we've figured that out, we're filling out and sending in the I-140 form to 
 <br />
 
 <p>
-Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw can help you secure your green card and build a fulfilling future here in the States
+Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law can help you secure your green card and build a fulfilling future here in the States
 
 </p>
 
@@ -2143,7 +2142,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
@@ -2237,7 +2236,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
   <br />
 
   <p>
-  Schedule a consultation today to discuss your VAWA options and learn how TripLaw can help you navigate the legal path towards safety, stability, and a life free from abuse.
+  Schedule a consultation today to discuss your VAWA options and learn how Trip Law can help you navigate the legal path towards safety, stability, and a life free from abuse.
   </p>
 
 </div>`,
@@ -2362,7 +2361,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
@@ -2538,7 +2537,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
@@ -2609,7 +2608,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
   <br />
 
   <p>
-  Right then, how about a chat today to see how TripLaw can help you navigate the legal process towards safety, sanctuary, and a brighter future here in the States?
+  Right then, how about a chat today to see how Trip Law can help you navigate the legal process towards safety, sanctuary, and a brighter future here in the States?
   </p>
 
 </div>`,
@@ -2717,7 +2716,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
@@ -2788,7 +2787,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
   <br />
 
   <p>
-  We cordially invite you to schedule a consultation today to explore your options for the T visa and to discover how TripLaw can assist you in navigating the legal process towards safety, stability, and a promising future.
+  We cordially invite you to schedule a consultation today to explore your options for the T visa and to discover how Trip Law can assist you in navigating the legal process towards safety, stability, and a promising future.
   </p>
 
 </div>
@@ -2917,7 +2916,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
@@ -2977,7 +2976,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
   <br />
 
   <p>
-  Don't face a bond hearing alone. Schedule a consultation today to discuss your case with our experienced attorneys and learn how TripLaw can help you navigate the legal system and secure your release.
+  Don't face a bond hearing alone. Schedule a consultation today to discuss your case with our experienced attorneys and learn how Trip Law can help you navigate the legal system and secure your release.
   </p>
 
 </div>
@@ -3106,11 +3105,11 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
-  We are familiar with the anxieties and challenges you face navigating the immigration system. At TripLaw, you are getting:
+  We are familiar with the anxieties and challenges you face navigating the immigration system. At Trip Law, you are getting:
   </p>
 </br>
 
@@ -3296,11 +3295,11 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
-  We understand the significance of Individual Hearing and the impact it has on your future. At TripLaw:
+  We understand the significance of Individual Hearing and the impact it has on your future. At Trip Law:
   </p>
 </br>
 
@@ -3531,11 +3530,11 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
-  We understand the complexities and emotional challenges of navigating immigration waivers. At TripLaw, you'll benefit from the following:
+  We understand the complexities and emotional challenges of navigating immigration waivers. At Trip Law, you'll benefit from the following:
   </p>
 </br>
 
@@ -3731,11 +3730,11 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
-  We understand the importance of your entrepreneurial dreams and the transformative power of the E-2 visa. At TripLaw, you shall discover:
+  We understand the importance of your entrepreneurial dreams and the transformative power of the E-2 visa. At Trip Law, you shall discover:
   </p>
 </br>
 
@@ -3813,7 +3812,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
   <br />
 
   <p>
-  Please arrange a consultation at your earliest convenience to discuss your E-2 Treaty Visa options and learn how TripLaw can help you navigate the legal pathway towards realizing your business aspirations in the US.
+  Please arrange a consultation at your earliest convenience to discuss your E-2 Treaty Visa options and learn how Trip Law can help you navigate the legal pathway towards realizing your business aspirations in the US.
   </p>
 
 </div>`,
@@ -3940,11 +3939,11 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
-  We understand that citizenship transcends borders and represents a pivotal decision in one's life journey. Here's how TripLaw can assist you:
+  We understand that citizenship transcends borders and represents a pivotal decision in one's life journey. Here's how Trip Law can assist you:
   </p>
 </br>
 
@@ -4026,7 +4025,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
   <br />
 
   <p>
-  Book a consultation today to explore your citizenship options and discover how TripLaw can support you in embracing your role as a valued member of the community. 
+  Book a consultation today to explore your citizenship options and discover how Trip Law can support you in embracing your role as a valued member of the community. 
   </p>
 
 </div>`,
@@ -4141,11 +4140,11 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
-  We understand the significance of naturalization & citizenship and the journey it represents. At TripLaw, you'll find:
+  We understand the significance of naturalization & citizenship and the journey it represents. At Trip Law, you'll find:
   </p>
 </br>
 
@@ -4228,7 +4227,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
   <br />
 
   <p>
-  Schedule a consultation today to discuss your naturalization & citizenship options and learn how TripLaw can help you navigate the legal path towards claiming your rightful place as a U.S. citizen.
+  Schedule a consultation today to discuss your naturalization & citizenship options and learn how Trip Law can help you navigate the legal path towards claiming your rightful place as a U.S. citizen.
   </p>
 
 </div>`,
@@ -4363,11 +4362,11 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
 
 <br />
 
-<h2>How TripLaw can help:</h2>
+<h2>How Trip Law can help:</h2>
 
   <br />
   <p>
-    We understand the transformative power of a green card and the anxieties involved in the process. At TripLaw, you'll experience:
+    We understand the transformative power of a green card and the anxieties involved in the process. At Trip Law, you'll experience:
   </p>
 </br>
 
@@ -4450,7 +4449,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how TripLaw c
   <br />
 
   <p>
-  Book an appointment today to talk about your green card options and find out how TripLaw can help you figure out the legal path to becoming a permanent resident in the United States. It's the first step toward your American dream, and we'll be right there with you, guiding you through every step with confidence.
+  Book an appointment today to talk about your green card options and find out how Trip Law can help you figure out the legal path to becoming a permanent resident in the United States. It's the first step toward your American dream, and we'll be right there with you, guiding you through every step with confidence.
   </p>
 
 </div>

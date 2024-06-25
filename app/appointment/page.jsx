@@ -1,13 +1,13 @@
-import AppointmentSection from "@/components/appointment/AppointmentSection";
-import Calendly from "@/components/appointment/Calendly";
-import HeroSection from "@/components/appointment/HeroSection";
+import AppointmentFrom from '@/components/appointment/AppointmentFrom';
+import AppointmentSection from '@/components/appointment/AppointmentSection';
+import HeroSection from '@/components/appointment/HeroSection';
 
 const page = () => {
   return (
     <div>
       <HeroSection />
       <AppointmentSection />
-      <Calendly />
+      <AppointmentFrom />
     </div>
   );
 };

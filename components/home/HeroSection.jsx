@@ -12,7 +12,7 @@ const HeroSection = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const text = 'Foundation of Justice is Good Faith'.split(' ');
+  const text = 'Hardam Tripathi, Esq.'.split(' ');
 
   return (
     <div className='relative'>
@@ -43,35 +43,31 @@ const HeroSection = () => {
                 >
                   Giving You Advices That Matters
                 </motion.h2>
-                <div className='flex justify-center md:justify-start '>
+                <div className='flex justify-center md:justify-start'>
                   <motion.hr
                     variants={variants}
                     className='h-[2px] my-2 bg-red-700 border-0 w-20'
                   />
                 </div>
                 <h1
-                  className={`text-[50px] md:text-[100px] font-[800] text-white text-center md:text-left leading-tight tracking-normal ${bitter.className}`}
+                  className={`text-[50px] md:text-[90px] font-[800] text-white text-center md:text-left leading-tight tracking-normal ${bitter.className}`}
                 >
-                  {text.map((el, i) => (
+                  {text.map((word, index) => (
                     <motion.span
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      transition={{
-                        duration: 0.25,
-                        delay: i / 10,
-                      }}
-                      key={i}
+                      transition={{ duration: 0.25, delay: index / 10 }}
+                      key={index}
                     >
-                      {el}{' '}
+                      {word}{' '}
                     </motion.span>
                   ))}
                 </h1>
                 <motion.p
                   variants={variants}
-                  className='text-white text-sm md:text-base max-w-[450px] mt-4 md:mt-8 text-center md:text-left'
+                  className='text-white text-sm md:text-lg max-w-[450px] mt-4 md:mt-5 text-center md:text-left'
                 >
-                  Malesuada felis facilisis diam sed volutpat sociis nibh enim
-                  arcu Ac diam eget faucibus pulvinar nunc porttitor sit. Quam.
+                  Connecting Families To Their Immigration Dream
                 </motion.p>
                 <motion.div
                   variants={variants}

@@ -122,7 +122,7 @@ const Footer = () => {
                 <li className='flex items-center justify-center md:justify-start mt-[-20px] md:mt-0 gap-3'>
                   <div className='flex mt-10 sm:justify-center sm:mt-4 gap-3'>
                     <Link
-                      href='https://www.facebook.com/TripLawPA'
+                      href='https://www.facebook.com/Trip LawPA'
                       target='_blank'
                       className='text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2'
                     >
@@ -158,7 +158,7 @@ const Footer = () => {
                       <span className='sr-only'>Facebook page</span>
                     </Link>
                     <Link
-                      href='https://www.youtube.com/@triplawpa'
+                      href='https://www.youtube.com/@Trip Lawpa'
                       target='_blank'
                       className='text-[#1B2639] hover:animate-pulse bg-slate-200 rounded-full p-2'
                     >
