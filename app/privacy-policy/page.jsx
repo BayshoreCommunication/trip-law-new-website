@@ -1,5 +1,6 @@
 import HeroSection from '@/components/privacy-policy/HeroSection';
 import PrivacyPolicy from '@/components/privacy-policy/PrivacyPolicy';
+import Head from 'next/head';
 
 const page = () => {
   return (
