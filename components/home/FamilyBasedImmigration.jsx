@@ -21,7 +21,7 @@ const FamilyBasedImmigration = () => {
       slug: 'green-card-through-immediate-relative',
       content:
         "If you're eager to reunite with your loved ones who are already U.S. citizens, getting a green card through a close family member can be quite tricky due to all the rules and challenges involved. But don't sweat it – we've got your back. We'll walk you through the whole process, making sure you've got everything you need to make your dream of permanent residency in the U.S. a reality",
-      img: `/assets/home/Family-Based-Immigration/Green-Card-Immediate-Relative's.png`,
+      img: `/assets/home/Family-Based-Immigration/green-card-lmmediate-relative's.png`,
     },
     {
       value: '3',
@@ -68,7 +68,7 @@ const FamilyBasedImmigration = () => {
           slug: 'green-card-through-immediate-relative',
           content:
             "If you're eager to reunite with your loved ones who are already U.S. citizens, getting a green card through a close family member can be quite tricky due to all the rules and challenges involved. But don't sweat it – we've got your back. We'll walk you through the whole process, making sure you've got everything you need to make your dream of permanent residency in the U.S. a reality",
-          img: `/assets/home/Family-Based-Immigration/Green-Card-Immediate-Relative's.png`,
+          img: `/assets/home/Family-Based-Immigration/green-card-lmmediate-relative's.png`,
         },
         {
           value: '3',

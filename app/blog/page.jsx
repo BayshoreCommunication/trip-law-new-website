@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { blogData } from '@/config/data';
 import GetAllPostData from '@/lib/GetAllPostData';
 import SectionLayout from '@/components/shared/SectionLayout';
-import MotionEffect from '@/components/motion/MotionEffect';
 import parse from 'html-react-parser';
 import { Link } from '@nextui-org/react';
 import HeroSection from '@/components/blog/HeroSection';

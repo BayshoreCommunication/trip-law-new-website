@@ -3182,7 +3182,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
 </div>`,
   },
   {
-    icon: '/assets/services/services-icon/Master-Calendar-Hearing.png',
+    icon: '/assets/services/services-icon/Individual-Hearing.png',
     slug: 'individual-hearing',
     title: 'Individual Hearing',
     sortTitle: `Facing removal proceedings can be stressful, and the Individual Hearing is where your case stands on trial. Whether you're seeking asylum, battling inadmissibility, or pursuing another form of relief, having experienced legal representation is crucial. We equip you with the knowledge, confidence, and advocacy you need to present your best case before the immigration judge.`,

@@ -1,6 +1,5 @@
 import React from 'react';
 import SectionLayout from '../shared/SectionLayout';
-import MotionEffect from '../motion/MotionEffect';
 import { Bitter } from 'next/font/google';
 import CardMotion from '../motion/CardMotion';
 

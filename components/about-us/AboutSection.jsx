@@ -5,44 +5,30 @@ import CardMotion from '../motion/CardMotion';
 import { Bitter } from 'next/font/google';
 import { BsFillPersonVcardFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
-import { FaFacebookF } from 'react-icons/fa';
-import { BsTwitterX } from 'react-icons/bs';
-import { FaInstagram } from 'react-icons/fa';
-import { RiLinkedinFill } from 'react-icons/ri';
+import { FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
 const AboutSection = () => {
   return (
-    <div>
-      <SectionLayout bg="bg-[url('/assets/about/about-bg-one.jpg')] bg-cover bg-center mt-5">
-        <div className='space-y-14'>
-          <div className='flex flex-col md:flex-row gap-8 items-center'>
-            <div className='flex-1'>
-              <CardMotion
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 1.1,
-                  },
-                }}
-                initial={{
-                  opacity: 0,
-                  x: -100,
-                }}
-              >
-                <div className='mb-[-30px] md:mb-[-55px]'>
-                  <Image
-                    width={600}
-                    height={500}
-                    src={'/assets/about/trip.png'}
-                    alt='about img'
-                  />
-                </div>
-              </CardMotion>
-            </div>
-            <div className='flex-1 bg-slate-50 md:bg-transparent md:p-0 p-6'>
+    <div className='mt-5'>
+      {/* Hardam Tripathi, Esq. */}
+      <div className='mb-[35%] md:mb-0'>
+        <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
+          <Image
+            src='/assets/about/triplaw.jpg'
+            alt='triplaw'
+            width={1200}
+            height={800}
+            priority
+            className='w-full'
+            rel='preload'
+          />
+
+          <div className='flex flex-col md:flex-row gap-8 items-center md:absolute md:inset-0 md:z-20 '>
+            <div className='flex-1'></div>
+            <div className='flex-1 md:p-0 md:bg-[#f5f7f8b9] items-center h-full z-30'>
               <CardMotion
                 whileInView={{
                   opacity: 1,
@@ -56,10 +42,10 @@ const AboutSection = () => {
                   x: 100,
                 }}
               >
-                <div className='flex justify-center items-center '>
+                <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Hardam Tripathi, Esq.
                     </h2>
@@ -69,29 +55,26 @@ const AboutSection = () => {
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
                     <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          Email
-                        </p>
+                      <Link
+                        href={'mailto:info@trip-law.com'}
+                        className='flex gap-3 items-center'
+                      >
                         <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          VCard
-                        </p>
+                        <p className='text-md font-medium text-center'>Email</p>
+                      </Link>
+                      <Link href={'/'} className='flex gap-3 items-center'>
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-40 text-md font-medium text-center'>
+                        <p className='text-md font-medium text-center'>VCard</p>
+                      </Link>
+                      <Link
+                        href={'/'}
+                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
+                      >
+                        <p className='text-md font-medium text-center'>
                           Contact
                         </p>
-                        <div className='flex items-center gap-x-5 mt-2'>
-                          <FaFacebookF className='text-blue-600 text-2xl' />
-                          <BsTwitterX className='text-blue-600 text-2xl' />
-                          <FaInstagram className='text-blue-600 text-2xl' />
-                          <RiLinkedinFill className='text-blue-600 text-2xl' />
-                        </div>
-                      </div>
+                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -99,9 +82,9 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </SectionLayout>
+      </div>
       <SectionLayout>
-        <div className='mt-10'>
+        <div className='mt-6'>
           <h2
             className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
           >
@@ -190,34 +173,22 @@ const AboutSection = () => {
           </ul>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-[url('/assets/about/about-bg-two.jpg')] bg-cover bg-center mt-5">
-        <div className='space-y-14'>
-          <div className='flex flex-col md:flex-row gap-8 items-center'>
-            <div className='flex-1'>
-              <CardMotion
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 1.1,
-                  },
-                }}
-                initial={{
-                  opacity: 0,
-                  x: -100,
-                }}
-              >
-                <div className='mb-[-30px] md:mb-[-55px]'>
-                  <Image
-                    width={500}
-                    height={400}
-                    src={'/assets/about/muktapatel.png'}
-                    alt='muktapatel'
-                  />
-                </div>
-              </CardMotion>
-            </div>
-            <div className='flex-1 bg-slate-50 md:bg-transparent md:p-0 p-6'>
+      {/* Mukta Patel */}
+      <div className='mb-[35%] md:mb-0'>
+        <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
+          <Image
+            src='/assets/about/mukta-patel.jpg'
+            alt='Mukta Patel'
+            width={1200}
+            height={800}
+            priority
+            className='w-full'
+            rel='preload'
+          />
+
+          <div className='flex flex-col md:flex-row gap-8 items-center md:absolute md:inset-0 md:z-20 '>
+            <div className='flex-1'></div>
+            <div className='flex-1 md:p-0 md:bg-[#f5f7f8cd] items-center h-full z-30'>
               <CardMotion
                 whileInView={{
                   opacity: 1,
@@ -231,10 +202,10 @@ const AboutSection = () => {
                   x: 100,
                 }}
               >
-                <div className='flex justify-center items-center '>
+                <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Mukta Patel
                     </h2>
@@ -244,29 +215,26 @@ const AboutSection = () => {
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
                     <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          Email
-                        </p>
+                      <Link
+                        href={'mailto:info@trip-law.com'}
+                        className='flex gap-3 items-center'
+                      >
                         <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          VCard
-                        </p>
+                        <p className='text-md font-medium text-center'>Email</p>
+                      </Link>
+                      <Link href={'/'} className='flex gap-3 items-center'>
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-40 text-md font-medium text-center'>
+                        <p className='text-md font-medium text-center'>VCard</p>
+                      </Link>
+                      <Link
+                        href={'/'}
+                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
+                      >
+                        <p className='text-md font-medium text-center'>
                           Contact
                         </p>
-                        <div className='flex items-center gap-x-5 mt-2'>
-                          <FaFacebookF className='text-blue-600 text-2xl' />
-                          <BsTwitterX className='text-blue-600 text-2xl' />
-                          <FaInstagram className='text-blue-600 text-2xl' />
-                          <RiLinkedinFill className='text-blue-600 text-2xl' />
-                        </div>
-                      </div>
+                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -274,7 +242,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </SectionLayout>
+      </div>
       <SectionLayout>
         <div className='mt-10'>
           <h2
@@ -338,34 +306,22 @@ const AboutSection = () => {
           </ul>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-[url('/assets/about/about-bg-three.jpg')] bg-cover bg-center mt-5">
-        <div className='space-y-14'>
-          <div className='flex flex-col md:flex-row gap-8 items-center'>
-            <div className='flex-1'>
-              <CardMotion
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 1.1,
-                  },
-                }}
-                initial={{
-                  opacity: 0,
-                  x: -100,
-                }}
-              >
-                <div className='mb-[-30px] md:mb-[-55px]'>
-                  <Image
-                    width={600}
-                    height={400}
-                    src={'/assets/about/arjoneel.png'}
-                    alt='arjoneel'
-                  />
-                </div>
-              </CardMotion>
-            </div>
-            <div className='flex-1 bg-slate-50 md:bg-transparent md:p-0 p-6'>
+      {/* Arjo Neel */}
+      <div className='mb-[35%] md:mb-0'>
+        <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
+          <Image
+            src='/assets/about/arjo-neel.jpg'
+            alt='Arjo Neel'
+            width={1200}
+            height={800}
+            priority
+            className='w-full'
+            rel='preload'
+          />
+
+          <div className='flex flex-col md:flex-row gap-8 items-center md:absolute md:inset-0 md:z-20 '>
+            <div className='flex-1'></div>
+            <div className='flex-1 md:p-0 md:bg-[#f5f7f8cd] items-center h-full z-30'>
               <CardMotion
                 whileInView={{
                   opacity: 1,
@@ -379,10 +335,10 @@ const AboutSection = () => {
                   x: 100,
                 }}
               >
-                <div className='flex justify-center items-center '>
+                <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Arjo Neel
                     </h2>
@@ -392,29 +348,26 @@ const AboutSection = () => {
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
                     <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          Email
-                        </p>
+                      <Link
+                        href={'mailto:info@trip-law.com'}
+                        className='flex gap-3 items-center'
+                      >
                         <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          VCard
-                        </p>
+                        <p className='text-md font-medium text-center'>Email</p>
+                      </Link>
+                      <Link href={'/'} className='flex gap-3 items-center'>
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-40 text-md font-medium text-center'>
+                        <p className='text-md font-medium text-center'>VCard</p>
+                      </Link>
+                      <Link
+                        href={'/'}
+                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
+                      >
+                        <p className='text-md font-medium text-center'>
                           Contact
                         </p>
-                        <div className='flex items-center gap-x-5 mt-2'>
-                          <FaFacebookF className='text-blue-600 text-2xl' />
-                          <BsTwitterX className='text-blue-600 text-2xl' />
-                          <FaInstagram className='text-blue-600 text-2xl' />
-                          <RiLinkedinFill className='text-blue-600 text-2xl' />
-                        </div>
-                      </div>
+                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -422,7 +375,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </SectionLayout>
+      </div>
       <SectionLayout>
         <div className='mt-10'>
           <h2
@@ -461,35 +414,22 @@ const AboutSection = () => {
           </p>
         </div>
       </SectionLayout>
+      {/* Sakawat Hossain */}
+      <div className='mb-[35%] md:mb-0'>
+        <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
+          <Image
+            src='/assets/about/sakawat-hossain.jpg'
+            alt='Sakawat Hossain'
+            width={1200}
+            height={800}
+            priority
+            className='w-full'
+            rel='preload'
+          />
 
-      <SectionLayout bg="bg-[url('/assets/about/about-bg-four.jpg')] bg-cover bg-center mt-5">
-        <div className='space-y-14'>
-          <div className='flex flex-col md:flex-row gap-8 items-center'>
-            <div className='flex-1'>
-              <CardMotion
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 1.1,
-                  },
-                }}
-                initial={{
-                  opacity: 0,
-                  x: -100,
-                }}
-              >
-                <div className='mb-[-30px] md:mb-[-55px]'>
-                  <Image
-                    width={600}
-                    height={400}
-                    src={'/assets/about/Sakawat.png'}
-                    alt='Sakawat'
-                  />
-                </div>
-              </CardMotion>
-            </div>
-            <div className='flex-1 bg-slate-50 md:bg-transparent md:p-0 p-6'>
+          <div className='flex flex-col md:flex-row gap-8 items-center md:absolute md:inset-0 md:z-20 '>
+            <div className='flex-1'></div>
+            <div className='flex-1 md:p-0 md:bg-[#f5f7f8cd] items-center h-full z-30'>
               <CardMotion
                 whileInView={{
                   opacity: 1,
@@ -503,10 +443,10 @@ const AboutSection = () => {
                   x: 100,
                 }}
               >
-                <div className='flex justify-center items-center '>
+                <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Sakawat Hossain
                     </h2>
@@ -516,29 +456,26 @@ const AboutSection = () => {
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
                     <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          Email
-                        </p>
+                      <Link
+                        href={'mailto:info@trip-law.com'}
+                        className='flex gap-3 items-center'
+                      >
                         <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          VCard
-                        </p>
+                        <p className='text-md font-medium text-center'>Email</p>
+                      </Link>
+                      <Link href={'/'} className='flex gap-3 items-center'>
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-40 text-md font-medium text-center'>
+                        <p className='text-md font-medium text-center'>VCard</p>
+                      </Link>
+                      <Link
+                        href={'/'}
+                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
+                      >
+                        <p className='text-md font-medium text-center'>
                           Contact
                         </p>
-                        <div className='flex items-center gap-x-5 mt-2'>
-                          <FaFacebookF className='text-blue-600 text-2xl' />
-                          <BsTwitterX className='text-blue-600 text-2xl' />
-                          <FaInstagram className='text-blue-600 text-2xl' />
-                          <RiLinkedinFill className='text-blue-600 text-2xl' />
-                        </div>
-                      </div>
+                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -546,7 +483,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </SectionLayout>
+      </div>
       <SectionLayout>
         <div className='mt-10'>
           <h2
@@ -585,34 +522,22 @@ const AboutSection = () => {
           </p>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-[url('/assets/about/about-bg-four.jpg')] bg-cover bg-center mt-5">
-        <div className='space-y-14'>
-          <div className='flex flex-col md:flex-row gap-8 items-center'>
-            <div className='flex-1'>
-              <CardMotion
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 1.1,
-                  },
-                }}
-                initial={{
-                  opacity: 0,
-                  x: -100,
-                }}
-              >
-                <div className='mb-[-30px] md:mb-[-55px]'>
-                  <Image
-                    width={600}
-                    height={400}
-                    src={'/assets/about/Abrar.png'}
-                    alt='Abrar'
-                  />
-                </div>
-              </CardMotion>
-            </div>
-            <div className='flex-1 bg-slate-50 md:bg-transparent md:p-0 p-6'>
+      {/* Abrar Faisaal */}
+      <div className='mb-[35%] md:mb-0'>
+        <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
+          <Image
+            src='/assets/about/abrar-faisaal.jpg'
+            alt='Abrar Faisaal'
+            width={1200}
+            height={800}
+            priority
+            className='w-full'
+            rel='preload'
+          />
+
+          <div className='flex flex-col md:flex-row gap-8 items-center md:absolute md:inset-0 md:z-20 '>
+            <div className='flex-1'></div>
+            <div className='flex-1 md:p-0 md:bg-[#f5f7f8cd] items-center h-full z-30'>
               <CardMotion
                 whileInView={{
                   opacity: 1,
@@ -626,10 +551,10 @@ const AboutSection = () => {
                   x: 100,
                 }}
               >
-                <div className='flex justify-center items-center '>
+                <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Abrar Faisaal
                     </h2>
@@ -639,29 +564,26 @@ const AboutSection = () => {
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
                     <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          Email
-                        </p>
+                      <Link
+                        href={'mailto:info@trip-law.com'}
+                        className='flex gap-3 items-center'
+                      >
                         <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-10 text-md font-medium text-center'>
-                          VCard
-                        </p>
+                        <p className='text-md font-medium text-center'>Email</p>
+                      </Link>
+                      <Link href={'/'} className='flex gap-3 items-center'>
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                      </div>
-                      <div>
-                        <p className='md:ml-40 text-md font-medium text-center'>
+                        <p className='text-md font-medium text-center'>VCard</p>
+                      </Link>
+                      <Link
+                        href={'/'}
+                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
+                      >
+                        <p className='text-md font-medium text-center'>
                           Contact
                         </p>
-                        <div className='flex items-center gap-x-5 mt-2'>
-                          <FaFacebookF className='text-blue-600 text-2xl' />
-                          <BsTwitterX className='text-blue-600 text-2xl' />
-                          <FaInstagram className='text-blue-600 text-2xl' />
-                          <RiLinkedinFill className='text-blue-600 text-2xl' />
-                        </div>
-                      </div>
+                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -669,7 +591,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </SectionLayout>
+      </div>
       <SectionLayout>
         <div className='mt-10'>
           <h2
@@ -679,7 +601,7 @@ const AboutSection = () => {
           </h2>
 
           <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
-            ABOUT Abrar Faisaal
+            Associate Paralegal
           </p>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
@@ -707,7 +629,7 @@ const AboutSection = () => {
             immigrant rights in her community.
           </p>
         </div>
-      </SectionLayout>
+      </SectionLayout>{' '}
     </div>
   );
 };

@@ -20,9 +20,9 @@ const PageHeroSection = ({ image, title }) => {
         }}
       >
         <div className='py-20 gap-10 items-center md:flex'>
-          <h2 className={`text-white font-bold text-4xl text-center`}>
+          <h1 className={`text-white font-bold text-4xl text-center`}>
             {title}
-          </h2>
+          </h1>
 
           <nav
             className='flex justify-center mt-8 md:mt-1 items-center'
