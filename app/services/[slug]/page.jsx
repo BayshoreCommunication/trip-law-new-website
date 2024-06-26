@@ -6,6 +6,7 @@ import SectionLayout from '@/components/shared/SectionLayout';
 import SideServicesCard from '@/components/services/SideServicesCard';
 import PageHeroSection from '@/components/shared/PageHeroSection';
 import CardMotion from '@/components/motion/CardMotion';
+import Head from 'next/head';
 
 const css = `
   h1{
@@ -48,6 +49,11 @@ const page = async ({ params }) => {
 
   return (
     <>
+      <Head>
+        <title>{servicesDetails[0]?.title}</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='description' content='' />
+      </Head>
       <style>{css}</style>
       <PageHeroSection
         image={

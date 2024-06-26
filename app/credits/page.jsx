@@ -1,12 +1,18 @@
-import Credits from "@/components/credits/Credits";
-import HeroSection from "@/components/credits/HeroSection";
+import Credits from '@/components/credits/Credits';
+import HeroSection from '@/components/credits/HeroSection';
+import Head from 'next/head';
 
 const page = () => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Credits - Trip Law</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='description' content='' />
+      </Head>
       <HeroSection />
       <Credits />
-    </div>
+    </>
   );
 };
 

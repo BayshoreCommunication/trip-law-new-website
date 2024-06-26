@@ -3,11 +3,17 @@ import ServiceCard from '@/components/services/ServiceCard';
 import PageHeroSection from '@/components/shared/PageHeroSection';
 import SectionLayout from '@/components/shared/SectionLayout';
 import { servicesData } from '@/config/data';
+import Head from 'next/head';
 import Link from 'next/link';
 
 const page = () => {
   return (
     <div>
+      <Head>
+        <title>Services - Trip Law</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='description' content='' />
+      </Head>
       <PageHeroSection
         image={"bg-[url('/assets/hero-img/services.jpg')] bg-cover bg-center"}
         title={'Services'}

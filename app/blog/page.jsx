@@ -8,6 +8,7 @@ import { Link } from '@nextui-org/react';
 import HeroSection from '@/components/blog/HeroSection';
 import ScondayButton from '@/components/shared/ScondayButton';
 import CardMotion from '@/components/motion/CardMotion';
+import Head from 'next/head';
 
 const page = async () => {
   const blogPostData = await GetAllPostData();
@@ -23,6 +24,11 @@ const page = async () => {
 
   return (
     <>
+      <Head>
+        <title>Blog - Trip Law</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='description' content='' />
+      </Head>
       <HeroSection />
       <SectionLayout bg='bg-white'>
         <CardMotion

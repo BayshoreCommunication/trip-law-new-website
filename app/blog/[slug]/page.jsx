@@ -6,6 +6,7 @@ import { Link } from '@nextui-org/react';
 import SectionLayout from '@/components/shared/SectionLayout';
 import HeroSection from '@/components/blog/HeroSection';
 import CardMotion from '@/components/motion/CardMotion';
+import Head from 'next/head';
 
 const css = `
   h1{
@@ -55,6 +56,11 @@ const page = async ({ params }) => {
 
   return (
     <>
+      <Head>
+        <title>{blogDetails[0]?.title}</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='description' content={blogDetails[0]?.title} />
+      </Head>
       <style>{css}</style>
       <HeroSection />
       <SectionLayout bg='bg-white'>

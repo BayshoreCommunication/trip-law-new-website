@@ -1,12 +1,17 @@
-import HeroSection from "@/components/privacy-policy/HeroSection";
-import PrivacyPolicy from "@/components/privacy-policy/PrivacyPolicy";
+import HeroSection from '@/components/privacy-policy/HeroSection';
+import PrivacyPolicy from '@/components/privacy-policy/PrivacyPolicy';
 
 const page = () => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Privacy Policy - Trip Law</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='description' content='' />
+      </Head>
       <HeroSection />
       <PrivacyPolicy />
-    </div>
+    </>
   );
 };
 
