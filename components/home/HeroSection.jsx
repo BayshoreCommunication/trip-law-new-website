@@ -3,6 +3,7 @@ import SectionLayout from '../shared/SectionLayout';
 import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
@@ -73,15 +74,18 @@ const HeroSection = () => {
                   variants={variants}
                   className='mt-6 md:mt-8 flex justify-center md:justify-start'
                 >
-                  <a
+                  <Link
                     className='text-white bg-red-700 hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-3 md:me-6 mb-2 uppercase'
                     href='/appointment'
                   >
                     Consultation
-                  </a>
-                  <button className='text-white bg-none hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-0 md:me-6 mb-2 border border-white'>
+                  </Link>
+                  <Link
+                    href={'tel:(863)-599-6735'}
+                    className='text-white bg-none hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-0 md:me-6 mb-2 border border-white'
+                  >
                     (863)-599-6735
-                  </button>
+                  </Link>
                 </motion.div>
               </div>
             </div>
