@@ -15,14 +15,21 @@ import Link from 'next/link';
 
 const MainNavbar = () => {
   const pathname = usePathname();
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
   };
 
+  console.log('check log menu', isMenuOpen);
+
   return (
     <Navbar
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
       maxWidth='2xl'
       className='flex !justify-center bg-white bg-cover my-1'
@@ -156,8 +163,9 @@ const MainNavbar = () => {
                       className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
                       href={nav.slug}
                       size='lg'
+                      aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
                     >
-                      Services
+                      Blog
                     </Link>
                     <span>
                       <svg
@@ -178,6 +186,9 @@ const MainNavbar = () => {
                     <ul className='py-2 '>
                       <li key={index}>
                         <Link
+                          onClick={() => {
+                            setIsMenuOpen((prev) => !prev);
+                          }}
                           href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
                           className={`py-2 flex text-slate-900 font-semibold text-lg hover:border-b-1 hover:border-solid hover:border-black`}
                         >
@@ -193,6 +204,9 @@ const MainNavbar = () => {
                 className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
                 href={nav.slug}
                 size='lg'
+                onClick={() => {
+                  setIsMenuOpen((prev) => !prev);
+                }}
               >
                 {nav.title}
               </Link>
