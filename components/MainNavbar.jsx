@@ -39,13 +39,15 @@ const MainNavbar = () => {
       </NavbarContent>
 
       <NavbarContent className=' md:hidden' justify='end'>
-        <Image
-          width={280}
-          height={130}
-          src={'/assets/site-logo/trip-law-logo.svg'}
-          alt='Trip Law'
-          className='object-cover cursor-pointer'
-        />
+        <Link href='/'>
+          <Image
+            width={280}
+            height={130}
+            src={'/assets/site-logo/trip-law-logo.svg'}
+            alt='Trip Law'
+            className='object-cover cursor-pointer'
+          />
+        </Link>
       </NavbarContent>
 
       <NavbarContent className='justify-center hidden gap-10 md:flex'></NavbarContent>
