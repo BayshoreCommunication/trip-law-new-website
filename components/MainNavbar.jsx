@@ -4,7 +4,6 @@ import {
   Navbar,
   NavbarContent,
   NavbarItem,
-  Link,
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
@@ -12,6 +11,7 @@ import {
 import { usePathname } from 'next/navigation';
 import { SITECONFIG } from '@/config/site';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const MainNavbar = () => {
   const pathname = usePathname();
@@ -48,7 +48,7 @@ const MainNavbar = () => {
             <NavbarItem key={index}>
               <Link
                 href={nav.slug}
-                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black !cursor-pointer ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
               >
                 {nav.title}
               </Link>
@@ -87,7 +87,7 @@ const MainNavbar = () => {
                     <div className='flex items-center gap-1'>
                       <Link
                         href={nav.slug}
-                        className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+                        className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black !cursor-pointer ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
                       >
                         Blog
                       </Link>
@@ -137,13 +137,66 @@ const MainNavbar = () => {
       <NavbarMenu className='ml-0'>
         {SITECONFIG?.mobileNav?.map((nav, index) => (
           <NavbarMenuItem key={`${nav}-${index}`} className='list-none'>
-            <Link
+            {/* <Link
               className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
               href={nav.slug}
               size='lg'
             >
               {nav.title}
-            </Link>
+            </Link> */}
+            {nav.title === 'Blog' ? (
+              <div
+                className='relative inline-block'
+                onMouseEnter={toggleDropdown}
+                onMouseLeave={toggleDropdown}
+              >
+                <div className='group'>
+                  <div className='flex items-center gap-1'>
+                    <Link
+                      className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+                      href={nav.slug}
+                      size='lg'
+                    >
+                      Services
+                    </Link>
+                    <span>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 24 24'
+                        fill='currentColor'
+                        className={`size-4 font-extrabold transform transition-transform duration-200 ${isDropdownVisible ? 'rotate-0' : 'rotate-180'}`}
+                      >
+                        <path
+                          fillRule='evenodd'
+                          d='M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z'
+                          clipRule='evenodd'
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div className='absolute hidden group-hover:block bg-white shadow-lg rounded p-2 z-50 w-[300px]'>
+                    <ul className='py-2 '>
+                      <li key={index}>
+                        <Link
+                          href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
+                          className={`py-2 flex text-slate-900 font-semibold text-lg hover:border-b-1 hover:border-solid hover:border-black`}
+                        >
+                          Podcast
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+                href={nav.slug}
+                size='lg'
+              >
+                {nav.title}
+              </Link>
+            )}
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

@@ -22,7 +22,7 @@ const AppointmentSection = () => {
         }}
       >
         <h2
-          className={`text-stone-950 font-bold text-5xl mt-5 mb-4 text-center ${bitter.className}`}
+          className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center ${bitter.className}`}
         >
           Appointment
         </h2>

@@ -20,7 +20,7 @@ function TestimonialSection() {
             x: -100,
           }}
         >
-          <h2 className='mb-4 sm:text-4xl text-3xl tracking-normal font-bold text-slate-900 text-center text-wrap w-80 sm:w-[700px]'>
+          <h2 className='mb-4 md:text-4xl text-3xl tracking-normal font-bold text-slate-900 text-center text-wrap w-80 sm:w-[700px]'>
             What our Clients Have to Say
           </h2>
         </CardMotion>

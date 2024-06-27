@@ -65,7 +65,7 @@ const NewsSection = async () => {
               <h2 className='text-stone-950 font-bold text-base'>News</h2>
               <hr className='h-[2px] my-0 bg-stone-950 border-0 w-4' />
               <h2
-                className={`text-stone-950 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
               >
                 News
               </h2>

@@ -44,7 +44,7 @@ const page = async () => {
             y: 100,
           }}
         >
-          <h2 className='mb-4 text-3xl font-bold tracking-normal text-left text-[#1B2639]'>
+          <h2 className='mb-4 text-xl md:text-3xl font-bold tracking-normal text-left text-[#1B2639]'>
             Recent Blog Post
           </h2>
 

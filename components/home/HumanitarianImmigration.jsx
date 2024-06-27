@@ -63,7 +63,7 @@ const HumanitarianImmigration = () => {
   return (
     <SectionLayout bg='bg-white'>
       <h2
-        className={`text-stone-950 font-bold text-4xl mt-5 mb-3 text-center ${bitter.className}`}
+        className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-3 text-center ${bitter.className}`}
       >
         Humanitarian Immigration
       </h2>

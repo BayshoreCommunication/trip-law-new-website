@@ -67,7 +67,7 @@ const ServiceSection = () => {
               <h2 className='text-stone-50 font-bold text-base'>Services</h2>
               <hr class='h-[2px] my-0 bg-stone-50 border-0 w-4'></hr>
               <h2
-                className={`text-stone-50 font-bold text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+                className={`text-stone-50 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
               >
                 Additional Services
               </h2>

@@ -1,4 +1,3 @@
-
 import SectionLayout from '../shared/SectionLayout';
 import { Bitter } from 'next/font/google';
 import { DoubleOneTabSection } from '../shared/DoubleOneTabSection';
@@ -63,7 +62,7 @@ const DeportationDefense = () => {
   return (
     <SectionLayout bg='bg-white'>
       <h2
-        className={`text-stone-950 font-bold text-4xl mb-3 text-center ${bitter.className}`}
+        className={`text-stone-950 font-bold text-3xl md:text-4xl mb-3 text-center ${bitter.className}`}
       >
         Deportation Defense
       </h2>
