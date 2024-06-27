@@ -6,6 +6,8 @@ import { Bitter } from 'next/font/google';
 import { BsFillPersonVcardFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { FaLinkedin } from 'react-icons/fa';
+import { RiCustomerService2Line } from 'react-icons/ri';
+
 import Link from 'next/link';
 
 const bitter = Bitter({ subsets: ['latin'] });
@@ -59,21 +61,25 @@ const AboutSection = () => {
                         href={'mailto:info@trip-law.com'}
                         className='flex gap-3 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>Email</p>
+                        <MdEmail className='w-10 h-10 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          Email
+                        </p>
                       </Link>
                       <Link href={'/'} className='flex gap-3 items-center'>
-                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>VCard</p>
+                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          VCard
+                        </p>
                       </Link>
                       <Link
                         href={'/'}
-                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
+                        className='flex md:flex-row gap-3 items-center'
                       >
-                        <p className='text-md font-medium text-center'>
-                          Contact
+                        <FaLinkedin className='w-9 h-9 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          Connect
                         </p>
-                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
                       </Link>
                     </div>
                   </div>
@@ -84,16 +90,16 @@ const AboutSection = () => {
         </div>
       </div>
       <SectionLayout>
-        <div className='mt-6'>
+        <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-2 text-center md:text-left ${bitter.className}`}
           >
-            ABOUT HARDAM TRIPATHI, ESQ.
+            ABOUT
           </h2>
 
-          <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
-            Top Immigration Lawyer
-          </p>
+          <div className='flex justify-center md:justify-start'>
+            <hr class='h-[2px] my-0 bg-red-700 border-0 w-32 mb-6 ' />
+          </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             U.S. Immigration Attorney Hardam Tripathi is a U.S. Immigration and
@@ -219,21 +225,25 @@ const AboutSection = () => {
                         href={'mailto:info@trip-law.com'}
                         className='flex gap-3 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>Email</p>
+                        <MdEmail className='w-10 h-10 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          Email
+                        </p>
                       </Link>
                       <Link href={'/'} className='flex gap-3 items-center'>
-                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>VCard</p>
+                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          VCard
+                        </p>
                       </Link>
                       <Link
                         href={'/'}
-                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
+                        className='flex md:flex-row gap-3 items-center'
                       >
-                        <p className='text-md font-medium text-center'>
-                          Contact
+                        <FaLinkedin className='w-9 h-9 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          Connect
                         </p>
-                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
                       </Link>
                     </div>
                   </div>
@@ -244,16 +254,16 @@ const AboutSection = () => {
         </div>
       </div>
       <SectionLayout>
-        <div className='mt-10'>
+        <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-2 text-center md:text-left ${bitter.className}`}
           >
-            ABOUT Mukta Patel
+            ABOUT
           </h2>
 
-          <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
-            Director of Legal Operation
-          </p>
+          <div className='flex justify-center md:justify-start'>
+            <hr class='h-[2px] my-0 bg-red-700 border-0 w-32 mb-6 ' />
+          </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Mukta Patel was originally a Licensed Attorney in India earning her
@@ -352,21 +362,25 @@ const AboutSection = () => {
                         href={'mailto:info@trip-law.com'}
                         className='flex gap-3 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>Email</p>
+                        <MdEmail className='w-10 h-10 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          Email
+                        </p>
                       </Link>
                       <Link href={'/'} className='flex gap-3 items-center'>
-                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>VCard</p>
+                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          VCard
+                        </p>
                       </Link>
                       <Link
                         href={'/'}
-                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
+                        className='flex md:flex-row gap-3 items-center'
                       >
-                        <p className='text-md font-medium text-center'>
-                          Contact
+                        <FaLinkedin className='w-9 h-9 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          Connect
                         </p>
-                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
                       </Link>
                     </div>
                   </div>
@@ -377,16 +391,16 @@ const AboutSection = () => {
         </div>
       </div>
       <SectionLayout>
-        <div className='mt-10'>
+        <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-2 text-center md:text-left ${bitter.className}`}
           >
-            ABOUT Arjo Neel
+            ABOUT
           </h2>
 
-          <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
-            E2 & EB5 Consultant
-          </p>
+          <div className='flex justify-center md:justify-start'>
+            <hr class='h-[2px] my-0 bg-red-700 border-0 w-32 mb-6 ' />
+          </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Mukta Patel was originally a Licensed Attorney in India earning her
@@ -460,22 +474,30 @@ const AboutSection = () => {
                         href={'mailto:info@trip-law.com'}
                         className='flex gap-3 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>Email</p>
-                      </Link>
-                      <Link href={'/'} className='flex gap-3 items-center'>
-                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>VCard</p>
+                        <MdEmail className='w-10 h-10 text-blue-600' />
+                        <p className='text-xl font-semibold text-center'>
+                          Email
+                        </p>
                       </Link>
                       <Link
+                        href={'tel: +1 863-599-6735'}
+                        className='flex gap-3 items-center'
+                      >
+                        <RiCustomerService2Line className='w-10 h-10 text-blue-600' />
+
+                        <p className='text-xl font-semibold text-center'>
+                          +1 863-599-6735
+                        </p>
+                      </Link>
+                      {/* <Link
                         href={'/'}
                         className='flex md:flex-row flex-row-reverse gap-3 items-center'
                       >
-                        <p className='text-md font-medium text-center'>
-                          Contact
-                        </p>
                         <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
-                      </Link>
+                        <p className='text-xl font-semibold text-center'>
+                          Connect
+                        </p>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -485,16 +507,16 @@ const AboutSection = () => {
         </div>
       </div>
       <SectionLayout>
-        <div className='mt-10'>
+        <div className=''>
           <h2
             className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
           >
-            ABOUT Sakawat Hossain
+            ABOUT
           </h2>
 
-          <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
-            Associate Manager
-          </p>
+          <div className='flex justify-center md:justify-start'>
+            <hr class='h-[2px] my-0 bg-red-700 border-0 w-32 mb-6 ' />
+          </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Mukta Patel was originally a Licensed Attorney in India earning her
@@ -571,19 +593,10 @@ const AboutSection = () => {
                         <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
                         <p className='text-md font-medium text-center'>Email</p>
                       </Link>
-                      <Link href={'/'} className='flex gap-3 items-center'>
+                      {/* <Link href={'/'} className='flex gap-3 items-center'>
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
                         <p className='text-md font-medium text-center'>VCard</p>
-                      </Link>
-                      <Link
-                        href={'/'}
-                        className='flex md:flex-row flex-row-reverse gap-3 items-center'
-                      >
-                        <p className='text-md font-medium text-center'>
-                          Contact
-                        </p>
-                        <FaLinkedin className='w-9 h-9 text-blue-600 mt-2' />
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -593,16 +606,16 @@ const AboutSection = () => {
         </div>
       </div>
       <SectionLayout>
-        <div className='mt-10'>
+        <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-2 text-center md:text-left ${bitter.className}`}
           >
-            ABOUT Abrar Faisaal
+            ABOUT
           </h2>
 
-          <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
-            Associate Paralegal
-          </p>
+          <div className='flex justify-center md:justify-start'>
+            <hr class='h-[2px] my-0 bg-red-700 border-0 w-32 mb-6 ' />
+          </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Mukta Patel was originally a Licensed Attorney in India earning her
@@ -629,7 +642,7 @@ const AboutSection = () => {
             immigrant rights in her community.
           </p>
         </div>
-      </SectionLayout>{' '}
+      </SectionLayout>
     </div>
   );
 };

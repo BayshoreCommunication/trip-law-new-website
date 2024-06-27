@@ -1,12 +1,10 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Navbar,
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
@@ -17,6 +15,11 @@ import Image from 'next/image';
 
 const MainNavbar = () => {
   const pathname = usePathname();
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!isDropdownVisible);
+  };
 
   return (
     <Navbar
@@ -68,12 +71,63 @@ const MainNavbar = () => {
         {SITECONFIG?.mainNav?.right?.map((nav, index) => {
           return (
             <NavbarItem key={index}>
-              <Link
+              {/* <Link
                 href={nav.slug}
                 className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
               >
                 {nav.title}
-              </Link>
+              </Link> */}
+              {nav.title === 'Blog' ? (
+                <div
+                  className='relative inline-block'
+                  onMouseEnter={toggleDropdown}
+                  onMouseLeave={toggleDropdown}
+                >
+                  <div className='group'>
+                    <div className='flex items-center gap-1'>
+                      <Link
+                        href={nav.slug}
+                        className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+                      >
+                        Blog
+                      </Link>
+                      <span>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 24 24'
+                          fill='currentColor'
+                          className={`size-4 font-extrabold transform transition-transform duration-200 ${isDropdownVisible ? 'rotate-0' : 'rotate-180'}`}
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <div className='absolute hidden group-hover:block bg-white shadow-lg rounded p-4 w-48'>
+                      <ul className='py-2 '>
+                        <li>
+                          <Link
+                            href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
+                            className={`py-2 flex text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black`}
+                          >
+                            Podcast
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  href={nav.slug}
+                  className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+                >
+                  {nav.title}
+                </Link>
+              )}
             </NavbarItem>
           );
         })}
