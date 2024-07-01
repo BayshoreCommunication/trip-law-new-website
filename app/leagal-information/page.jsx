@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Head>
-        <title>Leagal Information - Trip Law</title>
+        <title>Leagal Information - Attorney Hardam Tripathi, Esq.</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='description' content='' />
       </Head>

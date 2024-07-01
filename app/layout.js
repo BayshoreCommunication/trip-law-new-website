@@ -7,10 +7,11 @@ const bitter = Bitter({ subsets: ['latin'] });
 const mulish = Mulish({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Trip-Law',
+  title:
+    'Florida Immigration Lawyer Firm || U.S. Immigration Attorney Hardam Tripathi, Esq.',
   description:
-    'Trip Law focuses exclusively on the practice of the immigration law of The United States. Attorney Hardam Tripathi has a broad experience of practicing U.S.',
-  metadataBase: new URL('https://trip-law-new-website.vercel.app'),
+    'Florida Immigration Law Services Call our local Immigration office for your Green Card, Naturalization or Investor Visa.',
+  metadataBase: new URL('https://trip-law.com'),
   alternates: {
     canonical: '/',
     languages: {

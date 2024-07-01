@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div>
       <Head>
-        <title>Services - Trip Law</title>
+        <title>Services - Attorney Hardam Tripathi, Esq.</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='description' content='' />
       </Head>

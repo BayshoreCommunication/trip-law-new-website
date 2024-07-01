@@ -13,37 +13,37 @@ const ServiceSection = () => {
       icon: '/assets/home/icon/waivers.png',
       bg: "bg-[url('/assets/home/waivertwo.png')]",
       title: 'Waivers',
-      dec: 'Lorem tristique netus hac idellus orci bibendum aenean pellentesque pellentesque Habitant lorem.',
+      dec: 'We can help you sort through all the confusing waiver rules and build a strong case to get your application approved.',
     },
     {
       icon: '/assets/home/icon/e2-treaty-visas.png',
       bg: "bg-[url('/assets/home/e2-employees.png')]",
       title: 'E2 Treaty Visas',
-      dec: 'Lorem tristique netus hac idellus orci bibendum aenean pellentesque pellentesque Habitant lorem.',
+      dec: 'We can simplify the E2 Treaty Visa process, ensuring all papers, documents, and waivers are met for your investment in the U.S.',
     },
     {
       icon: '/assets/home/icon/citizenship.png',
       bg: "bg-[url('/assets/home/waviersone.png')]",
       title: 'Citizenship',
-      dec: 'Lorem tristique netus hac idellus orci bibendum aenean pellentesque pellentesque Habitant lorem.',
+      dec: 'Our team will be with you each step of getting citizenship and help you meet the eligibility criteria for a successful application.',
     },
     {
       icon: '/assets/home/icon/naturalization-citizenship.png',
       bg: "bg-[url('/assets/home/citizenshipbg.png')]",
       title: 'Naturalization & Citizenship',
-      dec: 'Lorem tristique netus hac idellus orci bibendum aenean pellentesque pellentesque Habitant lorem.',
+      dec: 'We walk you through the entire naturalization process and prepare all your legal documents, proofs, and citizenship interviews and exams.',
     },
     {
       icon: '/assets/home/icon/asylum.png',
       bg: "bg-[url('/assets/home/waivertwo.png')]",
       title: 'Asylum',
-      dec: 'Lorem tristique netus hac idellus orci bibendum aenean pellentesque pellentesque Habitant lorem.',
+      dec: 'Our years of experienced attorneys will build a strong asylum case by presenting compelling evidence for your safety and protection.',
     },
     {
       icon: '/assets/home/icon/green-card.png',
       bg: "bg-[url('/assets/home/e2-tready-visas.png')]",
       title: 'Green Card',
-      dec: 'Lorem tristique netus hac idellus orci bibendum aenean pellentesque pellentesque Habitant lorem.',
+      dec: 'We can guide you through the Green Card application process, ensuring all the requirements are met for smooth approval.',
     },
   ];
   return (
@@ -96,7 +96,7 @@ const ServiceSection = () => {
             </div>
           </CardMotion>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center mt-[-20px] md:mt-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-start mt-[-20px] md:mt-12'>
           {serviceData.map((item, index) => (
             <CardMotion
               whileInView={{

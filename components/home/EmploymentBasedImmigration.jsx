@@ -39,41 +39,41 @@ const EmploymentBasedImmigration = () => {
       {
         value: '1',
         content:
-          "You're hoping to get that great job in the United States, where your specialist skills are in high demand, right? Well, the H-1B visa program is your ladder to making it happen! But let's be real – the whole application process and all those legal hoops you gotta jump through can be pretty overwhelming. We're here to make it simple, guiding you through every step and making sure you've got everything you need to snag that H-1B visa and start your American adventure.",
+          'Start your U.S. career journey with the H-1B visa. It’s designed for professionals in specialized fields like IT, engineering, and healthcare. This employer-sponsored visa allows you to work in the U.S. for up to six years. We make the application process simple and stress-free, guiding you every step of the way. Focus on your career while we handle the details.',
         img: `/assets/home/Employment-Based-Immigration/H1B-Visa.png`,
         slug: 'h1b-visa',
       },
       {
         value: '2',
         content:
-          'Are you a key employee within a multinational company, eager to contribute your valuable skills and experience to the U.S. branch? The L-1 visa program facilitates the intracompany transfer of executives, managers, and specialized knowledge workers, allowing you to seamlessly transition and continue your impactful work in the United States. Our legal guidance will make sure your journey to getting that L-1 visa is a breeze, so you can hit the ground running in the U.S. and make a real impact.',
+          'Transfer to a U.S. office within your company. For that L-1 visa is just what you need. It’s perfect for executives, managers, and specialized knowledge employees moving within the same company. This visa lets you bring your expertise to the U.S. We’ll handle all the legal requirements so you can focus on growing your business. Establish your presence in the American market with confidence.',
         img: `/assets/home/Employment-Based-Immigration/L-1-Visa.png`,
         slug: 'l1-visa',
       },
       {
         value: '3',
-        content: `Are you an individual of "extraordinary ability" in the sciences, arts, education, business, or athletics, yearning to showcase your talents and contribute to the dynamic landscape of the United States? The O-1 visa program recognizes and welcomes individuals like you, paving the way for temporary residency and fostering innovation across diverse fields. We supply legal guidance and unwavering support to ensure your O-1 visa journey is a resounding success`,
+        content: `The O-1 visa is for individuals with extraordinary abilities in arts, sciences, business, education, or athletics. Whether you’re an artist, researcher, or athlete, this visa opens doors to top opportunities in the U.S. We specialize in showcasing your exceptional achievements. We’ll guide you quickly through the application process to secure your visa. We simplify everything, so you can focus on what you do best.`,
         img: `/assets/home/Employment-Based-Immigration/O-1-Visa.png`,
         slug: 'o1-visa',
       },
       {
         value: '4',
         content:
-          "Got real standout skills in your field, Just itching to bring your exceptional skills and talent to the U.S.? Well, good news – the EB-1 visa program is all about recognizing and welcoming folks like you who are at the top of their game. It's an elite pass to permanent residency in the States. And guess what? We're here to make that journey a piece of cake. We will be with you every step of the way, ensuring your EB-1 visa journey is smooth sailing and ends in success.",
+          'The EB-1 visa offers a direct path to U.S. permanent residency. It’s designed for those with extraordinary abilities, outstanding professors, researchers, or multinational executives. Our expert team will carefully prepare your case, emphasizing your exceptional qualifications to ensure a successful application. Let us help you achieve your American dream with ease.',
         img: `/assets/home/Employment-Based-Immigration/EB-1-Visa.png`,
         slug: 'eb1-visa',
       },
       {
         value: '5',
         content:
-          "If you're aiming to bring your expertise and skills to the American workforce permanently, the EB-2 visa program is your avenue. It offers professionals with advanced degrees or exceptional ability a route to securing green cards and leaving a lasting impact in the United States. Here, we're offering comprehensive legal guidance and steadfast support, ensuring your EB-2 visa journey is both successful and hassle-free.",
+          'If you’re a professional with an advanced degree or exceptional abilities seeking U.S. permanent residency, the EB-2 visa is ideal for you. This visa caters to those who can significantly contribute to the American economy. We make the application process simple. Trust our expertise to secure your future in the United States. Whether through a job offer or a National Interest Waiver, we can help.',
         img: `/assets/home/Employment-Based-Immigration/EB-2-Visa.png`,
         slug: 'eb2-visa',
       },
       {
         value: '6',
         content:
-          "Want to build a solid future in the US, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.",
+          'The EB-3 visa is available for skilled workers, professionals, and unskilled workers. You can also get permanent residency via an EB-3 visa. It’s perfect for those who want to build a life and career in the U.S. We will guide you through the complex immigration process. We make sure your skills and experience are presented convincingly.',
         img: `/assets/home/Employment-Based-Immigration/EB-3-Visa.png`,
         slug: 'eb3-visa',
       },

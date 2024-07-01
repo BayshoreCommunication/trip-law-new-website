@@ -30,21 +30,21 @@ const DeportationDefense = () => {
       {
         value: '1',
         content:
-          'Being arrested can be a frightening and confusing experience. One of the first hurdles you might face is a bond hearing, where a judge decides whether you can be released while awaiting trial. Having strong legal representation at this crucial stage is vital. Our experienced attorneys navigate the bond hearing process with you, maximizing your chances of release and ensuring your rights are protected.',
+          'A bond hearing is your chance to secure release from detention while awaiting immigration proceedings. Our experienced attorneys will advocate on your behalf, presenting evidence and arguments to show that you are neither a flight risk nor a danger to the community. With a successful bond hearing, you can prepare your defense from outside detention, giving you more time and resources to build a strong case.',
         img: `/assets/home/Deportation-Defense/Bond-Hearing.png`,
         slug: 'bond-hearing',
       },
       {
         value: '2',
         content:
-          'Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the U.S. legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.',
+          'The master calendar hearing is the first step in your deportation case after receiving a Notice to Appear (NTA). The immigration judge reviews the charges, and you can respond to the allegations. Our legal team will represent you, protect your rights, and help you understand the charges and possible defenses. We also strategize for the next steps in your case, laying the groundwork for a strong defense.',
         img: `/assets/home/Deportation-Defense/Master-Calendar-Hearing.png`,
         slug: 'master-celender-hearing',
       },
       {
         value: '3',
         content:
-          "Facing removal proceedings can be stressful, and the Individual Hearing is where your case stands on trial. Whether you're seeking asylum, battling inadmissibility, or pursuing another form of relief, having experienced legal representation is crucial. We equip you with the knowledge, confidence, and advocacy you need to present your best case before the immigration judge.",
+          'The individual hearing is a critical stage in your deportation case where the merits of your case are fully examined. This is when you will present your evidence, witness testimonies, and arguments to the judge. Our attorneys will meticulously prepare your case, ensuring all necessary documentation is submitted and your story is clearly communicated. We aim to present a compelling defense to achieve the best possible outcome for you.',
         img: `/assets/home/Deportation-Defense/Individual-Hearing.png`,
         slug: 'individual-hearing',
       },
@@ -52,7 +52,7 @@ const DeportationDefense = () => {
       {
         value: '4',
         content:
-          'Immigration pathways can be complex, and sometimes unforeseen circumstances or past decisions may create hurdles. However, with the right legal guidance, you can overcome these obstacles and achieve your immigration goals. Our experienced attorneys specialize in navigating the intricacies of immigration waivers, helping you clear the path towards a secure future in the United States.',
+          'Waivers can help overcome barriers to your immigration status, such as inadmissibility or deportation orders. Our skilled team will assist you in applying for various waivers, such as I-601 waivers for unlawful presence or I-212 waivers for prior deportations. We will gather and present evidence to demonstrate your eligibility and the hardships you or your family would face if the waiver is not granted.',
         img: `/assets/home/Deportation-Defense/Waiver.png`,
         slug: 'waivers',
       },

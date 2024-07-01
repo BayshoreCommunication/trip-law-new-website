@@ -74,7 +74,7 @@ const AppointmentFrom = () => {
               <Image
                 width={550}
                 height={400}
-                src={'/assets/appointment.jpg'}
+                src={'/assets/appointment.png'}
                 alt='appointment'
               />
             </div>

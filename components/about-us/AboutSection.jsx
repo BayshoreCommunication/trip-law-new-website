@@ -66,7 +66,10 @@ const AboutSection = () => {
                           Email
                         </p>
                       </Link>
-                      <Link href={'/'} className='flex gap-3 items-center'>
+                      <Link
+                        href={'/assets/vcard-info/hardam-tripathi.vcf'}
+                        className='flex gap-3 items-center'
+                      >
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
                         <p className='text-xl font-semibold text-center'>
                           VCard
