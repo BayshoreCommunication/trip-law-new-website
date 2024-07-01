@@ -120,7 +120,7 @@ const ServiceSection = () => {
                       width={45}
                       height={45}
                       src={item.icon}
-                      alt='about img'
+                      alt={item.title}
                       className='flex justify-center mx-auto'
                     />
                   </div>

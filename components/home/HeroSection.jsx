@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className='relative h-[500px] md:h-[800px]'>
         <Image
           src='/assets/home/trip-low-hero-bg.jpg'
-          alt='Home Banner'
+          alt='home-banner'
           layout='fill'
           objectFit='cover'
           priority

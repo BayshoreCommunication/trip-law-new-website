@@ -113,7 +113,7 @@ const ScheduleSection = () => {
               <div className='flex justify-center'>
                 <Image
                   src='/assets/home/membership-logo.png'
-                  alt='about-image'
+                  alt='membership-logo'
                   className=''
                   rel='preload'
                   height={200}

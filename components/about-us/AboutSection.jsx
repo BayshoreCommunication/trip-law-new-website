@@ -20,7 +20,7 @@ const AboutSection = () => {
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/triplaw.jpg'
-            alt='triplaw'
+            alt='Hardam Tripathi'
             width={1200}
             height={800}
             priority
@@ -76,7 +76,7 @@ const AboutSection = () => {
                         </p>
                       </Link>
                       <Link
-                        href={'/'}
+                        href={'https://www.linkedin.com/in/hardamtripathi'}
                         className='flex md:flex-row gap-3 items-center'
                       >
                         <FaLinkedin className='w-9 h-9 text-blue-600' />
@@ -240,7 +240,9 @@ const AboutSection = () => {
                         </p>
                       </Link>
                       <Link
-                        href={'/'}
+                        href={
+                          'https://www.linkedin.com/in/mukta-patel-b41067273'
+                        }
                         className='flex md:flex-row gap-3 items-center'
                       >
                         <FaLinkedin className='w-9 h-9 text-blue-600' />

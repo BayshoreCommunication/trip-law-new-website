@@ -93,12 +93,7 @@ export function SingleTabSection({ tabsData }) {
 
                 <div className='w-[100%]'>
                   <div className='flex justify-center items-center mt-8 md:mt-0'>
-                    <Image
-                      width={1000}
-                      height={400}
-                      src={img}
-                      alt='about img'
-                    />
+                    <Image width={1000} height={400} src={img} alt={slug} />
                   </div>
                 </div>
               </div>

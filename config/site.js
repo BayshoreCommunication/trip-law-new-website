@@ -67,8 +67,8 @@ export const SITECONFIG = {
       'With attorneys based in Florida, USA, our team has substantial experience in all areas of family and business immigration law. With a combined experience of 10 years, Trip Law is providing value-added immigration law services all over the United States.',
     company: [
       {
-        title: 'Career',
-        slug: '/career',
+        title: 'Privacy Policy',
+        slug: '/privacy-policy',
       },
       {
         title: 'Angel Investor',
