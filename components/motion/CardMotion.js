@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
 const CardMotion = ({ children, initial, whileInView }) => {
@@ -14,15 +14,14 @@ const CardMotion = ({ children, initial, whileInView }) => {
   }, [isInView, mainControls]);
 
   return (
-    <div ref={ref}>
-      <motion.div
-        initial={initial}
-        animate={mainControls}
-        variants={{ visible: whileInView }}
-      >
-        {children}
-      </motion.div>
-    </div>
+    <motion.div
+      ref={ref}
+      initial={initial}
+      animate={mainControls}
+      variants={{ visible: whileInView }}
+    >
+      {children}
+    </motion.div>
   );
 };
 

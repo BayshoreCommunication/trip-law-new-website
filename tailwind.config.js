@@ -6,11 +6,7 @@ const withMT = require('@material-tailwind/react/utils/withMT');
 module.exports = withMT({
   content: ['./pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {
-      colors: {
-        spinner: '#1B2639',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 });
@@ -28,9 +24,6 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-      colors: {
-        spinner: '#FF6C9D', // Add your custom color here
       },
     },
   },

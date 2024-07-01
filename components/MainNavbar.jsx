@@ -8,23 +8,27 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from '@nextui-org/react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { SITECONFIG } from '@/config/site';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const MainNavbar = () => {
   const pathname = usePathname();
-
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
   };
 
-  console.log('check log menu', isMenuOpen);
+  const handleNavItemClick = (slug) => {
+    setIsMenuOpen(false);
+    router.push(slug)?.then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  };
 
   return (
     <Navbar
@@ -55,12 +59,16 @@ const MainNavbar = () => {
         {SITECONFIG?.mainNav?.left?.map((nav, index) => {
           return (
             <NavbarItem key={index}>
-              <Link
-                href={nav.slug}
-                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black !cursor-pointer ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+              <span
+                onClick={() => handleNavItemClick(nav.slug)}
+                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black !cursor-pointer ${
+                  pathname === nav.slug
+                    ? 'border-b-2 border-solid border-black'
+                    : ''
+                }`}
               >
                 {nav.title}
-              </Link>
+              </span>
             </NavbarItem>
           );
         })}
@@ -80,12 +88,6 @@ const MainNavbar = () => {
         {SITECONFIG?.mainNav?.right?.map((nav, index) => {
           return (
             <NavbarItem key={index}>
-              {/* <Link
-                href={nav.slug}
-                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
-              >
-                {nav.title}
-              </Link> */}
               {nav.title === 'Blog' ? (
                 <div
                   className='relative inline-block'
@@ -94,18 +96,24 @@ const MainNavbar = () => {
                 >
                   <div className='group'>
                     <div className='flex items-center gap-1'>
-                      <Link
-                        href={nav.slug}
-                        className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black !cursor-pointer ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+                      <span
+                        onClick={() => handleNavItemClick(nav.slug)}
+                        className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black !cursor-pointer ${
+                          pathname === nav.slug
+                            ? 'border-b-2 border-solid border-black'
+                            : ''
+                        }`}
                       >
                         Blog
-                      </Link>
+                      </span>
                       <span>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           viewBox='0 0 24 24'
                           fill='currentColor'
-                          className={`size-4 font-extrabold transform transition-transform duration-200 ${isDropdownVisible ? 'rotate-0' : 'rotate-180'}`}
+                          className={`size-4 font-extrabold transform transition-transform duration-200 ${
+                            isDropdownVisible ? 'rotate-0' : 'rotate-180'
+                          }`}
                         >
                           <path
                             fillRule='evenodd'
@@ -130,12 +138,16 @@ const MainNavbar = () => {
                   </div>
                 </div>
               ) : (
-                <Link
-                  href={nav.slug}
-                  className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
+                <span
+                  onClick={() => handleNavItemClick(nav.slug)}
+                  className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${
+                    pathname === nav.slug
+                      ? 'border-b-2 border-solid border-black'
+                      : ''
+                  }`}
                 >
                   {nav.title}
-                </Link>
+                </span>
               )}
             </NavbarItem>
           );
@@ -146,13 +158,6 @@ const MainNavbar = () => {
       <NavbarMenu className='ml-0'>
         {SITECONFIG?.mobileNav?.map((nav, index) => (
           <NavbarMenuItem key={`${nav}-${index}`} className='list-none'>
-            {/* <Link
-              className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
-              href={nav.slug}
-              size='lg'
-            >
-              {nav.title}
-            </Link> */}
             {nav.title === 'Blog' ? (
               <div
                 className='relative inline-block'
@@ -161,20 +166,26 @@ const MainNavbar = () => {
               >
                 <div className='group'>
                   <div className='flex items-center gap-1'>
-                    <Link
-                      className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
-                      href={nav.slug}
+                    <span
+                      onClick={() => handleNavItemClick(nav.slug)}
+                      className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${
+                        pathname === nav.slug
+                          ? 'border-b-2 border-solid border-black'
+                          : ''
+                      }`}
                       size='lg'
                       aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
                     >
                       Blog
-                    </Link>
+                    </span>
                     <span>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 24 24'
                         fill='currentColor'
-                        className={`size-4 font-extrabold transform transition-transform duration-200 ${isDropdownVisible ? 'rotate-0' : 'rotate-180'}`}
+                        className={`size-4 font-extrabold transform transition-transform duration-200 ${
+                          isDropdownVisible ? 'rotate-0' : 'rotate-180'
+                        }`}
                       >
                         <path
                           fillRule='evenodd'
@@ -189,7 +200,7 @@ const MainNavbar = () => {
                       <li key={index}>
                         <Link
                           onClick={() => {
-                            setIsMenuOpen((prev) => !prev);
+                            setIsMenuOpen(false);
                           }}
                           href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
                           className={`py-2 flex text-slate-900 font-semibold text-lg hover:border-b-1 hover:border-solid hover:border-black`}
@@ -202,16 +213,17 @@ const MainNavbar = () => {
                 </div>
               </div>
             ) : (
-              <Link
-                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${pathname === nav.slug ? 'border-b-2 border-solid border-black' : ''}`}
-                href={nav.slug}
+              <span
+                onClick={() => handleNavItemClick(nav.slug)}
+                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${
+                  pathname === nav.slug
+                    ? 'border-b-2 border-solid border-black'
+                    : ''
+                }`}
                 size='lg'
-                onClick={() => {
-                  setIsMenuOpen((prev) => !prev);
-                }}
               >
                 {nav.title}
-              </Link>
+              </span>
             )}
           </NavbarMenuItem>
         ))}
