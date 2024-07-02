@@ -36,7 +36,7 @@ const MainNavbar = () => {
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
       maxWidth='2xl'
-      className='flex !justify-center bg-white bg-cover my-1'
+      className='flex !justify-center bg-white bg-cover py-1 fixed top-0'
     >
       <NavbarContent className='md:hidden ml-0' justify='start'>
         <NavbarMenuToggle className='text-slate-900 ml-0' />
