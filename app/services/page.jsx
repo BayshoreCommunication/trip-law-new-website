@@ -10,9 +10,12 @@ const page = () => {
   return (
     <div>
       <Head>
-        <title>Services - Attorney Hardam Tripathi, Esq.</title>
+        <title>What Immigration Services Does TripLaw Offer</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content='' />
+        <meta
+          name='description'
+          content={`Explore TripLaw's comprehensive immigration services, including visas, green cards, citizenship, and more. Find the right solution for your situation.`}
+        />
       </Head>
       <PageHeroSection
         image={"bg-[url('/assets/hero-img/services.jpg')] bg-cover bg-center"}

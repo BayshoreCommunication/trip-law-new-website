@@ -78,6 +78,7 @@ const AboutSection = () => {
                       <Link
                         href={'https://www.linkedin.com/in/hardamtripathi'}
                         className='flex md:flex-row gap-3 items-center'
+                        target='_blank'
                       >
                         <FaLinkedin className='w-9 h-9 text-blue-600' />
                         <p className='text-xl font-semibold text-center'>
@@ -233,7 +234,10 @@ const AboutSection = () => {
                           Email
                         </p>
                       </Link>
-                      <Link href={'/'} className='flex gap-3 items-center'>
+                      <Link
+                        href={'/assets/vcard-info/mukta-patel.vcf'}
+                        className='flex gap-3 items-center'
+                      >
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
                         <p className='text-xl font-semibold text-center'>
                           VCard
@@ -243,6 +247,7 @@ const AboutSection = () => {
                         href={
                           'https://www.linkedin.com/in/mukta-patel-b41067273'
                         }
+                        target='_blank'
                         className='flex md:flex-row gap-3 items-center'
                       >
                         <FaLinkedin className='w-9 h-9 text-blue-600' />
@@ -359,7 +364,7 @@ const AboutSection = () => {
                     </h2>
 
                     <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
-                      E2 & EB5 Consultant
+                      E2 & EB5 (Business Immigration Consultant)
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
                     <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
@@ -372,14 +377,18 @@ const AboutSection = () => {
                           Email
                         </p>
                       </Link>
-                      <Link href={'/'} className='flex gap-3 items-center'>
+                      <Link
+                        href={'/assets/vcard-info/arjo-neel.vcf'}
+                        className='flex gap-3 items-center'
+                      >
                         <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
                         <p className='text-xl font-semibold text-center'>
                           VCard
                         </p>
                       </Link>
                       <Link
-                        href={'/'}
+                        href={'https://www.linkedin.com/in/arjoneel'}
+                        target='_blank'
                         className='flex md:flex-row gap-3 items-center'
                       >
                         <FaLinkedin className='w-9 h-9 text-blue-600' />
@@ -408,28 +417,48 @@ const AboutSection = () => {
           </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            Mukta Patel was originally a Licensed Attorney in India earning her
-            LLB from Sir Maharaja Sayajirao University in Gujarat, India. She
-            focused her practice areas on Criminal Defense, Civil Business
-            Litigation, and Family Law and practiced complex legal cases for
-            half a decade. Since, she has immigrated to these great United
-            States of America, focusing on family based immigration matters
-            involving processing of Green Cards, Citizenship, and Visa matters
-            with respect to the U.S. Department of Homeland Security’s
-            Citizenship and Immigration Services and the U.S. Department of
-            State’s Bureau of Consular Affairs, respectively.
+            Arjo Neel is a seasoned professional in the field of business
+            immigration consulting, with a robust career spanning four years
+            marked by exceptional achievements and contributions to the
+            industry. Throughout this period, Arjo has leveraged his expertise
+            to provide invaluable guidance on numerous immigration projects,
+            demonstrating a keen understanding of intricate legal and financial
+            requirements.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            Attorney Patel currently serves as a Legal Advisor & Senior
-            Paralegal at Trip Law, P.A. and has earned her LLM at the Florida
-            State University with a specialization in American Law.
+            During his tenure, Arjo has successfully consulted on and written
+            business plans for over 50 projects, focusing primarily on
+            investment-based immigration pathways such as the E-2 and EB-5 visa
+            programs. His proficiency in navigating complex financial
+            landscapes, including managing intricate money trails and
+            documentation, has been instrumental in securing successful visa
+            applications for his clients.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            Currently Attorney Patel lives in Lakeland with her loving husband
-            and two children and is fluent in Gujarati and Hindi. Attorney Patel
-            empathizes with the plight of immigrants who struggle to gain legal
-            status in the U.S. and spends her spare time advocating for
-            immigrant rights in her community.
+            Arjo Neel's professional portfolio includes collaborations with a
+            diverse range of clients, including franchises, startups, and new
+            business formations. His adeptness at tailoring business plans to
+            meet immigration criteria and ensure viability underscores his
+            commitment to facilitating his clients' immigration goals
+            effectively.
+          </p>
+          <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
+            In addition to his role as a business plan writer and consultant,
+            Arjo has cultivated strong partnerships with immigration attorneys,
+            enabling him to stay abreast of legal developments and intricacies
+            affecting immigration policies. This collaboration ensures that his
+            clients receive comprehensive and up-to-date advice, mitigating
+            risks associated with legal complexities.
+          </p>
+          <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
+            Arjo Neel's brief yet impactful career in business immigration
+            consulting reflects his dedication to excellence, client-centric
+            approach, and deep-rooted commitment to facilitating successful
+            immigration journeys through sound business strategies. His
+            contributions have solidified his reputation as a trusted advisor
+            and pivotal figure within the industry, paving the way for continued
+            success and innovation in the field of business immigration
+            consulting.
           </p>
         </div>
       </SectionLayout>
@@ -524,16 +553,16 @@ const AboutSection = () => {
           </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            Mukta Patel was originally a Licensed Attorney in India earning her
-            LLB from Sir Maharaja Sayajirao University in Gujarat, India. She
-            focused her practice areas on Criminal Defense, Civil Business
-            Litigation, and Family Law and practiced complex legal cases for
-            half a decade. Since, she has immigrated to these great United
-            States of America, focusing on family based immigration matters
-            involving processing of Green Cards, Citizenship, and Visa matters
-            with respect to the U.S. Department of Homeland Security’s
-            Citizenship and Immigration Services and the U.S. Department of
-            State’s Bureau of Consular Affairs, respectively.
+            He was originally a Licensed Attorney in India earning her LLB from
+            Sir Maharaja Sayajirao University in Gujarat, India. She focused her
+            practice areas on Criminal Defense, Civil Business Litigation, and
+            Family Law and practiced complex legal cases for half a decade.
+            Since, she has immigrated to these great United States of America,
+            focusing on family based immigration matters involving processing of
+            Green Cards, Citizenship, and Visa matters with respect to the U.S.
+            Department of Homeland Security’s Citizenship and Immigration
+            Services and the U.S. Department of State’s Bureau of Consular
+            Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Attorney Patel currently serves as a Legal Advisor & Senior
@@ -598,10 +627,16 @@ const AboutSection = () => {
                         <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
                         <p className='text-md font-medium text-center'>Email</p>
                       </Link>
-                      {/* <Link href={'/'} className='flex gap-3 items-center'>
-                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>VCard</p>
-                      </Link> */}
+                      <Link
+                        href={'tel: +1 863-599-6735'}
+                        className='flex gap-3 items-center'
+                      >
+                        <RiCustomerService2Line className='w-10 h-10 text-blue-600' />
+
+                        <p className='text-xl font-semibold text-center'>
+                          +1 863-599-6735
+                        </p>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -623,16 +658,16 @@ const AboutSection = () => {
           </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            Mukta Patel was originally a Licensed Attorney in India earning her
-            LLB from Sir Maharaja Sayajirao University in Gujarat, India. She
-            focused her practice areas on Criminal Defense, Civil Business
-            Litigation, and Family Law and practiced complex legal cases for
-            half a decade. Since, she has immigrated to these great United
-            States of America, focusing on family based immigration matters
-            involving processing of Green Cards, Citizenship, and Visa matters
-            with respect to the U.S. Department of Homeland Security’s
-            Citizenship and Immigration Services and the U.S. Department of
-            State’s Bureau of Consular Affairs, respectively.
+            He was originally a Licensed Attorney in India earning her LLB from
+            Sir Maharaja Sayajirao University in Gujarat, India. She focused her
+            practice areas on Criminal Defense, Civil Business Litigation, and
+            Family Law and practiced complex legal cases for half a decade.
+            Since, she has immigrated to these great United States of America,
+            focusing on family based immigration matters involving processing of
+            Green Cards, Citizenship, and Visa matters with respect to the U.S.
+            Department of Homeland Security’s Citizenship and Immigration
+            Services and the U.S. Department of State’s Bureau of Consular
+            Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Attorney Patel currently serves as a Legal Advisor & Senior

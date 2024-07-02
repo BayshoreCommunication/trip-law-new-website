@@ -24,7 +24,7 @@ const ContactSection = () => {
         console.log('response', response);
         Swal.fire({
           icon: 'success',
-          text: 'Thanks for being awesome! We have received your message and would like to thank you for writing to us.',
+          text: 'Thank you for reaching out. Your information has been successfully submitted. Our team will respond to your inquiry shortl.',
         }).then(() => {
           setEmailForm({
             name: '',

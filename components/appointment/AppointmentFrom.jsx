@@ -25,7 +25,7 @@ const AppointmentFrom = () => {
         console.log('response', response);
         Swal.fire({
           icon: 'success',
-          text: 'Thanks for being awesome! We have received your message and would like to thank you for writing to us.',
+          text: 'Thank you for reaching out. Your information has been successfully submitted. Our team will respond to your inquiry shortl.',
         }).then(() => {
           setEmailForm({
             name: '',
@@ -86,8 +86,9 @@ const AppointmentFrom = () => {
               HAVE QUESTIONS? GET IN TOUCH
             </h2>
             <p className='text-md text-stone-950 text-left mb-4'>
-              Demo Digital Xperience Group (DXG), a pioneering division of WLJ
-              Consulting, is a premier partner.
+              If you have any questions about legal guidance on immigration
+              matters, feel free to ask. Our dedicated team is here to assist
+              you.
             </p>
             <form className='w-full' onSubmit={handleSubmit}>
               <div class='mb-6 w-full'>

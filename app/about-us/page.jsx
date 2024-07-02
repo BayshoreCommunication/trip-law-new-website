@@ -8,9 +8,12 @@ const page = () => {
   return (
     <>
       <Head>
-        <title>About - Attorney Hardam Tripathi, Esq.</title>
+        <title>About Trip Law Immigration Law Firm - Who We Are</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content='' />
+        <meta
+          name='description'
+          content={`Learn about TripLaw's experienced immigration attorneys, dedication to client success, and commitment to excellence.`}
+        />
       </Head>
       <HeroSection />
       <AboutSection />

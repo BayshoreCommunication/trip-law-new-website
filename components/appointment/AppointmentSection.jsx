@@ -41,11 +41,11 @@ const AppointmentSection = () => {
         }}
       >
         <p className='text-lg text-stone-950 text-center'>
-          Demo Digital Xperience Group (DXG), a pioneering division of WLJ
-          Consulting, is a premier partner in transforming events into
-          unforgettable experiences. With our roots firmly planted in the event
-          hospitality industry. We pride ourselves on elevating the digital and
-          production quality of in-person, virtual, and hybrid events.
+          Book your appointment with TripLaw, a leading immigration law firm in
+          Lakeland, Florida. Led by attorney Hardam Tripathi, our team provides
+          expert legal representation nationwide and internationally. Contact us
+          at 231 N. Kentucky Ave. Ste. 213, Lakeland, Florida 33801, or call
+          (863)-599-6735 for personalized assistance.
         </p>
       </CardMotion>
     </SectionLayout>
