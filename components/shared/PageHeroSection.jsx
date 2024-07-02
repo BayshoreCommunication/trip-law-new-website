@@ -5,7 +5,7 @@ import CardMotion from '../motion/CardMotion';
 
 const PageHeroSection = ({ image, title }) => {
   return (
-    <SectionLayout img={image} bg=' bg-black bg-opacity-85'>
+    <SectionLayout img={image} bg='bg-black bg-opacity-85 mt-[70px]'>
       <CardMotion
         whileInView={{
           opacity: 1,

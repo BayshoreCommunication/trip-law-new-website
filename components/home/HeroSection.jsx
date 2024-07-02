@@ -16,7 +16,7 @@ const HeroSection = () => {
   const text = 'Hardam Tripathi, Esq.'.split(' ');
 
   return (
-    <div className='relative'>
+    <div className='relative mt-[70px]'>
       <div className='relative h-[500px] md:h-[800px]'>
         <Image
           src='/assets/home/trip-low-hero-bg.jpg'
