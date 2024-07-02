@@ -36,7 +36,7 @@ const MainNavbar = () => {
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
       maxWidth='2xl'
-      className='flex !justify-center bg-white bg-cover py-1 fixed top-0'
+      className='flex !justify-center bg-white bg-cover py-1 fixed top-0 shadow-md'
     >
       <NavbarContent className='md:hidden ml-0' justify='start'>
         <NavbarMenuToggle className='text-slate-900 ml-0' />
@@ -157,7 +157,7 @@ const MainNavbar = () => {
 
       <NavbarMenu className='ml-0'>
         {SITECONFIG?.mobileNav?.map((nav, index) => (
-          <NavbarMenuItem key={`${nav}-${index}`} className='list-none'>
+          <NavbarMenuItem key={`${nav}-${index}`} className='list-none mt-4'>
             {nav.title === 'Blog' ? (
               <div
                 className='relative inline-block'
