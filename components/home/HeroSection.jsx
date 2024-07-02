@@ -16,15 +16,15 @@ const HeroSection = () => {
   const text = 'Hardam Tripathi, Esq.'.split(' ');
 
   return (
-    <div className='relative mt-[70px]'>
-      <div className='relative h-[500px] md:h-[800px]'>
+    <div className='relative mt-[70px] md:overflow-hidden'>
+      <div className='relative h-auto md:h-[800px]'>
         <Image
           src='/assets/home/trip-low-hero-bg.jpg'
           alt='home-banner'
-          layout='fill'
-          objectFit='cover'
+          width={1200}
+          height={800}
           priority
-          className='z-10'
+          className='w-full'
           rel='preload'
         />
 
@@ -36,22 +36,22 @@ const HeroSection = () => {
           variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
         >
           <SectionLayout>
-            <div className='grid grid-cols-1 md:grid-cols-3 items-center'>
+            <div className='grid grid-cols-3 items-center'>
               <div className='col-span-2'>
                 <motion.h2
                   variants={variants}
-                  className='text-red-700 font-black text-[20px] md:text-3xl text-center md:text-left'
+                  className='text-red-700 font-black text-[12px] md:text-3xl text-left'
                 >
                   Giving You Advices That Matters
                 </motion.h2>
-                <div className='flex justify-center md:justify-start'>
+                <div className='flex justify-start'>
                   <motion.hr
                     variants={variants}
                     className='h-[2px] my-2 bg-red-700 border-0 w-20'
                   />
                 </div>
                 <h1
-                  className={`text-[50px] md:text-[90px] font-[800] text-white text-center md:text-left leading-tight tracking-normal ${bitter.className}`}
+                  className={`text-[20px] md:text-[90px] font-[800] text-white text-left leading-tight tracking-normal ${bitter.className}`}
                 >
                   {text.map((word, index) => (
                     <motion.span
@@ -66,23 +66,23 @@ const HeroSection = () => {
                 </h1>
                 <motion.p
                   variants={variants}
-                  className='text-white text-sm md:text-lg max-w-[450px] mt-4 md:mt-5 text-center md:text-left'
+                  className='text-white text-[7px] md:text-lg max-w-[450px] mt-1 md:mt-5 text-left'
                 >
                   Connecting Families To Their Immigration Dream
                 </motion.p>
                 <motion.div
                   variants={variants}
-                  className='mt-6 md:mt-8 flex justify-center md:justify-start'
+                  className='mt-2 md:mt-8 flex justify-start'
                 >
                   <Link
-                    className='text-white bg-red-700 hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-3 md:me-6 mb-2 uppercase'
+                    className='text-white bg-red-700 hover:bg-red-800 font-medium text-[6px] md:text-lg px-2 md:px-8 py-2 me-3 md:me-6 mb-2 uppercase items-center justify-center flex'
                     href='/appointment'
                   >
                     Consultation
                   </Link>
                   <Link
                     href={'tel:(863)-599-6735'}
-                    className='text-white bg-none hover:bg-red-800 font-medium text-base md:text-lg px-3 md:px-8 py-2.5 me-0 md:me-6 mb-2 border border-white'
+                    className='text-white bg-none hover:bg-red-800 font-medium text-[6px] md:text-lg px-2 md:px-8 py-2 me-0 md:me-6 mb-2 border border-white items-center justify-center flex'
                   >
                     (863)-599-6735
                   </Link>

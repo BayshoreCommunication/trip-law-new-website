@@ -16,7 +16,7 @@ const AboutSection = () => {
   return (
     <div className='mt-5'>
       {/* Hardam Tripathi, Esq. */}
-      <div className='mb-[35%] md:mb-0'>
+      <div className='mb-[10%] md:mb-0'>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/triplaw.jpg'
@@ -56,32 +56,32 @@ const AboutSection = () => {
                       Immigration Lawyer
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
-                    <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
+                    <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <MdEmail className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           Email
                         </p>
                       </Link>
                       <Link
                         href={'/assets/vcard-info/hardam-tripathi.vcf'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <BsFillPersonVcardFill className='w-5 h-5 md:w-9 md:h-9 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           VCard
                         </p>
                       </Link>
                       <Link
                         href={'https://www.linkedin.com/in/hardamtripathi'}
-                        className='flex md:flex-row gap-3 items-center'
+                        className='flex md:flex-row gap-2 items-center'
                         target='_blank'
                       >
-                        <FaLinkedin className='w-9 h-9 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <FaLinkedin className='w-5 h-5 md:w-9 md:h-9 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           Connect
                         </p>
                       </Link>
@@ -184,7 +184,7 @@ const AboutSection = () => {
         </div>
       </SectionLayout>
       {/* Mukta Patel */}
-      <div className='mb-[35%] md:mb-0'>
+      <div className='mb-[10%] md:mb-0'>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/mukta-patel.jpg'
@@ -224,22 +224,22 @@ const AboutSection = () => {
                       Director of Legal Operation
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
-                    <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
+                    <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <MdEmail className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           Email
                         </p>
                       </Link>
                       <Link
                         href={'/assets/vcard-info/mukta-patel.vcf'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <BsFillPersonVcardFill className='w-5 h-5 md:w-9 md:h-9 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           VCard
                         </p>
                       </Link>
@@ -248,10 +248,10 @@ const AboutSection = () => {
                           'https://www.linkedin.com/in/mukta-patel-b41067273'
                         }
                         target='_blank'
-                        className='flex md:flex-row gap-3 items-center'
+                        className='flex md:flex-row gap-2 items-center'
                       >
-                        <FaLinkedin className='w-9 h-9 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <FaLinkedin className='w-5 h-5 md:w-9 md:h-9 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           Connect
                         </p>
                       </Link>
@@ -327,7 +327,7 @@ const AboutSection = () => {
         </div>
       </SectionLayout>
       {/* Arjo Neel */}
-      <div className='mb-[35%] md:mb-0'>
+      <div className='mb-[10%] md:mb-0'>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/arjo-neel.jpg'
@@ -367,32 +367,32 @@ const AboutSection = () => {
                       E2 & EB5 (Business Immigration Consultant)
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
-                    <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
+                    <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <MdEmail className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           Email
                         </p>
                       </Link>
                       <Link
                         href={'/assets/vcard-info/arjo-neel.vcf'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <BsFillPersonVcardFill className='w-9 h-9 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <BsFillPersonVcardFill className='md:w-9 md:h-9 w-5 h-5 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           VCard
                         </p>
                       </Link>
                       <Link
                         href={'https://www.linkedin.com/in/arjoneel'}
                         target='_blank'
-                        className='flex md:flex-row gap-3 items-center'
+                        className='flex md:flex-row gap-2 items-center'
                       >
-                        <FaLinkedin className='w-9 h-9 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <FaLinkedin className='w-5 h-5 md:w-9 md:h-9 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           Connect
                         </p>
                       </Link>
@@ -463,7 +463,7 @@ const AboutSection = () => {
         </div>
       </SectionLayout>
       {/* Sakawat Hossain */}
-      <div className='mb-[35%] md:mb-0'>
+      <div className='mb-[10%] md:mb-0'>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/sakawat-hossain.jpg'
@@ -503,23 +503,23 @@ const AboutSection = () => {
                       Associate Manager
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
-                    <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
+                    <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600' />
-                        <p className='text-xl font-semibold text-center'>
+                        <MdEmail className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           Email
                         </p>
                       </Link>
                       <Link
                         href={'tel: +1 863-599-6735'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <RiCustomerService2Line className='w-10 h-10 text-blue-600' />
+                        <RiCustomerService2Line className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
 
-                        <p className='text-xl font-semibold text-center'>
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           +1 863-599-6735
                         </p>
                       </Link>
@@ -579,7 +579,7 @@ const AboutSection = () => {
         </div>
       </SectionLayout>
       {/* Abrar Faisaal */}
-      <div className='mb-[35%] md:mb-0'>
+      <div className='mb-[10%] md:mb-0'>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/abrar-faisaal.jpg'
@@ -619,21 +619,23 @@ const AboutSection = () => {
                       Associate Paralegal
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
-                    <div className='mt-8 flex flex-col md:flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
+                    <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <MdEmail className='w-10 h-10 text-blue-600 mt-2' />
-                        <p className='text-md font-medium text-center'>Email</p>
+                        <MdEmail className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
+                        <p className='text-md md:text-xl font-semibold text-center'>
+                          Email
+                        </p>
                       </Link>
                       <Link
                         href={'tel: +1 863-599-6735'}
-                        className='flex gap-3 items-center'
+                        className='flex gap-2 items-center'
                       >
-                        <RiCustomerService2Line className='w-10 h-10 text-blue-600' />
+                        <RiCustomerService2Line className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
 
-                        <p className='text-xl font-semibold text-center'>
+                        <p className='text-md md:text-xl font-semibold text-center'>
                           +1 863-599-6735
                         </p>
                       </Link>
