@@ -9,33 +9,29 @@ import CardMotion from '@/components/motion/CardMotion';
 import Head from 'next/head';
 
 const css = `
-  h1{
-    padding-top: 10px;
-    font-size: 40px;
-    padding-bottom: 10px;
-  }
-  h2{
-    padding-top: 10px;
-    font-size: 25px;
-    padding-bottom: 10px;
-  }
-  p{
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-  ul{
-    list-style-type: disc;
-    margin-left: 30px;
-
-  }
-  br{
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-nav{
-  padding-top: 12px;
+ h1, h2, p, br, nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: normal;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p, br {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}
 `;
 
 const page = async ({ params }) => {
