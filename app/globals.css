@@ -117,3 +117,49 @@ h1 {
   height: 100%;
   border: 0;
 }
+
+/* Nav item select motion */
+
+@keyframes drawBorder {
+  from {
+    width: 0;
+    left: 0;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 1.125rem; /* text-lg */
+  cursor: pointer;
+  padding-bottom: 0.25rem;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-item.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

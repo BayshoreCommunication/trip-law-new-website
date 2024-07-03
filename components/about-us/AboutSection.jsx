@@ -16,7 +16,7 @@ const AboutSection = () => {
   return (
     <div className='mt-5'>
       {/* Hardam Tripathi, Esq. */}
-      <div className='mb-[10%] md:mb-0'>
+      <div className=''>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/triplaw.jpg'
@@ -47,15 +47,15 @@ const AboutSection = () => {
                 <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-2xl md:text-5xl mb-0 md:mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Hardam Tripathi, Esq.
                     </h2>
 
-                    <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
+                    <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
                       Immigration Lawyer
                     </p>
-                    <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
+                    <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
@@ -96,7 +96,7 @@ const AboutSection = () => {
       <SectionLayout>
         <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-2 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-xl md:text-4xl mb-2 text-center md:text-left ${bitter.className}`}
           >
             ABOUT
           </h2>
@@ -184,7 +184,7 @@ const AboutSection = () => {
         </div>
       </SectionLayout>
       {/* Mukta Patel */}
-      <div className='mb-[10%] md:mb-0'>
+      <div className=''>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/mukta-patel.jpg'
@@ -215,12 +215,12 @@ const AboutSection = () => {
                 <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-2xl md:text-5xl mb-0 md:mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Mukta Patel
                     </h2>
 
-                    <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
+                    <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
                       Director of Legal Operation
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
@@ -266,7 +266,7 @@ const AboutSection = () => {
       <SectionLayout>
         <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-2 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-xl md:text-4xl mb-2 text-center md:text-left ${bitter.className}`}
           >
             ABOUT
           </h2>
@@ -327,7 +327,7 @@ const AboutSection = () => {
         </div>
       </SectionLayout>
       {/* Arjo Neel */}
-      <div className='mb-[10%] md:mb-0'>
+      <div className=''>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/arjo-neel.jpg'
@@ -358,15 +358,15 @@ const AboutSection = () => {
                 <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-2xl md:text-5xl mb-0 md:mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Arjo Neel
                     </h2>
 
-                    <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
+                    <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
                       E2 & EB5 (Business Immigration Consultant)
                     </p>
-                    <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
+                    <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
@@ -407,7 +407,7 @@ const AboutSection = () => {
       <SectionLayout>
         <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-2 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-2xl md:text-4xl mb-2 text-center md:text-left ${bitter.className}`}
           >
             ABOUT
           </h2>
@@ -463,7 +463,7 @@ const AboutSection = () => {
         </div>
       </SectionLayout>
       {/* Sakawat Hossain */}
-      <div className='mb-[10%] md:mb-0'>
+      <div className=''>
         <div className='relative h-[300px] lg:xl:h-[400px] xl:h-[500px] 2xl:h-[600px] md:overflow-hidden'>
           <Image
             src='/assets/about/sakawat-hossain.jpg'
@@ -494,15 +494,15 @@ const AboutSection = () => {
                 <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-2xl md:text-5xl mb-0 md:mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Sakawat Hossain
                     </h2>
 
-                    <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
+                    <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
                       Associate Manager
                     </p>
-                    <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
+                    <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
@@ -543,7 +543,7 @@ const AboutSection = () => {
       <SectionLayout>
         <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-2xl md:text-4xl mb-4 text-center md:text-left ${bitter.className}`}
           >
             ABOUT
           </h2>
@@ -609,16 +609,29 @@ const AboutSection = () => {
               >
                 <div className='flex justify-start items-center md:pl-16 md:pt-[23%]'>
                   <div>
+                    {/* <h2
+                      className={`text-stone-950 font-bold text-2xl md:text-5xl mb-0 md:mb-4 text-center md:text-left ${bitter.className}`}
+                    >
+                      Hardam Tripathi, Esq.
+                    </h2>
+
+                    <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
+                      Immigration Lawyer
+                    </p>
+                    <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
+                    <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
+
+                    </div> */}
                     <h2
-                      className={`text-stone-950 font-bold text-3xl md:text-5xl mt-1 mb-4 text-center md:text-left ${bitter.className}`}
+                      className={`text-stone-950 font-bold text-2xl md:text-5xl mb-0 md:mb-4 text-center md:text-left ${bitter.className}`}
                     >
                       Abrar Faisaal
                     </h2>
 
-                    <p className='mb-4 text-xl font-semibold text-stone-950 text-center md:text-left'>
+                    <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
                       Associate Paralegal
                     </p>
-                    <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
+                    <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
                         href={'mailto:info@trip-law.com'}
@@ -650,7 +663,7 @@ const AboutSection = () => {
       <SectionLayout>
         <div className=''>
           <h2
-            className={`text-stone-950 font-bold text-3xl md:text-4xl mt-5 mb-2 text-center md:text-left ${bitter.className}`}
+            className={`text-stone-950 font-bold text-2xl md:text-4xl mb-2 text-center md:text-left ${bitter.className}`}
           >
             ABOUT
           </h2>

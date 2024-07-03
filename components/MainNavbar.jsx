@@ -45,7 +45,7 @@ const MainNavbar = () => {
       <NavbarContent className=' md:hidden' justify='end'>
         <Link href='/'>
           <Image
-            width={280}
+            width={250}
             height={130}
             src={'/assets/site-logo/trip-law-logo.svg'}
             alt='Trip Law'
@@ -61,11 +61,7 @@ const MainNavbar = () => {
             <NavbarItem key={index}>
               <span
                 onClick={() => handleNavItemClick(nav.slug)}
-                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black !cursor-pointer ${
-                  pathname === nav.slug
-                    ? 'border-b-2 border-solid border-black'
-                    : ''
-                }`}
+                className={`nav-item ${pathname === nav.slug ? 'active' : ''}`}
               >
                 {nav.title}
               </span>
@@ -98,7 +94,7 @@ const MainNavbar = () => {
                     <div className='flex items-center gap-1'>
                       <span
                         onClick={() => handleNavItemClick(nav.slug)}
-                        className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black !cursor-pointer ${
+                        className={`nav-item ${
                           pathname === nav.slug
                             ? 'border-b-2 border-solid border-black'
                             : ''
@@ -128,7 +124,7 @@ const MainNavbar = () => {
                         <li>
                           <Link
                             href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
-                            className={`py-2 flex text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black`}
+                            className={`nav-item`}
                           >
                             Podcast
                           </Link>
@@ -140,11 +136,7 @@ const MainNavbar = () => {
               ) : (
                 <span
                   onClick={() => handleNavItemClick(nav.slug)}
-                  className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black ${
-                    pathname === nav.slug
-                      ? 'border-b-2 border-solid border-black'
-                      : ''
-                  }`}
+                  className={`nav-item ${pathname === nav.slug ? 'active' : ''}`}
                 >
                   {nav.title}
                 </span>
@@ -168,7 +160,7 @@ const MainNavbar = () => {
                   <div className='flex items-center gap-1'>
                     <span
                       onClick={() => handleNavItemClick(nav.slug)}
-                      className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${
+                      className={`nav-item list-none ${
                         pathname === nav.slug
                           ? 'border-b-2 border-solid border-black'
                           : ''
@@ -203,7 +195,7 @@ const MainNavbar = () => {
                             setIsMenuOpen(false);
                           }}
                           href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
-                          className={`py-2 flex text-slate-900 font-semibold text-lg hover:border-b-1 hover:border-solid hover:border-black`}
+                          className={`py-2 flex nav-item`}
                         >
                           Podcast
                         </Link>
@@ -215,7 +207,7 @@ const MainNavbar = () => {
             ) : (
               <span
                 onClick={() => handleNavItemClick(nav.slug)}
-                className={`text-slate-900 font-semibold text-lg hover:border-b-2 hover:border-solid hover:border-black list-none ${
+                className={`nav-item list-none ${
                   pathname === nav.slug
                     ? 'border-b-2 border-solid border-black'
                     : ''
