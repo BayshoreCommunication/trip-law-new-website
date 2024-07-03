@@ -11,7 +11,7 @@ export const metadata = {
     'Florida Immigration Lawyer Firm || U.S. Immigration Attorney Hardam Tripathi, Esq.',
   description:
     'Florida Immigration Law Services Call our local Immigration office for your Green Card, Naturalization or Investor Visa.',
-  metadataBase: new URL('https://trip-law.com'),
+  metadataBase: new URL('https://trip-law-new-website.vercel.app'),
   alternates: {
     canonical: '/',
     languages: {
