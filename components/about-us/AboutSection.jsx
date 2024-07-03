@@ -505,7 +505,7 @@ const AboutSection = () => {
                     <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
-                        href={'mailto:info@trip-law.com'}
+                        href={'mailto:support@trip-law.com'}
                         className='flex gap-2 items-center'
                       >
                         <MdEmail className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
@@ -634,7 +634,7 @@ const AboutSection = () => {
                     <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
                       <Link
-                        href={'mailto:info@trip-law.com'}
+                        href={'mailto:support@trip-law.com'}
                         className='flex gap-2 items-center'
                       >
                         <MdEmail className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
