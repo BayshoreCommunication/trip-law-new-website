@@ -38,9 +38,9 @@ function YoutubeVideoSection() {
                   <li className='flex items-start'>
                     <span className='flex-shrink-0'>•</span>
                     <span className='ml-2'>
-                      Attorney Hardam Tripathi from Trip Law, P.A. practices US
+                      Attorney Hardam Tripathi from Trip Law, P.A. practices USA
                       Immigration & Nationality Law in all 50 states and
-                      territories in the Union and at Embassies and US
+                      territories in the Union and at Embassies and USA
                       Consulates abroad.
                     </span>
                   </li>
@@ -82,8 +82,8 @@ function YoutubeVideoSection() {
                     <span className='flex-shrink-0'>•</span>
                     <span className='ml-2'>
                       Federal Agencies Attorney Tripathi served in as a legal
-                      professional: US Air Force JAG Corps, DEA, ATF, US
-                      Department of State, US Attorney's Office, Federal
+                      professional: USA Air Force JAG Corps, DEA, ATF, USA
+                      Department of State, USA Attorney's Office, Federal
                       Defenders Office, State and Local Government, Thirteenth
                       Judicial Circuit of Florida, State Attorney’s Office.
                     </span>
@@ -111,7 +111,7 @@ function YoutubeVideoSection() {
                     frameborder='0'
                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                     allowfullscreen
-                    title='US Immigration Attorney Hardam Tripathi, Esq.'
+                    title='USA Immigration Attorney Hardam Tripathi, Esq.'
                     loading='lazy'
                     className='w-full h-64 md:h-96'
                   ></iframe>

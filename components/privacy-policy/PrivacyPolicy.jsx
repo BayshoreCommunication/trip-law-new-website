@@ -152,7 +152,7 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
           <div className='privacy-title'>
-            <h5>USE OF YOUR INFORMATION</h5>
+            <h5>USAE OF YOUR INFORMATION</h5>
             <p>
               Having accurate information about you permits us to provide you
               with a smooth, efficient, and customized experience. Specifically,

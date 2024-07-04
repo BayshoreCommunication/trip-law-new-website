@@ -41,8 +41,8 @@ const AppointmentSection = () => {
         }}
       >
         <p className='text-lg text-stone-950 text-center'>
-          Book your appointment with TripLaw, a leading immigration law firm in
-          Lakeland, Florida. Led by attorney Hardam Tripathi, our team provides
+          Book your appointment with Trip Law, a leading Immigration Law Firm in
+          Lakeland, Florida. Led by Attorney Hardam Tripathi, our team provides
           expert legal representation nationwide and internationally. Contact us
           at 231 N. Kentucky Ave. Ste. 213, Lakeland, Florida 33801, or call
           (863)-599-6735 for personalized assistance.

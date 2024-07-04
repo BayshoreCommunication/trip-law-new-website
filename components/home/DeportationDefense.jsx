@@ -72,7 +72,7 @@ const DeportationDefense = () => {
       {
         value: '4',
         content:
-          'Waivers can help overcome barriers to your immigration status, such as inadmissibility or deportation orders. Our skilled team will assist you in applying for various waivers, such as I-601 waivers for unlawful presence or I-212 waivers for prior deportations. We will gather and present evidence to demonstrate your eligibility and the hardships you or your family would face if the waiver is not granted.',
+          'Waivers can help overcome barriers to your immigration status, such as inadmissibility or deportation orders. Our skilled team will assist you in applying for various waivers, such as I-601 & I-601A waivers for unlawful presence or I-212 waivers for prior deportations. We will gather and present evidence to demonstrate your eligibility and the hardships you or your family would face if the waiver is not granted.',
         img: `/assets/home/Deportation-Defense/Waiver.png`,
         slug: 'waivers',
       },

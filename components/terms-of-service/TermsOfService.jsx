@@ -1,5 +1,5 @@
-import React from "react";
-import SectionLayout from "../shared/SectionLayout";
+import React from 'react';
+import SectionLayout from '../shared/SectionLayout';
 
 const css = `
   h1{
@@ -41,12 +41,12 @@ const TermsOfService = () => {
     <>
       <style>{css}</style>
       <SectionLayout>
-        <div className="text-center md:text-left">
-          <div className="my-8">
+        <div className='text-center md:text-left'>
+          <div className='my-8'>
             <p>Last updated March 06, 2024</p>
           </div>
 
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>INTRODUCTION</h5>
             <p>
               Trip-Law respects the privacy of our user. This Privacy Policy
@@ -69,14 +69,14 @@ const TermsOfService = () => {
               Site after the date such revised Privacy Policy is posted.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>COLLECTION OF YOUR INFORMATION</h5>
             <p>
               We may collect information about you in a variety of ways. The
               information we may collect on the Site includes:
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Personal Data</h5>
             <p>
               Personally identifiable information, such as your name, mailing
@@ -89,7 +89,7 @@ const TermsOfService = () => {
               may prevent you from using certain features of the Site.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Derivative Data</h5>
             <p>
               Information our servers automatically collect when you access the
@@ -98,7 +98,7 @@ const TermsOfService = () => {
               before and after accessing the Site.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Mobile Device Data</h5>
             <p>
               Device information, such as your mobile device ID, model, and
@@ -106,7 +106,7 @@ const TermsOfService = () => {
               if you access the Site from a mobile device.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Third-Party Data</h5>
             <p>
               Information from third parties, such as personal information or
@@ -114,14 +114,14 @@ const TermsOfService = () => {
               and grant the Site permission to access this information.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Data From Contests, Giveaways, and Surveys</h5>
             <p>
               Personal and other information you may provide when entering
               contests or giveaways and/or responding to surveys.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Mobile Application Information</h5>
             <p>
               If you connect using our mobile application: • Geo-Location
@@ -151,8 +151,8 @@ const TermsOfService = () => {
               </li>
             </ul>
           </div>
-          <div className="privacy-title">
-            <h5>USE OF YOUR INFORMATION</h5>
+          <div className='privacy-title'>
+            <h5>USAE OF YOUR INFORMATION</h5>
             <p>
               Having accurate information about you permits us to provide you
               with a smooth, efficient, and customized experience. Specifically,
@@ -204,14 +204,14 @@ const TermsOfService = () => {
               <li>Solicit support for the Site.</li>
             </ul>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>DISCLOSURE OF YOUR INFORMATION</h5>
             <p>
               We may share information we have collected about you in certain
               situations. Your information may be disclosed as follows:
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>By Law or to Protect Rights</h5>
             <p>
               If we believe the release of information about you is necessary to
@@ -223,7 +223,7 @@ const TermsOfService = () => {
               protection and credit risk reduction.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Third-Party Service Providers</h5>
             <p>
               We may share your information with third parties that perform
@@ -232,7 +232,7 @@ const TermsOfService = () => {
               and marketing assistance.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Marketing Communications</h5>
             <p>
               With your consent, or with an opportunity for you to withdraw
@@ -240,7 +240,7 @@ const TermsOfService = () => {
               marketing purposes, as permitted by law.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Interactions with Other Users</h5>
             <p>
               If you interact with other users of the Site, those users may see
@@ -249,7 +249,7 @@ const TermsOfService = () => {
               users, liking posts, following blogs.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Online Postings</h5>
             <p>
               When you post comments, contributions or other content to the
@@ -257,7 +257,7 @@ const TermsOfService = () => {
               distributed outside the Site in perpetuity.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Third-Party Advertisers</h5>
             <p>
               We may use third-party advertising companies to serve ads when you
@@ -267,14 +267,14 @@ const TermsOfService = () => {
               services of interest to you.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Business Partners</h5>
             <p>
               We may share your information with our business partners to offer
               you certain products, services or promotions.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Other Third Parties</h5>
             <p>
               We may share your information with advertisers and investors for
@@ -283,7 +283,7 @@ const TermsOfService = () => {
               purposes, as permitted by law.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Sale or Bankruptcy</h5>
             <p>
               If we reorganize or sell all or a portion of our assets, undergo a
@@ -300,10 +300,10 @@ const TermsOfService = () => {
               responsible for contacting the third party directly.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>TRACKING TECHNOLOGIES</h5>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Cookies and Web Beacons</h5>
             <p>
               We may use cookies, web beacons, tracking pixels, and other
@@ -337,7 +337,7 @@ const TermsOfService = () => {
               </li>
             </ul>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Internet-Based Advertising</h5>
             <p>
               Additionally, we may use third-party software to implement email
@@ -347,7 +347,7 @@ const TermsOfService = () => {
               experience with us.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>Website Analytics</h5>
             <p>
               We may also partner with selected third-party vendors; such as
@@ -370,7 +370,7 @@ const TermsOfService = () => {
               also clear certain opt-out cookies, plug-ins, or settings.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>THIRD-PARTY WEBSITES</h5>
             <p>
               The Site may contain links to third-party websites and
@@ -389,7 +389,7 @@ const TermsOfService = () => {
               from the Site.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>SECURITY OF YOUR INFORMATION</h5>
             <p>
               We use administrative, technical, and physical security measures
@@ -404,7 +404,7 @@ const TermsOfService = () => {
               information.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>POLICY FOR CHILDREN</h5>
             <p>
               We do not knowingly solicit information from or market to children
@@ -413,7 +413,7 @@ const TermsOfService = () => {
               contact information provided below.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>CONTROLS FOR DO-NOT-TRACK FEATURES</h5>
             <p>
               Most web browsers and some mobile operating systems include a
@@ -434,7 +434,7 @@ const TermsOfService = () => {
               signals.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>OPTIONS REGARDING YOUR INFORMATION</h5>
             <p>Emails and Communications</p>
             <p>
@@ -460,7 +460,7 @@ const TermsOfService = () => {
               contacting the third party directly.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>PRIVACY RIGHTS</h5>
             <p>
               Bangladesh law regarding privacy rights, permits our users who are
@@ -483,7 +483,7 @@ const TermsOfService = () => {
               may not be completely or comprehensively removed from our systems.
             </p>
           </div>
-          <div className="privacy-title">
+          <div className='privacy-title'>
             <h5>CONSENT</h5>
             <p>
               By using this Website, you consent to the collection and use of

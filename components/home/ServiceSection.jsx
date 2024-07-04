@@ -19,7 +19,7 @@ const ServiceSection = () => {
       icon: '/assets/home/icon/e2-treaty-visas.png',
       bg: "bg-[url('/assets/home/e2-employees.png')]",
       title: 'E2 Treaty Visas',
-      dec: 'We can simplify the E2 Treaty Visa process, ensuring all papers, documents, and waivers are met for your investment in the US',
+      dec: 'We can simplify the E2 Treaty Visa process, ensuring all papers, documents, and waivers are met for your investment in the USA',
     },
     {
       icon: '/assets/home/icon/citizenship.png',

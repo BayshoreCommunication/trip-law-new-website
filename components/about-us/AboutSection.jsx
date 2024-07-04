@@ -106,10 +106,10 @@ const AboutSection = () => {
           </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            US Immigration Attorney Hardam Tripathi is a US Immigration and
+            USA Immigration Attorney Hardam Tripathi is a USA Immigration and
             Nationality Law Attorney specializing in Business & Investor Based
             Immigration, specifically in Treaty Based Investor Visas (E2),
-            Citizenship by Investment (Golden Visas) for US Citizens interested
+            Citizenship by Investment (Golden Visas) for USA Citizens interested
             in investing in the European Union, and Employment Based (EB-2, 3,
             4, 5) Visas focusing on commercial real estate investments, staffing
             companies, and franchises. Attorney Tripathi zealously advocates for
@@ -151,7 +151,7 @@ const AboutSection = () => {
           <ul className='space-y-1 text-slate-900 list-disc list-inside text-md md:text-lg'>
             <li>
               Western Michigan University Cooley Law School, J.D. In Homeland &
-              National Security Law,  2017
+              National Security Law, 2017
             </li>
             <li>University Of Florida, M.S. In Pharmaceutical Policy, 2014</li>
             <li>
@@ -163,7 +163,8 @@ const AboutSection = () => {
             Bar Admissions
           </p>
           <ul className='space-y-1 text-slate-900 list-disc list-inside text-md md:text-lg'>
-            <li>Wisconsin</li>
+            <li>State Bar of Wisconsin</li>
+            <li>District of Columbia Bar</li>
           </ul>
 
           <p className='mb-4 mt-6 text-xl font-bold text-stone-950 text-center md:text-left'>
@@ -180,6 +181,7 @@ const AboutSection = () => {
             <li>United States Immigration Courts</li>
             <li>Supreme Court Of Wisconsin</li>
             <li>Red Cliff Band Of Lake Superior Chippewa Tribal Court</li>
+            <li>District of Columbia Court of Appeals</li>
           </ul>
         </div>
       </SectionLayout>
@@ -283,9 +285,9 @@ const AboutSection = () => {
             half a decade. Since, she has immigrated to these great United
             States of America, focusing on family based immigration matters
             involving processing of Green Cards, Citizenship, and Visa matters
-            with respect to the US Department of Homeland Security’s Citizenship
-            and Immigration Services and the US Department of State’s Bureau of
-            Consular Affairs, respectively.
+            with respect to the USA Department of Homeland Security’s
+            Citizenship and Immigration Services and the USA Department of
+            State’s Bureau of Consular Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Attorney Patel currently serves as a Legal Advisor & Senior
@@ -296,7 +298,7 @@ const AboutSection = () => {
             Currently Attorney Patel lives in Lakeland with her loving husband
             and two children and is fluent in Gujarati and Hindi. Attorney Patel
             empathizes with the plight of immigrants who struggle to gain legal
-            status in the US and spends her spare time advocating for immigrant
+            status in the USA and spends her spare time advocating for immigrant
             rights in her community.
           </p>
           <p className='mb-4 mt-2 text-xl font-bold text-stone-950 text-center md:text-left'>
@@ -559,9 +561,9 @@ const AboutSection = () => {
             Family Law and practiced complex legal cases for half a decade.
             Since, she has immigrated to these great United States of America,
             focusing on family based immigration matters involving processing of
-            Green Cards, Citizenship, and Visa matters with respect to the US
+            Green Cards, Citizenship, and Visa matters with respect to the USA
             Department of Homeland Security’s Citizenship and Immigration
-            Services and the US Department of State’s Bureau of Consular
+            Services and the USA Department of State’s Bureau of Consular
             Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
@@ -573,7 +575,7 @@ const AboutSection = () => {
             Currently Attorney Patel lives in Lakeland with her loving husband
             and two children and is fluent in Gujarati and Hindi. Attorney Patel
             empathizes with the plight of immigrants who struggle to gain legal
-            status in the US and spends her spare time advocating for immigrant
+            status in the USA and spends her spare time advocating for immigrant
             rights in her community.
           </p>
         </div>
@@ -643,13 +645,13 @@ const AboutSection = () => {
                         </p>
                       </Link>
                       <Link
-                        href={'tel: +1 863-599-6735'}
+                        href={'tel: +1 8138223542'}
                         className='flex gap-2 items-center'
                       >
                         <RiCustomerService2Line className='w-6 h-6 md:w-10 md:h-10 text-blue-600' />
 
                         <p className='text-md md:text-xl font-semibold text-center'>
-                          +1 863-599-6735
+                          +1 8138223542
                         </p>
                       </Link>
                     </div>
@@ -679,9 +681,9 @@ const AboutSection = () => {
             Family Law and practiced complex legal cases for half a decade.
             Since, she has immigrated to these great United States of America,
             focusing on family based immigration matters involving processing of
-            Green Cards, Citizenship, and Visa matters with respect to the US
+            Green Cards, Citizenship, and Visa matters with respect to the USA
             Department of Homeland Security’s Citizenship and Immigration
-            Services and the US Department of State’s Bureau of Consular
+            Services and the USA Department of State’s Bureau of Consular
             Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
@@ -693,7 +695,7 @@ const AboutSection = () => {
             Currently Attorney Patel lives in Lakeland with her loving husband
             and two children and is fluent in Gujarati and Hindi. Attorney Patel
             empathizes with the plight of immigrants who struggle to gain legal
-            status in the US and spends her spare time advocating for immigrant
+            status in the USA and spends her spare time advocating for immigrant
             rights in her community.
           </p>
         </div>
