@@ -106,15 +106,15 @@ const AboutSection = () => {
           </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            U.S. Immigration Attorney Hardam Tripathi is a U.S. Immigration and
+            US Immigration Attorney Hardam Tripathi is a US Immigration and
             Nationality Law Attorney specializing in Business & Investor Based
             Immigration, specifically in Treaty Based Investor Visas (E2),
-            Citizenship by Investment (Golden Visas) for U.S. Citizens
-            interested in investing in the European Union, and Employment Based
-            (EB-2, 3, 4, 5) Visas focusing on commercial real estate
-            investments, staffing companies, and franchises. Attorney Tripathi
-            zealously advocates for his clients with family-based immigration
-            matters related to waivers of inadmissibility, adjustment of status,
+            Citizenship by Investment (Golden Visas) for US Citizens interested
+            in investing in the European Union, and Employment Based (EB-2, 3,
+            4, 5) Visas focusing on commercial real estate investments, staffing
+            companies, and franchises. Attorney Tripathi zealously advocates for
+            his clients with family-based immigration matters related to waivers
+            of inadmissibility, adjustment of status,
             citizenship/naturalization, and visa & green card services.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
@@ -283,9 +283,9 @@ const AboutSection = () => {
             half a decade. Since, she has immigrated to these great United
             States of America, focusing on family based immigration matters
             involving processing of Green Cards, Citizenship, and Visa matters
-            with respect to the U.S. Department of Homeland Security’s
-            Citizenship and Immigration Services and the U.S. Department of
-            State’s Bureau of Consular Affairs, respectively.
+            with respect to the US Department of Homeland Security’s Citizenship
+            and Immigration Services and the US Department of State’s Bureau of
+            Consular Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Attorney Patel currently serves as a Legal Advisor & Senior
@@ -296,8 +296,8 @@ const AboutSection = () => {
             Currently Attorney Patel lives in Lakeland with her loving husband
             and two children and is fluent in Gujarati and Hindi. Attorney Patel
             empathizes with the plight of immigrants who struggle to gain legal
-            status in the U.S. and spends her spare time advocating for
-            immigrant rights in her community.
+            status in the US and spends her spare time advocating for immigrant
+            rights in her community.
           </p>
           <p className='mb-4 mt-2 text-xl font-bold text-stone-950 text-center md:text-left'>
             Education
@@ -559,9 +559,9 @@ const AboutSection = () => {
             Family Law and practiced complex legal cases for half a decade.
             Since, she has immigrated to these great United States of America,
             focusing on family based immigration matters involving processing of
-            Green Cards, Citizenship, and Visa matters with respect to the U.S.
+            Green Cards, Citizenship, and Visa matters with respect to the US
             Department of Homeland Security’s Citizenship and Immigration
-            Services and the U.S. Department of State’s Bureau of Consular
+            Services and the US Department of State’s Bureau of Consular
             Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
@@ -573,8 +573,8 @@ const AboutSection = () => {
             Currently Attorney Patel lives in Lakeland with her loving husband
             and two children and is fluent in Gujarati and Hindi. Attorney Patel
             empathizes with the plight of immigrants who struggle to gain legal
-            status in the U.S. and spends her spare time advocating for
-            immigrant rights in her community.
+            status in the US and spends her spare time advocating for immigrant
+            rights in her community.
           </p>
         </div>
       </SectionLayout>
@@ -679,9 +679,9 @@ const AboutSection = () => {
             Family Law and practiced complex legal cases for half a decade.
             Since, she has immigrated to these great United States of America,
             focusing on family based immigration matters involving processing of
-            Green Cards, Citizenship, and Visa matters with respect to the U.S.
+            Green Cards, Citizenship, and Visa matters with respect to the US
             Department of Homeland Security’s Citizenship and Immigration
-            Services and the U.S. Department of State’s Bureau of Consular
+            Services and the US Department of State’s Bureau of Consular
             Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
@@ -693,8 +693,8 @@ const AboutSection = () => {
             Currently Attorney Patel lives in Lakeland with her loving husband
             and two children and is fluent in Gujarati and Hindi. Attorney Patel
             empathizes with the plight of immigrants who struggle to gain legal
-            status in the U.S. and spends her spare time advocating for
-            immigrant rights in her community.
+            status in the US and spends her spare time advocating for immigrant
+            rights in her community.
           </p>
         </div>
       </SectionLayout>

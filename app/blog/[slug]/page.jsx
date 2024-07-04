@@ -15,6 +15,10 @@ const css = `
   line-height: normal;
 }
 
+h1, h2 {
+  font-style: blog;
+}
+
 h1 {
   font-size: 40px;
 }
@@ -23,7 +27,8 @@ h2 {
   font-size: 25px;
 }
 
-p, br {
+p {
+  font-size: 17px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -32,6 +37,7 @@ ul {
   list-style-type: disc;
   margin-left: 30px;
 }
+
 `;
 
 const page = async ({ params }) => {
@@ -73,11 +79,11 @@ const page = async ({ params }) => {
             y: 100,
           }}
         >
-          <h2 className='mb-4 text-3xl font-bold tracking-normal text-left text-[#1B2639]'>
+          <h2 className='mb-0 md:mb-4 text-xl md:text-3xl font-bold tracking-normal text-left text-[#1B2639]'>
             {blogDetails[0]?.title}
           </h2>
 
-          <hr className='w-full h-[1px] mx-auto my-8 bg-[#1B2639] border-0 rounded md:my-5' />
+          <hr className='w-full h-[1px] mx-auto mt-0 mb-6 bg-[#1B2639] border-0 rounded ' />
 
           <div className='grid gap-12 mb-10 gird-col-1 sm:grid-cols-3'>
             {blogDetails?.map((blogs, index) => (
@@ -90,10 +96,10 @@ const page = async ({ params }) => {
                   className='w-full h-auto bg-center bg-cover'
                 />
 
-                <p className='text-[1rem] text-black text-left italic mt-8'>
+                <p className='text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 '>
                   {postDate(blogs?.createdAt)}
                 </p>
-                <div className='mt-5 text-base'>{parse(blogs?.body)}</div>
+                <div className='mt-2 text-md'>{parse(blogs?.body)}</div>
               </div>
             ))}
 
@@ -114,18 +120,18 @@ const page = async ({ params }) => {
                       className='bg-center bg-cover'
                     />
                     <div>
-                      <div className='text-[1rem] text-black text-left italic mt-0'>
+                      <div className='text-[0.8rem] md:text-[.8rem] text-black text-left italic mt-0'>
                         {postDate(blogs?.createdAt)}
                       </div>
-                      <div className='text-md tracking-normal font-bold text-[#1B2639] text-left mb-0 line-clamp-2'>
+                      <div className='text-md font-bold text-[#1B2639] text-left line-clamp-2'>
                         {blogs?.title}
                       </div>
-                      <div className='font-normal text-[.8rem] text-black mb-4 text-justify sm:line-clamp-1 line-clamp-1 h-6'>
+                      <div className='font-normal text-[.8rem] text-black mb-2 md:mb-4 line-clamp-1 h-6'>
                         {parse(blogs?.body)}
                       </div>
                       <button
                         type='button'
-                        class='text-white bg-[#1B2639] hover:bg-[#162030] font-medium text-base px-3 py-1.5 me-2 mb-2 focus:outline-none rounded-md'
+                        class='text-white bg-[#1B2639] hover:bg-[#162030] font-medium text-sm md:text-lg px-3 py-1.5 me-2 focus:outline-none rounded-md'
                       >
                         Read More
                       </button>

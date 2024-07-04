@@ -19,7 +19,7 @@ const ServiceSection = () => {
       icon: '/assets/home/icon/e2-treaty-visas.png',
       bg: "bg-[url('/assets/home/e2-employees.png')]",
       title: 'E2 Treaty Visas',
-      dec: 'We can simplify the E2 Treaty Visa process, ensuring all papers, documents, and waivers are met for your investment in the U.S.',
+      dec: 'We can simplify the E2 Treaty Visa process, ensuring all papers, documents, and waivers are met for your investment in the US',
     },
     {
       icon: '/assets/home/icon/citizenship.png',
@@ -114,7 +114,7 @@ const ServiceSection = () => {
               <div
                 className={`flex text-center bg-cover h-[300px] items-center ${item.bg}`}
               >
-                <div class='p-6'>
+                <div class='p-6 items-start'>
                   <div className='bg-[#1B2639] p-3 rounded-full bg-opacity-25 flex justify-center items-center mx-auto w-[60px] h-[60px]'>
                     <Image
                       width={45}

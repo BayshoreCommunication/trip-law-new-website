@@ -47,11 +47,11 @@ const page = async () => {
             y: 100,
           }}
         >
-          <h2 className='mb-4 text-xl md:text-3xl font-bold tracking-normal text-left text-[#1B2639]'>
+          <h2 className='mb-0 md:mb-4 text-xl md:text-3xl font-bold tracking-normal text-left text-[#1B2639]'>
             Recent Blog Post
           </h2>
 
-          <hr className='w-full h-[1px] mx-auto my-8 bg-[#1B2639] border-0 rounded md:my-5' />
+          <hr className='w-full h-[1px] mx-auto mt-4 mb-4 md:mb-8 bg-[#1B2639] border-0 rounded ' />
 
           <div className='grid gap-0 mb-10 md:gap-12 gird-col-1 sm:grid-cols-3'>
             {blogPostData?.data
@@ -71,16 +71,16 @@ const page = async () => {
                       <p className='text-[1rem] text-black text-left italic mt-2'>
                         {postDate(blogs?.createdAt)}
                       </p>
-                      <h2 className='text-2xl tracking-normal font-bold text-[#1B2639] text-left mb-2 '>
+                      <h2 className='text-xl md:text-2xl tracking-normal font-bold text-[#1B2639] text-left mt-2 mb-4 '>
                         {blogs?.title}
                       </h2>
-                      <div className='font-normal text-[1rem] text-black mb-8 line-clamp-6'>
+                      <div className='font-normal text-[1rem] text-black mb-5 line-clamp-6'>
                         {parse(blogs?.body)}
                       </div>
-                      <div className='flex justify-center md:justify-start'>
+                      <div className='flex justify-start'>
                         <button
                           type='button'
-                          class='text-white bg-[#1B2639] hover:bg-[#162030] font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md'
+                          class='text-white bg-[#1B2639] hover:bg-[#162030] font-medium text-sm md:text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md'
                         >
                           Read More
                         </button>
@@ -113,19 +113,19 @@ const page = async () => {
                       className='bg-center bg-cover'
                     />
                     <div>
-                      <p className=' text-[1rem] text-black text-left italic mt-2'>
+                      <p className='text-[.8rem] md:text-[1rem] text-black text-left italic mt-2'>
                         {postDate(blogs?.createdAt)}
                       </p>
-                      <h2 className='text-xl tracking-normal font-bold text-[#1B2639] mb-2'>
+                      <h2 className='text-md md:text-xl tracking-normal font-bold text-[#1B2639] md:mb-2 md:line-clamp-3 line-clamp-2'>
                         {blogs?.title}
                       </h2>
-                      <div className='font-normal text-[1rem] text-black mb-4 sm:line-clamp-1 line-clamp-1'>
+                      <div className='font-normal text-[.8rem] md:text-[1.2rem] text-black mb-2 md:mb-4 sm:line-clamp-1 line-clamp-1'>
                         {parse(blogs?.body)}
                       </div>
-                      <div className='flex justify-center md:justify-start'>
+                      <div className='flex justify-start'>
                         <button
                           type='button'
-                          class='text-white bg-[#1B2639] hover:bg-[#162030] font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md'
+                          class='text-white bg-[#1B2639] hover:bg-[#162030] font-medium text-sm md:text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md'
                         >
                           Read More
                         </button>
@@ -159,7 +159,7 @@ const page = async () => {
           <hr className='w-full h-[1px] mx-auto my-2 bg-[#1B2639] border-0 rounded md:my-5' />
         </CardMotion>
 
-        <div className='flex flex-col-reverse lg:flex-row gap-16 mt-10 mb-10'>
+        <div className='flex flex-col-reverse lg:flex-row gap-7 md:gap-16 mt-8 md:mt-10 mb-4 md:mb-10'>
           <div className='flex-1'>
             <CardMotion
               whileInView={{
@@ -174,10 +174,10 @@ const page = async () => {
                 x: -100,
               }}
             >
-              <h2 className='mb-4 text-4xl font-bold tracking-normal text-slate-900 text-center md:text-left'>
-                Create a beautiful event platform <br /> services
+              <h2 className='mb-4 text-2xl md:text-4xl font-bold tracking-normal text-slate-900 text-center md:text-left'>
+                Create a beautiful event platform services
               </h2>
-              <div className='mt-8'>
+              <div className='mt-3'>
                 <p className='font-normal text-[1rem] text-black mb-8 text-center md:text-left'>
                   Demo Digital Xperience Group (DXG), a pioneering division of
                   WLJ Consulting, is a premier partner in transforming events
@@ -234,7 +234,7 @@ const page = async () => {
                 width={1000}
                 height={500}
                 src={'/assets/blogs/live.svg'}
-                alt='about img'
+                alt='Live image'
                 className='bg-cover'
               />
             </CardMotion>
@@ -254,7 +254,7 @@ const page = async () => {
             x: -100,
           }}
         >
-          <hr className='w-full h-[1px] mx-auto my-2 bg-[#1B2639] border-0 rounded md:my-5' />
+          <hr className='w-full h-[1px] mx-auto my-2 bg-[#1B2639] border-0 rounded md:my-5 hidden md:block' />
         </CardMotion>
 
         <div className='grid grid-cols-1 gap-10 mt-10 sm:grid-cols-3'>
@@ -280,7 +280,7 @@ const page = async () => {
                   alt='about img'
                   className=''
                 />
-                <h2 className='text-2xl tracking-normal font-bold text-[#1B2639] mb-2 mt-2 text-center md:text-left'>
+                <h2 className='text-2xl tracking-normal font-bold text-[#1B2639] mb-3 mt-2 text-center md:text-left'>
                   {item.title}
                 </h2>
                 <p className='font-normal text-[1rem] text-black mb-8 text-center md:text-left line-clamp-6'>

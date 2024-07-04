@@ -1,11 +1,8 @@
-'use client';
-
-import React, { Suspense } from 'react';
+import React from 'react';
 import SectionLayout from '../shared/SectionLayout';
 import CardMotion from '../motion/CardMotion';
 import { Bitter, Mulish } from 'next/font/google';
 import ScondayButton from '../shared/ScondayButton';
-import VideoPlayer from '../shared/Video/VideoPlayer';
 import Image from 'next/image';
 
 const bitter = Bitter({ subsets: ['latin'] });
