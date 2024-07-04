@@ -16,41 +16,76 @@ const AppointmentFrom = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [formErrors, setFormErrors] = useState({});
+
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.name) {
+      errors.name = 'Name is required!';
+    }
+    if (!values.email) {
+      errors.email = 'Email is required!';
+    } else if (!regex.test(values.email)) {
+      errors.email = 'This is not a valid email format!';
+    }
+    if (!values.phone) {
+      errors.phone = 'Phone number is required!';
+    }
+    if (!values.message) {
+      errors.message = 'Question is required!';
+    }
+    return errors;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true); // Start loading
-    send('service_21srltl', 'template_regri0n', emailForm, 'QQbwIXKpnJegjLF_x')
-      .then((response) => {
-        console.log('response', response);
-        Swal.fire({
-          icon: 'success',
-          text: 'Thank you for reaching out. Your information has been successfully submitted. Our team will respond to your inquiry shortl.',
-        }).then(() => {
-          setEmailForm({
-            name: '',
-            phone: '',
-            email: '',
-            message: '',
-          });
+
+    // Validate the form and set errors
+    const errors = validate(emailForm);
+    setFormErrors(errors);
+
+    // Check if there are any errors
+    if (Object.keys(errors).length === 0) {
+      send(
+        'service_21srltl',
+        'template_regri0n',
+        emailForm,
+        'QQbwIXKpnJegjLF_x',
+      )
+        .then((response) => {
           setLoading(false); // Stop loading
-        });
-      })
-      .catch((err) => {
-        console.log('err', err);
-        Swal.fire({
-          icon: 'error',
-          text: 'Something went wrong!',
-        }).then(() => {
-          setEmailForm({
-            name: '',
-            phone: '',
-            email: '',
-            message: '',
+          Swal.fire({
+            icon: 'success',
+            text: 'Thank you for reaching out. Your information has been successfully submitted. Our team will respond to your inquiry shortly.',
+          }).then(() => {
+            setEmailForm({
+              name: '',
+              phone: '',
+              email: '',
+              message: '',
+            });
           });
-          setLoading(false); // Stop loading
+        })
+        .catch((err) => {
+          console.log('err', err);
+          Swal.fire({
+            icon: 'error',
+            text: 'Something went wrong!',
+          }).then(() => {
+            setEmailForm({
+              name: '',
+              phone: '',
+              email: '',
+              message: '',
+            });
+            setLoading(false); // Stop loading
+          });
         });
-      });
+    } else {
+      setLoading(false); // Stop loading
+    }
   };
 
   return (
@@ -106,6 +141,7 @@ const AppointmentFrom = () => {
                     });
                   }}
                 />
+                <span className='text-orange-600'>{formErrors.name}</span>
               </div>
 
               <div class='mb-6'>
@@ -123,6 +159,7 @@ const AppointmentFrom = () => {
                     });
                   }}
                 />
+                <span className='text-orange-600'>{formErrors.email}</span>
               </div>
 
               <div class='mb-6'>
@@ -141,6 +178,7 @@ const AppointmentFrom = () => {
                     });
                   }}
                 />
+                <span className='text-orange-600'>{formErrors.phone}</span>
               </div>
 
               <div class='mb-6'>
@@ -159,6 +197,7 @@ const AppointmentFrom = () => {
                     });
                   }}
                 />
+                <span className='text-orange-600'>{formErrors.message}</span>
               </div>
 
               {loading ? (
