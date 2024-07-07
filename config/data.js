@@ -673,7 +673,7 @@ export const servicesData = [
     dece: `
           <div>
                   <img
-                    src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-1-Visa-Feature-Image.jpg"
+                    src="/assets/services/Employment-Based-Immigration-Feature-Images/H1B-Visa-Feature-Image.jpg"
                     className="w-full h-full mb-10"
                     />
                     
