@@ -555,28 +555,7 @@ const AboutSection = () => {
           </div>
 
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            He was originally a Licensed Attorney in India earning her LLB from
-            Sir Maharaja Sayajirao University in Gujarat, India. She focused her
-            practice areas on Criminal Defense, Civil Business Litigation, and
-            Family Law and practiced complex legal cases for half a decade.
-            Since, she has immigrated to these great United States of America,
-            focusing on family based immigration matters involving processing of
-            Green Cards, Citizenship, and Visa matters with respect to the USA
-            Department of Homeland Security’s Citizenship and Immigration
-            Services and the USA Department of State’s Bureau of Consular
-            Affairs, respectively.
-          </p>
-          <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            Attorney Patel currently serves as a Legal Advisor & Senior
-            Paralegal at Trip Law, P.A. and has earned her LLM at the Florida
-            State University with a specialization in American Law.
-          </p>
-          <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            Currently Attorney Patel lives in Lakeland with her loving husband
-            and two children and is fluent in Gujarati and Hindi. Attorney Patel
-            empathizes with the plight of immigrants who struggle to gain legal
-            status in the USA and spends her spare time advocating for immigrant
-            rights in her community.
+            {`Sakawat Hossain is currently in charge of TripLaw, P.A., overseeing the entire lifecycle of legal cases and ensuring their progress. Sakawat Hossain is currently in charge of TripLaw, P.A., overseeing the entire lifecycle of legal cases and ensuring they progress smoothly from initiation to resolution. This includes managing deadlines, tracking case developments, and coordinating with all parties involved. You serve as a primary point of contact for the client, maintaining regular communication to update them on.`}
           </p>
         </div>
       </SectionLayout>
