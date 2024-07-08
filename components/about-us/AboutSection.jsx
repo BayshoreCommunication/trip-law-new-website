@@ -153,9 +153,9 @@ const AboutSection = () => {
               Western Michigan University Cooley Law School, J.D., Homeland &
               National Security Law, 2017
             </li>
-            <li>University of Florida, M.S. In Pharmaceutical Policy, 2014</li>
+            <li>University of Florida, M.S. in Pharmaceutical Policy, 2014</li>
             <li>
-              University of South Florida, B.S. In Business
+              University of South Florida, B.S. in Business
               Management/Marketing, 2012
             </li>
           </ul>
