@@ -59,6 +59,7 @@ const AppointmentFrom = () => {
           Swal.fire({
             icon: 'success',
             text: 'Thank you for reaching out. Your information has been successfully submitted. Our team will respond to your inquiry shortly.',
+            confirmButtonColor: '#131b2a',
           }).then(() => {
             setEmailForm({
               name: '',
