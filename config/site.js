@@ -71,6 +71,10 @@ export const SITECONFIG = {
         slug: '/privacy-policy',
       },
       {
+        title: 'Disclaimers and Terms of Use',
+        slug: '/disclaimers-and-terms-of-use',
+      },
+      {
         title: 'Angel Investor',
         slug: '/angel-investor',
       },
@@ -81,10 +85,6 @@ export const SITECONFIG = {
       {
         title: 'Legal Information',
         slug: '/leagal-information',
-      },
-      {
-        title: 'Credits',
-        slug: '/credits',
       },
     ],
     quick_links: [

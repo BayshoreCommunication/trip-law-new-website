@@ -11,9 +11,10 @@ const Footer = () => {
         <div className={` mx-auto flex justify-center items-center w-full `}>
           <p className='container mx-5 lg-mx-0 text-white text-center md:text-left'>
             Disclaimer: Not a licensed attorney in the state of Florida.
-            Licensed attorney from the state of Wisconsin. Practices Immigration
-            Law in all 50 states, territories, and Embassies/Consulates abroad
-            via Federal Jurisdiction.
+            Licensed attorney in the District of Columbia and the state of
+            Wisconsin only. Practices Immigration Law in all 50 states,
+            territories, and Embassies/Consulates abroad via Federal
+            Jurisdiction.
           </p>
         </div>
       </div>

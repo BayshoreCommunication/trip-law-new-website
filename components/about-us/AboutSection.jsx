@@ -53,7 +53,7 @@ const AboutSection = () => {
                     </h2>
 
                     <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
-                      Immigration Lawyer
+                      U.S. Immigration Attorney
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
@@ -150,12 +150,12 @@ const AboutSection = () => {
           </p>
           <ul className='space-y-1 text-slate-900 list-disc list-inside text-md md:text-lg'>
             <li>
-              Western Michigan University Cooley Law School, J.D. In Homeland &
+              Western Michigan University Cooley Law School, J.D., Homeland &
               National Security Law, 2017
             </li>
-            <li>University Of Florida, M.S. In Pharmaceutical Policy, 2014</li>
+            <li>University of Florida, M.S. In Pharmaceutical Policy, 2014</li>
             <li>
-              University Of South Florida, B.S. In Business
+              University of South Florida, B.S. In Business
               Management/Marketing, 2012
             </li>
           </ul>
@@ -171,16 +171,16 @@ const AboutSection = () => {
             Court Admissions
           </p>
           <ul className='space-y-1 text-slate-900 list-disc list-inside text-md md:text-lg'>
-            <li>United States Court Of Appeals For The Seventh Circuit</li>
+            <li>United States Court of Appeals for the Seventh Circuit</li>
             <li>
-              United States District Court For The Western District Of Wisconsin
+              United States District Court for the Western District of Wisconsin
             </li>
             <li>
-              United States District Court For The Eastern District Of Wisconsin
+              United States District Court for the Eastern District of Wisconsin
             </li>
             <li>United States Immigration Courts</li>
-            <li>Supreme Court Of Wisconsin</li>
-            <li>Red Cliff Band Of Lake Superior Chippewa Tribal Court</li>
+            <li>Supreme Court of Wisconsin</li>
+            <li>Red Cliff Band of Lake Superior Chippewa Tribal Court</li>
             <li>District of Columbia Court of Appeals</li>
           </ul>
         </div>
@@ -223,7 +223,7 @@ const AboutSection = () => {
                     </h2>
 
                     <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
-                      Director of Legal Operation
+                      Director of Legal Operations
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
@@ -290,9 +290,9 @@ const AboutSection = () => {
             State’s Bureau of Consular Affairs, respectively.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
-            Attorney Patel currently serves as a Legal Advisor & Senior
-            Paralegal at Trip Law, P.A. and has earned her LLM at the Florida
-            State University with a specialization in American Law.
+            Attorney Patel currently serves as a Legal Advisor & Director at
+            Trip Law, P.A. and has earned her LLM at the Florida State
+            University with a specialization in American Law.
           </p>
           <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
             Currently Attorney Patel lives in Lakeland with her loving husband
@@ -306,25 +306,25 @@ const AboutSection = () => {
           </p>
           <ul className='space-y-1 text-slate-900 list-disc list-inside text-md md:text-lg'>
             <li>
-              Florida State University College Of Law, Ll.M. In American Law,
+              Florida State University College of Law, LL.M. in American Law,
               2018
             </li>
-            <li>The Maharaja Sayajirao University, Bachelor Of Law, 2012</li>
+            <li>The Maharaja Sayajirao University, Bachelor of Law, 2012</li>
           </ul>
           <p className='mb-4 mt-6 text-xl font-bold text-stone-950 text-center md:text-left'>
             Bar Admissions
           </p>
           <ul className='space-y-1 text-slate-900 list-disc list-inside text-md md:text-lg'>
-            <li>Bar Council Of India</li>
-            <li>Bar Council Of Gujarat</li>
+            <li>Bar Council of India</li>
+            <li>Bar Council of Gujarat</li>
           </ul>
 
           <p className='mb-4 mt-6 text-xl font-bold text-stone-950 text-center md:text-left'>
             Court Admissions
           </p>
           <ul className='space-y-1 text-slate-900 list-disc list-inside text-md md:text-lg'>
-            <li>High Court Of Gujarat</li>
-            <li>District Court Of Gujarat</li>
+            <li>High Court of Gujarat</li>
+            <li>District Court of Gujarat</li>
           </ul>
         </div>
       </SectionLayout>
@@ -502,7 +502,7 @@ const AboutSection = () => {
                     </h2>
 
                     <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
-                      Associate Manager
+                      Senior Associate Case Manager
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
@@ -631,7 +631,7 @@ const AboutSection = () => {
                     </h2>
 
                     <p className='mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left'>
-                      Associate Paralegal
+                      Senior Associate Paralegal
                     </p>
                     <hr class='h-[2px] my-0 bg-red-700 border-0 md:w-full'></hr>
                     <div className='mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start'>
