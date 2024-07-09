@@ -1,6 +1,7 @@
 import { Mulish, Bitter } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
+import { Analytics } from '@vercel/analytics/react';
 import MainNavbar from '@/components/MainNavbar';
 import Footer from '@/components/Footer';
 const bitter = Bitter({ subsets: ['latin'] });
