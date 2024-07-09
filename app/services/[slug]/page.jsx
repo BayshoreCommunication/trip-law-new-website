@@ -56,9 +56,7 @@ const page = async ({ params }) => {
       </Head>
       <style>{css}</style>
       <PageHeroSection
-        image={
-          "bg-[url('/assets/services/hero-banner.png')] bg-cover bg-center"
-        }
+        image={'/assets/services/hero-banner.png'}
         title={'Services'}
       />
       <SectionLayout bg='bg-white'>

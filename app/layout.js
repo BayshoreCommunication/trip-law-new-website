@@ -1,11 +1,11 @@
-import { Mulish, Bitter } from 'next/font/google';
+import { Mulish } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import MainNavbar from '@/components/MainNavbar';
 import Footer from '@/components/Footer';
-const bitter = Bitter({ subsets: ['latin'] });
+
 const mulish = Mulish({ subsets: ['latin'] });
 
 export const metadata = {

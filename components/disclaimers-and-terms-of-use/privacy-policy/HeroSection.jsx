@@ -4,9 +4,7 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <PageHeroSection
-      image={
-        "bg-[url('/assets/about/about-us-hero-banner.png')] bg-cover bg-center"
-      }
+      image={'/assets/about/about-us-hero-banner.png'}
       title={'Disclaimers and Terms of Use'}
     />
   );

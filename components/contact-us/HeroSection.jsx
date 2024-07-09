@@ -4,7 +4,7 @@ import PageHeroSection from '../shared/PageHeroSection';
 const HeroSection = () => {
   return (
     <PageHeroSection
-      image={"bg-[url('/assets/hero-img/contact.jpg')] bg-cover bg-center"}
+      image={'/assets/hero-img/contact.jpg'}
       title={'Contact Us'}
     />
   );

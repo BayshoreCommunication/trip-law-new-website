@@ -18,7 +18,7 @@ const page = () => {
         />
       </Head>
       <PageHeroSection
-        image={"bg-[url('/assets/hero-img/services.jpg')] bg-cover bg-center"}
+        image={'/assets/hero-img/services.jpg'}
         title={'Services'}
       />
       <SectionLayout bg='bg-white'>

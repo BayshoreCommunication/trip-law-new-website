@@ -43,13 +43,14 @@ const MainNavbar = () => {
       </NavbarContent>
 
       <NavbarContent className=' md:hidden' justify='end'>
-        <Link href='/'>
+        <Link href='/' passHref>
           <Image
             width={250}
             height={130}
             src={'/assets/site-logo/trip-law-logo.svg'}
             alt='Trip Law'
-            className='object-cover cursor-pointer'
+            className='object-cover cursor-pointer !max-w-[170px]'
+            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 170px'
           />
         </Link>
       </NavbarContent>
@@ -70,13 +71,14 @@ const MainNavbar = () => {
         })}
 
         <NavbarItem>
-          <Link href='/'>
+          <Link href='/' passHref>
             <Image
               width={170}
               height={60}
-              src={'/assets/site-logo/trip-law-logo.svg'}
+              src='/assets/site-logo/trip-law-logo.svg'
               alt='Trip Low'
               className='object-cover cursor-pointer !max-w-[170px]'
+              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 170px'
             />
           </Link>
         </NavbarItem>
