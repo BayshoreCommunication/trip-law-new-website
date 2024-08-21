@@ -77,7 +77,7 @@ export const servicesData = [
         className="w-full h-full mb-10"
     />
                     <p>
-                      Are you married to a USA permanent resident and dreaming of building a life together in the United States? Obtaining a green card through marriage can be a complex and emotionally charged process. We understand the challenges you face and are dedicated to providing comprehensive legal guidance throughout your journey.
+                      Are you married to a U.S.A citizen or lawful permanent resident and dreaming of building a life together in the United States? Obtaining a green card through marriage can be a complex and emotionally charged process. We understand the challenges you face and are dedicated to providing comprehensive legal guidance throughout your journey.
                     </p>
                     <br />
                     <h2>Who is this service for?</h2>
@@ -88,17 +88,17 @@ export const servicesData = [
                         <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg></span>
-                        <p>Married to a USAizen or green card holder</p>
+                        <p>Married to a U.S.A citizen or green card holder</p>
                       </li>
                       <li class="flex items-start">
                         <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg></span>
-                        <p>Seeking lawful permanent residency in the USA
+                        <p>Seeking lawful permanent residency in the U.S.A</p>
                       </li>
                       <li class="flex items-start">
                         <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />/
                         </svg></span>
                         <p>Dealing with the headaches of figuring out the immigration system.</p>
                       </li>
@@ -180,7 +180,7 @@ export const servicesData = [
 
         <br />
 
-        <h2>Problems You'll Face:</h2>
+        <h2>How Trip Law Can Help:</h2>
 
         <br />
         <p>
@@ -247,7 +247,7 @@ export const servicesData = [
       <br />
 
       <p>
-        Choose Trip Law not just because we're good at what we do, but because we're all about making your dream of building a life in the USA with your loved one a reality.
+        Choose Trip Law not just because we're good at what we do, but because we're all about making your dream of building a life in the U.S.A with your loved one a reality.
       </p>
 
     </div>
@@ -257,7 +257,7 @@ export const servicesData = [
     icon: '/assets/services/services-icon/Green-Card-Immediate-Relative.png',
     slug: 'green-card-through-immediate-relative',
     title: 'Green Card Through Immediate Relative',
-    sortTitle: `If you're eager to reunite with your loved ones who are already USA citizens, getting a green card through a close family member can be quite tricky due to all the rules and challenges involved. But don't sweat it – we've got your back. We'll walk you through the whole process, making sure you've got everything you need to make your dream of permanent residency in the USA a reality.`,
+    sortTitle: `If you're eager to reunite with your loved ones who are already USA citizens, getting a green card through a close family member can be quite tricky due to all the rules and challenges involved. But don't sweat it – we've got your back. We'll walk you through the whole process, making sure you've got everything you need to make your dream of permanent residency in the U.S.A a reality.`,
     dece: `
     <div>
 
@@ -267,7 +267,7 @@ export const servicesData = [
     />
     
     <p>
-    If you're eager to reunite with your loved ones who are already USA citizens, getting a green card through a close family member can be quite tricky due to all the rules and challenges involved. But don't sweat it – we've got your back. We'll walk you through the whole process, making sure you've got everything you need to make your dream of permanent residency in the USA a reality.
+    If you're eager to reunite with your loved ones who are already USA citizens, getting a green card through a close family member can be quite tricky due to all the rules and challenges involved. But don't sweat it – we've got your back. We'll walk you through the whole process, making sure you've got everything you need to make your dream of permanent residency in the U.S.A a reality.
     </p>
     
     <br/>
@@ -282,14 +282,14 @@ export const servicesData = [
               <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
               </svg></span>
-              <P>Parents, unmarried children under 21, or spouses of USA citizens</P>
+              <P>Parents, unmarried children under 21, or spouses of U.S.A citizens</P>
         </li>
 
         <li class="flex items-start">
           <span className="w-1.5 h-1.5 me-2 mt-2"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
           </svg></span>
-          Seeking lawful permanent residency in the USA
+          Seeking lawful permanent residency in the U.S.A
         </li>
 
         <li class="flex items-start">
@@ -432,7 +432,7 @@ export const servicesData = [
     </ul>
     <br/>
     <p>
-    If you want to chat about your situation and see how we can make your dream of living with your loved ones in the USA happen, let's set up a consultation. We're here to help.
+    If you want to chat about your situation and see how we can make your dream of living with your loved ones in the U.S.A happen, let's set up a consultation. We're here to help.
 
 
     </p>
@@ -477,7 +477,7 @@ export const servicesData = [
                         <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg></span>
-                        <p>Offered a qualifying job position by a USA employer.
+                        <p>Offered a qualifying job position by a U.S.A employer.
                         </p>
                       </li>
 
@@ -581,7 +581,7 @@ export const servicesData = [
 
         <br />
         <p>
-        We know how crucial it is for you to snag that H-1B visa and chase your career dreams in the USA We're all in to make sure you get:
+        We know how crucial it is for you to snag that H-1B visa and chase your career dreams in the U.S.A We're all in to make sure you get:
         </p>
       </br>
 
@@ -701,7 +701,7 @@ export const servicesData = [
                         <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg></span>
-                        <p>Offered a qualifying job position by a USA employer.
+                        <p>Offered a qualifying job position by a U.S.A employer.
                         </p>
                       </li>
 
@@ -805,7 +805,7 @@ export const servicesData = [
 
         <br />
         <p>
-        We know how crucial it is for you to snag that H-1B visa and chase your career dreams in the USA We're all in to make sure you get:
+        We know how crucial it is for you to snag that H-1B visa and chase your career dreams in the U.S.A We're all in to make sure you get:
         </p>
       </br>
 
@@ -894,7 +894,7 @@ export const servicesData = [
     icon: '/assets/services/services-icon/L1-Visa.png',
     slug: 'l1-visa',
     title: 'L1 Visa',
-    sortTitle: `Are you a key employee within a multinational company, eager to contribute your valuable skills and experience to the USA branch? The L-1 visa program facilitates the intracompany transfer of executives, managers, and specialized knowledge workers, allowing you to seamlessly transition and continue your impactful work in the United States. Our legal guidance will make sure your journey to getting that L-1 visa is a breeze, so you can hit the ground running in the USA and make a real impact.`,
+    sortTitle: `Are you a key employee within a multinational company, eager to contribute your valuable skills and experience to the U.S.A branch? The L-1 visa program facilitates the intracompany transfer of executives, managers, and specialized knowledge workers, allowing you to seamlessly transition and continue your impactful work in the United States. Our legal guidance will make sure your journey to getting that L-1 visa is a breeze, so you can hit the ground running in the U.S.A and make a real impact.`,
     dece: `
           <div>
                   <img
@@ -904,7 +904,7 @@ export const servicesData = [
                     />
                     
                     <p>
-                    Are you a key employee within a multinational company, eager to contribute your valuable skills and experience to the USA branch? The L-1 visa program facilitates the intracompany transfer of executives, managers, and specialized knowledge workers, allowing you to seamlessly transition and continue your impactful work in the United States. Our legal guidance will make sure your journey to getting that L-1 visa is a breeze, so you can hit the ground running in the USA and make a real impact.
+                    Are you a key employee within a multinational company, eager to contribute your valuable skills and experience to the U.S.A branch? The L-1 visa program facilitates the intracompany transfer of executives, managers, and specialized knowledge workers, allowing you to seamlessly transition and continue your impactful work in the United States. Our legal guidance will make sure your journey to getting that L-1 visa is a breeze, so you can hit the ground running in the U.S.A and make a real impact.
                     </p>
 
                     <br />
@@ -920,7 +920,7 @@ export const servicesData = [
                         <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg></span>
-                        <p>Employees of a multinational company with a branch, subsidiary, or affiliate in the USA
+                        <p>Employees of a multinational company with a branch, subsidiary, or affiliate in the U.S.A
 
                         </p>
                       </li>
@@ -938,7 +938,7 @@ export const servicesData = [
                         <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg></span>
-                        <p>Transferring to the USA branch for long-term work projects or establishing new operations.
+                        <p>Transferring to the U.S.A branch for long-term work projects or establishing new operations.
                         </p>
                       </li>
 
@@ -1012,7 +1012,7 @@ export const servicesData = [
                   <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
                 </svg>
               </span>
-              <p>Establishing a qualifying relationship between the foreign and USA companies.
+              <p>Establishing a qualifying relationship between the foreign and U.S.A companies.
               </p>
             </li>
 
@@ -1043,7 +1043,7 @@ export const servicesData = [
 
         <br />
         <p>
-        We understand the critical role you play within your company and the importance of securing your L-1 visa to seamlessly continue your contribution in the USA We are committed to provide you with:
+        We understand the critical role you play within your company and the importance of securing your L-1 visa to seamlessly continue your contribution in the U.S.A We are committed to provide you with:
         </p>
       </br>
 
@@ -1090,7 +1090,7 @@ export const servicesData = [
               <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
             </svg>
           </span>
-          <p>Proving there's a legit connection between your foreign and USA companies? We got that covered too.
+          <p>Proving there's a legit connection between your foreign and U.S.A companies? We got that covered too.
           </p>
         </li>
 
@@ -1132,7 +1132,7 @@ export const servicesData = [
     icon: '/assets/services/services-icon/O1-Visa.png',
     slug: 'o1-visa',
     title: 'O-1 Visa',
-    sortTitle: ` Want to build a solid future in the USA, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
+    sortTitle: ` Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
         src="/assets/services/Employment-Based-Immigration-Feature-Images/O-1-Visa-Feature-Image.jpg"} alt="server-image"
@@ -1176,7 +1176,7 @@ export const servicesData = [
           <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
-          <p>Seek temporary residency in the USA to continue their work and share their expertise.
+          <p>Seek temporary residency in the U.S.A to continue their work and share their expertise.
           </p>
         </li>
 
@@ -1255,7 +1255,7 @@ export const servicesData = [
 
 <br />
 <p>
-We understand the unique journey of individuals with extraordinary abilities and the value they bring to the USA We are committed to providing you with:
+We understand the unique journey of individuals with extraordinary abilities and the value they bring to the U.S.A We are committed to providing you with:
 </p>
 </br>
 
@@ -1323,7 +1323,7 @@ Today, set a free consultation with us to talk about your O-1 visa options. Disc
     icon: '/assets/services/services-icon/EB-1-Visa.png',
     slug: 'eb1-visa',
     title: 'EB-1 Visa',
-    sortTitle: ` Want to build a solid future in the USA, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
+    sortTitle: ` Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
       src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-1-Visa-Feature-Image.jpg"
@@ -1333,7 +1333,7 @@ Today, set a free consultation with us to talk about your O-1 visa options. Disc
       />
       
       <p>
-      Got real standout skills in your field, Just itching to bring your exceptional skills and talent to the USA? Well, good news – the EB-1 visa program is all about recognizing and welcoming folks like you who are at the top of their game. It's an elite pass to permanent residency in the States. And guess what? We're here to make that journey a piece of cake. We will be with you every step of the way, ensuring your EB-1 visa journey is smooth sailing and ends in success.
+      Got real standout skills in your field, Just itching to bring your exceptional skills and talent to the U.S.A? Well, good news – the EB-1 visa program is all about recognizing and welcoming folks like you who are at the top of their game. It's an elite pass to permanent residency in the States. And guess what? We're here to make that journey a piece of cake. We will be with you every step of the way, ensuring your EB-1 visa journey is smooth sailing and ends in success.
       </p>
 
       <br />
@@ -1367,7 +1367,7 @@ Today, set a free consultation with us to talk about your O-1 visa options. Disc
           <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
-          <p>Seek permanent residency in the USA to continue their groundbreaking work and enrich the nation.
+          <p>Seek permanent residency in the U.S.A to continue their groundbreaking work and enrich the nation.
           </p>
         </li>
 
@@ -1444,7 +1444,7 @@ Today, set a free consultation with us to talk about your O-1 visa options. Disc
   <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
 </svg>
 </span>
-<p>Effectively communicating the significance of their work and lasting contributions to the USA
+<p>Effectively communicating the significance of their work and lasting contributions to the U.S.A
 </p>
 </li>
 
@@ -1456,7 +1456,7 @@ Today, set a free consultation with us to talk about your O-1 visa options. Disc
 
 <br />
 <p>
-Recognizing the distinctive journey of individuals with extraordinary abilities and the transformative impact they can have in the USA, Trip Law is dedicated to offering you:
+Recognizing the distinctive journey of individuals with extraordinary abilities and the transformative impact they can have in the U.S.A, Trip Law is dedicated to offering you:
 </p>
 </br>
 
@@ -1533,7 +1533,7 @@ Schedule a consultation today to discuss your EB-1 visa options and learn how Tr
     icon: '/assets/services/services-icon/EB-2-Visa.png',
     slug: 'eb2-visa',
     title: 'EB-2 Visa',
-    sortTitle: ` Want to build a solid future in the USA, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
+    sortTitle: ` Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
         src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-2-Visa-Feature-Image.jpg" alt="server-image"
@@ -1591,7 +1591,7 @@ Schedule a consultation today to discuss your EB-1 visa options and learn how Tr
           <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
-          <p>Have received a qualifying job offer from a USA employer.
+          <p>Have received a qualifying job offer from a U.S.A employer.
           </p>
         </li>
 
@@ -1599,7 +1599,7 @@ Schedule a consultation today to discuss your EB-1 visa options and learn how Tr
           <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
-          <p>Seek professional growth and the stability of permanent residency in the USA
+          <p>Seek professional growth and the stability of permanent residency in the U.S.A
           </p>
         </li>
 
@@ -1666,7 +1666,7 @@ Schedule a consultation today to discuss your EB-1 visa options and learn how Tr
   <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
 </svg>
 </span>
-<p>Effectively communicating the value they bring to the USA workforce and overcoming potential challenges.
+<p>Effectively communicating the value they bring to the U.S.A workforce and overcoming potential challenges.
 
 </p>
 </li>
@@ -1786,7 +1786,7 @@ Once we've got that sorted, we're going to fill out and send in the I-140 form t
 <br />
 
 <p>
-Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and discuss how Trip Law can help you make your way to permanent residency in the USA and start sharing your skills here.
+Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and discuss how Trip Law can help you make your way to permanent residency in the U.S.A and start sharing your skills here.
 
 </p>
 
@@ -1796,7 +1796,7 @@ Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and 
     icon: '/assets/services/services-icon/EB-3-Visa.png',
     slug: 'eb3-visa',
     title: 'EB-3 Visa',
-    sortTitle: ` Want to build a solid future in the USA, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
+    sortTitle: ` Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
       src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-3-Visa-Feature-Image.jpg" alt="server-image"
@@ -1805,7 +1805,7 @@ Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and 
       />
       
       <p>
-      Want to build a solid future in the USA, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.
+      Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.
       </p>
 
       <br />
@@ -1830,7 +1830,7 @@ Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and 
           <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
-          <p>Hold a job offer from a USA employer for a qualifying position.
+          <p>Hold a job offer from a U.S.A employer for a qualifying position.
           </p>
         </li>
 
@@ -2644,7 +2644,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
           <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
-          <p>Are victims of severe forms of human trafficking as defined by USA law.
+          <p>Are victims of severe forms of human trafficking as defined by U.S.A law.
           </p>
         </li>
 
@@ -2797,7 +2797,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
     icon: '/assets/services/services-icon/Bond-Hearing.png',
     slug: 'bond-hearing',
     title: 'Bond Hearing',
-    sortTitle: `Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the USA legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.`,
+    sortTitle: `Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the U.S.A legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.`,
     dece: `
     <div>
     <img
@@ -2986,7 +2986,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
     icon: '/assets/services/services-icon/Master-Calendar-Hearing.png',
     slug: 'master-celender-hearing',
     title: 'Master Calendar Hearing',
-    sortTitle: `Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the USA legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.`,
+    sortTitle: `Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the U.S.A legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.`,
     dece: `
     <div>
     <img
@@ -2996,7 +2996,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
       />
       
       <p>
-      Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the USA legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.
+      Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the U.S.A legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.
       </p>
 
       <br />
@@ -3013,7 +3013,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
           <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
-          <p>Have received an NTA initiating removal proceedings in the USA immigration court.
+          <p>Have received an NTA initiating removal proceedings in the U.S.A immigration court.
           </p>
         </li>
 
@@ -3612,7 +3612,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
     icon: '/assets/services/services-icon/E2-Treaty-Visas.png',
     slug: 'e2-treaty-visas',
     title: 'E2 Treaty Visas',
-    sortTitle: `Are you a citizen of a treaty country with entrepreneurial ambitions in the United States? The E-2 Treaty Visa offers a unique pathway to establishing and managing a business in the USA, boosting your economic activity, and achieving your professional goals. We extend thorough legal guidance and steadfast support to assist you in understanding and navigating the E-2 visa process, opening doors to exciting business prospects.`,
+    sortTitle: `Are you a citizen of a treaty country with entrepreneurial ambitions in the United States? The E-2 Treaty Visa offers a unique pathway to establishing and managing a business in the U.S.A, boosting your economic activity, and achieving your professional goals. We extend thorough legal guidance and steadfast support to assist you in understanding and navigating the E-2 visa process, opening doors to exciting business prospects.`,
     dece: ` 
     <div>
     <img
@@ -3622,7 +3622,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
       />
       
       <p>
-      Are you a citizen of a treaty country with entrepreneurial ambitions in the United States? The E-2 Treaty Visa offers a unique pathway to establishing and managing a business in the USA, boosting your economic activity, and achieving your professional goals. We extend thorough legal guidance and steadfast support to assist you in understanding and navigating the E-2 visa process, opening doors to exciting business prospects.
+      Are you a citizen of a treaty country with entrepreneurial ambitions in the United States? The E-2 Treaty Visa offers a unique pathway to establishing and managing a business in the U.S.A, boosting your economic activity, and achieving your professional goals. We extend thorough legal guidance and steadfast support to assist you in understanding and navigating the E-2 visa process, opening doors to exciting business prospects.
       </p>
 
       <br />
@@ -3702,7 +3702,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
           <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
       </svg>
     </span>
-    <p>Effectively demonstrating the substantial nature of their investment and its positive impact on the USA economy.
+    <p>Effectively demonstrating the substantial nature of their investment and its positive impact on the U.S.A economy.
     </p>
     </li>
 
@@ -3770,7 +3770,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
       <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 0 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z" />
       </svg>
     </span>
-    <p>We'll help you gather up all the paperwork you need to apply for the E-2 visa. That includes a detailed business plan showing how your investment will benefit the USA, proof of your financial investment and where it's coming from, evidence of your skills and experience running a business, and information about you and your travels.
+    <p>We'll help you gather up all the paperwork you need to apply for the E-2 visa. That includes a detailed business plan showing how your investment will benefit the U.S.A, proof of your financial investment and where it's coming from, evidence of your skills and experience running a business, and information about you and your travels.
     </p>
   </li>
 
@@ -3812,7 +3812,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
   <br />
 
   <p>
-  Please arrange a consultation at your earliest convenience to discuss your E-2 Treaty Visa options and learn how Trip Law can help you navigate the legal pathway towards realizing your business aspirations in the USA.
+  Please arrange a consultation at your earliest convenience to discuss your E-2 Treaty Visa options and learn how Trip Law can help you navigate the legal pathway towards realizing your business aspirations in the U.S.A.
   </p>
 
 </div>`,
@@ -3864,7 +3864,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
           <span className="w-1.5 h-1.5 me-2 mt-3"><svg class="w-1.5 h-1.5 me-2 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
-          <p>Immigrants who gained citizenship through marriage to a USA citizen and want to explore the nuances of their citizenship status.
+          <p>Immigrants who gained citizenship through marriage to a U.S.A citizen and want to explore the nuances of their citizenship status.
           </p>
         </li>
 
@@ -3931,7 +3931,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
       <path fillRule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clipRule="evenodd" />
   </svg>
 </span>
-<p>Preparing for the naturalization interview and civics test to demonstrate your understanding of USA history and government.
+<p>Preparing for the naturalization interview and civics test to demonstrate your understanding of U.S.A history and government.
 </p>
 </li>
 
@@ -4034,7 +4034,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
     icon: '/assets/services/services-icon/Naturalization-Citizenship.png',
     slug: 'naturalization-and-citizenship',
     title: 'Naturalization & Citizenship',
-    sortTitle: `Becoming a USA citizen unlocks a multitude of rights and privileges, solidifying your place within the American fabric. Whether you've dreamt of this moment for years or recently arrived seeking a permanent home, the naturalization process can be complex and daunting. We're right there with you, offering top-notch legal advice and steady support to help you reach your citizenship dreams.`,
+    sortTitle: `Becoming a U.S.A citizen unlocks a multitude of rights and privileges, solidifying your place within the American fabric. Whether you've dreamt of this moment for years or recently arrived seeking a permanent home, the naturalization process can be complex and daunting. We're right there with you, offering top-notch legal advice and steady support to help you reach your citizenship dreams.`,
     dece: `
     <div>
     <img
@@ -4044,7 +4044,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
       />
       
       <p>
-      Becoming a USA citizen unlocks a multitude of rights and privileges, solidifying your place within the American fabric. Whether you've dreamt of this moment for years or recently arrived seeking a permanent home, the naturalization process can be complex and daunting. We're right there with you, offering top-notch legal advice and steady support to help you reach your citizenship dreams. 
+      Becoming a U.S.A citizen unlocks a multitude of rights and privileges, solidifying your place within the American fabric. Whether you've dreamt of this moment for years or recently arrived seeking a permanent home, the naturalization process can be complex and daunting. We're right there with you, offering top-notch legal advice and steady support to help you reach your citizenship dreams. 
       </p>
 
       <br />
@@ -4218,7 +4218,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
       </svg>
     </span>
     <p>
-      And finally, when it's time for your interview and citizenship ceremony, we'll make sure you're prepped and ready to go, so you can become a citizen with confidence.  First off, we'll take a good look at your immigration status and how long you've been living in the USA to see if you meet the requirements for naturalization.
+      And finally, when it's time for your interview and citizenship ceremony, we'll make sure you're prepped and ready to go, so you can become a citizen with confidence.  First off, we'll take a good look at your immigration status and how long you've been living in the U.S.A to see if you meet the requirements for naturalization.
     </p>
   </li>
 
@@ -4227,7 +4227,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
   <br />
 
   <p>
-  Schedule a consultation today to discuss your naturalization & citizenship options and learn how Trip Law can help you navigate the legal path towards claiming your rightful place as a USA citizen.
+  Schedule a consultation today to discuss your naturalization & citizenship options and learn how Trip Law can help you navigate the legal path towards claiming your rightful place as a U.S.A citizen.
   </p>
 
 </div>`,
@@ -4265,7 +4265,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
           <p>
-            Family members of USA citizens: Spouses, children, parents, and siblings seeking family-based green cards.
+            Family members of U.S.A citizens: Spouses, children, parents, and siblings seeking family-based green cards.
           </p>
         </li>
 
@@ -4274,7 +4274,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
           <p>
-            Employment-based immigrants: Professionals offered job opportunities in the USA
+            Employment-based immigrants: Professionals offered job opportunities in the U.S.A
           </p>
         </li>
 
@@ -4283,7 +4283,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
         </svg></span>
         <p>       
-          Refugees and asylum seekers: Fleeing persecution and seeking safe haven in the USA
+          Refugees and asylum seekers: Fleeing persecution and seeking safe haven in the U.S.A
         </p>
       </li>
 
@@ -4292,7 +4292,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
       </svg></span>
       <p>
-       Refugees and asylum seekers: Fleeing persecution and seeking safe haven in the USA
+       Refugees and asylum seekers: Fleeing persecution and seeking safe haven in the U.S.A
       </p>
     </li>
 
@@ -4301,7 +4301,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg></span>
           <p>
-            Investors: Entrepreneurs establishing businesses and creating jobs in the USA
+            Investors: Entrepreneurs establishing businesses and creating jobs in the U.S.A
 
           </p>
         </li>

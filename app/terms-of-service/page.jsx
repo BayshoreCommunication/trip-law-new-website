@@ -9,7 +9,10 @@ const page = () => {
       <Head>
         <title>Terms of Service - Attorney Hardam Tripathi, Esq.</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content='' />
+        <meta
+          name='description'
+          content={`Explore our Terms of Service to understand the rules, guidelines, and legal agreements managing your use of our website and services.`}
+        />
       </Head>
       <HeroSection />
       <TermsOfService />

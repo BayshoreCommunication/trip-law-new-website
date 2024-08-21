@@ -105,7 +105,7 @@ const ContactSection = () => {
       >
         <div className='grid grid-cols-1 lg:grid-cols-3 md:gap-x-12 gap-x-0'>
           <div className='space-y-4'>
-            <div className='p-3 shadow-md border rounded-md'>
+            <div className='p-3 border rounded-md shadow-md'>
               <div className='flex justify-center md:justify-start'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -120,16 +120,16 @@ const ContactSection = () => {
                   />
                 </svg>
               </div>
-              <h1 className='mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black'>
+              <h2 className='mt-5 mb-2 text-2xl font-semibold tracking-normal text-center text-black md:text-left'>
                 231 N. Kentucky Ave. Ste. 213, <br />
                 Lakeland, Florida 33801
-              </h1>
-              <p className='text-base text-stone-950 text-center md:text-left'>
+              </h2>
+              <p className='text-base text-center text-stone-950 md:text-left'>
                 Our Location
               </p>
             </div>
 
-            <div className='p-3 shadow-md border'>
+            <div className='p-3 border shadow-md'>
               <div className='flex justify-center md:justify-start'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -144,15 +144,15 @@ const ContactSection = () => {
                   />
                 </svg>
               </div>
-              <h1 className='mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black'>
+              <h2 className='mt-5 mb-2 text-2xl font-semibold tracking-normal text-center text-black md:text-left'>
                 (863)-599-6735
-              </h1>
-              <p className='text-lg text-stone-950 text-center md:text-left'>
+              </h2>
+              <p className='text-lg text-center text-stone-950 md:text-left'>
                 Let’s Talk
               </p>
             </div>
 
-            <div className='p-3 shadow-md border'>
+            <div className='p-3 border shadow-md'>
               <div className='flex justify-center md:justify-start'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -164,15 +164,15 @@ const ContactSection = () => {
                   <path d='M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z' />
                 </svg>
               </div>
-              <h1 className='mt-5 mb-2 text-2xl font-semibold tracking-normal text-center md:text-left text-black'>
+              <h2 className='mt-5 mb-2 text-2xl font-semibold tracking-normal text-center text-black md:text-left'>
                 info@trip-law.com
-              </h1>
-              <p className='text-base text-stone-950 text-center md:text-left'>
+              </h2>
+              <p className='text-base text-center text-stone-950 md:text-left'>
                 Drop a Line
               </p>
             </div>
           </div>
-          <div className='flex flex-col col-span-1 lg:col-span-2 mt-12 md:mt-0'>
+          <div className='flex flex-col col-span-1 mt-12 lg:col-span-2 md:mt-0'>
             <form className='w-full' onSubmit={handleSubmit}>
               <div class='mb-6 w-full'>
                 <input
@@ -268,7 +268,7 @@ const ContactSection = () => {
                 </Button>
               )}
 
-              <p className='mt-8 text-lg text-stone-950 text-center md:text-left'>
+              <p className='mt-8 text-lg text-center text-stone-950 md:text-left'>
                 *I understand that the use of this form for communication with
                 Trip Law, P.A
               </p>

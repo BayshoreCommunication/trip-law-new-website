@@ -43,456 +43,301 @@ const TermsOfService = () => {
       <SectionLayout>
         <div className='text-center md:text-left'>
           <div className='my-8'>
-            <p>Last updated March 06, 2024</p>
+            <h2 className='font-extrabold'>TERMS OF SERVICE</h2>
+            <p>Last updated July 03, 2024</p>
           </div>
 
           <div className='privacy-title'>
-            <h5>INTRODUCTION</h5>
+            <h5>AGREEMENT TO OUR LEGAL TERMS</h5>
+            <p>We are Trip Law ("Company," "we," "us," "our").</p>
             <p>
-              Trip-Law respects the privacy of our user. This Privacy Policy
-              explains how we collect, use, disclose, and safeguard your
-              information when you visit our website www.Trip-Law.com, including
-              any other media form, media channel, mobile website, or mobile
-              application related or connected thereto. Please read this privacy
-              policy carefully. If you do not agree with the terms of this
-              privacy policy, please do not access the site. We reserve the
-              right to make changes to this Privacy Policy at any time and for
-              any reason. We will alert you about any changes by updating the
-              “Last Updated” date of this Privacy Policy. Any changes or
-              modifications will be effective immediately upon posting the
-              updated Privacy Policy on the Site, and you waive the right to
-              receive specific notice of each such change or modification. You
-              are encouraged to periodically review this Privacy Policy to stay
-              informed of updates. You will be deemed to have been made aware
-              of, will be subject to, and will be deemed to have accepted the
-              changes in any revised Privacy Policy by your continued use of the
-              Site after the date such revised Privacy Policy is posted.
+              We operate the website{' '}
+              <a
+                href='https://trip-law.com'
+                target='_blank'
+                className='text-blue-500 underline'
+              >
+                https://trip-law.com
+              </a>
+              {` , as well as any other related products and services that refer or
+              link to these legal terms (the "Legal Terms") (collectively, the
+              "Services").`}
+            </p>
+            <p>
+              {` At Trip Law, we aim to combine exceptional immigration services
+              with a strong dedication to humanity. Founded by Hardam H.
+              Tripathi, a former federal legal professional, our firm is now
+              home to some of the most experienced lawyers in the field. Trip
+              Law has become a leader in immigration law, built on a foundation
+              of excellence, integrity, and a well-earned reputation for
+              quality.`}
+            </p>
+            <p>
+              {`You can contact us by phone at (863)-599-6735, email at info@trip-law.com, or by mail to 231 N. Kentucky Ave. Ste. 213, Lakeland, FL 33801, USA.`}
+            </p>
+            <p>
+              {`These Terms constitute a legally binding agreement between you, whether personally or on behalf of an entity ("you"), and Trip Law, concerning your access to and use of the Services.`}
+            </p>
+            <p>
+              <strong>{`If you do not agree with all of these legal terms, you are prohibited from using the services and must discontinue use immediately.`}</strong>
+            </p>
+            <p>
+              {`We will provide you with a notice about any modifications to the Services you are using. The amended Legal Terms shall take effect upon publishing or alerting you. By using the Services after the effective date of such modifications, you agree to be bound by the new terms.`}
+            </p>
+            <p>
+              {`Note: The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.`}
             </p>
           </div>
           <div className='privacy-title'>
-            <h5>COLLECTION OF YOUR INFORMATION</h5>
+            <h5>1. OUR SERVICES</h5>
             <p>
-              We may collect information about you in a variety of ways. The
-              information we may collect on the Site includes:
+              The Services are not intended for distribution in jurisdictions
+              where it would be contrary to law or regulation. Users accessing
+              the Services from other locations are responsible for local laws.
+              The Services are not tailored to industry-specific regulations, so
+              interactions subject to such laws may not be used.
             </p>
           </div>
           <div className='privacy-title'>
-            <h5>Personal Data</h5>
+            <h5>2. INTELLECTUAL PROPERTY RIGHTS</h5>
+            <h5 className='text-center'>Our intellectual property</h5>
             <p>
-              Personally identifiable information, such as your name, mailing
-              address, email address, and telephone number, and demographic
-              information, such as your age, gender, hometown, and interests,
-              that you voluntarily give to us when you choose to participate in
-              various activities related to the Site, such as online chat and
-              message boards. You are under no obligation to provide us with
-              personal information of any kind, however your refusal to do so
-              may prevent you from using certain features of the Site.
+              {`We own or license all intellectual property rights in our Services, including source code, databases, software, website designs, and trademarks. These rights are protected by copyright and trademark laws and treaties worldwide.`}
+            </p>
+            <h5 className='text-center'>Your use of our Services</h5>
+            <p>
+              {`The company provides a non-exclusive, non-transferable, revocable license to access Services and Content for personal or non-commercial use, with copyright restrictions. Use requires written permission and breach of Intellectual Property Rights results in termination.`}
+            </p>
+            <h5 className='text-center'>Your submissions and contributions</h5>
+            <p>
+              {`By sending questions, comments, or feedback about the Services, you agree to assign intellectual property rights to us. The Services may invite you to create, submit, post, display, publish, distribute, or broadcast content and materials, including text, writings, video, audio, photographs, music, graphics, comments, and personal information.`}
             </p>
           </div>
           <div className='privacy-title'>
-            <h5>Derivative Data</h5>
+            <h5>3. USER REPRESENTATIONS</h5>
             <p>
-              Information our servers automatically collect when you access the
-              Site, such as your IP address, your browser type, your operating
-              system, your access times, and the pages you have viewed directly
-              before and after accessing the Site.
+              {`By using the Services, however, you certify and guarantee that:
+              (1) all registration information you submit will be true,
+              accurate, current, and complete; (2) you have the legal capacity
+              and agree to comply with these Legal Terms; (3) you are not a
+              minor in the state or nation in which you reside; (4) you will not
+              access the Services through automated or non-human means, whether
+              through a bot, script or otherwise; (5) you can not utilize the
+              Services for any illegal purpose; and (6) Your usage will not
+              violate any applicable law.`}
+            </p>
+            <p>
+              {`If you offer any information that is false, incorrect, or not current, or incomplete, we have the right to suspend or terminate your account and refuse any current or future use of the Services (or any portion thereof).`}
             </p>
           </div>
+
           <div className='privacy-title'>
-            <h5>Mobile Device Data</h5>
+            <h5>4. USER REGISTRATION</h5>
             <p>
-              Device information, such as your mobile device ID, model, and
-              manufacturer, and information about the location of your device,
-              if you access the Site from a mobile device.
+              {`You may need to register to use the Services. You agree to keep your password secure and accept responsibility for any use of your account and password. We have the right to remove, reclaim, or alter any username you pick if we believe it is improper, vulgar, or objectionable.`}
             </p>
           </div>
+
           <div className='privacy-title'>
-            <h5>Third-Party Data</h5>
+            <h5>5. PROHIBITED ACTIVITIES</h5>
             <p>
-              Information from third parties, such as personal information or
-              network friends, if you connect your account to the third party
-              and grant the Site permission to access this information.
+              {`You are not permitted to access or use the Services for any purpose other than those for which we make them available. The Services may not be utilized in connection with any commercial effort other than those expressly sponsored or approved by us.`}
             </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Data From Contests, Giveaways, and Surveys</h5>
-            <p>
-              Personal and other information you may provide when entering
-              contests or giveaways and/or responding to surveys.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Mobile Application Information</h5>
-            <p>
-              If you connect using our mobile application: • Geo-Location
-              Information. We may request access or permission to and track
-              location-based information from your mobile device, either
-              continuously or while you are using our mobile application, to
-              provide location-based services. If you wish to change our access
-              or permissions, you may do so in your device’s settings.
-            </p>
+            <p>{`As our service user, you should agree to:`}</p>
             <ul>
               <li>
-                Mobile Device Access. We may request access or permission to
-                certain features from your mobile device. If you wish to change
-                our access or permissions, you may do so in your device’s
-                settings.
+                Without our explicit authorization, you may systematically
+                obtain data or other content from the Services to establish or
+                assemble a collection, compilation, database, or directory.
               </li>
               <li>
-                Mobile Device Data. We may collect device information (such as
-                your mobile device ID, model and manufacturer), operating
-                system, version information and IP address.
+                Trick, swindle, or mislead us and other users, especially when
+                attempting to obtain sensitive account information such as user
+                passwords.
               </li>
               <li>
-                Push Notifications. We may request to send you push
-                notifications regarding your account or the Application. If you
-                wish to opt-out from receiving these types of communications,
-                you may turn them off in your device’s settings.
+                Circumvent, deactivate, or otherwise tamper with
+                security-related aspects of the Services, including measures
+                that prohibit or limit the use or copying of any Content or
+                enforce limitations on the use of the Services and/or the
+                Content contained therein.
+              </li>
+              <li>
+                Damage, defame, or in any way impair us or the Services in our
+                view.
+              </li>
+              <li>
+                Utilize any data you get from the Services to intimidate,
+                mistreat, or hurt someone else.
+              </li>
+              <li>
+                Use our support services improperly, or make up complaints of
+                mistreatment or abuse.
+              </li>
+              <li>
+                Make use of the Services in a way that defies any relevant laws
+                or rules.
+              </li>
+              <li>
+                Participate in unapproved framing or connecting to the Services.
+              </li>
+              <li>
+                Viruses, Trojan horses, and other materials—such as excessive
+                use of capital letters and spamming, which is the posting of
+                repetitive text on the internet—that interfere with the
+                uninterrupted use and enjoyment of the Services by any party or
+                that alter, modify, interfere with, disrupt, or interfere with
+                the operation, upkeep, or features of the Services—should not be
+                uploaded, transmitted, or attempted to be uploaded.
+              </li>
+              <li>
+                Use the system in any automated way, including by sending
+                comments or messages using scripts, or by employing robots, data
+                mining, or other comparable techniques for extracting and
+                gathering data.
+              </li>
+              <li>Deleting any content that has copyright.</li>
+              <li>
+                Utilize the Services in any way that would put you in direct
+                competition with us, or utilize the Services and/or the Content
+                in any way that would allow you to make money or run a business.
+              </li>
+              <li>
+                Use the Services to promote products and services or to make
+                sales offers.
               </li>
             </ul>
           </div>
+
           <div className='privacy-title'>
-            <h5>USAE OF YOUR INFORMATION</h5>
-            <p>
-              Having accurate information about you permits us to provide you
-              with a smooth, efficient, and customized experience. Specifically,
-              we may use information collected about you via the Site to:
-            </p>
+            <h5>6. USER GENERATED CONTRIBUTIONS</h5>
             <ul>
-              <li>Administer sweepstakes, promotions, and contests.</li>
-              <li>Assist law enforcement and respond to subpoena.</li>
               <li>
-                Compile anonymous statistical data and analysis for use
-                internally or with third parties.
-              </li>
-              <li>Create and manage your account.</li>
-              <li>
-                Deliver targeted advertising, coupons, newsletters, and other
-                information regarding promotions and the Site to you.
-              </li>
-              <li>Email you regarding your account or order.</li>
-              <li>Enable user-to-user communications.</li>
-              <li>
-                Fulfill and manage purchases, orders, payments, and other
-                transactions related to the Site.
+                Contributions must not infringe proprietary rights of third
+                parties.
               </li>
               <li>
-                Generate a personal profile about you to make future visits to
-                the Site more personalized.
+                Contributors must have the necessary licenses, rights, consents,
+                releases, and permissions to use their Contributions.
               </li>
-              <li>Increase the efficiency and operation of the Site.</li>
               <li>
-                Monitor and analyze usage and trends to improve your experience
-                with the Site.
+                Contributions must have written consent from identifiable
+                individuals for inclusion and use.
               </li>
-              <li>Notify you of updates to the Site.</li>
               <li>
-                Offer new products, services, and/or recommendations to you.
+                Contributions must not be false, inaccurate, or misleading.
               </li>
-              <li>Perform other business activities as needed.</li>
+              <li>Contributions should not be unsolicited or unauthorized.</li>
               <li>
-                Prevent fraudulent transactions, monitor against theft, and
-                protect against criminal activity.
+                Contributions should not be used in pyramid schemes, chain
+                letters, spam, mass mailings, or other forms of solicitation.
               </li>
-              <li>Process payments and refunds.</li>
-              <li>
-                Request feedback and contact you about your use of the Site.
-              </li>
-              <li>Resolve disputes and troubleshoot problems.</li>
-              <li>Respond to product and customer service requests.</li>
-              <li>Send you a newsletter.</li>
-              <li>Solicit support for the Site.</li>
             </ul>
           </div>
+
           <div className='privacy-title'>
-            <h5>DISCLOSURE OF YOUR INFORMATION</h5>
+            <h5>7. CONTRIBUTION LICENSE</h5>
             <p>
-              We may share information we have collected about you in certain
-              situations. Your information may be disclosed as follows:
+              This license applies to any form, media, or technology now known
+              or to be developed in the future, and includes our use of your
+              name, business name, and franchise name, if applicable, as well as
+              any trademarks, service marks, trade names, logos, and personal
+              and commercial pictures that you submit. You relinquish any moral
+              rights in your Contributions and guarantee that no moral rights
+              were asserted in your Contributions.
+            </p>
+          </div>
+
+          <div className='privacy-title'>
+            <h5>8. PRIVACY POLICY</h5>
+            <p>
+              We care about data privacy and security. Please review our Privacy
+              Policy:{' '}
+              <a
+                href='https://trip-law.com/privacy-policy'
+                target='_blank'
+                className='text-blue-500 underline'
+              >
+                https://trip-law.com/privacy-policy
+              </a>
+              . By using the Services, you agree to comply with our Privacy
+              Policy, which is included in these Legal Terms. Please be aware
+              that the Services are hosted in the United States and United
+              States.
+            </p>
+            <p>
+              If you access the Services from a location where the laws or other
+              requirements governing the gathering of personal data, use, or
+              disclosure differ from those in the United States and the United
+              States, your continued use of the Services transfers your data to
+              the United States and the United States, and you explicitly agree
+              to have your data passed on to and processed in the United States
+              and the United States.
+            </p>
+          </div>
+
+          <div className='privacy-title'>
+            <h5>9. COPYRIGHT INFRINGEMENTS</h5>
+            <p>
+              We respect others' intellectual property rights. If you feel that
+              any material published on or through the Services violates any
+              copyright you own or control, please tell us right away via the
+              contact information given or by email.
+            </p>
+          </div>
+
+          <div className='privacy-title'>
+            <h5>10. MODIFICATIONS AND INTERRUPTIONS</h5>
+            <p>
+              We reserve the right to update, modify, or eliminate the contents
+              of the Services at any time and for any reason, without prior
+              warning. However, we are not obligated to update any information
+              about our Services. We shall not be accountable to you or any
+              third person for any modification, price change, suspension, or
+              termination of the Services.
+            </p>
+          </div>
+
+          <div className='privacy-title'>
+            <h5>11. USER DATA</h5>
+            <p>
+              We will maintain certain data that you transmit to the Services to
+              manage the performance of the Services, as well as data relating
+              to your use of the Services. Although we perform routine backups
+              of data, you are solely responsible for all data that you transmit
+              or that relates to any activity you have undertaken using the
+              Services.
             </p>
           </div>
           <div className='privacy-title'>
-            <h5>By Law or to Protect Rights</h5>
+            <h5>12. CALIFORNIA USERS AND RESIDENTS</h5>
             <p>
-              If we believe the release of information about you is necessary to
-              respond to legal process, to investigate or remedy potential
-              violations of our policies, or to protect the rights, property,
-              and safety of others, we may share your information as permitted
-              or required by any applicable law, rule, or regulation. This
-              includes exchanging information with other entities for fraud
-              protection and credit risk reduction.
+              {`If we are unable to address your issue, please contact the issue
+              Assistance Unit of the Division of Consumer Services at the
+              California Department of Consumer Affairs. You can reach them in
+              writing at 1625 North Market Blvd., Suite N 112, Sacramento, CA
+              95834, or by phone at (800) 952-5210 or (916) 445-1254.`}
+            </p>
+          </div>
+
+          <div className='privacy-title'>
+            <h5>CONTACT US</h5>
+            <p>
+              {`To resolve a complaint regarding the Services or to receive further information regarding the use of the Services, please contact us at:`}
             </p>
           </div>
           <div className='privacy-title'>
-            <h5>Third-Party Service Providers</h5>
             <p>
-              We may share your information with third parties that perform
-              services for us or on our behalf, including payment processing,
-              data analysis, email delivery, hosting services, customer service,
-              and marketing assistance.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Marketing Communications</h5>
-            <p>
-              With your consent, or with an opportunity for you to withdraw
-              consent, we may share your information with third parties for
-              marketing purposes, as permitted by law.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Interactions with Other Users</h5>
-            <p>
-              If you interact with other users of the Site, those users may see
-              your name, profile photo, and descriptions of your activity,
-              including sending invitations to other users, chatting with other
-              users, liking posts, following blogs.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Online Postings</h5>
-            <p>
-              When you post comments, contributions or other content to the
-              Site, your posts may be viewed by all users and may be publicly
-              distributed outside the Site in perpetuity.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Third-Party Advertisers</h5>
-            <p>
-              We may use third-party advertising companies to serve ads when you
-              visit the Site. These companies may use information about your
-              visits to the Site and other websites that are contained in web
-              cookies in order to provide advertisements about goods and
-              services of interest to you.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Business Partners</h5>
-            <p>
-              We may share your information with our business partners to offer
-              you certain products, services or promotions.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Other Third Parties</h5>
-            <p>
-              We may share your information with advertisers and investors for
-              the purpose of conducting general business analysis. We may also
-              share your information with such third parties for marketing
-              purposes, as permitted by law.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Sale or Bankruptcy</h5>
-            <p>
-              If we reorganize or sell all or a portion of our assets, undergo a
-              merger, or are acquired by another entity, we may transfer your
-              information to the successor entity. If we go out of business or
-              enter bankruptcy, your information would be an asset transferred
-              or acquired by a third party. You acknowledge that such transfers
-              may occur and that the transferee may decline honor commitments we
-              made in this Privacy Policy. We are not responsible for the
-              actions of third parties with whom you share personal or sensitive
-              data, and we have no authority to manage or control third-party
-              solicitations. If you no longer wish to receive correspondence,
-              emails or other communications from third parties, you are
-              responsible for contacting the third party directly.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>TRACKING TECHNOLOGIES</h5>
-          </div>
-          <div className='privacy-title'>
-            <h5>Cookies and Web Beacons</h5>
-            <p>
-              We may use cookies, web beacons, tracking pixels, and other
-              tracking technologies on the Site to help customize the Site and
-              improve your experience.
+              Trip Law <br />
+              231 N. Kentucky Ave. Ste. 213, <br />
+              Lakeland, FL 33801
               <br />
-              When you access the Site, your personal information is not
-              collected through the use of tracking technology. Most browsers
-              are set to accept cookies by default. You can remove or reject
-              cookies, but be aware that such action could affect the
-              availability and functionality of the Site. You may not decline
-              web beacons. However, they can be rendered ineffective by
-              declining all cookies or by modifying your web browser’s settings
-              to notify you each time a cookie is tendered, permitting you to
-              accept or decline cookies on an individual basis.
+              United States
               <br />
-              We may use cookies, web beacons, tracking pixels, and other
-              tracking technologies on the Site to help customize the Site and
-              improve your experience. Examples of Cookies we may use:
-            </p>
-            <ul>
-              <li>
-                Session Cookies. We use Session Cookies to operate our Service.
-              </li>
-              <li>
-                Preference Cookies. We use Preference Cookies to remember your
-                preferences and various settings.
-              </li>
-              <li>
-                Security Cookies. We use Security Cookies for security purposes.
-              </li>
-            </ul>
-          </div>
-          <div className='privacy-title'>
-            <h5>Internet-Based Advertising</h5>
-            <p>
-              Additionally, we may use third-party software to implement email
-              marketing campaigns and manage other interactive marketing
-              initiatives. This third-party software may use cookies or similar
-              tracking technology to help manage and optimize your online
-              experience with us.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>Website Analytics</h5>
-            <p>
-              We may also partner with selected third-party vendors; such as
-              Google, Facebook, Twitter and others, to allow tracking
-              technologies and remarketing services on the Site [and our mobile
-              application] through the use of first party cookies and
-              third-party cookies, to, among other things, analyze and track
-              users’ use of the Site [and our mobile application] , determine
-              the popularity of certain content and better understand online
-              activity. By accessing the Site[,our mobile application,], you
-              consent to the collection and use of your information by these
-              third-party vendors. You are encouraged to review their privacy
-              policy and contact them directly for responses to your questions.
-              We do not transfer personal information to these third-party
-              vendors. However, if you do not want any information to be
-              collected and used by tracking technologies, you can visit the
-              third-party vendor or You should be aware that getting a new
-              computer, installing a new browser, upgrading an existing browser,
-              or erasing or otherwise altering your browser’s cookies files may
-              also clear certain opt-out cookies, plug-ins, or settings.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>THIRD-PARTY WEBSITES</h5>
-            <p>
-              The Site may contain links to third-party websites and
-              applications of interest, including external services, that are
-              not affiliated with us. Once you have used these links to leave
-              the Site any information you provide to these third parties is not
-              covered by this Privacy Policy, and we cannot guarantee the safety
-              and privacy of your information. Before visiting and providing any
-              information to any third-party websites, you should inform
-              yourself of the privacy policies and practices of the third party
-              responsible for that website, and should take those steps
-              necessary to, in your discretion, protect the privacy of your
-              information. We are not responsible for the content or privacy and
-              security practices and policies of any third parties, including
-              other sites, services or applications that may be linked to or
-              from the Site.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>SECURITY OF YOUR INFORMATION</h5>
-            <p>
-              We use administrative, technical, and physical security measures
-              to help protect your personal information. While we have taken
-              reasonable steps to secure the personal information you provide to
-              us, please be aware that despite our efforts, no security measures
-              are perfect or impenetrable, and no method of data transmission
-              can be guaranteed against any interception or other type of
-              misuse. Any information disclosed online is vulnerable to
-              interception and misuse by unauthorized parties. Therefore, we
-              cannot guarantee complete security if you provide personal
-              information.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>POLICY FOR CHILDREN</h5>
-            <p>
-              We do not knowingly solicit information from or market to children
-              under the age of 13. If you become aware of any data we have
-              collected from children under age 13, please contact us using the
-              contact information provided below.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>CONTROLS FOR DO-NOT-TRACK FEATURES</h5>
-            <p>
-              Most web browsers and some mobile operating systems include a
-              Do-Not-Track (“DNT”) feature or setting you can activate to signal
-              your privacy preference not to have data about your online
-              browsing activities monitored and collected. No uniform technology
-              standard for recognizing and implementing DNT signals has been
-              finalized. As such, we do not currently respond to DNT browser
-              signals or any other mechanism that automatically communicates
-              your choice not to be tracked online. If a standard for online
-              tracking is adopted that we must follow in the future, we will
-              inform you about that practice in a revised version of this
-              Privacy Policy./Most web browsers and some mobile operating system
-              include a Do-Not-Track (“DNT”) feature or setting you can activate
-              to signal your privacy preference not to have data about your
-              online browsing activities monitored and collected. If you set the
-              DNT signal on your browser, we will respond to such DNT browser
-              signals.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>OPTIONS REGARDING YOUR INFORMATION</h5>
-            <p>Emails and Communications</p>
-            <p>
-              If you no longer wish to receive correspondence, emails, or other
-              communications from us, you may opt-out by:
-            </p>
-            <ul>
-              <li>
-                Noting your preferences at the time you register your account
-                with the Site
-              </li>
-              <li>
-                Logging into your account settings and updating your
-                preferences.
-              </li>
-              <li>
-                Contacting us using the contact information provided below
-              </li>
-            </ul>
-            <p>
-              If you no longer wish to receive correspondence, emails, or other
-              communications from third parties, you are responsible for
-              contacting the third party directly.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>PRIVACY RIGHTS</h5>
-            <p>
-              Bangladesh law regarding privacy rights, permits our users who are
-              Bangladeshi citizen or residents to request and obtain from us,
-              once a year and free of charge, information about categories of
-              personal information we disclosed to third parties for direct
-              marketing purposes and the names and addresses of all third
-              parties with which we shared personal information in the
-              immediately preceding calendar year. If you are a Bangladeshi
-              citizen or resident and would like to make such a request, please
-              submit your request in writing to us using the contact information
-              provided below. If you are under 18 years of age, reside in
-              Bangladesh, and have a registered account with the Site, you have
-              the right to request removal of unwanted data that you publicly
-              post on the Site. To request removal of such data, please contact
-              us using the contact information provided below, and include the
-              email address associated with your account and a statement that
-              you reside in Bangladesh. We will make sure the data is not
-              publicly displayed on the Site, but please be aware that the data
-              may not be completely or comprehensively removed from our systems.
-            </p>
-          </div>
-          <div className='privacy-title'>
-            <h5>CONSENT</h5>
-            <p>
-              By using this Website, you consent to the collection and use of
-              information as specified above. If we make changes to our Privacy
-              Policy, we will post those changes on this page. Please review
-              this page frequently to remain up-to-date with the information we
-              collect, how we use it, and under what circumstances we disclose
-              it. You must review the new Privacy Policy carefully to make sure
-              you understand our practices and procedures.
+              Phone: (863)-599-6735
+              <br />
+              info@trip-law.com
+              <br />
             </p>
           </div>
         </div>

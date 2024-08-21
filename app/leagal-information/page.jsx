@@ -9,7 +9,10 @@ const page = () => {
       <Head>
         <title>Leagal Information - Attorney Hardam Tripathi, Esq.</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content='' />
+        <meta
+          name='description'
+          content={`Learn about Trip-Law's commitment to your privacy, the use of cookies, comment policy, and legal notices in our detailed Legal Information section`}
+        />
       </Head>
       <HeroSection />
       <LeagalInformation />

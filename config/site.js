@@ -16,7 +16,7 @@ export const SITECONFIG = {
       },
       {
         title: 'About Us',
-        slug: '/about-us',
+        slug: '/about',
       },
     ],
     right: [
@@ -30,7 +30,7 @@ export const SITECONFIG = {
       },
       {
         title: 'Contact Us',
-        slug: '/contact-us',
+        slug: '/contact',
       },
     ],
   },
@@ -45,7 +45,7 @@ export const SITECONFIG = {
     },
     {
       title: 'About Us',
-      slug: '/about-us',
+      slug: '/about',
     },
     {
       title: 'Appointment',
@@ -57,7 +57,7 @@ export const SITECONFIG = {
     },
     {
       title: 'Contact Us',
-      slug: '/contact-us',
+      slug: '/contact',
     },
   ],
 

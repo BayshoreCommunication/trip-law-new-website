@@ -12,7 +12,7 @@ const ScheduleSection = () => {
   return (
     <SectionLayout bg='bg-[#F1F5FA] '>
       <div className='space-y-14'>
-        <div className='flex flex-col-reverse md:flex-row gap-8 items-center'>
+        <div className='flex flex-col-reverse items-center gap-8 md:flex-row'>
           <div className='flex-1'>
             <CardMotion
               whileInView={{
@@ -34,11 +34,11 @@ const ScheduleSection = () => {
                   You Can Get A Free Consultation <br /> From Hardam Tripathi,
                   Esq.
                 </h2>
-                <div className='flex justify-center items-center md:justify-start'>
+                <div className='flex items-center justify-center md:justify-start'>
                   <hr className='h-[2px] my-0 bg-stone-950 border-0 w-28 mt-2 mb-4 '></hr>
                 </div>
 
-                <p className='mb-4 text-lg text-stone-950 text-center md:text-left'>
+                <p className='mb-4 text-lg text-center text-stone-950 md:text-left'>
                   Using our interactive simulator, you can find out your options
                   of moving abroad. We offer a diverse database of mentorship
                   programs that will prepare you to be able to succeed in your
@@ -69,12 +69,7 @@ const ScheduleSection = () => {
                 x: 100,
               }}
             >
-              <div className='flex justify-center items-center'>
-                {/* <div>
-                  <Suspense fallback={<p>Loading video...</p>}>
-                    <VideoPlayer src={'/assets/video/trip-law.mp4'} />
-                  </Suspense>
-                </div> */}
+              <div className='flex items-center justify-center'>
                 <Image
                   src='/assets/home/Consultation.png'
                   alt='about-image'
@@ -106,7 +101,7 @@ const ScheduleSection = () => {
                 <hr className='h-[2px] my-0 bg-stone-950 border-0 w-28 mt-2 mb-4 '></hr>
               </div>
             </div>
-            <div className='flex justify-center items-center md:items-end flex-col md:flex-row gap-8 md:gap-20 '>
+            <div className='flex flex-col items-center justify-center gap-8 md:items-end md:flex-row md:gap-20 '>
               <div className='flex justify-center'>
                 <Image
                   src='/assets/home/membership-logo.png'
