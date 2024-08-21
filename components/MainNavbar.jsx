@@ -38,8 +38,8 @@ const MainNavbar = () => {
       maxWidth='2xl'
       className='flex !justify-center bg-white bg-cover py-1 fixed top-0 shadow-md'
     >
-      <NavbarContent className='md:hidden ml-0' justify='start'>
-        <NavbarMenuToggle className='text-slate-900 ml-0' />
+      <NavbarContent className='ml-0 md:hidden' justify='start'>
+        <NavbarMenuToggle className='ml-0 text-slate-900' />
       </NavbarContent>
 
       <NavbarContent className=' md:hidden' justify='end'>
@@ -121,12 +121,13 @@ const MainNavbar = () => {
                         </svg>
                       </span>
                     </div>
-                    <div className='absolute hidden group-hover:block bg-white shadow-lg rounded p-4 w-48'>
+                    <div className='absolute hidden w-48 p-4 bg-white rounded shadow-lg group-hover:block'>
                       <ul className='py-2 '>
                         <li>
                           <Link
                             href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
                             className={`nav-item`}
+                            target='_blank'
                           >
                             Podcast
                           </Link>
@@ -151,7 +152,7 @@ const MainNavbar = () => {
 
       <NavbarMenu className='ml-0'>
         {SITECONFIG?.mobileNav?.map((nav, index) => (
-          <NavbarMenuItem key={`${nav}-${index}`} className='list-none mt-4'>
+          <NavbarMenuItem key={`${nav}-${index}`} className='mt-4 list-none'>
             {nav.title === 'Blog' ? (
               <div
                 className='relative inline-block'
@@ -198,6 +199,7 @@ const MainNavbar = () => {
                           }}
                           href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
                           className={`py-2 flex nav-item`}
+                          target='_blank'
                         >
                           Podcast
                         </Link>

@@ -98,7 +98,7 @@ export const SITECONFIG = {
       },
       {
         title: 'About Us',
-        slug: '/about-us',
+        slug: '/about',
       },
       {
         title: 'News',
@@ -106,7 +106,7 @@ export const SITECONFIG = {
       },
       {
         title: 'Contact Us',
-        slug: '/contact-us',
+        slug: '/contact',
       },
     ],
     contact_us: [
