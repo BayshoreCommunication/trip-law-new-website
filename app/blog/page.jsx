@@ -84,12 +84,6 @@ const page = async () => {
                         >
                           Read More
                         </button>
-                        {/* <button
-                          type="button"
-                          class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
-                        >
-                          Research
-                        </button> */}
                       </div>
                     </div>
                   </Link>
@@ -129,12 +123,6 @@ const page = async () => {
                         >
                           Read More
                         </button>
-                        {/* <button
-                          type="button"
-                          class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
-                        >
-                          Research
-                        </button> */}
                       </div>
                     </div>
                   </Link>
@@ -142,7 +130,7 @@ const page = async () => {
             </div>
           </div>
         </CardMotion>
-
+        {/* 
         <CardMotion
           whileInView={{
             opacity: 1,
@@ -159,7 +147,7 @@ const page = async () => {
           <hr className='w-full h-[1px] mx-auto my-2 bg-[#1B2639] border-0 rounded md:my-5' />
         </CardMotion>
 
-        <div className='flex flex-col-reverse lg:flex-row gap-7 md:gap-16 mt-8 md:mt-10 mb-4 md:mb-10'>
+        <div className='flex flex-col-reverse mt-8 mb-4 lg:flex-row gap-7 md:gap-16 md:mt-10 md:mb-10'>
           <div className='flex-1'>
             <CardMotion
               whileInView={{
@@ -174,7 +162,7 @@ const page = async () => {
                 x: -100,
               }}
             >
-              <h2 className='mb-4 text-2xl md:text-4xl font-bold tracking-normal text-slate-900 text-center md:text-left'>
+              <h2 className='mb-4 text-2xl font-bold tracking-normal text-center md:text-4xl text-slate-900 md:text-left'>
                 Create a beautiful event platform services
               </h2>
               <div className='mt-3'>
@@ -206,12 +194,6 @@ const page = async () => {
                   style={'bg-[#1B2639] text-white'}
                   radius={'sm'}
                 />
-                {/* <button
-                  type="button"
-                  class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
-                >
-                  Research
-                </button> */}
               </div>
             </CardMotion>
           </div>
@@ -287,29 +269,17 @@ const page = async () => {
                   {item.dec}
                 </p>
                 <div className='flex justify-center md:justify-start'>
-                  {/* <button
-                    type="button"
-                    class="text-white bg-[#1B2639] hover:bg-[#162030] font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
-                  >
-                    Read More
-                  </button> */}
                   <ScondayButton
                     title={'Read More'}
                     link={''}
                     style={'bg-[#1B2639] text-white'}
                     radius={'sm'}
                   />
-                  {/* <button
-                    type="button"
-                    class="text-white bg-[#1B2639] hover:bg-[#162030] focus:ring-4 focus:ring-blue-300 font-medium  text-lg px-4 py-2 me-2 mb-2 focus:outline-none rounded-md"
-                  >
-                    Research
-                  </button> */}
                 </div>
               </div>
             </CardMotion>
           ))}
-        </div>
+        </div> */}
       </SectionLayout>
     </>
   );

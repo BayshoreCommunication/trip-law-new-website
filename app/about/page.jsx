@@ -18,7 +18,7 @@ const page = () => {
       <HeroSection />
       <AboutSection />
       <TripLawObligation />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
     </>
   );
 };
