@@ -38,8 +38,8 @@ const AboutSection = () => {
                 <p className='mb-4 text-lg text-center text-stone-950 md:text-left'>
                   At Trip Law we set out to create a unique law firm where
                   outstanding immigration representation and a deep commitment
-                  to humanity go hand in hand. Hardam H. Tripathi was a former
-                  legal professional in the federal government.
+                  to humanity go hand in hand. Attorney Hardam Tripathi was a
+                  former legal professional in the federal government.
                 </p>
                 <p className='mb-4 text-lg text-center text-stone-950 md:text-left'>
                   Trip Law at this moment is the home to some of the most

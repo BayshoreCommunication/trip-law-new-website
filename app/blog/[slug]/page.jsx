@@ -1,12 +1,11 @@
-import React from 'react';
 import Image from 'next/image';
 import GetAllPostData from '@/lib/GetAllPostData';
 import parse from 'html-react-parser';
-import { Link } from '@nextui-org/react';
 import SectionLayout from '@/components/shared/SectionLayout';
 import HeroSection from '@/components/blog/HeroSection';
 import CardMotion from '@/components/motion/CardMotion';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const css = `
  h1, h2, p, br, nav {

@@ -88,7 +88,7 @@ const page = async ({ params }) => {
 
             <div className='col-span-2 sm:col-span-1 h-[100%] md:h-[1600px] overflow-y-scroll overflow-x-hidden hidden md:block'>
               {servicesData?.map((el, index) => (
-                <Link href={`/services/${el?.slug}`}>
+                <Link href={`/services/${el?.slug}`} key={index}>
                   <SideServicesCard serversData={el} />
                 </Link>
               ))}

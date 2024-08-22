@@ -68,7 +68,7 @@ export const servicesData = [
     icon: '/assets/services/services-icon/Green-Card-Through-Marriage.png',
     slug: 'green-card-through-marriage',
     title: 'Green Card Through Marriage',
-    sortTitle: `Are you married to a USAn the United States? Obtaining a green card through marriage can be a complex and emotionally charged process. We understand the challenges you face and are dedicated to providing comprehensive legal guidance throughout your journey.`,
+    sortTitle: `Are you married to a U.S.A citizen or lawful permanent resident and dreaming of building a life together in the United States? Obtaining a green card through marriage can be a complex and emotionally charged process. We understand the challenges you face and are dedicated to providing comprehensive legal guidance throughout your journey.`,
     dece: `
     <div>
         <img
@@ -435,7 +435,7 @@ export const servicesData = [
     icon: '/assets/services/services-icon/Green-Card-Through-Consular-Processing.png',
     slug: 'green-card-through-consular-processing',
     title: 'Green Card Through Consular Processing',
-    sortTitle: ` You're hoping to get that great job in the United States, where your specialist skills are in high demand, right? Well, the H-1B visa program is your ladder to making it happen! But let's be real – the whole application process and all those legal hoops you gotta jump through can be pretty overwhelming. We're here to make it simple, guiding you through every step and making sure you've got everything you need to snag that H-1B visa and start your American adventure.`,
+    sortTitle: `Are you all set to start the process for getting your permanent residency in the U.S.A, but you're currently living outside the country? Going through Consular Processing for a Green Card can be your ticket to making that dream a reality. It can be a bit tricky to figure out all the ins and outs, but don't worry! We're here to give you expert advice and full support to make sure everything goes smoothly and you can make that transition successfully.`,
     dece: `
     <div>
       <img
@@ -444,7 +444,7 @@ export const servicesData = [
       className="w-full h-full mb-10"
       />
                     
-                    <p>
+      <p>
          Are you all set to start the process for getting your permanent residency in the U.S.A, but you're currently living outside the country? Going through Consular Processing for a Green Card can be your ticket to making that dream a reality. It can be a bit tricky to figure out all the ins and outs, but don't worry! We're here to give you expert advice and full support to make sure everything goes smoothly and you can make that transition successfully.
 
 
@@ -1136,7 +1136,7 @@ export const servicesData = [
     icon: '/assets/services/services-icon/O1-Visa.png',
     slug: 'o1-visa',
     title: 'O-1 Visa',
-    sortTitle: ` Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
+    sortTitle: `Are you an individual of "extraordinary ability" in the sciences, arts, education, business, or athletics, yearning to showcase your talents and contribute to the dynamic landscape of the United States? The O-1 visa program recognizes and welcomes individuals like you, paving the way for temporary residency and fostering innovation across diverse fields. We supply legal guidance and unwavering support to ensure your O-1 visa journey is a resounding success.`,
     dece: `<div>
     <img
         src="/assets/services/Employment-Based-Immigration-Feature-Images/O-1-Visa-Feature-Image.jpg"} alt="server-image"
@@ -1335,7 +1335,7 @@ Today, set a free consultation with us to talk about your O-1 visa options. Disc
     icon: '/assets/services/services-icon/EB-1-Visa.png',
     slug: 'eb1-visa',
     title: 'EB-1 Visa',
-    sortTitle: ` Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
+    sortTitle: `Got real standout skills in your field, Just itching to bring your exceptional skills and talent to the U.S.A? Well, good news – the EB-1 visa program is all about recognizing and welcoming folks like you who are at the top of their game. It's an elite pass to permanent residency in the States. And guess what? We're here to make that journey a piece of cake. We will be with you every step of the way, ensuring your EB-1 visa journey is smooth sailing and ends in success.`,
     dece: `<div>
     <img
       src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-1-Visa-Feature-Image.jpg"
@@ -1537,7 +1537,7 @@ Schedule a consultation today to discuss your EB-1 visa options and learn how Tr
     icon: '/assets/services/services-icon/EB-2-Visa.png',
     slug: 'eb2-visa',
     title: 'EB-2 Visa',
-    sortTitle: ` Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
+    sortTitle: `If you're aiming to bring your expertise and skills to the American workforce permanently, the EB-2 visa program is your avenue. It offers professionals with advanced degrees or exceptional ability a route to securing green cards and leaving a lasting impact in the United States. Here, we're offering comprehensive legal guidance and steadfast support, ensuring your EB-2 visa journey is both successful and hassle-free.`,
     dece: `<div>
     <img
         src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-2-Visa-Feature-Image.jpg" alt="server-image"
@@ -1791,7 +1791,7 @@ Ready to consult about your EB-2 visa possibilities? Let's set up a meeting and 
     icon: '/assets/services/services-icon/EB-3-Visa.png',
     slug: 'eb3-visa',
     title: 'EB-3 Visa',
-    sortTitle: ` Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
+    sortTitle: `Want to build a solid future in the U.S.A, leveraging your skills and hard work? The EB-3 visa program is your ticket. It's made for skilled workers, professionals, and experienced individuals like you, offering a path to permanent residency. We'll guide you through the entire application process, ensuring your journey to a green card is as smooth as it is stress-free.`,
     dece: `<div>
     <img
       src="/assets/services/Employment-Based-Immigration-Feature-Images/EB-3-Visa-Feature-Image.jpg" alt="server-image"
@@ -2222,7 +2222,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
     icon: '/assets/services/services-icon/U-Visa.png',
     slug: 'u-visa',
     title: 'U Visa',
-    sortTitle: `Did you flee from your home country due to a well-founded fear of persecution based on your race, religion, nationality, political opinion, or membership in a particular social group? The asylum process offers a pathway to protection and safety in the United States for individuals like you. We're here to lend a hand and offer all the support you need to navigate through the sometimes confusing asylum process. Our goal is to ensure you find the safety and sanctuary you're seeking.`,
+    sortTitle: `Have you been a victim of a serious crime in the United States, such as human trafficking, violent assault, or domestic violence? Did you cooperate with law enforcement in investigating or prosecuting the crime? The U visa program offers a unique pathway to lawful status for victims who meet certain criteria. We're here to give you all the legal advice and support you need to navigate the U visa process and make sure you get the safety and justice you deserve.`,
     dece: `
     <div>
     <img
@@ -2757,7 +2757,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
     icon: '/assets/services/services-icon/Bond-Hearing.png',
     slug: 'bond-hearing',
     title: 'Bond Hearing',
-    sortTitle: `Being served with a Notice to Appear (NTA) can be daunting, marking the beginning of your immigration journey through the U.S.A legal system. The first hurdle on this path is often the Master Calendar Hearing (MCH), where the stage is set for your case. We are dedicated to supporting you through each stage of the MCH process with clarity and expertise. Our aim is to ensure that you comprehend your options fully and can make well-informed decisions regarding your future.`,
+    sortTitle: `Being arrested can be a frightening and confusing experience. One of the first hurdles you might face is a bond hearing, where a judge decides whether you can be released while awaiting trial. Having strong legal representation at this crucial stage is vital. Our experienced attorneys navigate the bond hearing process with you, maximizing your chances of release and ensuring your rights are protected.`,
     dece: `
     <div>
     <img
@@ -3792,7 +3792,7 @@ Fancy a chat about your EB-3 visa options today? We can talk about how Trip Law 
     icon: '/assets/services/services-icon/Citizenship.png',
     slug: 'citizenship',
     title: 'Citizenship',
-    sortTitle: `Citizenship isn’t merely about paperwork, ceremonies, and legal requirements. It’s a profound connection to a nation—a bond forged through shared values, responsibilities, and contributions. It grants you a multitude of rights and privileges, from voting in elections to running for office, citizenship empowers you to shape the future of your adopted nation. We’re here to provide tailored guidance to help you navigate the intricate process of obtaining citizenship.`,
+    sortTitle: `Citizenship isn’t merely about paperwork, ceremonies, and legal requirements. It’s a profound connection to a nation—a bond forged through shared values, responsibilities, and contributions. It grants you a multitude of rights and privileges, from voting in elections to running for office, citizenship empowers you to shape the future of your adopted nation. We’re here to provide tailored guidance to help you navigate the intricate process of obtaining citizenship. `,
     dece: `
     <div>
     <img
