@@ -30,7 +30,7 @@ const SideServicesCard = ({ serversData }) => {
       whileHover={{ scale: 0.99 }}
       whileTap={{ scale: 0.95 }}
       href='#'
-      class={`flex max-w-md p-6 bg-white border border-gray-200 rounded-sm shadow hover:bg-gray-100 items-center gap-6 mb-2 ${pathname === '/services/' + serversData?.slug ? 'bg-gray-200' : ''}`}
+      class={`flex max-w-md p-6 border border-gray-200 rounded-sm shadow hover:bg-gray-100 items-center gap-6 mb-2 ${pathname === '/services/' + serversData?.slug ? 'bg-gray-200' : 'bg-white'}`}
     >
       <Image
         src={serversData.icon}
