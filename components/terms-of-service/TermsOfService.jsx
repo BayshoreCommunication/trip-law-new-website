@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionLayout from '../shared/SectionLayout';
+import Link from 'next/link';
 
 const css = `
   h1{
@@ -52,14 +53,14 @@ const TermsOfService = () => {
             <p>We are Trip Law ("Company," "we," "us," "our").</p>
             <p>
               We operate the website{' '}
-              <a
-                href='https://trip-law.com'
+              <Link
+                href='/'
                 target='_blank'
                 className='text-blue-500 underline'
               >
-                https://trip-law.com
-              </a>
-              {` , as well as any other related products and services that refer or
+                www.trip-law.com
+              </Link>
+              {`, as well as any other related products and services that refer or
               link to these legal terms (the "Legal Terms") (collectively, the
               "Services").`}
             </p>
