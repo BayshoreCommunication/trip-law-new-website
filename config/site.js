@@ -84,7 +84,7 @@ export const SITECONFIG = {
       },
       {
         title: 'Legal Information',
-        slug: '/leagal-information',
+        slug: '/legal-information',
       },
     ],
     quick_links: [
