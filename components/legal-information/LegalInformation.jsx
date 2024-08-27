@@ -36,7 +36,7 @@ const css = `
 
 `;
 
-const LeagalInformation = () => {
+const LegalInformation = () => {
   return (
     <>
       <style>{css}</style>
@@ -235,4 +235,4 @@ const LeagalInformation = () => {
   );
 };
 
-export default LeagalInformation;
+export default LegalInformation;
