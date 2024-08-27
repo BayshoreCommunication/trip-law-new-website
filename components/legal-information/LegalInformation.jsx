@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionLayout from '../shared/SectionLayout';
+import Link from 'next/link';
 
 const css = `
   h1{
@@ -53,13 +54,13 @@ const LegalInformation = () => {
               protecting your personal information. Our Privacy Policy outlines
               how we collect, use, disclose, and safeguard your information when
               you visit our website,{' '}
-              <a
-                href='www.trip-law.com'
+              <Link
+                href='/'
                 target='_blank'
                 className='text-blue-500 underline'
               >
                 www.trip-law.com
-              </a>
+              </Link>
               , or any related media. Please read it carefully. If you have any
               disagreements, kindly do not use the site.
             </p>
