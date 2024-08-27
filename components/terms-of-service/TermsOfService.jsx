@@ -254,13 +254,13 @@ const TermsOfService = () => {
             <p>
               We care about data privacy and security. Please review our Privacy
               Policy:{' '}
-              <a
-                href='https://trip-law.com/privacy-policy'
+              <Link
+                href='/privacy-policy'
                 target='_blank'
                 className='text-blue-500 underline'
               >
-                https://trip-law.com/privacy-policy
-              </a>
+                www.trip-law.com/privacy-policy
+              </Link>
               . By using the Services, you agree to comply with our Privacy
               Policy, which is included in these Legal Terms. Please be aware
               that the Services are hosted in the United States and United
