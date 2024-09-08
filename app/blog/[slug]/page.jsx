@@ -62,7 +62,6 @@ const page = async ({ params }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='description' content={blogDetails[0]?.title} />
 
-        {/* Open Graph meta tags */}
         <meta property='og:title' content={blogDetails[0]?.title} />
         <meta property='og:description' content={blogDetails[0]?.title} />
         <meta
