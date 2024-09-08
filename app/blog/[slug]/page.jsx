@@ -61,7 +61,22 @@ const page = async ({ params }) => {
         <title>{blogDetails[0]?.title}</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='description' content={blogDetails[0]?.title} />
+
+        {/* Open Graph meta tags */}
+        <meta property='og:title' content={blogDetails[0]?.title} />
+        <meta
+          property='og:description'
+          content={blogDetails[0]?.description || blogDetails[0]?.title}
+        />
+        <meta
+          property='og:image'
+          content={blogDetails[0]?.featuredImage?.image?.url}
+        />
+        <meta property='og:url' content={blogDetails[0]?.slug} />
+        <meta property='og:type' content='article' />
+        <meta property='og:site_name' content='Trip Law' />
       </Head>
+
       <style>{css}</style>
       <HeroSection />
       <SectionLayout bg='bg-white'>
