@@ -73,8 +73,8 @@ const MainNavbar = () => {
         <NavbarItem>
           <Link href='/' passHref>
             <Image
-              width={270}
-              height={270}
+              width={280}
+              height={280}
               src='/assets/site-logo/trip-law-logo.png'
               alt='Trip Low'
               className='object-cover cursor-pointer !max-w-[170px]'
