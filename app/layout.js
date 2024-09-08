@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className={mulish.className}>
         <Providers>
-          <div className='text-black bg-white overflow-x-hidden'>
+          <div className='overflow-x-hidden text-black bg-white'>
             <MainNavbar />
             {children}
             <Analytics />

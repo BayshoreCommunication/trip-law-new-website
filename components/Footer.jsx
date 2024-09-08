@@ -7,9 +7,9 @@ import SectionLayout from './shared/SectionLayout';
 const Footer = () => {
   return (
     <>
-      <div className='bg-red-700 py-3'>
+      <div className='py-3 bg-red-700'>
         <div className={` mx-auto flex justify-center items-center w-full `}>
-          <p className='container mx-5 lg-mx-0 text-white text-center md:text-left'>
+          <p className='container mx-5 text-center text-white lg-mx-0 md:text-left'>
             Disclaimer: Not a licensed attorney in the state of Florida.
             Licensed attorney in the District of Columbia and the state of
             Wisconsin only. Practices Immigration Law in all 50 states,
@@ -21,21 +21,21 @@ const Footer = () => {
       <footer className='bg-[#1B2639]'>
         <SectionLayout>
           <div className='md:flex md:justify-center'>
-            <div className='grid grid-cols-2 gap-8 sm:gap-6 md:grid-cols-5 justify-center '>
-              <div className='mb-6 md:mb-0 col-span-2 mx-auto md:mx-0'>
+            <div className='grid justify-center grid-cols-2 gap-8 sm:gap-6 md:grid-cols-5 '>
+              <div className='col-span-2 mx-auto mb-6 md:mb-0 md:mx-0'>
                 <Link
                   href='https://trip-law.com'
-                  className='flex items-center md:justify-start justify-center cursor-pointer'
+                  className='flex items-center justify-center cursor-pointer md:justify-start'
                 >
                   <Image
                     width={320}
                     height={200}
-                    src={SITECONFIG?.footer?.footer_logo}
+                    src={'/assets/site-logo/footer-logo.png'}
                     alt='Trip Low'
                     className='object-cover'
                   />
                 </Link>
-                <p className='text-gray-300 font-thin text-base py-5 max-w-96 text-center md:text-left'>
+                <p className='py-5 text-base font-thin text-center text-gray-300 max-w-96 md:text-left'>
                   {SITECONFIG?.footer?.description}
                 </p>
               </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <h2 className='mb-6 text-lg font-semibold text-white'>
                   Company
                 </h2>
-                <ul className='text-gray-300 font-thin text-base list-none ml-0'>
+                <ul className='ml-0 text-base font-thin text-gray-300 list-none'>
                   {SITECONFIG?.footer?.company?.map((el, index) => (
                     <li className='mb-4' key={index}>
                       <Link href={el.slug} className='hover:underline'>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <h2 className='mb-6 text-lg font-semibold text-white'>
                   Quick Links
                 </h2>
-                <ul className='text-gray-300 font-thin text-base list-none ml-0'>
+                <ul className='ml-0 text-base font-thin text-gray-300 list-none'>
                   {SITECONFIG?.footer?.quick_links?.map((el, index) => (
                     <li className='mb-4' key={index}>
                       <Link href={el.slug} className='hover:underline'>
@@ -71,8 +71,8 @@ const Footer = () => {
                 <h2 className='mb-6 text-lg font-semibold text-white'>
                   Contact
                 </h2>
-                <ul className='text-gray-300 font-thin text-base list-none ml-0'>
-                  <li className='mb-4 flex items-center gap-3'>
+                <ul className='ml-0 text-base font-thin text-gray-300 list-none'>
+                  <li className='flex items-center gap-3 mb-4'>
                     <div className='w-4 h-4'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -98,7 +98,7 @@ const Footer = () => {
                       231 N. Kentucky Ave. Ste. 213, Lakeland, Florida 33801
                     </p>
                   </li>
-                  <li className='mb-4 flex items-center gap-3'>
+                  <li className='flex items-center gap-3 mb-4'>
                     <div className='w-4 h-4'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -118,7 +118,7 @@ const Footer = () => {
 
                     <p>info@trip-law.com</p>
                   </li>
-                  <li className='mb-4 flex items-center gap-3'>
+                  <li className='flex items-center gap-3 mb-4'>
                     <div className='w-4 h-4'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -139,7 +139,7 @@ const Footer = () => {
                     <p>(863)-599-6735</p>
                   </li>
                   <li className='flex items-center justify-center md:justify-start mt-[-20px] md:mt-0 gap-3'>
-                    <div className='flex mt-10 sm:justify-center sm:mt-4 gap-3'>
+                    <div className='flex gap-3 mt-10 sm:justify-center sm:mt-4'>
                       <Link
                         href='https://www.facebook.com/TripLawPA'
                         target='_blank'
@@ -199,19 +199,19 @@ const Footer = () => {
           </div>
           <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
           <div className='md:flex :items-center sm:justify-between'>
-            <div className='text-gray-300 font-thin text-base text-center'>
+            <div className='text-base font-thin text-center text-gray-300'>
               © 2024{' '}
               <a href='https://trip-law.com/' className='hover:underline'>
                 Trip Law™
               </a>
               . All Rights Reserved.
             </div>
-            <div className='text-gray-300 font-thin text-base text-center'>
+            <div className='text-base font-thin text-center text-gray-300'>
               Design & Developed by{' '}
               <a
                 href='https://www.bayshorecommunication.com//'
                 target='_blank'
-                className='hover:underline font-medium'
+                className='font-medium hover:underline'
               >
                 BayShore Communication
               </a>
