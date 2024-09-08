@@ -39,6 +39,36 @@ ul {
 
 `;
 
+export async function generateMetadata({ params }) {
+  const blogPostData = await GetAllPostData();
+
+  const blogDetails = blogPostData?.data?.find(
+    (blogs) => blogs.slug === params.slug,
+  );
+
+  if (!blogDetails) {
+    return {
+      title: 'Blog not found',
+      description: 'No blog post available.',
+    };
+  }
+
+  let description = parse(blogDetails?.body);
+
+  return {
+    title: blogDetails?.title,
+    description: description[0]?.props?.children || blogDetails?.excerpt,
+    openGraph: {
+      title: blogDetails?.title,
+      description: description[0]?.props?.children || blogDetails?.excerpt,
+      images: [blogDetails?.featuredImage?.image?.url],
+      url: `https://www.trip-law.com/blog/${blogDetails?.slug}`,
+      type: 'article',
+      site_name: 'Trip Law',
+    },
+  };
+}
+
 const page = async ({ params }) => {
   const blogPostData = await GetAllPostData();
 
@@ -57,24 +87,6 @@ const page = async ({ params }) => {
 
   return (
     <>
-      <Head>
-        <title>{blogDetails[0]?.title}</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content={blogDetails[0]?.title} />
-
-        {/* This value change*/}
-
-        {/* <meta property='og:title' content={blogDetails[0]?.title} />
-        <meta property='og:description' content={blogDetails[0]?.title} />
-        <meta
-          property='og:image'
-          content={blogDetails[0]?.featuredImage?.image?.url}
-        />
-        <meta property='og:url' content={blogDetails[0]?.slug} />
-        <meta property='og:type' content='article' />
-        <meta property='og:site_name' content='Trip Law' /> */}
-      </Head>
-
       <style>{css}</style>
       <HeroSection />
       <SectionLayout bg='bg-white'>
