@@ -62,7 +62,7 @@ const page = async ({ params }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='description' content={blogDetails[0]?.title} />
 
-        <meta property='og:title' content={blogDetails[0]?.title} />
+        {/* <meta property='og:title' content={blogDetails[0]?.title} />
         <meta property='og:description' content={blogDetails[0]?.title} />
         <meta
           property='og:image'
@@ -70,7 +70,7 @@ const page = async ({ params }) => {
         />
         <meta property='og:url' content={blogDetails[0]?.slug} />
         <meta property='og:type' content='article' />
-        <meta property='og:site_name' content='Trip Law' />
+        <meta property='og:site_name' content='Trip Law' /> */}
       </Head>
 
       <style>{css}</style>
