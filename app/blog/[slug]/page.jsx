@@ -64,10 +64,7 @@ const page = async ({ params }) => {
 
         {/* Open Graph meta tags */}
         <meta property='og:title' content={blogDetails[0]?.title} />
-        <meta
-          property='og:description'
-          content={blogDetails[0]?.description || blogDetails[0]?.title}
-        />
+        <meta property='og:description' content={blogDetails[0]?.title} />
         <meta
           property='og:image'
           content={blogDetails[0]?.featuredImage?.image?.url}
