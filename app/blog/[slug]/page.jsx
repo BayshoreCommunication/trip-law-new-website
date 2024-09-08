@@ -4,7 +4,6 @@ import parse from 'html-react-parser';
 import SectionLayout from '@/components/shared/SectionLayout';
 import HeroSection from '@/components/blog/HeroSection';
 import CardMotion from '@/components/motion/CardMotion';
-import Head from 'next/head';
 import Link from 'next/link';
 
 const css = `
