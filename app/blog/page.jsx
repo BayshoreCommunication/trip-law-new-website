@@ -92,7 +92,7 @@ const page = async () => {
 
             <div className='col-span-2 h-[100%] md:h-[590px] overflow-y-scroll overflow-x-hidden '>
               {blogPostData?.data
-                ?.filter((pub, no) => pub.published === true)
+                ?.filter((pub, no) => pub.published === true && no !== 0)
                 ?.map((blogs, index) => (
                   <Link
                     className='flex items-center gap-6 mb-8'
