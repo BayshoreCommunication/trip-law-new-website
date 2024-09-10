@@ -5,6 +5,7 @@ import SectionLayout from '@/components/shared/SectionLayout';
 import HeroSection from '@/components/blog/HeroSection';
 import CardMotion from '@/components/motion/CardMotion';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 const css = `
  h1, h2, p, br, nav {
@@ -77,6 +78,10 @@ const page = async ({ params }) => {
   const blogDetails = blogPostData?.data?.filter(
     (blogs) => blogs.slug === params.slug,
   );
+
+  if (!blogDetails || blogDetails.length === 0) {
+    notFound();
+  }
 
   const postDate = (date) => {
     const formattedDate = new Date(date).toLocaleDateString('en-US', {
