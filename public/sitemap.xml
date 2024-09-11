@@ -1,4 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://trip-law.com/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://trip-law.com/</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/appointment</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/privacy-policy</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/disclaimers-and-terms-of-use</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/angel-investor</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/terms-of-service</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/legal-information</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/services</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/about</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/blog</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trip-law.com/contact</loc>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
