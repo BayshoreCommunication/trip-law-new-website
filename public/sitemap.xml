@@ -1,245 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
 <url>
   <loc>https://trip-law.com/</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://trip-law.com/appointment</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/green-card-through-marriage</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/green-card-through-immediate-relative</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/green-card-through-consular-processing</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/h1b-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/l1-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/o1-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/eb1-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/eb2-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/eb3-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/vawa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/u-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/asylum</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/t-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/bond-hearing</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/master-celender-hearing</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/individual-hearing</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/waivers</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/already-have-an-h1b-visa-should-i-get-ead-after-marriage</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/should-i-apply-for-a-single-or-multiple-entry-visa-which-one-suits-your-travel-plans-best</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/why-you-should-hire-a-lawyer-for-k1-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/privacy-policy</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/disclaimers-and-terms-of-use</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/angel-investor</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/terms-of-service</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/legal-information</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/services</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/about</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/blog</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://trip-law.com/contact</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
+  <lastmod>2024-09-10T09:18:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://trip-law.com/services/e2-treaty-visas</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/citizenship</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/naturalization-and-citizenship</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/services/green-card</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/how-does-car-accident-eligible-for-u-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/can-you-withdraw-asylum-application-after-green-card</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/j1-vs-h1b-visa-for-medical-residency-a-detailed-comparison</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/life-insurance-for-h1b-visa-holders-in-the-usa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/can-you-get-a-green-card-after-renouncing-us-citizenship</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/do-i-need-a-work-permit-for-e2-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/can-I-apply-for-h1b-visa-before-graduation</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/can-i-change-status-from-f1-to-e2-visa</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/how-long-can-you-stay-after-485-denied</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/how-can-i-contact-an-immigration-lawyer-for-free</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/do-you-need-an-immigration-lawyer</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://trip-law.com/blog/fastest-way-to-get-us-citizenship</loc>
-  <lastmod>2024-09-18T10:26:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-  
+
+
 </urlset>
