@@ -2,6 +2,8 @@
 User-agent: *
 Allow: /
 
+Disallow: /cgi-bin/
+
 # Host
 Host: https://trip-law.com
 
