@@ -69,7 +69,6 @@ const MainNavbar = () => {
             </NavbarItem>
           );
         })}
-        {/* comment */}
         <NavbarItem>
           <Link href='/' passHref>
             <Image
