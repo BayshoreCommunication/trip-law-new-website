@@ -1,6 +1,6 @@
-/** @type {import('next-sitemap').IConfig} */
+// next-sitemap.config.js
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://trip-law.com',
-  generateRobotsTxt: true, // (optional)
-  // ...other options
+  siteUrl: 'https://trip-law.com',
+  generateRobotsTxt: true, // Generate robots.txt
+  sitemapSize: 5000,
 };

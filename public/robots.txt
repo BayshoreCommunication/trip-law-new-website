@@ -2,14 +2,8 @@
 User-agent: *
 Allow: /
 
-Disallow: /cgi-bin/
-
 # Host
 Host: https://trip-law.com
 
 # Sitemaps
 Sitemap: https://trip-law.com/sitemap.xml
-
-
-
-
