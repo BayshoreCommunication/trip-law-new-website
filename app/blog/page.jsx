@@ -53,11 +53,11 @@ const page = async () => {
 
           <hr className='w-full h-[1px] mx-auto mt-4 mb-4 md:mb-8 bg-[#1B2639] border-0 rounded ' />
 
-          <div className='grid gap-0 mb-10 md:gap-12 gird-col-1 sm:grid-cols-3'>
+          <div className='grid gap-0 mb-10 md:gap-12 gird-col-1 sm:grid-cols-2'>
             {blogPostData?.data
               ?.filter((pub, no) => pub.published === true && no === 0)
               ?.map((blogs, index) => (
-                <div className='col-span-2 md:col-span-1'>
+                <div className='flex-1'>
                   <Link href={`/blog/${blogs?.slug}`}>
                     <div>
                       <Image
@@ -90,7 +90,7 @@ const page = async () => {
                 </div>
               ))}
 
-            <div className='col-span-2 h-[100%] md:h-[590px] overflow-y-scroll overflow-x-hidden '>
+            <div className='flex-1 h-[100%] md:h-[590px] overflow-y-scroll overflow-x-hidden '>
               {blogPostData?.data
                 ?.filter((pub, no) => pub.published === true && no !== 0)
                 ?.map((blogs, index) => (
