@@ -43,6 +43,12 @@ nav{
 
 `;
 
+export const metadata = {
+  title: "What Immigration Services Does TripLaw Offer",
+  description:
+    "Explore TripLaw's comprehensive immigration services, including visas, green cards, citizenship, and more. Find the right solution for your situation",
+};
+
 const page = async ({ params }) => {
   const servicesDetails = servicesData?.filter(
     (service) => service.slug === params.slug
@@ -54,11 +60,6 @@ const page = async ({ params }) => {
 
   return (
     <>
-      <Head>
-        <title>{servicesDetails[0]?.title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-      </Head>
       <style>{css}</style>
       <PageHeroSection
         image={"/assets/services/hero-banner.png"}

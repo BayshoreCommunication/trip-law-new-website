@@ -8,23 +8,6 @@ import Footer from "@/components/Footer";
 
 const mulish = Mulish({ subsets: ["latin"] });
 
-// export const metadata = {
-//   title:
-//     "Florida Immigration Lawyer Firm || USA Immigration Attorney Hardam Tripathi, Esq.",
-//   description:
-//     "Florida Immigration Law Services Call our local Immigration office for your Green Card, Naturalization or Investor Visa.",
-//   metadataBase: new URL("https://trip-law-new-website.vercel.app"),
-//   alternates: {
-//     canonical: "/",
-//     languages: {
-//       "en-US": "/en-USA",
-//     },
-//   },
-//   openGraph: {
-//     images: "/opengraph-image.jpg",
-//   },
-// };
-
 export const metadata = {
   metadataBase: new URL("https://trip-law-new-website.vercel.app"),
 };
