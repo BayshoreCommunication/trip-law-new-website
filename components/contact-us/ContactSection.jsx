@@ -255,7 +255,7 @@ const ContactSection = () => {
                   radius='sm'
                   size='lg'
                 >
-                  Sending
+                  Sending...
                 </Button>
               ) : (
                 <Button
