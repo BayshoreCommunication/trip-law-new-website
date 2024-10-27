@@ -7,9 +7,9 @@ import Head from "next/head";
 import Link from "next/link";
 
 export const metadata = {
-  title: "What Immigration Services Does TripLaw Offer",
+  title: "Comprehensive U.S. Immigration Services | Green Cards, Visas & Asylum",
   description:
-    "Explore TripLaw's comprehensive immigration services, including visas, green cards, citizenship, and more. Find the right solution for your situation",
+    "Explore Trip Law's wide range of U.S. immigration services, including Green Cards, family sponsorship, employment-based visas (H-1B, EB-1, L-1), asylum,Citizenship,U visas, and more. Our Florida-based attorneys are dedicated to helping you through every step of your immigration journey.",
 };
 
 const page = () => {

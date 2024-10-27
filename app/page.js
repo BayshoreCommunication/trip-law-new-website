@@ -13,9 +13,9 @@ import TripLawObligation from "@/components/shared/TripLawObligation";
 
 export const metadata = {
   title:
-    "Florida Immigration Lawyer Firm || USA Immigration Attorney Hardam Tripathi, Esq.",
+    " Best immigration lawyer lakeland,Florida | Green Card, Visa & Citizenship Attorneys",
   description:
-    "Florida Immigration Law Services. Call our local Immigration office for your Green Card, Naturalization, or Investor Visa.",
+    "Trip Law is a trusted immigration law firm dedicated to helping clients secure Green Cards, family sponsorships, employment visas (H-1B, L-1, EB-1, EB-2), and asylum.Our experienced Florida attorneys provide personalized legal support to guide you through every step of your U.S. immigration journey.",
   alternates: {
     canonical: "/",
     languages: {
