@@ -11,9 +11,9 @@ import CardMotion from "@/components/motion/CardMotion";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Trip Law Blog - Insights and Updates on Immigration Law",
+  title: "Immigration Tips, Success Stories & Legal News | Trip Law Blog",
   description:
-    "Stay informed on the latest immigration news, legal updates, and valuable resources with TripLaw's immigration blog",
+    "Description -  Stay informed with the latest U.S. immigration law news, expert tips, and insights from Trip Law. Our blog covers Green Cards, work visas (H-1B, EB-1), asylum, family sponsorship, and more. Get valuable advice from experienced immigration attorneys to guide your journey.",
 };
 
 const page = async () => {

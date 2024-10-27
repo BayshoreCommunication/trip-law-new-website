@@ -5,9 +5,9 @@ import TripLawObligation from "@/components/shared/TripLawObligation";
 import Head from "next/head";
 
 export const metadata = {
-  title: "About Trip Law Immigration Law Firm - Who We Are",
+  title: " Best immigration lawyer lakeland,Florida | Green Card, Visa & Citizenship Attorneys",
   description:
-    "Learn about TripLaw's experienced immigration attorneys, dedication to client success, and commitment to excellence.",
+    "Trip Law is a trusted immigration law firm dedicated to helping clients secure Green Cards, family sponsorships, employment visas (H-1B, L-1, EB-1, EB-2), and asylum.Our experienced Florida attorneys provide personalized legal support to guide you through every step of your U.S. immigration journey.",
 };
 
 const page = () => {
