@@ -3,7 +3,7 @@ import HeroSection from "@/components/disclaimers-and-terms-of-use/privacy-polic
 import Head from "next/head";
 
 export const metadata = {
-  title: "Privacy Policy - Attorney Hardam Tripathi, Esq.",
+  title: "Disclaimers and Terms of Use - Attorney Hardam Tripathi, Esq.",
   description:
     "Stay informed on the latest immigration news, legal updates, and valuable resources with TripLaw's immigration blog",
 };

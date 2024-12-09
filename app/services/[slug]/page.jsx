@@ -43,10 +43,49 @@ nav{
 
 `;
 
-export const metadata = {
-  title: "What Immigration Services Does TripLaw Offer",
-  description:
-    "Explore TripLaw's comprehensive immigration services, including visas, green cards, citizenship, and more. Find the right solution for your situation",
+// export const metadata = {
+//   title: "What Immigration Services Does TripLaw Offer",
+//   description:
+//     "Explore TripLaw's comprehensive immigration services, including visas, green cards, citizenship, and more. Find the right solution for your situation",
+// };
+
+export const generateMetadata = ({ params }) => {
+  const servicesDetails = servicesData?.filter(
+    (service) => service.slug === params.slug
+  );
+
+  if (!servicesDetails || servicesDetails.length === 0) {
+    notFound();
+  }
+  //console.log(servicesDetails);
+  return {
+    title:
+      servicesDetails[0]?.title ||
+      "What Immigration Services Does TripLaw Offer",
+    description:
+      servicesDetails[0]?.sortTitle.slice(0, 200) ||
+      "Explore TripLaw's comprehensive immigration services, including visas, green cards, citizenship, and more. Find the right solution for your situation",
+    openGraph: {
+      title:
+        servicesDetails[0]?.title ||
+        "What Immigration Services Does TripLaw Offer",
+      description:
+        servicesDetails[0]?.sortTitle.slice(0, 200) ||
+        "Explore TripLaw's comprehensive immigration services, including visas, green cards, citizenship, and more. Find the right solution for your situation",
+      images: [
+        {
+          url: servicesDetails[0]?.icon,
+          width: 1200,
+          height: 800,
+          alt: servicesDetails[0]?.title,
+        },
+      ],
+      siteName: "TripLaw",
+      type: "article",
+      locale: "en_US",
+      url: `https://www.trip-law.com/services/${servicesDetails[0]?.slug}`,
+    },
+  };
 };
 
 const page = async ({ params }) => {
@@ -63,7 +102,7 @@ const page = async ({ params }) => {
       <style>{css}</style>
       <PageHeroSection
         image={"/assets/services/hero-banner.png"}
-        title={"Services"}
+        titleH2={"Services"}
       />
       <SectionLayout bg="bg-white">
         <CardMotion
@@ -79,9 +118,9 @@ const page = async ({ params }) => {
             y: 100,
           }}
         >
-          <h2 className="mb-4 text-3xl font-bold tracking-normal text-left text-[#1B2639]">
+          <h1 className="mb-4 text-3xl font-bold tracking-normal text-left text-[#1B2639]">
             {servicesDetails[0]?.title}
-          </h2>
+          </h1>
 
           <hr className="w-full h-[1px] mx-auto my-8 bg-[#1B2639] border-0 rounded md:my-5" />
 

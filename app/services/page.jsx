@@ -7,7 +7,8 @@ import Head from "next/head";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Comprehensive U.S. Immigration Services | Green Cards, Visas & Asylum",
+  title:
+    "Comprehensive U.S. Immigration Services | Green Cards, Visas & Asylum",
   description:
     "Explore Trip Law's wide range of U.S. immigration services, including Green Cards, family sponsorship, employment-based visas (H-1B, EB-1, L-1), asylum,Citizenship,U visas, and more. Our Florida-based attorneys are dedicated to helping you through every step of your immigration journey.",
 };
@@ -17,7 +18,7 @@ const page = () => {
     <div>
       <PageHeroSection
         image={"/assets/hero-img/services.jpg"}
-        title={"Services"}
+        titleH1={"Services"}
       />
       <SectionLayout bg="bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-5 items-center justify-between">
