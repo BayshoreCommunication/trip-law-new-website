@@ -3,7 +3,10 @@ import PageHeroSection from "../shared/PageHeroSection";
 
 const HeroSection = () => {
   return (
-    <PageHeroSection image={"/assets/hero-img/about-us.jpg"} titleH1={"News"} />
+    <PageHeroSection
+      image={"/assets/hero-img/about-us.jpg"}
+      titleH1={"About Us"}
+    />
   );
 };
 
