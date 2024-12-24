@@ -19,7 +19,7 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.18.0",
     "html-react-parser": "^5.1.7",
-    "next": "14.0.4",
+    "next": "^14.2.21",
     "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-calendly": "^4.3.0",
@@ -29,7 +29,7 @@
     "react-use-measure": "^2.1.1",
     "resize-observer-polyfill": "^1.5.1",
     "styled-components": "^6.1.8",
-    "sweetalert2": "^11.12.0",
+    "sweetalert2": "^11.6.13",
     "swiper": "^11.0.5"
   },
   "devDependencies": {

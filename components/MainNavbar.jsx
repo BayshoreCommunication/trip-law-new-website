@@ -1,5 +1,5 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 import {
   Navbar,
   NavbarContent,
@@ -7,11 +7,11 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
-} from '@nextui-org/react';
-import { usePathname, useRouter } from 'next/navigation';
-import { SITECONFIG } from '@/config/site';
-import Image from 'next/image';
-import Link from 'next/link';
+} from "@nextui-org/react";
+import { usePathname, useRouter } from "next/navigation";
+import { SITECONFIG } from "@/config/site";
+import Image from "next/image";
+import Link from "next/link";
 
 const MainNavbar = () => {
   const pathname = usePathname();
@@ -26,7 +26,7 @@ const MainNavbar = () => {
   const handleNavItemClick = (slug) => {
     setIsMenuOpen(false);
     router.push(slug)?.then(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   };
 
@@ -35,34 +35,34 @@ const MainNavbar = () => {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
-      maxWidth='2xl'
-      className='flex !justify-center bg-white bg-cover py-1 fixed top-0 shadow-md'
+      maxWidth="2xl"
+      className="flex !justify-center bg-white bg-cover py-1 fixed top-0 shadow-md"
     >
-      <NavbarContent className='ml-0 md:hidden' justify='start'>
-        <NavbarMenuToggle className='ml-0 text-slate-900' />
+      <NavbarContent className="ml-0 md:hidden" justify="start">
+        <NavbarMenuToggle className="ml-0 text-slate-900" />
       </NavbarContent>
 
-      <NavbarContent className=' md:hidden' justify='end'>
-        <Link href='/' passHref>
+      <NavbarContent className=" md:hidden" justify="end">
+        <Link href="/" passHref>
           <Image
             width={250}
             height={250}
-            src={'/assets/site-logo/trip-law-logo.png'}
-            alt='Trip Law'
-            className='object-cover cursor-pointer !max-w-[170px]'
-            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 170px'
+            src={"/assets/site-logo/trip-law-logo.png"}
+            alt="Trip Law"
+            className="object-cover cursor-pointer !max-w-[170px]"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 170px"
           />
         </Link>
       </NavbarContent>
 
-      <NavbarContent className='justify-center hidden gap-10 md:flex'></NavbarContent>
-      <NavbarContent className='justify-center hidden gap-14 md:flex'>
+      <NavbarContent className="justify-center hidden gap-10 md:flex"></NavbarContent>
+      <NavbarContent className="justify-center hidden gap-14 md:flex">
         {SITECONFIG?.mainNav?.left?.map((nav, index) => {
           return (
             <NavbarItem key={index}>
               <span
                 onClick={() => handleNavItemClick(nav.slug)}
-                className={`nav-item ${pathname === nav.slug ? 'active' : ''}`}
+                className={`nav-item ${pathname === nav.slug ? "active" : ""}`}
               >
                 {nav.title}
               </span>
@@ -70,14 +70,14 @@ const MainNavbar = () => {
           );
         })}
         <NavbarItem>
-          <Link href='/' passHref>
+          <Link href="/" passHref>
             <Image
               width={310}
               height={310}
-              src='/assets/site-logo/trip-law-logo.png'
-              alt='Trip Low'
-              className='object-cover cursor-pointer !max-w-[170px]'
-              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 170px'
+              src="/assets/site-logo/trip-law-logo.png"
+              alt="Trip Low"
+              className="object-cover cursor-pointer !max-w-[170px]"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 170px"
             />
           </Link>
         </NavbarItem>
@@ -85,48 +85,56 @@ const MainNavbar = () => {
         {SITECONFIG?.mainNav?.right?.map((nav, index) => {
           return (
             <NavbarItem key={index}>
-              {nav.title === 'Blog' ? (
+              {nav.title === "Blog" ? (
                 <div
-                  className='relative inline-block'
+                  className="relative inline-block"
                   onMouseEnter={toggleDropdown}
                   onMouseLeave={toggleDropdown}
                 >
-                  <div className='group'>
-                    <div className='flex items-center gap-1'>
+                  <div className="group">
+                    <div className="flex items-center gap-1">
                       <span
                         onClick={() => handleNavItemClick(nav.slug)}
                         className={`nav-item ${
                           pathname === nav.slug
-                            ? 'border-b-2 border-solid border-black'
-                            : ''
+                            ? "border-b-2 border-solid border-black"
+                            : ""
                         }`}
                       >
                         Blog
                       </span>
                       <span>
                         <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          viewBox='0 0 24 24'
-                          fill='currentColor'
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
                           className={`size-4 font-extrabold transform transition-transform duration-200 ${
-                            isDropdownVisible ? 'rotate-0' : 'rotate-180'
+                            isDropdownVisible ? "rotate-0" : "rotate-180"
                           }`}
                         >
                           <path
-                            fillRule='evenodd'
-                            d='M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z'
-                            clipRule='evenodd'
+                            fillRule="evenodd"
+                            d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                            clipRule="evenodd"
                           />
                         </svg>
                       </span>
                     </div>
-                    <div className='absolute hidden w-48 p-4 bg-white rounded shadow-lg group-hover:block'>
-                      <ul className='py-2 '>
-                        <li>
+                    <div className="absolute hidden w-48 p-4 bg-white rounded shadow-lg group-hover:block">
+                      <ul className="py-2 ">
+                        {/* <li>
+                          <Link href={`/news`} className={`nav-item`}>
+                            News
+                          </Link>
+                        </li> */}
+                        <li key={index}>
                           <Link
+                            onClick={() => {
+                              setIsMenuOpen(false);
+                            }}
                             href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
-                            className={`nav-item`}
-                            target='_blank'
+                            className={`py-2 flex nav-item`}
+                            target="_blank"
                           >
                             Podcast
                           </Link>
@@ -138,7 +146,7 @@ const MainNavbar = () => {
               ) : (
                 <span
                   onClick={() => handleNavItemClick(nav.slug)}
-                  className={`nav-item ${pathname === nav.slug ? 'active' : ''}`}
+                  className={`nav-item ${pathname === nav.slug ? "active" : ""}`}
                 >
                   {nav.title}
                 </span>
@@ -147,50 +155,61 @@ const MainNavbar = () => {
           );
         })}
       </NavbarContent>
-      <NavbarContent className='justify-center hidden gap-10 md:flex'></NavbarContent>
+      <NavbarContent className="justify-center hidden gap-10 md:flex"></NavbarContent>
 
-      <NavbarMenu className='ml-0'>
+      <NavbarMenu className="ml-0">
         {SITECONFIG?.mobileNav?.map((nav, index) => (
-          <NavbarMenuItem key={`${nav}-${index}`} className='mt-4 list-none'>
-            {nav.title === 'Blog' ? (
+          <NavbarMenuItem key={`${nav}-${index}`} className="mt-4 list-none">
+            {nav.title === "Blog" ? (
               <div
-                className='relative inline-block'
+                className="relative inline-block"
                 onMouseEnter={toggleDropdown}
                 onMouseLeave={toggleDropdown}
               >
-                <div className='group'>
-                  <div className='flex items-center gap-1'>
+                <div className="group">
+                  <div className="flex items-center gap-1">
                     <span
                       onClick={() => handleNavItemClick(nav.slug)}
                       className={`nav-item list-none ${
                         pathname === nav.slug
-                          ? 'border-b-2 border-solid border-black'
-                          : ''
+                          ? "border-b-2 border-solid border-black"
+                          : ""
                       }`}
-                      size='lg'
-                      aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+                      size="lg"
+                      aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     >
                       Blog
                     </span>
                     <span>
                       <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 24 24'
-                        fill='currentColor'
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
                         className={`size-4 font-extrabold transform transition-transform duration-200 ${
-                          isDropdownVisible ? 'rotate-0' : 'rotate-180'
+                          isDropdownVisible ? "rotate-0" : "rotate-180"
                         }`}
                       >
                         <path
-                          fillRule='evenodd'
-                          d='M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z'
-                          clipRule='evenodd'
+                          fillRule="evenodd"
+                          d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                          clipRule="evenodd"
                         />
                       </svg>
                     </span>
                   </div>
-                  <div className='absolute hidden group-hover:block bg-white shadow-lg rounded p-2 z-50 w-[300px]'>
-                    <ul className='py-2 '>
+                  <div className="absolute hidden group-hover:block bg-white shadow-lg rounded p-2 z-50 w-[300px]">
+                    <ul className="py-2 ">
+                      {/* <li key={index}>
+                        <Link
+                          onClick={() => {
+                            setIsMenuOpen(false);
+                          }}
+                          href={`/news`}
+                          className={`py-2 flex nav-item`}
+                        >
+                          News
+                        </Link>
+                      </li> */}
                       <li key={index}>
                         <Link
                           onClick={() => {
@@ -198,7 +217,7 @@ const MainNavbar = () => {
                           }}
                           href={`https://podcasters.spotify.com/pod/show/theimmigrationzone`}
                           className={`py-2 flex nav-item`}
-                          target='_blank'
+                          target="_blank"
                         >
                           Podcast
                         </Link>
@@ -212,10 +231,10 @@ const MainNavbar = () => {
                 onClick={() => handleNavItemClick(nav.slug)}
                 className={`nav-item list-none ${
                   pathname === nav.slug
-                    ? 'border-b-2 border-solid border-black'
-                    : ''
+                    ? "border-b-2 border-solid border-black"
+                    : ""
                 }`}
-                size='lg'
+                size="lg"
               >
                 {nav.title}
               </span>

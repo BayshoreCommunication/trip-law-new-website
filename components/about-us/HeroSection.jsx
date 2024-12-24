@@ -1,12 +1,9 @@
-import React from 'react';
-import PageHeroSection from '../shared/PageHeroSection';
+import React from "react";
+import PageHeroSection from "../shared/PageHeroSection";
 
 const HeroSection = () => {
   return (
-    <PageHeroSection
-      image={'/assets/hero-img/about-us.jpg'}
-      title={'About Us'}
-    />
+    <PageHeroSection image={"/assets/hero-img/about-us.jpg"} titleH1={"News"} />
   );
 };
 
