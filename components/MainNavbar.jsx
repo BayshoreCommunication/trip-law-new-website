@@ -122,11 +122,11 @@ const MainNavbar = () => {
                     </div>
                     <div className="absolute hidden w-48 p-4 bg-white rounded shadow-lg group-hover:block">
                       <ul className="py-2 ">
-                        {/* <li>
+                        <li>
                           <Link href={`/news`} className={`nav-item`}>
                             News
                           </Link>
-                        </li> */}
+                        </li>
                         <li key={index}>
                           <Link
                             onClick={() => {
@@ -199,7 +199,7 @@ const MainNavbar = () => {
                   </div>
                   <div className="absolute hidden group-hover:block bg-white shadow-lg rounded p-2 z-50 w-[300px]">
                     <ul className="py-2 ">
-                      {/* <li key={index}>
+                      <li key={index}>
                         <Link
                           onClick={() => {
                             setIsMenuOpen(false);
@@ -209,7 +209,7 @@ const MainNavbar = () => {
                         >
                           News
                         </Link>
-                      </li> */}
+                      </li>
                       <li key={index}>
                         <Link
                           onClick={() => {

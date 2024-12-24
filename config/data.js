@@ -1,42 +1,11 @@
 export const newsData = [
   {
-    title: "Create a beautiful website for any device.",
-    dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry, we pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.",
+    title:
+      "Polk Immigrants Married to Citizens Seek Relief Through New Parole Program Amid Legal Challenge.",
+    dec: "Hardam Tripathi, an immigration lawyer based in Lakeland, reported submitting eight applications for Polk County residents as of Wednesday. Seven applicants are from Spanish-speaking countries, while one is from Poland, according to Tripathi. Among the eight applicants, only one has a misdemeanor charge for driving without a license, Tripathi noted. “We’ve seen a surge in inquiries,” Tripathi said. “I’m certain immigration attorneys across Florida and Polk County are receiving hundreds of calls.",
     url: "/assets/news/news.jpg",
-    link: "https://www.freepik.com/free-photo/toy-bricks-table-with-word-news_11260639.htm#fromView=search&page=1&position=4&uuid=7f5d3446-55cd-490e-b936-05b29f462c92",
-    createdAt: "2023-12-01T10:00:00Z",
-    published: true,
-  },
-  {
-    title: "Create a beautiful website for any device.",
-    dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry, we pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.",
-    url: "/assets/news/news.jpg",
-    link: "https://www.freepik.com/free-photo/toy-bricks-table-with-word-news_11260639.htm#fromView=search&page=1&position=4&uuid=7f5d3446-55cd-490e-b936-05b29f462c92",
-    createdAt: "2023-12-01T10:00:00Z",
-    published: true,
-  },
-  {
-    title: "Create a beautiful website for any device.",
-    dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry, we pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.",
-    url: "/assets/news/news.jpg",
-    link: "https://www.freepik.com/free-photo/toy-bricks-table-with-word-news_11260639.htm#fromView=search&page=1&position=4&uuid=7f5d3446-55cd-490e-b936-05b29f462c92",
-    createdAt: "2023-12-01T10:00:00Z",
-    published: true,
-  },
-  {
-    title: "Create a beautiful website for any device.",
-    dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry, we pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.",
-    url: "/assets/news/news.jpg",
-    link: "https://www.freepik.com/free-photo/toy-bricks-table-with-word-news_11260639.htm#fromView=search&page=1&position=4&uuid=7f5d3446-55cd-490e-b936-05b29f462c92",
-    createdAt: "2023-12-01T10:00:00Z",
-    published: true,
-  },
-  {
-    title: "Create a beautiful website for any device.",
-    dec: "Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry, we pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.",
-    url: "/assets/news/news.jpg",
-    link: "https://www.freepik.com/free-photo/toy-bricks-table-with-word-news_11260639.htm#fromView=search&page=1&position=4&uuid=7f5d3446-55cd-490e-b936-05b29f462c92",
-    createdAt: "2023-12-01T10:00:00Z",
+    link: "https://www.newschief.com/story/news/local/2024/09/01/polk-immigrants-begin-applying-for-new-program-amid-court-challenge/74906710007/",
+    createdAt: "Sept. 1, 2024",
     published: true,
   },
 ];
