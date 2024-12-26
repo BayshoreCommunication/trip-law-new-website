@@ -101,7 +101,7 @@ export const SITECONFIG = {
         slug: "/about",
       },
       {
-        title: "Blog",
+        title: "Blogs",
         slug: "/blog",
       },
       {
