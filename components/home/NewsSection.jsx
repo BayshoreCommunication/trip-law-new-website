@@ -65,7 +65,7 @@ const NewsSection = async () => {
               <h2
                 className={`text-stone-950 font-bold text-3xl md:text-5xl mt-5 mb-4 text-center md:text-left ${bitter.className}`}
               >
-                News
+                Blogs
               </h2>
             </div>
           </CardMotion>
