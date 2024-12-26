@@ -1,117 +1,117 @@
 export const SITECONFIG = {
   siteMetadata: {
-    title: 'Trip Law',
-    description: 'Trip Law',
+    title: "Trip Law",
+    description: "Trip Law",
   },
-  siteLogo: { url: '/assets/site-logo/10x-tax-pro.png' },
+  siteLogo: { url: "/assets/site-logo/10x-tax-pro.png" },
   mainNav: {
     left: [
       {
-        title: 'Home',
-        slug: '/',
+        title: "Home",
+        slug: "/",
       },
       {
-        title: 'Services',
-        slug: '/services',
+        title: "Services",
+        slug: "/services",
       },
       {
-        title: 'About Us',
-        slug: '/about',
+        title: "About Us",
+        slug: "/about",
       },
     ],
     right: [
       {
-        title: 'Appointment',
-        slug: '/appointment',
+        title: "Appointment",
+        slug: "/appointment",
       },
       {
-        title: 'Blog',
-        slug: '/blog',
+        title: "Blog",
+        slug: "/blog",
       },
       {
-        title: 'Contact Us',
-        slug: '/contact',
+        title: "Contact Us",
+        slug: "/contact",
       },
     ],
   },
   mobileNav: [
     {
-      title: 'Home',
-      slug: '/',
+      title: "Home",
+      slug: "/",
     },
     {
-      title: 'Services',
-      slug: '/services',
+      title: "Services",
+      slug: "/services",
     },
     {
-      title: 'About Us',
-      slug: '/about',
+      title: "About Us",
+      slug: "/about",
     },
     {
-      title: 'Appointment',
-      slug: '/appointment',
+      title: "Appointment",
+      slug: "/appointment",
     },
     {
-      title: 'Blog',
-      slug: '/blog',
+      title: "Blog",
+      slug: "/blog",
     },
     {
-      title: 'Contact Us',
-      slug: '/contact',
+      title: "Contact Us",
+      slug: "/contact",
     },
   ],
 
   footer: {
-    footer_logo: '/assets/site-logo/footer-logo.png',
+    footer_logo: "/assets/site-logo/footer-logo.png",
     description:
-      'With attorneys based in Florida, USA, our team has substantial experience in all areas of family and business immigration law. With a combined experience of 10 years, Trip Law is providing value-added immigration law services all over the United States.',
+      "With attorneys based in Florida, USA, our team has substantial experience in all areas of family and business immigration law. With a combined experience of 10 years, Trip Law is providing value-added immigration law services all over the United States.",
     company: [
       {
-        title: 'Privacy Policy',
-        slug: '/privacy-policy',
+        title: "Privacy Policy",
+        slug: "/privacy-policy",
       },
       {
-        title: 'Disclaimers and Terms of Use',
-        slug: '/disclaimers-and-terms-of-use',
+        title: "Disclaimers and Terms of Use",
+        slug: "/disclaimers-and-terms-of-use",
       },
       {
-        title: 'Angel Investor',
-        slug: '/angel-investor',
+        title: "Angel Investor",
+        slug: "/angel-investor",
       },
       {
-        title: 'Terms of Service',
-        slug: '/terms-of-service',
+        title: "Terms of Service",
+        slug: "/terms-of-service",
       },
       {
-        title: 'Legal Information',
-        slug: '/legal-information',
+        title: "Legal Information",
+        slug: "/legal-information",
       },
     ],
     quick_links: [
       {
-        title: 'Home',
-        slug: '/',
+        title: "Home",
+        slug: "/",
       },
       {
-        title: 'Services',
-        slug: '/services',
+        title: "Services",
+        slug: "/services",
       },
       {
-        title: 'About Us',
-        slug: '/about',
+        title: "About Us",
+        slug: "/about",
       },
       {
-        title: 'News',
-        slug: '/blog',
+        title: "Blog",
+        slug: "/blog",
       },
       {
-        title: 'Contact Us',
-        slug: '/contact',
+        title: "Contact Us",
+        slug: "/contact",
       },
     ],
     contact_us: [
       {
-        title: '1543 Lakeland Hills Blvd, Ste. 17, Lakeland, FL 33805',
+        title: "1543 Lakeland Hills Blvd, Ste. 17, Lakeland, FL 33805",
         icon: ` <svg
         className="w-4 h-4"
         aria-hidden="true"
@@ -127,34 +127,34 @@ export const SITECONFIG = {
       </svg>`,
       },
       {
-        title: 'info@trip-law.com',
-        slug: '/services',
+        title: "info@trip-law.com",
+        slug: "/services",
       },
       {
-        title: '(863)-599-6735',
-        slug: '/about-us',
+        title: "(863)-599-6735",
+        slug: "/about-us",
       },
     ],
   },
   socialLinks: [
     {
-      title: 'Facebook',
-      url: '',
+      title: "Facebook",
+      url: "",
     },
     {
-      title: 'Twitter',
-      url: '#',
+      title: "Twitter",
+      url: "#",
     },
     {
-      title: 'Instagram',
-      url: '#',
+      title: "Instagram",
+      url: "#",
     },
     {
-      title: 'LinkedIn',
-      url: '#',
+      title: "LinkedIn",
+      url: "#",
     },
   ],
-  address: '1543 Lakeland Hills Blvd, Ste. 17, Lakeland, FL 33805',
-  phone: 'info@trip-law.com',
-  email: '(863)-599-6735',
+  address: "1543 Lakeland Hills Blvd, Ste. 17, Lakeland, FL 33805",
+  phone: "info@trip-law.com",
+  email: "(863)-599-6735",
 };
