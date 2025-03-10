@@ -1,5 +1,7 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true, // Move this outside the remotePatterns array
     remotePatterns: [
       {
         protocol: 'https',
@@ -24,7 +26,6 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'bayshore.nyc3.digitaloceanspaces.com',
-        // hostname: "**",
       },
     ],
   },
