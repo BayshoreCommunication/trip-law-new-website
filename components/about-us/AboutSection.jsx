@@ -502,7 +502,7 @@ const AboutSection = () => {
                     </h2>
 
                     <p className="mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left">
-                      Senior Associate Case Manager
+                      Senior Associate Paralegal
                     </p>
                     <hr class="h-[2px] my-0 bg-red-700 border-0 md:w-full"></hr>
                     <div className="mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start">
@@ -610,7 +610,7 @@ const AboutSection = () => {
                     </h2>
 
                     <p className="mb-3 md:mb-4 text-md md:text-xl font-semibold text-stone-950 text-center md:text-left">
-                      Senior Associate Paralegal
+                      Senior Case Manager
                     </p>
                     <hr class="h-[2px] my-0 bg-red-700 border-0 md:w-full"></hr>
                     <div className="mt-8 flex flex-row items-center md:gap-28 gap-4 justify-center md:justify-start">
