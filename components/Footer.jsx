@@ -202,7 +202,7 @@ const Footer = () => {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="md:flex :items-center sm:justify-between">
             <div className="text-base font-thin text-center text-gray-300">
-              © 2024{" "}
+              <span>© {new Date().getFullYear()}</span>{" "}
               <a href="https://trip-law.com/" className="hover:underline">
                 Trip Law™
               </a>
