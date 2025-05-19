@@ -3,7 +3,7 @@ export const newsData = [
     title:
       "Breaking News: Attorney Tripathi discusses Deportation in Central Florida & Orlando",
     dec: "ORANGE COUNTY, Fla. - Following a wave of immigration-related arrests as federal agents moved quickly to apprehend suspected criminals, recent data from the largest jail in Central Florida indicates a decline in bookings. In February, local, state, and federal law enforcement officials detained 264 undocumented immigrants, with many Florida sheriffs expressing their support for the increased authority to enforce immigration laws. This was also the month when Governor DeSantis' administration mandated that local sheriff's offices and jails establish agreements with ICE to facilitate the deportation of immigrants.",
-    url: "/assets/news/news.jpg",
+    url: "/assets/news/news-2.jpg",
     link: "https://www.wftv.com/unavailable-location/?fbclid=IwY2xjawKNUW1leHRuA2FlbQIxMABicmlkETFrYmFsdFZsSHFkNDFXaEdxAR5heiI1aceTmhldVJ-Us_ikuhcW4Yl8wxvrRrQGAsLp0XA08Byocw6mnM_AlQ_aem_1AylBq1MwFSLobEkbJAAEQ",
     createdAt: "April 18, 2025",
     published: true,
