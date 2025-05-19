@@ -1,6 +1,15 @@
 export const newsData = [
   {
     title:
+      "Breaking News: Attorney Tripathi discusses Deportation in Central Florida & Orlando",
+    dec: "ORANGE COUNTY, Fla. - Following a wave of immigration-related arrests as federal agents moved quickly to apprehend suspected criminals, recent data from the largest jail in Central Florida indicates a decline in bookings. In February, local, state, and federal law enforcement officials detained 264 undocumented immigrants, with many Florida sheriffs expressing their support for the increased authority to enforce immigration laws. This was also the month when Governor DeSantis' administration mandated that local sheriff's offices and jails establish agreements with ICE to facilitate the deportation of immigrants.",
+    url: "/assets/news/news.jpg",
+    link: "https://www.wftv.com/unavailable-location/?fbclid=IwY2xjawKNUW1leHRuA2FlbQIxMABicmlkETFrYmFsdFZsSHFkNDFXaEdxAR5heiI1aceTmhldVJ-Us_ikuhcW4Yl8wxvrRrQGAsLp0XA08Byocw6mnM_AlQ_aem_1AylBq1MwFSLobEkbJAAEQ",
+    createdAt: "April 18, 2025",
+    published: true,
+  },
+  {
+    title:
       "Polk Immigrants Married to Citizens Seek Relief Through New Parole Program Amid Legal Challenge.",
     dec: "Hardam Tripathi, an immigration lawyer based in Lakeland, reported submitting eight applications for Polk County residents as of Wednesday. Seven applicants are from Spanish-speaking countries, while one is from Poland, according to Tripathi. Among the eight applicants, only one has a misdemeanor charge for driving without a license, Tripathi noted. “We’ve seen a surge in inquiries,” Tripathi said. “I’m certain immigration attorneys across Florida and Polk County are receiving hundreds of calls.",
     url: "/assets/news/news.jpg",
