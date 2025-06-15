@@ -121,8 +121,8 @@ const ContactSection = () => {
                 </svg>
               </div>
               <h2 className="mt-5 mb-2 text-2xl font-semibold tracking-normal text-center text-black md:text-left">
-                231 N. Kentucky Ave. Ste. 213, <br />
-                Lakeland, Florida 33801
+                1820 Florida Ave S, Ste. C, <br />
+                Lakeland, FL 33803
               </h2>
               <p className="text-base text-center text-stone-950 md:text-left">
                 Our Location

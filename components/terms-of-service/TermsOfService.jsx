@@ -1,6 +1,6 @@
-import React from 'react';
-import SectionLayout from '../shared/SectionLayout';
-import Link from 'next/link';
+import React from "react";
+import SectionLayout from "../shared/SectionLayout";
+import Link from "next/link";
 
 const css = `
   h1{
@@ -42,21 +42,21 @@ const TermsOfService = () => {
     <>
       <style>{css}</style>
       <SectionLayout>
-        <div className='text-center md:text-left'>
-          <div className='my-8'>
-            <h2 className='font-extrabold'>TERMS OF SERVICE</h2>
+        <div className="text-center md:text-left">
+          <div className="my-8">
+            <h2 className="font-extrabold">TERMS OF SERVICE</h2>
             <p>Last updated July 03, 2024</p>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>AGREEMENT TO OUR LEGAL TERMS</h5>
             <p>We are Trip Law ("Company," "we," "us," "our").</p>
             <p>
-              We operate the website{' '}
+              We operate the website{" "}
               <Link
-                href='/'
-                target='_blank'
-                className='text-blue-500 underline'
+                href="/"
+                target="_blank"
+                className="text-blue-500 underline"
               >
                 www.trip-law.com
               </Link>
@@ -74,7 +74,7 @@ const TermsOfService = () => {
               quality.`}
             </p>
             <p>
-              {`You can contact us by phone at (863)-599-6735, email at info@trip-law.com, or by mail to 231 N. Kentucky Ave. Ste. 213, Lakeland, FL 33801, USA.`}
+              {`You can contact us by phone at (863)-599-6735, email at info@trip-law.com, or by mail to 1820 Florida Ave S, Ste. C, Lakeland, FL 33803, 1820 Florida Ave S, Ste. C, Lakeland, FL 33803, USA.`}
             </p>
             <p>
               {`These Terms constitute a legally binding agreement between you, whether personally or on behalf of an entity ("you"), and Trip Law, concerning your access to and use of the Services.`}
@@ -89,7 +89,7 @@ const TermsOfService = () => {
               {`Note: The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.`}
             </p>
           </div>
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>1. OUR SERVICES</h5>
             <p>
               The Services are not intended for distribution in jurisdictions
@@ -99,22 +99,22 @@ const TermsOfService = () => {
               interactions subject to such laws may not be used.
             </p>
           </div>
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>2. INTELLECTUAL PROPERTY RIGHTS</h5>
-            <h5 className='text-center'>Our intellectual property</h5>
+            <h5 className="text-center">Our intellectual property</h5>
             <p>
               {`We own or license all intellectual property rights in our Services, including source code, databases, software, website designs, and trademarks. These rights are protected by copyright and trademark laws and treaties worldwide.`}
             </p>
-            <h5 className='text-center'>Your use of our Services</h5>
+            <h5 className="text-center">Your use of our Services</h5>
             <p>
               {`The company provides a non-exclusive, non-transferable, revocable license to access Services and Content for personal or non-commercial use, with copyright restrictions. Use requires written permission and breach of Intellectual Property Rights results in termination.`}
             </p>
-            <h5 className='text-center'>Your submissions and contributions</h5>
+            <h5 className="text-center">Your submissions and contributions</h5>
             <p>
               {`By sending questions, comments, or feedback about the Services, you agree to assign intellectual property rights to us. The Services may invite you to create, submit, post, display, publish, distribute, or broadcast content and materials, including text, writings, video, audio, photographs, music, graphics, comments, and personal information.`}
             </p>
           </div>
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>3. USER REPRESENTATIONS</h5>
             <p>
               {`By using the Services, however, you certify and guarantee that:
@@ -132,14 +132,14 @@ const TermsOfService = () => {
             </p>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>4. USER REGISTRATION</h5>
             <p>
               {`You may need to register to use the Services. You agree to keep your password secure and accept responsibility for any use of your account and password. We have the right to remove, reclaim, or alter any username you pick if we believe it is improper, vulgar, or objectionable.`}
             </p>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>5. PROHIBITED ACTIVITIES</h5>
             <p>
               {`You are not permitted to access or use the Services for any purpose other than those for which we make them available. The Services may not be utilized in connection with any commercial effort other than those expressly sponsored or approved by us.`}
@@ -210,7 +210,7 @@ const TermsOfService = () => {
             </ul>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>6. USER GENERATED CONTRIBUTIONS</h5>
             <ul>
               <li>
@@ -236,7 +236,7 @@ const TermsOfService = () => {
             </ul>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>7. CONTRIBUTION LICENSE</h5>
             <p>
               This license applies to any form, media, or technology now known
@@ -249,15 +249,15 @@ const TermsOfService = () => {
             </p>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>8. PRIVACY POLICY</h5>
             <p>
               We care about data privacy and security. Please review our Privacy
-              Policy:{' '}
+              Policy:{" "}
               <Link
-                href='/privacy-policy'
-                target='_blank'
-                className='text-blue-500 underline'
+                href="/privacy-policy"
+                target="_blank"
+                className="text-blue-500 underline"
               >
                 www.trip-law.com/privacy-policy
               </Link>
@@ -277,7 +277,7 @@ const TermsOfService = () => {
             </p>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>9. COPYRIGHT INFRINGEMENTS</h5>
             <p>
               We respect others' intellectual property rights. If you feel that
@@ -287,7 +287,7 @@ const TermsOfService = () => {
             </p>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>10. MODIFICATIONS AND INTERRUPTIONS</h5>
             <p>
               We reserve the right to update, modify, or eliminate the contents
@@ -299,7 +299,7 @@ const TermsOfService = () => {
             </p>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>11. USER DATA</h5>
             <p>
               We will maintain certain data that you transmit to the Services to
@@ -310,7 +310,7 @@ const TermsOfService = () => {
               Services.
             </p>
           </div>
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>12. CALIFORNIA USERS AND RESIDENTS</h5>
             <p>
               {`If we are unable to address your issue, please contact the issue
@@ -321,17 +321,17 @@ const TermsOfService = () => {
             </p>
           </div>
 
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <h5>CONTACT US</h5>
             <p>
               {`To resolve a complaint regarding the Services or to receive further information regarding the use of the Services, please contact us at:`}
             </p>
           </div>
-          <div className='privacy-title'>
+          <div className="privacy-title">
             <p>
               Trip Law <br />
-              231 N. Kentucky Ave. Ste. 213, <br />
-              Lakeland, FL 33801
+              1820 Florida Ave S, Ste. C, <br />
+              Lakeland, FL 33803
               <br />
               United States
               <br />

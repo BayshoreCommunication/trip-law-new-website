@@ -1,13 +1,13 @@
-import React from 'react';
-import SectionLayout from '../shared/SectionLayout';
-import { Bitter } from 'next/font/google';
-import CardMotion from '../motion/CardMotion';
+import React from "react";
+import SectionLayout from "../shared/SectionLayout";
+import { Bitter } from "next/font/google";
+import CardMotion from "../motion/CardMotion";
 
-const bitter = Bitter({ subsets: ['latin'] });
+const bitter = Bitter({ subsets: ["latin"] });
 
 const AppointmentSection = () => {
   return (
-    <SectionLayout bg='bg-white'>
+    <SectionLayout bg="bg-white">
       <CardMotion
         whileInView={{
           opacity: 1,
@@ -40,11 +40,11 @@ const AppointmentSection = () => {
           x: 100,
         }}
       >
-        <p className='text-lg text-stone-950 text-center'>
+        <p className="text-lg text-stone-950 text-center">
           Book your appointment with Trip Law, a leading Immigration Law Firm in
           Lakeland, Florida. Led by Attorney Hardam Tripathi, our team provides
           expert legal representation nationwide and internationally. Contact us
-          at 231 N. Kentucky Ave. Ste. 213, Lakeland, Florida 33801, or call
+          at 1820 Florida Ave S, Ste. C, Lakeland, FL 33803, or call
           (863)-599-6735 for personalized assistance.
         </p>
       </CardMotion>
