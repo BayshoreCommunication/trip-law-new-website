@@ -197,6 +197,19 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div className="py-6 px-10 bg-slate-600">
+            <p className="text-base font-normal text-center text-gray-100">
+              All rights reserved by copyright holders! Copyright Disclaimer
+              under section 107 of the Copyright Act of 1976, allowance is made
+              for “fair use” for purposes such as criticism, comment, news
+              reporting, teaching, scholarship, education, and research. All
+              rights reserved to the respective copyright owners. Please{" "}
+              <Link href="/contact" className="underline">
+                Contact My Email
+              </Link>{" "}
+              if there are any issues or if you'd like a video removed.
+            </p>
+          </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="md:flex :items-center sm:justify-between">
             <div className="text-base font-thin text-center text-gray-300">
