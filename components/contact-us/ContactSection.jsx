@@ -1,10 +1,11 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import SectionLayout from "../shared/SectionLayout";
 import { Button } from "@nextui-org/react";
 import { send } from "emailjs-com";
+import { isValidPhoneNumber } from "libphonenumber-js";
+import { useState } from "react";
 import Swal from "sweetalert2";
 import CardMotion from "../motion/CardMotion";
+import SectionLayout from "../shared/SectionLayout";
 
 const ContactSection = () => {
   const [emailForm, setEmailForm] = useState({
@@ -30,9 +31,19 @@ const ContactSection = () => {
     }
     if (!values.phone) {
       errors.phone = "Phone number is required!";
+    } else if (!isValidPhoneNumber(values.phone, "US")) {
+      errors.phone = "Please enter a valid US phone number!";
     }
     if (!values.message) {
       errors.message = "Question is required!";
+    } else {
+      const wordCount = values.message
+        .trim()
+        .split(/\s+/)
+        .filter((word) => word.length > 0).length;
+      if (wordCount < 10) {
+        errors.message = "Message must contain at least 10 words!";
+      }
     }
     return errors;
   };

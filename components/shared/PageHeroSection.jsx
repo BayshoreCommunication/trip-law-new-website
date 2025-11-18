@@ -1,13 +1,12 @@
-import React from "react";
-import SectionLayout from "../shared/SectionLayout";
+import Image from "next/image";
 import Link from "next/link";
 import CardMotion from "../motion/CardMotion";
-import Image from "next/image";
+import SectionLayout from "../shared/SectionLayout";
 
 const PageHeroSection = ({ image, titleH1, titleH2 }) => {
   return (
     <>
-      <div className="relative w-full h-full bg-black bg-opacity-85 mt-[70px]">
+      <div className="relative w-full h-full bg-black bg-opacity-85">
         <Image
           src={`${image}`}
           alt={titleH1}
