@@ -1,12 +1,11 @@
-import Image from "next/image";
+import CardMotion from "@/components/motion/CardMotion";
+import PageHeroSection from "@/components/shared/PageHeroSection";
+import SectionLayout from "@/components/shared/SectionLayout";
 import GetAllPostData from "@/lib/GetAllPostData";
 import parse from "html-react-parser";
-import SectionLayout from "@/components/shared/SectionLayout";
-import HeroSection from "@/components/blog/HeroSection";
-import CardMotion from "@/components/motion/CardMotion";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import PageHeroSection from "@/components/shared/PageHeroSection";
 
 const css = `
  h1, h2, p, br, nav {
@@ -39,6 +38,25 @@ ul {
 }
 
 `;
+
+export async function generateStaticParams() {
+  try {
+    const blogPostData = await GetAllPostData();
+    
+    if (!blogPostData?.data) {
+      return [];
+    }
+    
+    return blogPostData.data
+      .filter((blog) => blog.published === true)
+      .map((blog) => ({
+        slug: blog.slug,
+      }));
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    return [];
+  }
+}
 
 export async function generateMetadata({ params }) {
   const blogPostData = await GetAllPostData();
