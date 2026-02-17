@@ -6,7 +6,7 @@ import SectionLayout from "../shared/SectionLayout";
 const PageHeroSection = ({ image, titleH1, titleH2 }) => {
   return (
     <>
-      <div className="relative w-full h-full bg-black bg-opacity-85">
+      <div className="relative w-full h-full bg-black bg-opacity-85 mt-16">
         <Image
           src={`${image}`}
           alt={titleH1}

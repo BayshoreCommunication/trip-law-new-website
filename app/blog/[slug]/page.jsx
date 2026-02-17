@@ -2,6 +2,7 @@ import CardMotion from "@/components/motion/CardMotion";
 import PageHeroSection from "@/components/shared/PageHeroSection";
 import SectionLayout from "@/components/shared/SectionLayout";
 import GetAllPostData from "@/lib/GetAllPostData";
+import GetBlogBySlug from "@/lib/GetBlogBySlug";
 import parse from "html-react-parser";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,11 +60,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const blogPostData = await GetAllPostData();
-
-  const blogDetails = blogPostData?.data?.find(
-    (blogs) => blogs.slug === params.slug
-  );
+  const blogDetails = await GetBlogBySlug(params.slug);
 
   if (!blogDetails) {
     return {
@@ -71,8 +68,6 @@ export async function generateMetadata({ params }) {
       description: "No blog post available.",
     };
   }
-  console.log(blogDetails?.body);
-  let description = parse(blogDetails?.body);
 
   return {
     title: blogDetails?.title,
@@ -89,13 +84,10 @@ export async function generateMetadata({ params }) {
 }
 
 const page = async ({ params }) => {
-  const blogPostData = await GetAllPostData();
+  const blogDetails = await GetBlogBySlug(params.slug);
+  const allBlogsData = await GetAllPostData();
 
-  const blogDetails = blogPostData?.data?.filter(
-    (blogs) => blogs.slug === params.slug
-  );
-
-  if (!blogDetails || blogDetails.length === 0) {
+  if (!blogDetails) {
     notFound();
   }
 
@@ -127,32 +119,30 @@ const page = async ({ params }) => {
           }}
         >
           <h1 className="mb-0 md:mb-4 text-xl md:text-3xl font-bold tracking-normal text-left text-[#1B2639]">
-            {blogDetails[0]?.title}
+            {blogDetails?.title}
           </h1>
 
           <hr className="w-full h-[1px] mx-auto mt-0 mb-6 bg-[#1B2639] border-0 rounded " />
 
           <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3">
-            {blogDetails?.map((blogs, index) => (
-              <div className="col-span-2">
-                <Image
-                  width={1000}
-                  height={300}
-                  src={blogs?.featuredImage?.image?.url}
-                  alt={blogs?.featuredImage?.altText}
-                  className="w-full h-auto bg-center bg-cover"
-                />
+            <div className="col-span-2">
+              <Image
+                width={1000}
+                height={300}
+                src={blogDetails?.featuredImage?.image?.url}
+                alt={blogDetails?.featuredImage?.altText}
+                className="w-full h-auto bg-center bg-cover"
+              />
 
-                <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                  {postDate(blogs?.createdAt)}
-                </p>
-                <div className="mt-2 text-md">{parse(blogs?.body)}</div>
-              </div>
-            ))}
+              <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
+                {postDate(blogDetails?.createdAt)}
+              </p>
+              <div className="mt-2 text-md">{parse(blogDetails?.body)}</div>
+            </div>
 
             <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1000px] overflow-y-scroll overflow-x-hidden ">
-              {blogPostData?.data
-                ?.filter((pub, index) => pub.published === true)
+              {allBlogsData?.data
+                ?.filter((pub) => pub.published === true)
                 ?.map((blogs, index) => (
                   <Link
                     className="flex items-center gap-6 mb-4 "
