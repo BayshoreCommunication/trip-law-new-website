@@ -84,8 +84,10 @@ export async function generateMetadata({ params }) {
 }
 
 const page = async ({ params }) => {
-  const blogDetails = await GetBlogBySlug(params.slug);
-  const allBlogsData = await GetAllPostData();
+  const [blogDetails, allBlogsData] = await Promise.all([
+    GetBlogBySlug(params.slug),
+    GetAllPostData()
+  ]);
 
   if (!blogDetails) {
     notFound();
