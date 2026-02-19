@@ -124,14 +124,16 @@ const page = async ({ params }) => {
 
           <hr className="w-full h-[1px] mx-auto mt-0 mb-6 bg-[#1B2639] border-0 rounded " />
 
-          <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3">
+          <div className="grid gap-12 mb-10 grid-cols-1 sm:grid-cols-3">
             <div className="col-span-2">
               <Image
                 width={1000}
                 height={300}
                 src={blogDetails?.featuredImage?.image?.url}
-                alt={blogDetails?.featuredImage?.altText}
-                className="w-full h-auto bg-center bg-cover"
+                alt={blogDetails?.featuredImage?.altText || blogDetails?.title}
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 1000px"
+                className="w-full h-auto object-cover"
               />
 
               <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
@@ -153,8 +155,9 @@ const page = async ({ params }) => {
                       width={180}
                       height={180}
                       src={blogs?.featuredImage?.image?.url}
-                      alt={blogs?.featuredImage?.altText}
-                      className="bg-center bg-cover"
+                      alt={blogs?.featuredImage?.altText || blogs?.title}
+                      className="object-cover flex-shrink-0"
+                      style={{ objectFit: 'cover' }}
                     />
                     <div>
                       <div className="text-[0.8rem] md:text-[.8rem] text-black text-left italic mt-0">

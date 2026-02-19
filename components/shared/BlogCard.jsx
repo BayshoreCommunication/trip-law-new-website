@@ -1,46 +1,50 @@
-import React from 'react';
-import { Image } from '@nextui-org/react';
-import parse from 'html-react-parser';
-import Link from 'next/link';
+import Link from "next/link";
+import Image from "next/image";
+import parse from "html-react-parser";
 
-const BlogCard = ({ blogs }) => {
+const BlogCard = ({ blog }) => {
   const postDate = (date) => {
-    const formattedDate = new Date(date).toLocaleDateString('en-USA', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
+    const formattedDate = new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
     return formattedDate;
   };
+
   return (
-    <div className='flex items-center gap-6 mb-4 '>
-      <Link href={`/blog/${blogs?.slug}`}>
+    <Link href={`/blog/${blog?.slug}`} className="flex flex-col group h-full">
+      <div className="overflow-hidden rounded-lg relative h-[250px] w-full">
         <Image
-          width={180}
-          height={180}
-          src={blogs?.featuredImage?.image?.url}
-          alt={blogs?.featuredImage?.altText}
-          className='bg-center bg-cover'
+          src={blog?.featuredImage?.image?.url}
+          alt={blog?.featuredImage?.altText || blog?.title}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
-        <div>
-          <div className='font-thin text-[.8rem] text-white text-left italic mt-0'>
-            {postDate(blogs?.createdAt)}
-          </div>
-          <div className='text-md tracking-normal font-bold text-[#D5AD45] text-left mb-0 line-clamp-2'>
-            {blogs?.title}
-          </div>
-          <div className='font-normal text-[.8rem] text-white mb-4 text-justify sm:line-clamp-1 line-clamp-1 h-6'>
-            {parse(blogs?.body)}
-          </div>
-          <button
-            href={`/blog/${blogs?.slug}`}
-            className='px-4 py-2 font-medium tracking-wider text-white border border-white rounded-full text-normal focus:outline-none hover:bg-white hover:text-black focus:ring-1 focus:ring-gray-200'
-          >
-            Read More
-          </button>
-        </div>
-      </Link>
-    </div>
+      </div>
+
+      <p className="text-[0.9rem] text-black text-left italic mt-3">
+        {postDate(blog?.createdAt)}
+      </p>
+
+      <h3 className="text-lg md:text-xl tracking-normal font-bold text-[#1B2639] text-left mt-2 mb-3 line-clamp-2 group-hover:text-[#3a4a64] transition-colors">
+        {blog?.title}
+      </h3>
+
+      <div className="font-normal text-[0.95rem] text-black mb-4 line-clamp-3 fraction">
+        {parse(blog?.body || "")}
+      </div>
+
+      <div className="mt-auto flex justify-start">
+        <button
+          type="button"
+          className="text-white bg-[#1B2639] hover:bg-[#162030] font-medium text-sm md:text-base px-4 py-2 focus:outline-none rounded-md transition-colors"
+        >
+          Read More
+        </button>
+      </div>
+    </Link>
   );
 };
 
