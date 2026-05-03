@@ -65,6 +65,15 @@ h1 {
     blinkTextCursor 500ms steps(44) infinite normal;
 }
 
+/* globals.css */
+/* Show content if JS is disabled */
+@media (scripting: none) {
+  [data-framer-motion] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 @keyframes typewriter {
   from {
     width: 0;
