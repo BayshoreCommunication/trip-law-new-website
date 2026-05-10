@@ -5,6 +5,22 @@ import Pagination from "@/components/shared/Pagination";
 import SectionLayout from "@/components/shared/SectionLayout";
 import GetAllPostData from "@/lib/GetAllPostData";
 
+const staticBlogs = [
+  {
+    slug: "visa-overstay",
+    title: "What Happens If You Overstay Your U.S. Visa and How to Fix It",
+    body: "Find out what happens after a U.S. visa overstay and explore ways to fix it, including waivers and family based options.",
+    createdAt: "2026-05-10",
+    published: true,
+    featuredImage: {
+      image: {
+        url: "/assets/home/waviersone.png",
+      },
+      altText: "U.S. visa overstay legal options",
+    },
+  },
+];
+
 export const metadata = {
   title: "Immigration Tips, Success Stories & Legal News | Trip Law Blog",
   description:
@@ -18,6 +34,10 @@ const page = async ({ searchParams }) => {
 
   // Fetch paginated blog data
   const blogPostData = await GetAllPostData(currentPage, limit);
+  const publishedBlogs = [
+    ...(currentPage === 1 ? staticBlogs : []),
+    ...(blogPostData?.data?.filter((pub) => pub.published === true) || []),
+  ];
 
   return (
     <>
@@ -44,17 +64,15 @@ const page = async ({ searchParams }) => {
 
           {/* Blog Grid */}
           <div className="grid gap-8 mb-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            {blogPostData?.data
-              ?.filter((pub) => pub.published === true)
-              ?.map((blog, index) => (
-                <div key={index} className="h-full">
-                  <BlogCard blog={blog} />
-                </div>
-              ))}
+            {publishedBlogs?.map((blog, index) => (
+              <div key={index} className="h-full">
+                <BlogCard blog={blog} />
+              </div>
+            ))}
           </div>
 
           {/* No blogs message */}
-          {(!blogPostData?.data || blogPostData.data.length === 0) && (
+          {publishedBlogs.length === 0 && (
             <div className="text-center py-12">
               <p className="text-xl text-gray-600">No blog posts found.</p>
             </div>
