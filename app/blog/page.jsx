@@ -3,20 +3,26 @@ import CardMotion from "@/components/motion/CardMotion";
 import BlogCard from "@/components/shared/BlogCard";
 import Pagination from "@/components/shared/Pagination";
 import SectionLayout from "@/components/shared/SectionLayout";
+import {
+  VISA_OVERSTAY_DESCRIPTION,
+  VISA_OVERSTAY_FEATURE_IMAGE,
+  VISA_OVERSTAY_FEATURE_IMAGE_ALT,
+  VISA_OVERSTAY_TITLE,
+} from "@/components/static-blogs/blogs/visaOverstayMeta";
 import GetAllPostData from "@/lib/GetAllPostData";
 
 const staticBlogs = [
   {
     slug: "visa-overstay",
-    title: "What Happens If You Overstay Your U.S. Visa and How to Fix It",
-    body: "Find out what happens after a U.S. visa overstay and explore ways to fix it, including waivers and family based options.",
+    title: VISA_OVERSTAY_TITLE,
+    body: VISA_OVERSTAY_DESCRIPTION,
     createdAt: "2026-05-10",
     published: true,
     featuredImage: {
       image: {
-        url: "/assets/home/waviersone.png",
+        url: VISA_OVERSTAY_FEATURE_IMAGE,
       },
-      altText: "U.S. visa overstay legal options",
+      altText: VISA_OVERSTAY_FEATURE_IMAGE_ALT,
     },
   },
 ];

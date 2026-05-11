@@ -1,6 +1,11 @@
 import parse from "html-react-parser";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  VISA_OVERSTAY_FEATURE_IMAGE,
+  VISA_OVERSTAY_FEATURE_IMAGE_ALT,
+  VISA_OVERSTAY_TITLE,
+} from "./visaOverstayMeta";
 
 const penaltyRows = [
   ["Up to 180 days", "No bar triggered", "N/A", "Flexible options available"],
@@ -103,8 +108,17 @@ export default function VisaOverstayArticle({ allBlogsData }) {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
           <article className="col-span-2 text-[#2C2C2C]">
             <h1 className="mb-8 max-w-3xl border-b-2 border-[#C9A84C] pb-5 text-[34px] font-bold leading-tight text-[#1A2B4A] md:text-[42px]">
-              What Happens If You Overstay Your U.S. Visa and How to Fix It
+              {VISA_OVERSTAY_TITLE}
             </h1>
+
+            <Image
+              src={VISA_OVERSTAY_FEATURE_IMAGE}
+              alt={VISA_OVERSTAY_FEATURE_IMAGE_ALT}
+              width={1000}
+              height={510}
+              priority
+              className="mb-8 h-auto w-full object-cover"
+            />
 
             <Paragraph>
               The United States remains a beacon of hope for families across the globe. Building a life here

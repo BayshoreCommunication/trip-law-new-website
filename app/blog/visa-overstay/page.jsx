@@ -1,16 +1,18 @@
 import PageHeroSection from "@/components/shared/PageHeroSection";
 import VisaOverstayArticle from "@/components/static-blogs/blogs/VisaOverstayArticle";
+import {
+  VISA_OVERSTAY_DESCRIPTION,
+  VISA_OVERSTAY_FEATURE_IMAGE,
+} from "@/components/static-blogs/blogs/visaOverstayMeta";
 import GetAllPostData from "@/lib/GetAllPostData";
 
 export const metadata = {
   title: "U.S. Visa Overstay, Risks and Solutions | Trip Law",
-  description:
-    "Find out what happens after a U.S. visa overstay and explore ways to fix it, including waivers and family based options.",
+  description: VISA_OVERSTAY_DESCRIPTION,
   openGraph: {
     title: "U.S. Visa Overstay, Risks and Solutions",
-    description:
-      "Find out what happens after a U.S. visa overstay and explore ways to fix it, including waivers and family based options.",
-    images: ["/assets/home/waviersone.png"],
+    description: VISA_OVERSTAY_DESCRIPTION,
+    images: [VISA_OVERSTAY_FEATURE_IMAGE],
     url: "https://www.trip-law.com/blog/visa-overstay",
     type: "article",
     siteName: "Trip Law",
