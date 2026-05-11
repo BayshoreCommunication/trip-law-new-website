@@ -14,13 +14,13 @@ const BlogCard = ({ blog }) => {
 
   return (
     <Link href={`/blog/${blog?.slug}`} className="flex flex-col group h-full">
-      <div className="overflow-hidden rounded-lg relative h-[250px] w-full">
+      <div className="overflow-hidden rounded-lg relative aspect-[1000/510] w-full bg-white">
         <Image
           src={blog?.featuredImage?.image?.url}
           alt={blog?.featuredImage?.altText || blog?.title}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          className="object-contain transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 

@@ -6,11 +6,13 @@ import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import ScondayButton from "../shared/ScondayButton";
 import GetAllPostData from "@/lib/GetAllPostData";
 import Link from "next/link";
+import { getPublishedBlogsWithStatic } from "@/components/static-blogs/blogs/staticBlogs";
 
 const bitter = Bitter({ subsets: ["latin"] });
 
 const NewsSection = async () => {
   const blogPostData = await GetAllPostData();
+  const publishedBlogs = getPublishedBlogsWithStatic(blogPostData).slice(0, 3);
 
   const postDate = (date) => {
     return new Date(date).toLocaleDateString("en-US", {
@@ -21,32 +23,30 @@ const NewsSection = async () => {
   };
 
   const renderBlogPosts = () => {
-    return blogPostData?.data
-      ?.filter((pub, index) => pub.published && index < 3)
-      ?.map((blog, index) => (
-        <Link href={`/blog/${blog.slug}`} key={index}>
-          <Card shadow="sm" radius="none" isPressable>
-            <CardBody className="p-0">
-              <Image
-                shadow="none"
-                radius="none"
-                width="100%"
-                className="w-full object-cover h-[300px]"
-                src={blog.featuredImage?.image?.url}
-                alt={blog.featuredImage?.altText}
-              />
-            </CardBody>
-            <CardFooter className="text-small block text-left">
-              <h2 className="text-default-500 text-lg font-bold line-clamp-1">
-                {blog.title}
-              </h2>
-              <p className="text-default-500 block">
-                {postDate(blog.createdAt)}
-              </p>
-            </CardFooter>
-          </Card>
-        </Link>
-      ));
+    return publishedBlogs.map((blog, index) => (
+      <Link href={`/blog/${blog.slug}`} key={index}>
+        <Card shadow="sm" radius="none" isPressable>
+          <CardBody className="p-0">
+            <Image
+              shadow="none"
+              radius="none"
+              width="100%"
+              className="aspect-[1000/510] w-full bg-white object-contain"
+              src={blog.featuredImage?.image?.url}
+              alt={blog.featuredImage?.altText}
+            />
+          </CardBody>
+          <CardFooter className="text-small block text-left">
+            <h2 className="text-default-500 text-lg font-bold line-clamp-1">
+              {blog.title}
+            </h2>
+            <p className="text-default-500 block">
+              {postDate(blog.createdAt)}
+            </p>
+          </CardFooter>
+        </Card>
+      </Link>
+    ));
   };
 
   return (

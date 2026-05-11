@@ -3,29 +3,8 @@ import CardMotion from "@/components/motion/CardMotion";
 import BlogCard from "@/components/shared/BlogCard";
 import Pagination from "@/components/shared/Pagination";
 import SectionLayout from "@/components/shared/SectionLayout";
-import {
-  VISA_OVERSTAY_DESCRIPTION,
-  VISA_OVERSTAY_FEATURE_IMAGE,
-  VISA_OVERSTAY_FEATURE_IMAGE_ALT,
-  VISA_OVERSTAY_TITLE,
-} from "@/components/static-blogs/blogs/visaOverstayMeta";
+import { getPublishedBlogsWithStatic } from "@/components/static-blogs/blogs/staticBlogs";
 import GetAllPostData from "@/lib/GetAllPostData";
-
-const staticBlogs = [
-  {
-    slug: "visa-overstay",
-    title: VISA_OVERSTAY_TITLE,
-    body: VISA_OVERSTAY_DESCRIPTION,
-    createdAt: "2026-05-10",
-    published: true,
-    featuredImage: {
-      image: {
-        url: VISA_OVERSTAY_FEATURE_IMAGE,
-      },
-      altText: VISA_OVERSTAY_FEATURE_IMAGE_ALT,
-    },
-  },
-];
 
 export const metadata = {
   title: "Immigration Tips, Success Stories & Legal News | Trip Law Blog",
@@ -40,10 +19,10 @@ const page = async ({ searchParams }) => {
 
   // Fetch paginated blog data
   const blogPostData = await GetAllPostData(currentPage, limit);
-  const publishedBlogs = [
-    ...(currentPage === 1 ? staticBlogs : []),
-    ...(blogPostData?.data?.filter((pub) => pub.published === true) || []),
-  ];
+  const publishedBlogs =
+    currentPage === 1
+      ? getPublishedBlogsWithStatic(blogPostData)
+      : blogPostData?.data?.filter((pub) => pub.published === true) || [];
 
   return (
     <>
