@@ -21,12 +21,12 @@ const ServiceSection = () => {
       title: "E2 Treaty Visas",
       dec: "We can simplify the E2 Treaty Visa process, ensuring all papers, documents, and waivers are met for your investment in the USA",
     },
-    {
-      icon: "/assets/home/icon/citizenship.png",
-      bg: "bg-[url('/assets/home/waviersone.png')]",
-      title: "Citizenship",
-      dec: "Our team will be with you each step of getting citizenship and help you meet the eligibility criteria for a successful application.",
-    },
+    // {
+    //   icon: "/assets/home/icon/citizenship.png",
+    //   bg: "bg-[url('/assets/home/waviersone.png')]",
+    //   title: "Citizenship",
+    //   dec: "Our team will be with you each step of getting citizenship and help you meet the eligibility criteria for a successful application.",
+    // },
     {
       icon: "/assets/home/icon/naturalization-citizenship.png",
       bg: "bg-[url('/assets/home/citizenshipbg.png')]",
