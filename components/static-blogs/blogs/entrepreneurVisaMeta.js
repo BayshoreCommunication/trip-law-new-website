@@ -1,6 +1,9 @@
 export const ENTREPRENEUR_SLUG =
   "us-immigration-options-entrepreneur-visa-law";
 
+export const ENTREPRENEUR_CANONICAL_URL =
+  `https://www.trip-law.com/blog/${ENTREPRENEUR_SLUG}`;
+
 export const ENTREPRENEUR_ARTICLE_TITLE =
   "US Immigration Options for Entrepreneurs Without an E-2 Treaty Country";
 
