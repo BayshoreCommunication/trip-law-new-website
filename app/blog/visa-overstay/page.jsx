@@ -6,14 +6,20 @@ import {
 } from "@/components/static-blogs/blogs/visaOverstayMeta";
 import GetAllPostData from "@/lib/GetAllPostData";
 
+const canonicalUrl = "https://www.trip-law.com/blog/visa-overstay";
+const featureImageUrl = `https://www.trip-law.com${VISA_OVERSTAY_FEATURE_IMAGE}`;
+
 export const metadata = {
   title: "U.S. Visa Overstay, Risks and Solutions | Trip Law",
   description: VISA_OVERSTAY_DESCRIPTION,
+  alternates: {
+    canonical: canonicalUrl,
+  },
   openGraph: {
     title: "U.S. Visa Overstay, Risks and Solutions",
     description: VISA_OVERSTAY_DESCRIPTION,
-    images: [VISA_OVERSTAY_FEATURE_IMAGE],
-    url: "https://www.trip-law.com/blog/visa-overstay",
+    images: [featureImageUrl],
+    url: canonicalUrl,
     type: "article",
     siteName: "Trip Law",
   },

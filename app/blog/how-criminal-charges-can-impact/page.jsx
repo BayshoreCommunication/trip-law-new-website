@@ -10,8 +10,8 @@ import {
 } from "@/components/static-blogs/blogs/criminalChargesMeta";
 import GetAllPostData from "@/lib/GetAllPostData";
 
-const canonicalUrl = `https://trip-law.com/blog/${CRIMINAL_CHARGES_SLUG}`;
-const featureImageUrl = `https://trip-law.com${CRIMINAL_CHARGES_FEATURE_IMAGE}`;
+const canonicalUrl = `https://www.trip-law.com/blog/${CRIMINAL_CHARGES_SLUG}`;
+const featureImageUrl = `https://www.trip-law.com${CRIMINAL_CHARGES_FEATURE_IMAGE}`;
 
 export const metadata = {
   title: `${CRIMINAL_CHARGES_META_TITLE} | Trip Law`,
@@ -66,7 +66,7 @@ export default async function CriminalChargesImmigrationStatusPage() {
       name: "Trip Law",
       logo: {
         "@type": "ImageObject",
-        url: "https://trip-law.com/assets/site-logo/trip-law-logo.png",
+        url: "https://www.trip-law.com/assets/site-logo/trip-law-logo.png",
       },
     },
   };

@@ -9,6 +9,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+const SITE_URL = "https://www.trip-law.com";
+
 const css = `
  h1, h2, p, br, nav {
   padding-top: 10px;
@@ -70,14 +72,19 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const canonicalUrl = `${SITE_URL}/blog/${blogDetails?.slug || params.slug}`;
+
   return {
     title: blogDetails?.title,
     description: blogDetails?.metaDescription,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: blogDetails?.title,
       description: blogDetails?.metaDescription,
       images: [blogDetails?.featuredImage?.image?.url],
-      url: `https://www.trip-law.com/blog/${blogDetails?.slug}`,
+      url: canonicalUrl,
       type: "article",
       site_name: "Trip Law",
     },
