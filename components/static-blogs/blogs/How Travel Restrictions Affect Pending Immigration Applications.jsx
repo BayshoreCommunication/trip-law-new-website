@@ -214,9 +214,9 @@ function VisaImpactTable() {
 function MidPageCta() {
   return (
     <div className="my-8 border-l-4 border-[#C9A84C] bg-[#F0F4FA] p-6">
-      <h3 className="text-[20px] font-bold text-[#1A2B4A]">
+      <h2 className="text-[20px] font-bold text-[#1A2B4A]">
         Is Your Immigration Case Caught in the 2026 Travel Ban?
-      </h3>
+      </h2>
       <p className="mt-2 text-[16px] text-[#2C2C2C]">
         Attorney Hardam Tripathi reviews your specific situation. Don't wait for
         a denial letter to show up first.
@@ -237,9 +237,9 @@ function ComparisonPanel() {
   return (
     <div className="my-9 grid gap-6 md:grid-cols-2">
       <div className="border-t-4 border-red-500 bg-[#FFF5F5] p-6 rounded-sm">
-        <h4 className="text-[18px] font-bold text-red-800 uppercase tracking-wide">
+        <h3 className="text-[18px] font-bold text-red-800 uppercase tracking-wide">
           WITHOUT Legal Guidance
-        </h4>
+        </h3>
         <ul className="mt-4 space-y-3 text-[15px] leading-relaxed text-red-950 list-disc pl-5 marker:text-red-500">
           <li>Application frozen, no updates for months</li>
           <li>RFE deadlines missed, case dismissed</li>
@@ -248,9 +248,9 @@ function ComparisonPanel() {
         </ul>
       </div>
       <div className="border-t-4 border-green-600 bg-[#F3FAF5] p-6 rounded-sm">
-        <h4 className="text-[18px] font-bold text-green-800 uppercase tracking-wide">
+        <h3 className="text-[18px] font-bold text-green-800 uppercase tracking-wide">
           WITH Trip Law on Your Side
-        </h4>
+        </h3>
         <ul className="mt-4 space-y-3 text-[15px] leading-relaxed text-green-950 list-disc pl-5 marker:text-green-600">
           <li>Case reviewed for travel ban exceptions</li>
           <li>Every RFE response handled on time</li>
@@ -265,9 +265,9 @@ function ComparisonPanel() {
 function GreenCardChart() {
   return (
     <div className="my-8 bg-[#F0F4FA] p-6 rounded-md">
-      <h4 className="text-[17px] font-bold uppercase tracking-wider text-[#1A2B4A] mb-5">
+      <h3 className="text-[17px] font-bold uppercase tracking-wider text-[#1A2B4A] mb-5">
         GREEN CARD NUMBERS: THE DROP IS REAL
-      </h4>
+      </h3>
       <div className="space-y-4">
         <div>
           <div className="flex justify-between text-[14px] font-bold text-[#2C2C2C] mb-1">
@@ -437,9 +437,9 @@ export default function HowTravelRestrictionsAffectPendingImmigrationApplication
           <article className="col-span-2 text-[#2C2C2C]">
             <IntroPanel />
 
-            <h1 className="mb-8 max-w-3xl border-b-2 border-[#C9A84C] pb-5 text-[34px] font-bold leading-tight text-[#1A2B4A] md:text-[42px]">
+            <h3 className="mb-8 max-w-3xl border-b-2 border-[#C9A84C] pb-5 text-[34px] font-bold leading-tight text-[#1A2B4A] md:text-[42px]">
               {TRAVEL_RESTRICTIONS_ARTICLE_TITLE}
-            </h1>
+            </h3>
 
             <figure className="mb-8">
               <Image

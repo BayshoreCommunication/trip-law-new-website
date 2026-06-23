@@ -245,9 +245,9 @@ function ComparisonPanel() {
   return (
     <div className="my-9 grid gap-6 md:grid-cols-2">
       <div className="border-t-4 border-green-600 bg-[#F3FAF5] p-6 rounded-sm">
-        <h4 className="text-[18px] font-bold text-green-800 uppercase tracking-wide">
+        <h3 className="text-[18px] font-bold text-green-800 uppercase tracking-wide">
           Working WITH an EAD
-        </h4>
+        </h3>
         <ul className="mt-4 space-y-3 text-[15px] leading-relaxed text-green-950 list-disc pl-5 marker:text-green-600">
           <li>Completely legal and USCIS-approved employment</li>
           <li>Builds a positive, documented work history in the U.S.</li>
@@ -256,9 +256,9 @@ function ComparisonPanel() {
         </ul>
       </div>
       <div className="border-t-4 border-red-500 bg-[#FFF5F5] p-6 rounded-sm">
-        <h4 className="text-[18px] font-bold text-red-800 uppercase tracking-wide">
+        <h3 className="text-[18px] font-bold text-red-800 uppercase tracking-wide">
           Working WITHOUT Authorization
-        </h4>
+        </h3>
         <ul className="mt-4 space-y-3 text-[15px] leading-relaxed text-red-950 list-disc pl-5 marker:text-red-500">
           <li>Ground of inadmissibility under the Immigration & Nationality Act</li>
           <li>Can lead to immediate denial of green card/asylum application</li>
@@ -273,9 +273,9 @@ function ComparisonPanel() {
 function EadProcessingTimesChart() {
   return (
     <div className="my-8 bg-[#F0F4FA] p-6 rounded-md">
-      <h4 className="text-[17px] font-bold uppercase tracking-wider text-[#1A2B4A] mb-5">
+      <h3 className="text-[17px] font-bold uppercase tracking-wider text-[#1A2B4A] mb-5">
         EAD Processing Time Ranges by Application Type (Months)
-      </h4>
+      </h3>
       <div className="space-y-4">
         {eadProcessingTimes.map((item) => (
           <div key={item.label}>
@@ -305,9 +305,9 @@ function EadProcessingTimesChart() {
 function AsylumCasesChart() {
   return (
     <div className="my-8 bg-[#F0F4FA] p-6 rounded-md">
-      <h4 className="text-[17px] font-bold uppercase tracking-wider text-[#1A2B4A] mb-5">
+      <h3 className="text-[17px] font-bold uppercase tracking-wider text-[#1A2B4A] mb-5">
         Florida Pending Asylum Cases by Region (Estimate)
-      </h4>
+      </h3>
       <div className="space-y-4">
         {pendingAsylumCases.map((item) => (
           <div key={item.region}>
@@ -543,7 +543,7 @@ export default function WorkInUsWhileImmigrationCasePending({
               Florida applicants should factor in that the Miami and Orlando USCIS field offices historically run slightly longer than the national average. Plan ahead. Check <ExternalLink href="https://egov.uscis.gov/processing-times/">current USCIS processing time estimates</ExternalLink> before you file.
             </Paragraph>
             <Paragraph>
-              Your timeline matters. Do not guess it.
+              <h2>Your timeline matters. Do not guess it.</h2>
             </Paragraph>
 
             <MidPageCta />
