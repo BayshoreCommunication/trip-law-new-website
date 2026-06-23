@@ -11,6 +11,12 @@ import {
 } from "./administrativeProcessingMeta";
 import { getPublishedBlogsWithStatic } from "./staticBlogs";
 
+export const metadata = {
+  title: "What To Do If Immigration Application Stuck At Processing",
+  description:
+    "Stuck in administrative processing? We expose why consular officers pause your immigration application and how to force a decision on your stalled case.",
+};
+
 const takeaways = [
   "Administrative processing is not a visa denial. It is a deeper review phase after your interview.",
   "Most cases resolve within 60 days. Acting too early on inquiries can hurt your progress.",
