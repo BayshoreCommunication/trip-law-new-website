@@ -65,6 +65,9 @@ export const generateMetadata = ({ params }) => {
     description:
       servicesDetails[0]?.sortTitle.slice(0, 200) ||
       "Explore TripLaw's comprehensive immigration services, including visas, green cards, citizenship, and more. Find the right solution for your situation",
+    alternates: {
+      canonical: `/services/${servicesDetails[0]?.slug}`,
+    },
     openGraph: {
       title:
         servicesDetails[0]?.title ||

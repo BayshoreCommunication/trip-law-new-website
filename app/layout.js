@@ -7,7 +7,7 @@ import { Providers } from "./providers";
 const mulish = Mulish({ subsets: ["latin"] });
 
 export const metadata = {
-  metadataBase: new URL("https://trip-law-new-website.vercel.app"),
+  metadataBase: new URL("https://www.trip-law.com"),
 };
 
 export default function RootLayout({ children }) {

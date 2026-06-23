@@ -7,6 +7,9 @@ export const metadata = {
   title: "Career - Attorney Hardam Tripathi, Esq.",
   description:
     "Stay informed on the latest immigration news, legal updates, and valuable resources with TripLaw's immigration blog ",
+  alternates: {
+    canonical: "/career",
+  },
 };
 
 const page = () => {

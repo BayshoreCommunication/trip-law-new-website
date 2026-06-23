@@ -10,6 +10,9 @@ export const metadata = {
   title: "Immigration Tips, Success Stories & Legal News | Trip Law Blog",
   description:
     "Stay informed with the latest U.S. immigration law news, expert tips, and insights from Trip Law. Our blog covers Green Cards, work visas (H-1B, EB-1), asylum, family sponsorship, and more. Get valuable advice from experienced immigration attorneys to guide your journey.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 const page = async ({ searchParams }) => {

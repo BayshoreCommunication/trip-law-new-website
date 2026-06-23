@@ -7,6 +7,9 @@ export const metadata = {
   title: "Terms of Service - Attorney Hardam Tripathi, Esq.",
   description:
     "Explore our Terms of Service to understand the rules, guidelines, and legal agreements managing your use of our website and services.",
+  alternates: {
+    canonical: "/terms-of-service",
+  },
 };
 
 const page = () => {

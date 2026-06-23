@@ -6,6 +6,9 @@ export const metadata = {
   title: "Disclaimers and Terms of Use - Attorney Hardam Tripathi, Esq.",
   description:
     "Stay informed on the latest immigration news, legal updates, and valuable resources with TripLaw's immigration blog",
+  alternates: {
+    canonical: "/disclaimers-and-terms-of-use",
+  },
 };
 
 const page = () => {

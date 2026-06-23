@@ -7,6 +7,9 @@ export const metadata = {
   title: "Contact Trip Law - Get Legal Assistance Today",
   description:
     "Stay informed on the latest immigration news, legal updates, and valuable resources with TripLaw's immigration blog",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const page = () => {

@@ -6,6 +6,9 @@ export const metadata = {
   title: "Privacy Policy - Attorney Hardam Tripathi, Esq.",
   description:
     "Learn about Trip-Law's commitment to your privacy, the use of cookies, comment policy, and legal notices in our detailed Legal Information section",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 const page = () => {
