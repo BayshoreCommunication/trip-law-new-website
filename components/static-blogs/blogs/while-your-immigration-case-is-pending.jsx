@@ -159,7 +159,7 @@ function TakeawayPanel() {
 function QuotePanel({ text, author }) {
   return (
     <div className="my-8 border-l-4 border-[#C9A84C] bg-[#F0F4FA] px-6 py-5 italic text-[#1A2B4A]">
-      <p className="text-[17px] font-medium leading-[1.65]">"{text}"</p>
+      <p className="text-[17px] font-medium leading-[1.65]">&quot;{text}&quot;</p>
       <p className="mt-2 text-[15px] font-bold not-italic">— {author}</p>
     </div>
   );
@@ -179,11 +179,11 @@ function StatPanel() {
       </div>
       <div className="border-t-4 border-[#C9A84C] bg-[#1A2B4A] p-6 text-white">
         <p className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#C9A84C]">
-          Florida's Rank for Total EAD Filings
+          Florida&apos;s Rank for Total EAD Filings
         </p>
         <p className="mt-2 text-[48px] font-bold leading-none text-white">#3</p>
         <p className="mt-2 text-[15px] leading-[1.55] text-[#F0F4FA]">
-          Tampa Bay and Central Florida lead the state's filing statistics.
+          Tampa Bay and Central Florida lead the state&apos;s filing statistics.
         </p>
       </div>
     </div>
@@ -488,7 +488,7 @@ export default function WorkInUsWhileImmigrationCasePending({
             </figure>
 
             <Paragraph>
-              Yes, it’s possible once you have proper permission. Then you can work in the United States during your immigration process. A valid work permit comes before any job activity. For many, that means submitting Form I-765 to get what's called an EAD (Employment Authorization Document). Whether you qualify directly ties to your current visa category and the application already submitted.
+              Yes, it’s possible once you have proper permission. Then you can work in the United States during your immigration process. A valid work permit comes before any job activity. For many, that means submitting Form I-765 to get what&apos;s called an EAD (Employment Authorization Document). Whether you qualify directly ties to your current visa category and the application already submitted.
             </Paragraph>
 
             <TakeawayPanel />

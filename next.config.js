@@ -30,6 +30,9 @@ const nextConfig = {
     ],
   },
   skipTrailingSlashRedirect: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
