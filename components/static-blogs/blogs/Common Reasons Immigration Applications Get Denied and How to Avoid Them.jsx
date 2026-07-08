@@ -394,7 +394,7 @@ export default function CommonReasonsImmigrationApplicationsGetDenied({
           <article className="col-span-2 text-[#2C2C2C]">
             <IntroPanel />
 
-            <h1 className="mb-8 max-w-3xl border-b-2 border-[#C9A84C] pb-5 text-[34px] font-bold leading-tight text-[#1A2B4A] md:text-[42px] text-justify">
+            <h1 className="mb-8 max-w-3xl border-b-2 border-[#C9A84C] pb-5 text-[34px] font-bold leading-tight text-[#1A2B4A] md:text-[42px]">
               {DENIED_APPLICATIONS_ARTICLE_TITLE}
             </h1>
 
