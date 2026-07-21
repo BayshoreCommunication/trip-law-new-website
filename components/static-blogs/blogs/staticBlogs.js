@@ -1,4 +1,14 @@
 import {
+  RAID_RIGHTS_ARTICLE_DESCRIPTION,
+  RAID_RIGHTS_ARTICLE_TITLE,
+  RAID_RIGHTS_FEATURE_IMAGE,
+  RAID_RIGHTS_FEATURE_IMAGE_ALT,
+  RAID_RIGHTS_FEATURE_IMAGE_CAPTION,
+  RAID_RIGHTS_FEATURE_IMAGE_DESCRIPTION,
+  RAID_RIGHTS_FEATURE_IMAGE_TITLE,
+  RAID_RIGHTS_SLUG,
+} from "./whatAreYourRightsDuringAnImmigrationRaidOrArrestMeta";
+import {
   VISA_OVERSTAY_DESCRIPTION,
   VISA_OVERSTAY_FEATURE_IMAGE,
   VISA_OVERSTAY_FEATURE_IMAGE_ALT,
@@ -96,6 +106,22 @@ import {
 } from "./waiverOfInadmissibilityMeta";
 
 export const staticBlogs = [
+  {
+    slug: RAID_RIGHTS_SLUG,
+    title: RAID_RIGHTS_ARTICLE_TITLE,
+    body: RAID_RIGHTS_ARTICLE_DESCRIPTION,
+    createdAt: "2026-07-21",
+    published: true,
+    featuredImage: {
+      image: {
+        url: RAID_RIGHTS_FEATURE_IMAGE,
+      },
+      altText: RAID_RIGHTS_FEATURE_IMAGE_ALT,
+      title: RAID_RIGHTS_FEATURE_IMAGE_TITLE,
+      description: RAID_RIGHTS_FEATURE_IMAGE_DESCRIPTION,
+      caption: RAID_RIGHTS_FEATURE_IMAGE_CAPTION,
+    },
+  },
   {
     slug: IMMIGRATION_HOLDS_SLUG,
     title: IMMIGRATION_HOLDS_ARTICLE_TITLE,
