@@ -250,7 +250,7 @@ function SilenceStatsPanel() {
 function MidPageCta({ heading, subtext }) {
   return (
     <div className="my-8 border-t-4 border-[#C9A84C] bg-[#1A2B4A] p-6 text-white text-center rounded-sm">
-      <h3 className="text-[22px] font-bold text-[#C9A84C]">{heading}</h3>
+      <h2 className="text-[22px] font-bold text-[#C9A84C]">{heading}</h2>
       <p className="mt-2 text-[16px] text-white">{subtext}</p>
       <div className="mt-4">
         <Link
