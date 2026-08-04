@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .swiper-slide .swiper-slide-active {
   width: 1170px !important;

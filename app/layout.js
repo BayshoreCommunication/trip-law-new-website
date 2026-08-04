@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={mulish.className}>
         <Providers>
-          <div className="overflow-x-hidden text-black bg-white">
+          <div className="overflow-x-clip text-black bg-white">
             <MainNavbar />
             {children}
             <Footer />
