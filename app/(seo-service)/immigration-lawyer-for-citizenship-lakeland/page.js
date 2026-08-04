@@ -22,6 +22,15 @@ export const metadata = {
   title: 'Immigration Lawyer for Citizenship in Lakeland, FL',
   description:
     'Become a U.S. citizen with help from Trip Law. Our Lakeland immigration lawyer handles citizenship applications, naturalization, and interview preparation.',
+    robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
 };
 
 export default function ImmigrationLawyerLakelandPage() {
