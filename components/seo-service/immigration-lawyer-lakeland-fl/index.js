@@ -1,0 +1,17 @@
+export { default as HeroSection } from './HeroSection';
+export { default as EligibilitySection } from './EligibilitySection';
+export { default as PathwaysSection } from './PathwaysSection';
+export { default as DocumentsSection } from './DocumentsSection';
+export { default as HighRiskCasesSection } from './HighRiskCasesSection';
+export { default as DenialReasonsSection } from './DenialReasonsSection';
+export { default as ProcessTimelineSection } from './ProcessTimelineSection';
+export { default as InterviewPrepSection } from './InterviewPrepSection';
+export { default as AfterApprovalSection } from './AfterApprovalSection';
+export { default as FilingFeesSection } from './FilingFeesSection';
+export { default as WhyTrustUsSection } from './WhyTrustUsSection';
+export { default as LicensedAttorneySection } from './LicensedAttorneySection';
+export { default as WhatToExpectSection } from './WhatToExpectSection';
+export { default as TestimonialsSection } from './TestimonialsSection';
+export { default as PracticeAreasCitiesSection } from './PracticeAreasCitiesSection';
+export { default as FinalCtaSection } from './FinalCtaSection';
+export { default as FaqSection } from './FaqSection';
