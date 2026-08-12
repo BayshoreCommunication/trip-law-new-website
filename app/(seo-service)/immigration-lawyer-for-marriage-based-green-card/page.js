@@ -22,6 +22,9 @@ export const metadata = {
   title: 'Marriage Based Green Card Immigration Lawyer',
   description:
     'Trip Law helps couples obtain marriage based green cards through family immigration. Get trusted guidance from filing through approval.',
+  alternates: {
+    canonical: '/immigration-lawyer-for-marriage-based-green-card',
+  },
   robots: {
     index: false,
     follow: false,

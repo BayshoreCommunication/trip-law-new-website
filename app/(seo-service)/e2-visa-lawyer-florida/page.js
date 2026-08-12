@@ -22,6 +22,9 @@ export const metadata = {
   title: 'E2 Visa Lawyer In Florida | Treaty Investor Visa Attorney',
   description:
     'Protect your commercial investment and secure your E2 Treaty Investor Visa in Florida with help from Trip Law. Contact our experienced E2 visa lawyers today.',
+  alternates: {
+    canonical: '/e2-visa-lawyer-florida',
+  },
   robots: {
     index: false,
     follow: false,

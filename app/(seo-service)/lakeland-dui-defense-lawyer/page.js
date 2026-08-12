@@ -22,6 +22,9 @@ export const metadata = {
   title: 'Lakeland DUI Defense Lawyer for DUI Charges | Trip Law',
   description:
     'Arrested for DUI in Lakeland? Trip Law defends clients against first time and repeat DUI charges. Call today for a confidential consultation.',
+  alternates: {
+    canonical: '/lakeland-dui-defense-lawyer',
+  },
   robots: {
     index: false,
     follow: false,
