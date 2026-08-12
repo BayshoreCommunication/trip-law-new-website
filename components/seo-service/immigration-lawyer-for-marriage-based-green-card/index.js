@@ -35,3 +35,4 @@ export {
   FinalCtaSection,
   FaqSection,
 };
+export default HeroSection;
