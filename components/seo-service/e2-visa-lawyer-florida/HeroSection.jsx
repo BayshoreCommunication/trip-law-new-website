@@ -40,9 +40,9 @@ const NumberCounter = ({ target = 15, suffix = '+', duration = 1800 }) => {
 };
 
 const HeroSection = ({
-  locationTitle = 'MARRIAGE-BASED GREEN CARD LAWYER IN LAKELAND & TAMPA',
-  mainHeading = 'Immigration Lawyer for Marriage-Based Green Card — Build Your Life Together in the U.S.',
-  description = 'Applying for a marriage-based green card requires clear evidence, accurate paperwork, and thorough interview preparation. Trip Law helps couples navigate USCIS requirements with confidence, protecting your application from unnecessary delays or denials.',
+  locationTitle = 'E2 VISA LAWYER IN FLORIDA',
+  mainHeading = 'E2 Visa Lawyer In Florida — Protect Your Investment and Secure Treaty Investor Status',
+  description = "Buying or starting a business in Florida under an E2 visa takes more than a wire transfer. You shouldn't risk your capital when establishing new commercial operations inside the United States. Having an experienced e2 visa lawyer florida protects your enterprise from sudden operational disruptions. USCIS and consular officers test your treaty nationality, your investment, and your business plan before granting status. Trip Law prepares your complete evidentiary packet to meet strict federal review guidelines. Our firm directly assists international entrepreneurs who want to establish profitable businesses here.",
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
   consultationLink = '/appointment',
   consultationText = 'SCHEDULE CONSULTATION',
@@ -56,7 +56,7 @@ const HeroSection = ({
       <div className="absolute inset-0 z-0">
         <Image
           src={bgImage}
-          alt="Marriage Based Green Card Background"
+          alt="E2 Visa Lawyer Background"
           fill
           priority
           quality={90}
@@ -209,7 +209,7 @@ const HeroSection = ({
                   </span>
                 </div>
 
-                {/* Highlight 3: USCIS Interview Support */}
+                {/* Highlight 3: Consular & USCIS Support */}
                 <div className="flex items-center gap-5 py-5">
                   <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-red-700/10 border border-red-700/30">
                     <svg
@@ -233,7 +233,7 @@ const HeroSection = ({
                     </svg>
                   </div>
                   <span className="text-white font-medium text-base sm:text-lg tracking-wide">
-                    USCIS Marriage Interview Prep
+                    USCIS & Consular Processing Support
                   </span>
                 </div>
 
@@ -257,7 +257,7 @@ const HeroSection = ({
                     </svg>
                   </div>
                   <span className="text-white font-medium text-base sm:text-lg tracking-wide">
-                    Florida Family Immigration Practice
+                    Florida E2 Investor Practice
                   </span>
                 </div>
 
