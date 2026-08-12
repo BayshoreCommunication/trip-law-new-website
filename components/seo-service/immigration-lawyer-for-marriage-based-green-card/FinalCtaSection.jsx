@@ -7,7 +7,6 @@ import { Bitter } from 'next/font/google';
 const bitter = Bitter({ subsets: ['latin'] });
 
 const FinalCtaSection = ({
-  tagline = 'GET STARTED TODAY',
   title = 'Start Your Marriage Based Green Card Application With Trip Law Today',
   description = "Do not navigate the stressful federal immigration system without professional legal support. Our dedicated Florida law firm is ready to protect your family's future. Contact an experienced immigration lawyer for marriage based green card cases right now. Schedule your initial strategy consultation with our skilled legal team this week.",
   consultationLink = '/appointment',
@@ -23,15 +22,6 @@ const FinalCtaSection = ({
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="max-w-4xl mx-auto text-center flex flex-col items-center"
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-            <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase">
-              {tagline}
-            </span>
-            <span className="text-red-500 font-bold text-xs sm:text-sm">★</span>
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-          </div>
-
           <h2 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6 leading-tight ${bitter.className}`}>
             {title}
           </h2>

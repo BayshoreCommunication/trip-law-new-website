@@ -37,7 +37,6 @@ const defaultLocations = [
 ];
 
 const PracticeAreasCitiesSection = ({
-  tagline = 'PRACTICE AREAS & LOCATIONS',
   title = 'Serving Clients Across Florida',
   practiceAreas = defaultPracticeAreas,
   locations = defaultLocations,
@@ -52,22 +51,12 @@ const PracticeAreasCitiesSection = ({
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="flex flex-col items-center text-center mb-12 sm:mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-            <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase">
-              {tagline}
-            </span>
-            <span className="text-red-500 font-bold text-xs sm:text-sm">★</span>
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-          </div>
-
           <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight mb-4 ${bitter.className}`}>
             {title}
           </h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
-          {/* Practice Areas */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -88,7 +77,6 @@ const PracticeAreasCitiesSection = ({
             </ul>
           </motion.div>
 
-          {/* Cities & Counties Served */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

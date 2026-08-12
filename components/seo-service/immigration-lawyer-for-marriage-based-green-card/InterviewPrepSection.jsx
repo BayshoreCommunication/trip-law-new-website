@@ -39,7 +39,6 @@ const defaultSteps = [
 ];
 
 const InterviewPrepSection = ({
-  tagline = 'INTERVIEW PREPARATION',
   title = 'How Trip Immigration Lawyer Prepares Married Couples for Green Card Interview',
   description = 'Marriage based green card interview allows a USCIS officer to directly assess your paperwork. With good preparation couples can respond with confidence and consistently with evidence. USCIS emphasizes thorough screening of marriage applications to detect fraud or check legitimacy.',
   steps = defaultSteps,
@@ -54,15 +53,6 @@ const InterviewPrepSection = ({
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="flex flex-col items-center text-center mb-12 sm:mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-            <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase">
-              {tagline}
-            </span>
-            <span className="text-red-700 font-bold text-xs sm:text-sm">★</span>
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-          </div>
-
           <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1829] tracking-tight mb-4 ${bitter.className}`}>
             {title}
           </h2>

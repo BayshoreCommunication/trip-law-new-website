@@ -7,7 +7,6 @@ import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-// Animated Number Counter Component
 const NumberCounter = ({ target = 15, suffix = '+', duration = 1800 }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
@@ -52,7 +51,6 @@ const HeroSection = ({
 }) => {
   return (
     <section className="relative w-full min-h-[700px] lg:min-h-[820px] flex items-center justify-center bg-slate-950 text-white overflow-hidden py-16 lg:py-28 mt-[70px]">
-      {/* Background Image using Next.js Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src={bgImage}
@@ -62,16 +60,12 @@ const HeroSection = ({
           quality={90}
           className="object-cover object-center transform scale-105"
         />
-        {/* Dark Gradient Overlay for Maximum Readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#030914]/95 via-[#061224]/85 to-[#030914]/90 md:bg-gradient-to-r md:from-[#040B17]/95 md:via-[#081427]/85 md:to-black/40" />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
       </div>
 
-      {/* Expanded Container Width */}
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-          
-          {/* Left Column: Heading, Subtitle & Action Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -86,34 +80,21 @@ const HeroSection = ({
               <div className="h-[3px] w-16 bg-red-700 rounded-full" />
             </div>
 
-            {/* Main Title with Bitter font */}
             <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.15] mb-6 ${bitter.className}`}>
               {mainHeading}
             </h1>
 
-            {/* Paragraph / Body Text */}
             <p className="text-slate-200 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-3xl mb-10">
               {description}
             </p>
 
-            {/* CTA Action Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 w-full sm:w-auto">
               <Link
                 href={consultationLink}
                 className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-bold text-sm sm:text-base tracking-wider uppercase rounded-md sm:rounded-full shadow-xl shadow-red-900/30 transition-all duration-300 transform hover:-translate-y-0.5"
               >
-                <svg
-                  className="w-5 h-5 text-white transition-transform duration-300 group-hover:scale-110"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
+                <svg className="w-5 h-5 text-white transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 <span>{consultationText}</span>
               </Link>
@@ -122,25 +103,14 @@ const HeroSection = ({
                 href={eligibilityLink}
                 className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent hover:bg-red-700/20 text-white border-2 border-red-700 hover:border-red-600 font-bold text-sm sm:text-base tracking-wider uppercase rounded-md sm:rounded-full transition-all duration-300 transform hover:-translate-y-0.5"
               >
-                <svg
-                  className="w-5 h-5 text-red-700 group-hover:text-white transition-colors duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
+                <svg className="w-5 h-5 text-red-700 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
                 <span>{eligibilityText}</span>
               </Link>
             </div>
           </motion.div>
 
-          {/* Right Column: Navy Dark Card */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -151,13 +121,7 @@ const HeroSection = ({
               <div className="flex flex-col divide-y divide-slate-800/80">
                 <div className="flex items-center gap-5 pb-6">
                   <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-700/10 border border-red-700/30">
-                    <svg
-                      className="w-6 h-6 sm:w-7 sm:h-7 text-red-700"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      viewBox="0 0 24 24"
-                    >
+                    <svg className="w-6 h-6 sm:w-7 sm:h-7 text-red-700" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 15a4 4 0 100-8 4 4 0 000 8z" />
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l-2.5 2.5L10 18.5M12 19l2.5 2.5L14 18.5" />
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6.3 8.3a8 8 0 000 7.4M17.7 8.3a8 8 0 010 7.4" />
@@ -211,7 +175,6 @@ const HeroSection = ({
               </div>
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>

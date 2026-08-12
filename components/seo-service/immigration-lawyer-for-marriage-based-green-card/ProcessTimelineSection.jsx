@@ -33,7 +33,6 @@ const defaultTimelineItems = [
 ];
 
 const ProcessTimelineSection = ({
-  badgeText = 'PROCESS TIMELINE',
   title = 'How Long You Should Expect For the Application Processing',
   subtitle = 'The time it takes to obtain a marriage based green card depends on location, legal path, government backlog and potential RFEs. USCIS provides average processing times yet individual cases might move slower or faster for these factors.',
   items = defaultTimelineItems,
@@ -48,15 +47,6 @@ const ProcessTimelineSection = ({
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="flex flex-col items-center text-center mb-12 sm:mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-            <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase">
-              {badgeText}
-            </span>
-            <span className="text-red-700 font-bold text-xs sm:text-sm">★</span>
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-          </div>
-
           <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1829] tracking-tight mb-4 ${bitter.className}`}>
             {title}
           </h2>

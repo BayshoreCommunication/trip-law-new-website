@@ -34,7 +34,6 @@ const defaultItems = [
 ];
 
 const EvidenceGenuineSection = ({
-  badgeText = 'GENUINE MARRIAGE PROOF',
   title = 'Evidence To Prove Your Marriage Is Genuine to USCIS',
   description = 'USCIS seeks proof of genuine relationship and your living together before granting immigration benefits. It is because of increased fraud prevention. An immigration lawyer for marriage based green card helps to gather all necessary evidence for review process.',
   items = defaultItems,
@@ -49,15 +48,6 @@ const EvidenceGenuineSection = ({
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="flex flex-col items-center text-center mb-12 sm:mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-            <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase">
-              {badgeText}
-            </span>
-            <span className="text-red-500 font-bold text-xs sm:text-sm">★</span>
-            <div className="h-[2px] w-12 sm:w-16 bg-red-700 rounded-full" />
-          </div>
-
           <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight mb-4 ${bitter.className}`}>
             {title}
           </h2>
