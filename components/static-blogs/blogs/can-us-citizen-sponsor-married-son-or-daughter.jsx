@@ -326,11 +326,139 @@ function BlogSidebar({ allBlogsData }) {
   );
 }
 
+const jsonLdSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.trip-law.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.trip-law.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Can a U.S. Citizen Sponsor a Married Son or Daughter?",
+          "item": "https://www.trip-law.com/blog/can-us-citizen-sponsor-married-son-or-daughter"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.trip-law.com/blog/can-us-citizen-sponsor-married-son-or-daughter"
+      },
+      "headline": "Can a U.S. Citizen Sponsor a Married Son or Daughter?",
+      "name": "Proven U.S. Citizen Sponsor a Married Child Facts 2026 | Trip Law",
+      "description": "Learn how a U.S. citizen sponsor can petition for a married son or daughter, including eligibility, processing steps, and important immigration rules.",
+      "url": "https://www.trip-law.com/blog/can-us-citizen-sponsor-married-son-or-daughter",
+      "image": "https://www.trip-law.com/assets/static-blogs/can-us-citizen-sponsor-married-son-or-daughter.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.trip-law.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Sponsoring a Married Son or Daughter for Immigration",
+        "description": "An overview of how U.S. citizens can petition for married sons or daughters through the family-based immigration system, including the F3 preference category and the immigrant visa or adjustment of status process."
+      },
+      "keywords": [
+        "can a US citizen sponsor a married son or daughter",
+        "US citizen sponsor married son",
+        "US citizen sponsor married daughter",
+        "sponsor married child for green card",
+        "married son immigration USA",
+        "married daughter immigration USA",
+        "F3 family preference category",
+        "family based immigration",
+        "family based green card",
+        "US citizen family sponsorship",
+        "immigration lawyer"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Tanenbaum Law Group"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tanenbaum Law Group",
+        "url": "https://www.trip-law.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.trip-law.com/assets/site-logo/trip-law-logo.png"
+        }
+      },
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can A U.S. Citizen Sponsor An Adult Daughter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Age blocks nothing. Marriage triggers the F3 category. You file Form I-130. You watch the Visa Bulletin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can My Married Son Bring His Wife And Children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. F3 allows derivative visas. Your son’s spouse and unmarried children may immigrate with him. Track children’s ages to avoid CSPA and age-out issues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Filing I-130 Give My Child Legal Status?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. I-130 does not grant legal stay. It only starts the immigrant process. Your child needs separate lawful status to remain in the U.S. while waiting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Happens If My Child Divorces During The Process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The category can change from F3 to F1. That can change the wait time. You should report the divorce with proof to USCIS or NVC quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Sponsor My Married Child As A Green Card Holder?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Permanent residents cannot sponsor married children. You must naturalize first. After citizenship, you can file an F3 petition for your married son or daughter."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 export default function CanUsCitizenSponsorMarriedChildGuide({
   allBlogsData,
 }) {
   return (
-    <section className="bg-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+      />
+      <section className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
           <article className="col-span-2 text-[#2C2C2C]">
@@ -628,5 +756,6 @@ export default function CanUsCitizenSponsorMarriedChildGuide({
         </div>
       </div>
     </section>
+    </>
   );
 }
