@@ -6,6 +6,29 @@ import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
+const practiceAreas = [
+  'Green Card',
+  'Green Card Through Marriage',
+  'Green Card Through Immediate Relative',
+  'Green Card Through Consular Processing',
+  'Naturalization & Citizenship',
+  'H1B Visa',
+  'L-1 Visa',
+  'O-1 Visa',
+  'EB-1 Visa',
+  'EB-2 Visa',
+  'EB-3 Visa',
+  'E2 Treaty Visa',
+  'U Visa',
+  'T Visa',
+  'VAWA',
+  'Asylum',
+  'Bond Hearing',
+  'Master Calendar Hearing',
+  'Individual Hearing',
+  'Waivers',
+];
+
 const PracticeAreasCitiesSection = ({
   tagline = 'PRACTICE AREAS & LOCATIONS',
   title = 'Practice Areas and Cities Trip Law Handles Across Florida',
@@ -42,28 +65,41 @@ const PracticeAreasCitiesSection = ({
           </p>
         </motion.div>
 
-        {/* Office Location & Google Maps Section */}
+        {/* Office Location & Practice Areas Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
           
-          {/* Left Column: Google Maps Embed Iframe (7 cols) */}
+          {/* Left Column: Practice Areas Grid (7 cols) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="lg:col-span-7 rounded-3xl overflow-hidden shadow-2xl border border-slate-200 min-h-[350px] lg:min-h-[420px] relative order-2 lg:order-1"
+            className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200 flex flex-col justify-between order-2 lg:order-1"
           >
-            <iframe
-              title="Trip Law Lakeland Office Location Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.5188612151624!2d-81.95662768493196!3d27.97805598268153!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd396b27e1d5eb%3A0x6b7fa579294e5e41!2s1820%20Florida%20Ave%20S%20ste%20c%2C%20Lakeland%2C%20FL%2033803!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: '380px' }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-full"
-            />
+            <div>
+              <h3 className={`text-xl sm:text-2xl font-bold text-[#0B1829] mb-6 flex items-center gap-3 ${bitter.className}`}>
+                <span className="w-2.5 h-6 bg-red-700 rounded-full inline-block flex-shrink-0" />
+                Immigration Cases We Handle Across Lakeland, FL
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {practiceAreas.map((area, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-red-50/50 transition-all duration-200 group"
+                  >
+                    <div className="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:bg-red-700 group-hover:text-white transition-colors">
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-xs sm:text-sm font-medium text-slate-700 group-hover:text-slate-900 leading-snug">
+                      {area}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
 
           {/* Right Column: Contact Details Card (5 cols) */}
@@ -123,6 +159,21 @@ const PracticeAreasCitiesSection = ({
                     </a>
                   </div>
                 </div>
+              </div>
+
+              {/* Location Map */}
+              <div className="mt-6 rounded-2xl overflow-hidden border border-slate-700/80 h-[200px] w-full shadow-inner">
+                <iframe
+                  title="Trip Law Lakeland Office Location Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.5188612151624!2d-81.95662768493196!3d27.97805598268153!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd396b27e1d5eb%3A0x6b7fa579294e5e41!2s1820%20Florida%20Ave%20S%20ste%20c%2C%20Lakeland%2C%20FL%2033803!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                />
               </div>
             </div>
 
