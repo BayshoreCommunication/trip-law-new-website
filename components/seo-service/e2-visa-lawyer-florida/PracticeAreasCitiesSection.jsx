@@ -7,26 +7,27 @@ import { Bitter } from 'next/font/google';
 const bitter = Bitter({ subsets: ['latin'] });
 
 const practiceAreas = [
-  'Green Card',
-  'Green Card Through Marriage',
-  'Green Card Through Immediate Relative',
-  'Green Card Through Consular Processing',
-  'Naturalization & Citizenship',
-  'H1B Visa',
-  'L-1 Visa',
-  'O-1 Visa',
-  'EB-1 Visa',
-  'EB-2 Visa',
-  'EB-3 Visa',
-  'E2 Treaty Visa',
-  'U Visa',
-  'T Visa',
-  'VAWA',
-  'Asylum',
-  'Bond Hearing',
-  'Master Calendar Hearing',
-  'Individual Hearing',
-  'Waivers',
+  { name: 'Green Card', href: '/immigration-lawyer-lakeland-fl' },
+  { name: 'Green Card Through Marriage', href: '/immigration-lawyer-for-marriage-based-green-card' },
+  { name: 'Green Card Through Immediate Relative' },
+  { name: 'Green Card Through Consular Processing' },
+  { name: 'Naturalization & Citizenship', href: '/immigration-lawyer-for-citizenship-lakeland' },
+  { name: 'H1B Visa' },
+  { name: 'L-1 Visa' },
+  { name: 'O-1 Visa' },
+  { name: 'EB-1 Visa' },
+  { name: 'EB-2 Visa' },
+  { name: 'EB-3 Visa' },
+  { name: 'E2 Treaty Visa', href: '/e2-visa-lawyer-florida' },
+  { name: 'U Visa' },
+  { name: 'T Visa' },
+  { name: 'VAWA' },
+  { name: 'Asylum' },
+  { name: 'Bond Hearing' },
+  { name: 'Master Calendar Hearing' },
+  { name: 'Individual Hearing' },
+  { name: 'Waivers' },
+  { name: 'DUI Defense', href: '/lakeland-dui-defense-lawyer' },
 ];
 
 const PracticeAreasCitiesSection = ({
@@ -83,21 +84,38 @@ const PracticeAreasCitiesSection = ({
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {practiceAreas.map((area, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-red-50/50 transition-all duration-200 group"
-                  >
-                    <div className="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:bg-red-700 group-hover:text-white transition-colors">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
+                {practiceAreas.map((area, idx) =>
+                  area.href ? (
+                    <Link
+                      key={idx}
+                      href={area.href}
+                      className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-red-50/50 transition-all duration-200 group"
+                    >
+                      <div className="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:bg-red-700 group-hover:text-white transition-colors">
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-xs sm:text-sm font-medium text-slate-700 group-hover:text-red-700 leading-snug">
+                        {area.name}
+                      </span>
+                    </Link>
+                  ) : (
+                    <div
+                      key={idx}
+                      className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100"
+                    >
+                      <div className="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-xs sm:text-sm font-medium text-slate-700 leading-snug">
+                        {area.name}
+                      </span>
                     </div>
-                    <span className="text-xs sm:text-sm font-medium text-slate-700 group-hover:text-slate-900 leading-snug">
-                      {area}
-                    </span>
-                  </div>
-                ))}
+                  )
+                )}
               </div>
             </div>
           </motion.div>
