@@ -31,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/static-blogs/blogs/What Happens If The Petitioner Dies While A Green Card Case Is Pending.jsx"  ],
   "exclude": [
     "node_modules"
   ]
