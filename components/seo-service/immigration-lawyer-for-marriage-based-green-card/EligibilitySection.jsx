@@ -21,8 +21,8 @@ const defaultEligibilityListRight = [
 
 const EligibilitySection = ({
   title = 'Are You Eligible To Apply? Check Requirement For Marriage Based Green Card',
-  subtitleBold = 'Are you sure your marriage based green card application will meet all USCIS requirements?',
-  description = 'USCIS requires thorough investigation of marriage authenticity and compliance with all regulations with marriage certificate. Our immigration lawyer for marriage based green card at Trip Law gets you well prepared applications to smooth the approval process.',
+  subtitleBold = '',
+  description = 'Can your marriage survive a detailed USCIS bona fide relationship review? USCIS looks into your finances, your history, your joint bank accounts and your shared life together. Our immigration lawyer for marriage based green card builds proof your relationship is genuine. We bring strong, well documented evidence, a solid Form I-130 petition and a clean, complete filing.',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/eligibility-bg.png',
   cardTitle = 'Ready to Apply for Marriage Based Green Card?',
   cardSubtitle = 'Check Requirements First',

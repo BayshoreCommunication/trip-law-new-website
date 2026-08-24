@@ -19,8 +19,8 @@ const defaultEligibilityRight = [
 
 const EligibilitySection = ({
   title = 'Ready to Start Your Immigration Case? Check Your Eligibility First',
-  subtitleBold = 'Are you sure your application meets every federal immigration standard?',
-  description = 'Our immigration lawyer lakeland fl at Trip Law guides applicants through initial case evaluation to final USCIS approval. We review your full history and evidence before federal officers do.',
+  subtitleBold = '',
+  description = 'Your eligibility depends on your immigration history, qualifications and the requirement of the visa category you are pursuing.',
   cardTitle = 'Essential Immigration Eligibility Checklist',
   cardSubtitle = 'Before submitting any petition to USCIS, confirm these core requirements:',
   eligibilityListLeft = defaultEligibilityLeft,

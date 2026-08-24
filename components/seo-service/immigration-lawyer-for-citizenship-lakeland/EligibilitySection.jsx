@@ -7,9 +7,9 @@ import { Bitter } from 'next/font/google';
 const bitter = Bitter({ subsets: ['latin'] });
 
 const EligibilitySection = ({
-  title = 'Immigration Lawyer for Citizenship in Lakeland — Apply Right & Become a U.S. Citizen',
-  subtitleBold = 'Are you sure your citizenship application will not be denied? Most Florida applicants discover application issues at their USCIS interview.',
-  description = 'Our immigration lawyer for citizenship lakeland at Trip Law guides applicants from application decision to final oath taking ceremony. We review your full immigration and legal history before the officer does. We make sure a single issue cannot cause your citizenship case denial.',
+  title = 'Ready to Apply for Citizenship? Check Your Eligibility First',
+  subtitleBold = '',
+  description = 'Have you met every residency criterion USCIS demands for citizenship? USCIS reviews your residency length, your physical presence, your time in the country and your criminal record. Our immigration lawyer for citizenship tampa checks every requirement early, files your Form N-400 correctly and prepares you for the English and civics test with confidence.',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/eligibility-bg.png',
   cardTitle = 'Ready to Apply for Citizenship?',
   cardSubtitle = 'Check Your Eligibility First',

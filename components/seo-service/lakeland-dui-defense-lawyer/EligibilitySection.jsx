@@ -23,8 +23,8 @@ const defaultEligibilityRight = [
 
 const EligibilitySection = ({
   title = "Arrested for DUI in Lakeland? Here's What to Do in the First 24 Hours",
-  subtitleBold = 'What to Do in the First 24 Hours After a DUI Arrest in Lakeland',
-  description = 'The hours following a DUI arrest often affect both your court case and driving privileges. Acting carefully protects valuable evidence and prevents avoidable mistakes in earliest stage.',
+  subtitleBold = '',
+  description = "Did you refuse the breathalyzer at your Lakeland traffic stop? Florida's implied consent law triggers an automatic license suspension within ten days and Polk County courts move fast on DUI cases. Our lakeland dui defense lawyer challenges the stop, fights the suspension and protects your record from day one.",
   cardTitle = 'Immediate Action Steps After Arrest',
   cardSubtitle = 'Critical 24-hour guidelines for Lakeland DUI arrests:',
   eligibilityListLeft = defaultEligibilityLeft,

@@ -20,8 +20,8 @@ const defaultEligibilityRight = [
 
 const EligibilitySection = ({
   title = 'Ready to Apply for an E2 Visa? Check Your Eligibility First',
-  subtitleBold = 'Are you sure your treaty investor application meets every federal standard?',
-  description = 'Our e2 visa lawyer florida at Trip Law guides international entrepreneurs from initial business structure to final visa approval. We review your capital source, ownership structure, and business plan before immigration officers do.',
+  subtitleBold = '',
+  description = "Does your investment meet USCIS treaty trader standards for an E2 visa? USCIS checks your capital, your treaty country, your ownership stake and your business's real purpose including job creation plans. Our e2 visa Lawyer florida builds a strong case for approval, backed by clear investment evidence, Form I-129 documentation and a solid business plan.",
   cardTitle = 'E2 Visa Core Eligibility Requirements',
   cardSubtitle = 'Key criteria every treaty investor must satisfy:',
   eligibilityListLeft = defaultEligibilityLeft,
