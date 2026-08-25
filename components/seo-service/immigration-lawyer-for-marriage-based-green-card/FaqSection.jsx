@@ -73,6 +73,8 @@ const FaqSection = ({
   consultationLink = '/appointment',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
   passportImage = '/assets/seo-service/trip-law.jpeg',
+  passportImageAlt = 'Marriage-Based Green Card Attorney Guiding Spousal Visa Process',
+  passportImageTitle = 'US Marriage Green Card Application FAQs & USCIS Interview Prep',
   ctaBgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/services-bg.png',
   faqs = defaultFaqs,
 }) => {
@@ -140,7 +142,8 @@ const FaqSection = ({
           >
             <Image
               src={passportImage}
-              alt="US Marriage Based Green Card"
+              alt={passportImageAlt}
+              title={passportImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

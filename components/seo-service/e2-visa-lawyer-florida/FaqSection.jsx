@@ -72,6 +72,8 @@ const FaqSection = ({
   consultationLink = '/appointment',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
   passportImage = '/assets/seo-service/trip-law.jpeg',
+  passportImageAlt = 'Florida E2 Visa Attorney Answering Investor Residency FAQs',
+  passportImageTitle = 'E-2 Investor Visa Frequently Asked Questions & Legal Guidance',
   ctaBgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/services-bg.png',
   faqs = defaultFaqs,
 }) => {
@@ -128,7 +130,8 @@ const FaqSection = ({
           >
             <Image
               src={passportImage}
-              alt="Florida E2 Visa Lawyer"
+              alt={passportImageAlt}
+              title={passportImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

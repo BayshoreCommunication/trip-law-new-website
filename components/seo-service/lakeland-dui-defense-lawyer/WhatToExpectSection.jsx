@@ -39,6 +39,8 @@ const WhatToExpectSection = ({
   title = 'Our DUI Defense Process for Lakeland Clients',
   description = 'A successful defense follows an organized process. We start early preparation for our defense strategy to identify issues and prevent them become larger legal problems.',
   heroImage = '/assets/seo-service/trip-law.jpeg',
+  heroImageAlt = 'Lakeland DUI Defense Attorney Consultation & Case Preparation Process',
+  heroImageTitle = 'Step-by-Step DUI Defense Consultation at Trip Law Lakeland',
   consultationLink = '/appointment',
   steps = defaultSteps,
 }) => {
@@ -91,7 +93,8 @@ const WhatToExpectSection = ({
           >
             <Image
               src={heroImage}
-              alt="DUI Defense Process"
+              alt={heroImageAlt}
+              title={heroImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

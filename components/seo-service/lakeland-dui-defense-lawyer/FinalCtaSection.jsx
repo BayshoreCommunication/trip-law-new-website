@@ -16,6 +16,8 @@ const FinalCtaSection = ({
   phone = '(863)-599-6735',
   consultationLink = '/appointment',
   rightImage = '/assets/seo-service/trip-law.jpeg',
+  rightImageAlt = 'Consultation with Experienced Lakeland DUI Defense Lawyer at Trip Law',
+  rightImageTitle = 'Schedule Your DUI Legal Defense Consultation in Lakeland FL',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png',
 }) => {
   return (
@@ -93,7 +95,8 @@ const FinalCtaSection = ({
           >
             <Image
               src={rightImage}
-              alt="Lakeland DUI Defense Lawyer Call To Action"
+              alt={rightImageAlt}
+              title={rightImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

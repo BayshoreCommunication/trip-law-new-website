@@ -39,6 +39,8 @@ const WhatToExpectSection = ({
   title = 'Trip Law\'s Proven Immigration Process for Lakeland Clients',
   description = 'Every case handled by our immigration lawyer lakeland fl clients trust runs through the same structured process, built to catch problems before they ever reach USCIS.',
   heroImage = '/assets/seo-service/trip-law.jpeg',
+  heroImageAlt = 'Lakeland FL Immigration Lawyer Reviewing Client Visa & Green Card Files',
+  heroImageTitle = 'Structured Immigration Application Review Process in Lakeland Florida',
   consultationLink = '/appointment',
   steps = defaultSteps,
 }) => {
@@ -91,7 +93,8 @@ const WhatToExpectSection = ({
           >
             <Image
               src={heroImage}
-              alt="Immigration Case Process"
+              alt={heroImageAlt}
+              title={heroImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

@@ -60,6 +60,8 @@ const reviews = [
     author: 'Clifton Brown',
     location: 'Florida',
     avatar: '/assets/seo-service/trip-law.jpeg',
+    avatarAlt: 'Clifton Brown - Florida E2 Business Investor Visa Client Review Avatar',
+    avatarTitle: 'E2 Investor Visa Client Review Avatar: Clifton Brown',
   },
   {
     quote:
@@ -202,7 +204,8 @@ const TestimonialsSection = ({
                   <div className="w-11 h-11 rounded-full overflow-hidden relative border-2 border-red-700/30 flex-shrink-0 shadow-sm">
                     <Image
                       src={rev.avatar}
-                      alt={rev.author}
+                      alt={rev.avatarAlt || rev.author}
+                      title={rev.avatarTitle || rev.author}
                       fill
                       quality={90}
                       className="object-cover object-center"

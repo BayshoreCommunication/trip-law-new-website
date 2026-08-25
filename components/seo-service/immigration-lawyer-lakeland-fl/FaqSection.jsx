@@ -61,6 +61,8 @@ const FaqSection = ({
   consultationLink = '/appointment',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
   passportImage = '/assets/seo-service/trip-law.jpeg',
+  passportImageAlt = 'Lakeland Immigration Lawyer Answering USCIS Filing & Application FAQs',
+  passportImageTitle = 'Lakeland Florida Immigration Legal Assistance & FAQ Guidance',
   ctaBgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/services-bg.png',
   faqs = defaultFaqs,
 }) => {
@@ -110,14 +112,15 @@ const FaqSection = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             className="lg:col-span-4 relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-white h-[360px] sm:h-[420px] lg:h-[460px] self-start"
           >
             <Image
               src={passportImage}
-              alt="Immigration Lawyer Lakeland FL"
+              alt={passportImageAlt}
+              title={passportImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

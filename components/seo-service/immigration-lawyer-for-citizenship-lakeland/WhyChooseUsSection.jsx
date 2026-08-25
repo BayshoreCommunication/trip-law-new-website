@@ -96,6 +96,8 @@ const defaultItems = [
     description:
       'Our paralegals and case managers fill out every form. Our licensed attorney advises you on your record and represents you at USCIS interview. We carry professional accountability for the result.',
     image: '/assets/seo-service/trip-law.jpeg',
+    imageAlt: 'Florida Bar Licensed Immigration Attorney Reviewing Citizenship N-400 Applications',
+    imageTitle: 'Why Choose Trip Law: Licensed Attorney on Every Citizenship File',
     icon: (
       <svg className="w-6 h-6 text-red-700" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
         {/* Lawyer / Shield Icon */}
@@ -280,7 +282,8 @@ const WhyChooseUsSection = ({
                     {item.image ? (
                       <Image
                         src={item.image}
-                        alt={item.title}
+                        alt={item.imageAlt || item.title}
+                        title={item.imageTitle || item.title}
                         fill
                         quality={90}
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-500"

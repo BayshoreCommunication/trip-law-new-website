@@ -57,6 +57,8 @@ const WhatToExpectSection = ({
   title = 'Trip Law\'s Proven E2 Visa Application Process for Florida Clients',
   description = 'Systematic preparation minimizes execution risk and ensures orderly submission to federal immigration authorities. We walk alongside you through every analytical milestone to achieve optimal processing results.',
   heroImage = '/assets/seo-service/trip-law.jpeg',
+  heroImageAlt = 'Florida E2 Investor Visa Lawyer Reviewing Business Plan & Treaty Documents',
+  heroImageTitle = 'Step-by-Step E-2 Treaty Investor Visa Application Process in Florida',
   ctaBgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
   consultationLink = '/appointment',
   steps = defaultSteps,
@@ -110,7 +112,8 @@ const WhatToExpectSection = ({
           >
             <Image
               src={heroImage}
-              alt="Proven E2 Process"
+              alt={heroImageAlt}
+              title={heroImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

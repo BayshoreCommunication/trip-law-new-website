@@ -82,6 +82,8 @@ const reviews = [
     author: 'Clifton Brown',
     location: 'Florida',
     avatar: '/assets/seo-service/trip-law.jpeg',
+    avatarAlt: 'Clifton Brown - Marriage Green Card Client Review Profile',
+    avatarTitle: 'Client Testimonial: Marriage-Based Green Card Attorney Services',
   },
   {
     quote:
@@ -242,7 +244,8 @@ const TestimonialsSection = ({
                   <div className="w-11 h-11 rounded-full overflow-hidden relative border-2 border-red-700/30 flex-shrink-0 shadow-sm">
                     <Image
                       src={rev.avatar}
-                      alt={rev.author}
+                      alt={rev.avatarAlt || rev.author}
+                      title={rev.avatarTitle || rev.author}
                       fill
                       quality={90}
                       className="object-cover object-center"

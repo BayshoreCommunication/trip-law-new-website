@@ -16,6 +16,8 @@ const FinalCtaSection = ({
   phone = '(863)-599-6735',
   consultationLink = '/appointment',
   rightImage = '/assets/seo-service/trip-law.jpeg',
+  rightImageAlt = 'Apply for U.S. Citizenship with Lakeland Immigration Lawyer Trip Law',
+  rightImageTitle = 'Start Your U.S. Citizenship Naturalization Application Today',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png',
 }) => {
   return (
@@ -87,7 +89,8 @@ const FinalCtaSection = ({
             <div className="relative w-full max-w-[540px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/70 border-4 border-white/80 group">
               <Image
                 src={rightImage}
-                alt="Start Your U.S. Citizenship Application with Trip Law"
+                alt={rightImageAlt}
+                title={rightImageTitle}
                 fill
                 quality={95}
                 priority

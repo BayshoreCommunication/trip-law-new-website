@@ -95,6 +95,8 @@ const FaqSection = ({
   consultationLink = '/appointment',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
   passportImage = '/assets/seo-service/trip-law.jpeg',
+  passportImageAlt = 'U.S. Citizenship Lawyer Answering N-400 Naturalization Questions',
+  passportImageTitle = 'Lakeland Naturalization & Citizenship FAQ Legal Guidance',
   ctaBgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/services-bg.png',
 }) => {
   return (
@@ -161,7 +163,8 @@ const FaqSection = ({
           >
             <Image
               src={passportImage}
-              alt="US Passport & Constitution"
+              alt={passportImageAlt}
+              title={passportImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

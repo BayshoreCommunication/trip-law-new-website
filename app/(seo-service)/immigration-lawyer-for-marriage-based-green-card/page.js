@@ -26,12 +26,12 @@ export const metadata = {
     canonical: '/immigration-lawyer-for-marriage-based-green-card',
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 };

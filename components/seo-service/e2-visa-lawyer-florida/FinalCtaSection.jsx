@@ -16,6 +16,8 @@ const FinalCtaSection = ({
   phone = '(863)-599-6735',
   consultationLink = '/appointment',
   rightImage = '/assets/seo-service/trip-law.jpeg',
+  rightImageAlt = 'Consult Florida E2 Treaty Investor Visa Attorney at Trip Law',
+  rightImageTitle = 'Schedule E-2 Business Visa Legal Consultation in Florida',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png',
 }) => {
   return (
@@ -93,7 +95,8 @@ const FinalCtaSection = ({
           >
             <Image
               src={rightImage}
-              alt="E2 Visa Lawyer Call To Action"
+              alt={rightImageAlt}
+              title={rightImageTitle}
               fill
               quality={90}
               className="object-cover object-center"

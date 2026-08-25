@@ -26,12 +26,12 @@ export const metadata = {
     canonical: '/immigration-lawyer-for-citizenship-lakeland',
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 };
@@ -124,6 +124,8 @@ export default function ImmigrationLawyerLakelandPage() {
         title="Trip Law's Proven Citizenship Application Process for Lakeland, FL Clients"
         description="Our immigration lawyer for citizenship lakeland follow a defined case process for every florida citizenship client."
         heroImage="/assets/seo-service/trip-law.jpeg"
+        heroImageAlt="Attorney Tripathy Seated at Desk Assisting Lakeland Citizenship Applicants"
+        heroImageTitle="Attorney-Guided Citizenship Application Process in Lakeland FL"
         ctaBgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
         consultationLink="/appointment"
       />
@@ -154,6 +156,8 @@ export default function ImmigrationLawyerLakelandPage() {
         phone="(863)-599-6735"
         consultationLink="/appointment"
         rightImage="/assets/seo-service/trip-law.jpeg"
+        rightImageAlt="Apply for U.S. Citizenship with Lakeland Immigration Lawyer Trip Law"
+        rightImageTitle="Start Your U.S. Citizenship Naturalization Application Today"
         bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png"
       />
 
@@ -164,6 +168,8 @@ export default function ImmigrationLawyerLakelandPage() {
         consultationLink="/appointment"
         bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
         passportImage="/assets/seo-service/trip-law.jpeg"
+        passportImageAlt="U.S. Citizenship Lawyer Answering N-400 Naturalization Questions"
+        passportImageTitle="Lakeland Naturalization & Citizenship FAQ Legal Guidance"
         ctaBgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/services-bg.png"
       />
     </main>

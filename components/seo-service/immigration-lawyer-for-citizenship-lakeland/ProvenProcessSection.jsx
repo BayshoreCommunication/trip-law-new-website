@@ -104,6 +104,8 @@ const ProvenProcessSection = ({
   title = "Trip Law's Proven Citizenship Application Process for Lakeland, FL Clients",
   description = 'Our immigration lawyer for citizenship lakeland follow a defined case process for every florida citizenship client.',
   heroImage = '/assets/seo-service/trip-law.jpeg',
+  heroImageAlt = 'Attorney Tripathy Seated at Desk Assisting Lakeland Citizenship Applicants',
+  heroImageTitle = 'Attorney-Guided Citizenship Application Process in Lakeland FL',
   ctaBgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
   consultationLink = '/appointment',
   steps = defaultSteps,
@@ -159,7 +161,8 @@ const ProvenProcessSection = ({
           <div className="lg:col-span-5 w-full h-[300px] sm:h-[360px] lg:h-[400px] rounded-2xl overflow-hidden relative shadow-lg border border-white">
             <Image
               src={heroImage}
-              alt="Licensed Immigration Attorney Seated at Mahogany Desk"
+              alt={heroImageAlt}
+              title={heroImageTitle}
               fill
               quality={90}
               priority

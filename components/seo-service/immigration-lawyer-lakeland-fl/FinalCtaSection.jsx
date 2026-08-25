@@ -16,6 +16,8 @@ const FinalCtaSection = ({
   phone = '(863)-599-6735',
   consultationLink = '/appointment',
   rightImage = '/assets/seo-service/trip-law.jpeg',
+  rightImageAlt = 'Schedule Legal Consultation with Lakeland FL Immigration Attorney',
+  rightImageTitle = 'Get Strategic Immigration Representation in Lakeland Florida',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png',
 }) => {
   return (
@@ -93,7 +95,8 @@ const FinalCtaSection = ({
           >
             <Image
               src={rightImage}
-              alt="Immigration Lawyer Lakeland FL Call To Action"
+              alt={rightImageAlt}
+              title={rightImageTitle}
               fill
               quality={90}
               className="object-cover object-center"
