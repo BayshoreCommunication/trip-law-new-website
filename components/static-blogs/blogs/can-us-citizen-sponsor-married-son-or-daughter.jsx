@@ -387,11 +387,11 @@ const jsonLdSchema = {
       ],
       "author": {
         "@type": "Organization",
-        "name": "Tanenbaum Law Group"
+        "name": "Trip Law"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Tanenbaum Law Group",
+        "name": "Trip Law",
         "url": "https://www.trip-law.com/",
         "logo": {
           "@type": "ImageObject",
