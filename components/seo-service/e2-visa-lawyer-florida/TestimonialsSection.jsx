@@ -59,7 +59,7 @@ const reviews = [
       '“My experience with Trip Law was a good one. The lawyer is excellent in terms of case preparation and communication. My case was approved quickly. I would definitely recommend this firm to anyone in need of immigration assistance.”',
     author: 'Clifton Brown',
     location: 'Florida',
-    avatar: '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png',
+    avatar: '/assets/seo-service/trip-law.jpeg',
   },
   {
     quote:

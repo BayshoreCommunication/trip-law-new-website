@@ -15,7 +15,7 @@ const FinalCtaSection = ({
   description = 'USCIS controls your eligibility timeline, so every day counts. Call Trip Law today to get your case reviewed by a licensed attorney. We help you file your N-400 with total confidence. Know exactly what is in your record before officer does.',
   phone = '(863)-599-6735',
   consultationLink = '/appointment',
-  rightImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png',
+  rightImage = '/assets/seo-service/trip-law.jpeg',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png',
 }) => {
   return (

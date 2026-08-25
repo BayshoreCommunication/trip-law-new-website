@@ -15,7 +15,7 @@ const FinalCtaSection = ({
   description = 'Every single day matters after a DUI arrest because legal deadlines begin immediately. You shouldn\'t wait until your first court appearance to plan your defense. Waiting limits your options regarding your driver license and future defense. Our lakeland dui defense lawyer at Trip Law reviews the arrest, explains your charges, and evaluates available evidence. We prepare a strong defense based specifically upon your unique and complex situation. Schedule a confidential consultation today to begin protecting your rights against serious charges.',
   phone = '(863)-599-6735',
   consultationLink = '/appointment',
-  rightImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png',
+  rightImage = '/assets/seo-service/trip-law.jpeg',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png',
 }) => {
   return (

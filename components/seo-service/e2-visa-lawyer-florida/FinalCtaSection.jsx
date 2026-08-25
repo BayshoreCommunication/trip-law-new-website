@@ -15,7 +15,7 @@ const FinalCtaSection = ({
   description = 'Call Trip Law today to get your E2 case reviewed by a licensed attorney. Protect your business investment and secure your treaty investor status with total confidence.',
   phone = '(863)-599-6735',
   consultationLink = '/appointment',
-  rightImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png',
+  rightImage = '/assets/seo-service/trip-law.jpeg',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png',
 }) => {
   return (

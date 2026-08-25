@@ -123,7 +123,7 @@ export default function ImmigrationLawyerLakelandPage() {
         tagline="ATTORNEY-GUIDED PROCESS"
         title="Trip Law's Proven Citizenship Application Process for Lakeland, FL Clients"
         description="Our immigration lawyer for citizenship lakeland follow a defined case process for every florida citizenship client."
-        heroImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png"
+        heroImage="/assets/seo-service/trip-law.jpeg"
         ctaBgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
         consultationLink="/appointment"
       />
@@ -153,7 +153,7 @@ export default function ImmigrationLawyerLakelandPage() {
         description="USCIS controls your eligibility timeline, so every day counts. Call Trip Law today to get your case reviewed by a licensed attorney. We help you file your N-400 with total confidence. Know exactly what is in your record before officer does."
         phone="(863)-599-6735"
         consultationLink="/appointment"
-        rightImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png"
+        rightImage="/assets/seo-service/trip-law.jpeg"
         bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png"
       />
 
@@ -163,7 +163,7 @@ export default function ImmigrationLawyerLakelandPage() {
         description="Answers to common questions about the U.S. citizenship and naturalization process."
         consultationLink="/appointment"
         bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
-        passportImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png"
+        passportImage="/assets/seo-service/trip-law.jpeg"
         ctaBgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/services-bg.png"
       />
     </main>

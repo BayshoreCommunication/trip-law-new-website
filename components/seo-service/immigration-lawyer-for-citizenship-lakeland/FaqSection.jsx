@@ -94,7 +94,7 @@ const FaqSection = ({
   description = 'Answers to common questions about the U.S. citizenship and naturalization process.',
   consultationLink = '/appointment',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
-  passportImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png',
+  passportImage = '/assets/seo-service/trip-law.jpeg',
   ctaBgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/services-bg.png',
 }) => {
   return (

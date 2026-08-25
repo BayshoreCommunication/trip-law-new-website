@@ -15,7 +15,7 @@ const FinalCtaSection = ({
   description = 'Your immigration future shouldn\'t come down to speculation. Reach out to Trip Law for a case review and take the next step with a real plan behind you.',
   phone = '(863)-599-6735',
   consultationLink = '/appointment',
-  rightImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png',
+  rightImage = '/assets/seo-service/trip-law.jpeg',
   bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png',
 }) => {
   return (

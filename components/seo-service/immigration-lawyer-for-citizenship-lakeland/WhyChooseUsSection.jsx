@@ -95,7 +95,7 @@ const defaultItems = [
     title: 'Florida Bar Attorney on Every File',
     description:
       'Our paralegals and case managers fill out every form. Our licensed attorney advises you on your record and represents you at USCIS interview. We carry professional accountability for the result.',
-    image: '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/why-choose-1.png',
+    image: '/assets/seo-service/trip-law.jpeg',
     icon: (
       <svg className="w-6 h-6 text-red-700" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
         {/* Lawyer / Shield Icon */}
