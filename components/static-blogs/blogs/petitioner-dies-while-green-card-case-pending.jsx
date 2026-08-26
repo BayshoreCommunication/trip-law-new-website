@@ -234,7 +234,7 @@ function MidPageCta() {
         NEED HELP SAVING YOUR GREEN CARD CASE?
       </h3>
       <p className="mt-2 text-[16px] leading-[1.65] text-[#2C2C2C]">
-        Deceased petitioners create serious legal risks. Don't let your case be revoked. Contact our team immediately to map your safest next steps.
+        Deceased petitioners create serious legal risks. Don&apos;t let your case be revoked. Contact our team immediately to map your safest next steps.
       </p>
       <div className="mt-4">
         <Link
@@ -316,7 +316,7 @@ function BottomCta() {
         TAKE ACTION ON YOUR GREEN CARD CASE TODAY
       </h2>
       <p className="mx-auto max-w-3xl text-[16px] leading-[1.65] text-white">
-        Don't let rigid deadlines or automatic revocations put your immigration journey at risk. Contact Trip Law now to safeguard your future.
+        Don&apos;t let rigid deadlines or automatic revocations put your immigration journey at risk. Contact Trip Law now to safeguard your future.
       </p>
       <div className="mt-5 space-y-1 text-[16px] leading-[1.65] text-white">
         <p>Call (863) 599-6735 | Free Consultation</p>
@@ -437,28 +437,33 @@ const jsonLdSchema = {
       },
       "about": {
         "@type": "Thing",
-        "name": "Immigration Options When Petitioner Dies During Pending Green Card Case",
-        "description": "Understanding survivor options, Section 204(l) relief, humanitarian reinstatement, and substitute sponsorship when a green card petitioner dies."
+        "name": "Petitioner Dies While Green Card Case Is Pending",
+        "description": "An overview of what happens when an immigration petitioner dies during a pending green card case, including Section 204(l) relief, humanitarian reinstatement, widow(er) self-petitions, substitute sponsors, and other survivor options."
       },
       "keywords": [
-        "petitioner dies green card pending",
-        "what happens if petitioner dies",
-        "section 204l relief",
-        "humanitarian reinstatement I-130",
-        "substitute sponsor I-864",
-        "widow self-petition green card",
-        "immigration petitioner death",
-        "USCIS petitioner death rules",
-        "family green card survivor options",
-        "Trip Law immigration attorney"
+        "petitioner dies while green card case pending",
+        "what happens if petitioner dies during green card process",
+        "petitioner dies immigration case",
+        "deceased petitioner green card",
+        "petitioner death immigration",
+        "I-130 petitioner dies",
+        "green card petitioner dies",
+        "Section 204(l) immigration relief",
+        "204(l) survivor immigration",
+        "humanitarian reinstatement",
+        "substitute sponsor",
+        "deceased sponsor green card",
+        "family based immigration",
+        "family based green card",
+        "immigration lawyer"
       ],
       "author": {
         "@type": "Organization",
-        "name": "Tanenbaum Law Group"
+        "name": "Trip Law"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Tanenbaum Law Group",
+        "name": "Trip Law",
         "url": "https://www.trip-law.com/",
         "logo": {
           "@type": "ImageObject",
