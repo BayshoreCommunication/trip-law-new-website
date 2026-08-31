@@ -273,9 +273,9 @@ function StatCards() {
 function MidPageCta() {
   return (
     <div className="my-8 border-l-4 border-[#C9A84C] bg-[#F0F4FA] p-6 rounded-r-md">
-      <h3 className="text-[20px] font-bold text-[#1A2B4A]">
+      <h2 className="text-[20px] font-bold text-[#1A2B4A]">
         NEED HELP PLANNING YOUR FAMILY IMMIGRATION ROUTE?
-      </h3>
+      </h2>
       <p className="mt-2 text-[16px] leading-[1.65] text-[#2C2C2C]">
         Waiting without a strategy adds unnecessary years of separation. Contact Trip Law today to evaluate your naturalization timeline and sibling sponsorship options.
       </p>
@@ -757,9 +757,9 @@ export default function CanGreenCardHolderSponsorSiblingsGuide({
                 alongside a family petition, since both can run at the same time.
               </Paragraph>
 
-              <SubSectionHeading>
+              <SectionHeading>
                 Filing Early Versus Waiting to File
-              </SubSectionHeading>
+              </SectionHeading>
               <SideBySideComparison />
 
               <SectionHeading>
