@@ -530,19 +530,31 @@ const jsonLdSchema = {
       },
       "about": {
         "@type": "Thing",
-        "name": "Can a Green Card Holder Sponsor Their Siblings",
-        "description": "An overview of family immigration rules regarding whether a green card holder can sponsor siblings, eligibility rules, wait times, naturalization paths, and alternative visa options."
+        "name": "Green Card Holder Sponsoring a Sibling",
+        "description": "An overview of U.S. family-based immigration rules for sibling sponsorship, including why lawful permanent residents cannot petition for siblings, the F4 category available to U.S. citizens, naturalization, wait times, relationship evidence, and alternative immigration options."
       },
       "keywords": [
         "can a green card holder sponsor siblings",
-        "green card holder sponsor brother sister",
-        "F4 sibling visa backlog",
-        "family based green card wait times",
-        "sponsor sibling after naturalization",
-        "US citizenship sibling petition",
-        "Form I-130 sibling",
-        "family immigration law",
-        "Trip Law Lakeland FL"
+        "can green card holder sponsor sibling",
+        "green card holder sponsor brother",
+        "green card holder sponsor sister",
+        "can permanent resident sponsor sibling",
+        "green card holder sibling sponsorship",
+        "sibling green card sponsorship",
+        "sibling immigration USA",
+        "F4 sibling visa",
+        "F4 family preference category",
+        "sibling petition immigration",
+        "US citizen sponsor sibling",
+        "green card holder sponsor family",
+        "naturalization for sibling sponsorship",
+        "sibling green card wait time",
+        "sibling immigration wait time",
+        "brother sister immigration USA",
+        "family based immigration",
+        "family based green card",
+        "immigration lawyer",
+        "Trip Law"
       ],
       "author": {
         "@type": "Organization",
