@@ -45,7 +45,7 @@ export default function ImmigrationLawyerLakelandPage() {
         description="Are you sure your citizenship application will not be denied? Most Florida applicants discover application issues at their USCIS interview. Our immigration lawyer for citizenship lakeland at Trip Law guides applicants from application decision to final oath taking ceremony. We review your full immigration and legal history before the officer does. We make sure a single issue cannot cause your citizenship case denial."
         bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
         consultationLink="/appointment"
-        eligibilityLink="/appointment"
+        eligibilityLink="tel:(863)-599-6735"
         experienceYears={15}
       />
 
