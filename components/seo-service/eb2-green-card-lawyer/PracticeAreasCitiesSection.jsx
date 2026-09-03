@@ -110,6 +110,21 @@ const PracticeAreasCitiesSection = ({
               <div><strong className="text-white">Phone:</strong> <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} className="hover:text-red-400">{phone}</a></div>
               <div><strong className="text-white">Email:</strong> <a href={`mailto:${email}`} className="hover:text-red-400">{email}</a></div>
             </div>
+
+            {/* Google Map Embed */}
+            <div className="mt-6 rounded-2xl overflow-hidden border border-slate-700/80 h-[200px] w-full shadow-inner">
+              <iframe
+                title="Trip Law Lakeland Office Location Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.5188612151624!2d-81.95662768493196!3d27.97805598268153!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd396b27e1d5eb%3A0x6b7fa579294e5e41!2s1820%20Florida%20Ave%20S%20ste%20c%2C%20Lakeland%2C%20FL%2033803!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              />
+            </div>
           </div>
         </div>
       </div>
