@@ -407,7 +407,7 @@ function BottomCta() {
   return (
     <div className="my-12 bg-[#1A2B4A] px-6 py-10 text-center text-white rounded-md">
       <h2 className="mb-3 text-[24px] font-bold leading-tight text-[#C9A84C]">
-        Don't Let Your Sibling Wait Longer Than Necessary
+        Don&apos;t Let Your Sibling Wait Longer Than Necessary
       </h2>
       <p className="mx-auto max-w-3xl text-[16px] leading-[1.65] text-white">
         Attorney Hardam Tripathi has guided Lakeland and Tampa families through family sponsorship for over a decade.
@@ -629,7 +629,7 @@ export default function CanGreenCardHolderSponsorSiblingsGuide({
               </figure>
 
               <Paragraph>
-                No. Green card holders can’t sponsor a sibling right now. Only a U.S. citizen may file for a brother or sister. The petitioner must be 21 or older. This falls under family fourth preference, F4. Wait times often stretch past fifteen years. The exact number depends on the sibling's birth country.
+                No. Green card holders can’t sponsor a sibling right now. Only a U.S. citizen may file for a brother or sister. The petitioner must be 21 or older. This falls under family fourth preference, F4. Wait times often stretch past fifteen years. The exact number depends on the sibling&apos;s birth country.
               </Paragraph>
 
               <KeyPointsPanel />
@@ -639,7 +639,7 @@ export default function CanGreenCardHolderSponsorSiblingsGuide({
               </Paragraph>
 
               <SectionHeading>
-                Why Can't Green Card Holders Sponsor a Brother or Sister
+                Why Can&apos;t Green Card Holders Sponsor a Brother or Sister
               </SectionHeading>
               <Paragraph>
                 Federal law limits sibling sponsorship to U.S. citizens only. Permanent residents are left out entirely. No exceptions apply.
@@ -698,7 +698,7 @@ export default function CanGreenCardHolderSponsorSiblingsGuide({
                 How Long Does the F4 Sibling Green Card Really Take
               </SectionHeading>
               <Paragraph>
-                Most sibling cases take between 10 and 25 years. Your sibling's country of birth decides most of the wait.
+                Most sibling cases take between 10 and 25 years. Your sibling&apos;s country of birth decides most of the wait.
               </Paragraph>
               <Paragraph>
                 The F4 category receives only 65,000 visas per year. Demand from large sending countries dwarfs that number yearly. Mexico, the Philippines, and India carry the longest backlogs. The July 2026 Visa Bulletin shows most countries at January 2009. That is the F4 final action cutoff. Mexico trails further behind at November 2006. The Philippines sits near an August 2007 cutoff.
@@ -751,7 +751,7 @@ export default function CanGreenCardHolderSponsorSiblingsGuide({
                 Are There Faster Immigration Options Than Sibling Sponsorship
               </SectionHeading>
               <Paragraph>
-                Yes. Employment visas and other family categories often move faster. A sibling's own qualifications may open a quicker door.
+                Yes. Employment visas and other family categories often move faster. A sibling&apos;s own qualifications may open a quicker door.
               </Paragraph>
               <ul className="mb-4 ml-6 space-y-3 text-[16px] leading-[1.65] text-[#2C2C2C]">
                 {fasterOptions.map((opt, idx) => (
@@ -784,12 +784,12 @@ export default function CanGreenCardHolderSponsorSiblingsGuide({
                 Petitioners who move without updating their address lose mailings. A missed evidence request notice can end a case entirely. Lakeland and Tampa clients face this often during long-distance moves.
               </Paragraph>
               <Paragraph>
-                Some petitioners wait years to file, thinking the sibling waits too. That thinking costs real years once the priority date locks. File the moment you naturalize, regardless of readiness elsewhere. One case reviewer sees this pattern often. Every year a client waits to file adds two years to the sibling's wait.
+                Some petitioners wait years to file, thinking the sibling waits too. That thinking costs real years once the priority date locks. File the moment you naturalize, regardless of readiness elsewhere. One case reviewer sees this pattern often. Every year a client waits to file adds two years to the sibling&apos;s wait.
               </Paragraph>
 
               <div className="my-8 border-l-4 border-[#C9A84C] bg-[#F0F4FA] px-8 py-6 rounded-r-md">
                 <blockquote className="text-[18px] font-semibold italic leading-[1.6] text-[#1A2B4A]">
-                  &quot;Every year a client waits to file adds roughly two years to the sibling's eventual wait.&quot;
+                  &quot;Every year a client waits to file adds roughly two years to the sibling&apos;s eventual wait.&quot;
                 </blockquote>
                 <p className="mt-3 text-[15px] font-bold text-[#C9A84C]">
                   Florida Family Immigration Case Reviewer
