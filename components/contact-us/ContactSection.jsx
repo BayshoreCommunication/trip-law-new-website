@@ -132,7 +132,7 @@ const ContactSection = () => {
                 </svg>
               </div>
               <h2 className="mt-5 mb-2 text-2xl font-semibold tracking-normal text-center text-black md:text-left">
-                5304 Florida Ave S Ste. 406-I, Lakeland, FL 33813, United States <br />
+                5304 Florida Ave S Ste. 406-I, Lakeland,<br />
              FL 33813, United States 
               </h2>
               <p className="text-base text-center text-stone-950 md:text-left">
