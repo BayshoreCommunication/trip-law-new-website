@@ -152,19 +152,9 @@ const DocumentsSection = ({
                     {doc.title}
                   </h3>
 
-                  <p className="text-slate-600 text-sm sm:text-base font-normal leading-relaxed mb-6 flex-grow">
+                  <p className="text-slate-600 text-sm sm:text-base font-normal leading-relaxed">
                     {doc.description}
                   </p>
-
-                  <Link
-                    href={doc.link}
-                    className="inline-flex items-center gap-2 text-red-700 font-bold text-sm tracking-wide uppercase hover:text-red-800 transition-colors duration-200"
-                  >
-                    <span>Learn More</span>
-                    <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </Link>
                 </motion.div>
               ))}
             </div>

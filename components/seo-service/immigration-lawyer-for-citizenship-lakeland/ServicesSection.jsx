@@ -280,26 +280,13 @@ const ServicesSection = ({
                   <div className="flex-1 grid grid-cols-1 sm:grid-cols-12 gap-4 bg-white rounded-2xl p-5 sm:p-6 shadow-md border border-slate-100/90 group-hover:shadow-xl group-hover:border-red-700/30 transition-all duration-300">
                     
                     {/* Text Details (7 cols) */}
-                    <div className="sm:col-span-7 flex flex-col justify-between items-start text-left">
-                      <div>
-                        <h3 className={`text-xl sm:text-2xl font-bold text-[#0B1829] mb-2 group-hover:text-red-700 transition-colors duration-300 ${bitter.className}`}>
-                          {item.title}
-                        </h3>
-                        <p className="text-slate-600 text-sm sm:text-base font-normal leading-relaxed mb-4">
-                          {item.description}
-                        </p>
-                      </div>
-
-                      {/* Learn More Link */}
-                      <Link
-                        href={item.link}
-                        className="inline-flex items-center gap-2 text-red-700 font-bold text-xs sm:text-sm tracking-wider uppercase hover:text-red-800 transition-colors"
-                      >
-                        <span>Learn More</span>
-                        <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                      </Link>
+                    <div className="sm:col-span-7 flex flex-col justify-center items-start text-left">
+                      <h3 className={`text-xl sm:text-2xl font-bold text-[#0B1829] mb-2 group-hover:text-red-700 transition-colors duration-300 ${bitter.className}`}>
+                        {item.title}
+                      </h3>
+                      <p className="text-slate-600 text-sm sm:text-base font-normal leading-relaxed">
+                        {item.description}
+                      </p>
                     </div>
 
                     {/* Right Photo Card (5 cols) */}
