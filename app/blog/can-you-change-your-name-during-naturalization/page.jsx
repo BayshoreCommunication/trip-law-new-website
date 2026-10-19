@@ -1,7 +1,6 @@
 import PageHeroSection from "@/components/shared/PageHeroSection";
 import CanYouChangeYourNameDuringNaturalization from "@/components/static-blogs/blogs/can-you-change-your-name-during-naturalization";
 import {
-  CAN_YOU_CHANGE_YOUR_NAME_DURING_NATURALIZATION_ARTICLE_TITLE,
   CAN_YOU_CHANGE_YOUR_NAME_DURING_NATURALIZATION_CANONICAL_URL,
   CAN_YOU_CHANGE_YOUR_NAME_DURING_NATURALIZATION_FEATURE_IMAGE,
   CAN_YOU_CHANGE_YOUR_NAME_DURING_NATURALIZATION_FEATURE_IMAGE_ALT,
@@ -48,35 +47,9 @@ export const metadata = {
 
 export default async function CanYouChangeYourNameDuringNaturalizationPage() {
   const allBlogsData = await GetAllPostData();
-  const blogJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: CAN_YOU_CHANGE_YOUR_NAME_DURING_NATURALIZATION_ARTICLE_TITLE,
-    description: CAN_YOU_CHANGE_YOUR_NAME_DURING_NATURALIZATION_META_DESCRIPTION,
-    image: featureImageUrl,
-    mainEntityOfPage: canonicalUrl,
-    datePublished: "2026-09-07",
-    dateModified: "2026-09-07",
-    author: {
-      "@type": "Person",
-      name: "Hardam Tripathi",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Trip Law",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.trip-law.com/assets/site-logo/trip-law-logo.png",
-      },
-    },
-  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
-      />
       <PageHeroSection image="/assets/hero-img/blog.jpg" titleH2="Blog" />
       <CanYouChangeYourNameDuringNaturalization allBlogsData={allBlogsData} />
     </>

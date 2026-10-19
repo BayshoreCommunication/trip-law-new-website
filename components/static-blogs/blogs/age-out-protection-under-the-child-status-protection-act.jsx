@@ -316,6 +316,7 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id": "https://www.trip-law.com/blog/age-out-protection-under-the-child-status-protection-act#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -332,50 +333,57 @@ const jsonLdSchema = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": AGE_OUT_PROTECTION_UNDER_THE_CHILD_STATUS_PROTECTION_ACT_ARTICLE_TITLE,
-          "item": AGE_OUT_PROTECTION_UNDER_THE_CHILD_STATUS_PROTECTION_ACT_CANONICAL_URL
+          "name": "Age-Out Protection Under the Child Status Protection Act",
+          "item": "https://www.trip-law.com/blog/age-out-protection-under-the-child-status-protection-act"
         }
       ]
     },
     {
       "@type": "BlogPosting",
+      "@id": "https://www.trip-law.com/blog/age-out-protection-under-the-child-status-protection-act#blogposting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": AGE_OUT_PROTECTION_UNDER_THE_CHILD_STATUS_PROTECTION_ACT_CANONICAL_URL
+        "@id": "https://www.trip-law.com/blog/age-out-protection-under-the-child-status-protection-act"
       },
-      "headline": AGE_OUT_PROTECTION_UNDER_THE_CHILD_STATUS_PROTECTION_ACT_ARTICLE_TITLE,
-      "name": `${AGE_OUT_PROTECTION_UNDER_THE_CHILD_STATUS_PROTECTION_ACT_META_TITLE} | Trip Law`,
-      "description": AGE_OUT_PROTECTION_UNDER_THE_CHILD_STATUS_PROTECTION_ACT_META_DESCRIPTION,
-      "url": AGE_OUT_PROTECTION_UNDER_THE_CHILD_STATUS_PROTECTION_ACT_CANONICAL_URL,
-      "image": `https://www.trip-law.com${AGE_OUT_PROTECTION_UNDER_THE_CHILD_STATUS_PROTECTION_ACT_FEATURE_IMAGE}`,
+      "headline": "Age-Out Protection Under the Child Status Protection Act",
+      "name": "Crucial Facts Of Child Status Protection Act (CSPA) 2026 | Trip Law",
+      "description": "Understand Child Status Protection Act (CSPA) age-out protection, including eligibility, age calculation basics, and how CSPA may affect immigration cases.",
+      "url": "https://www.trip-law.com/blog/age-out-protection-under-the-child-status-protection-act",
+      "image": "https://www.trip-law.com/assets/static-blogs/age-out-protection-under-the-child-status-protection-act.webp",
       "isPartOf": {
         "@type": "Blog",
-        "@id": "https://www.trip-law.com/blog"
+        "name": "Trip Law Blog",
+        "url": "https://www.trip-law.com/blog"
       },
       "about": {
         "@type": "Thing",
-        "name": "Child Status Protection Act (CSPA) Age-Out Protection",
-        "description": "Comprehensive guide on age-out protection under the Child Status Protection Act (CSPA), CSPA age calculation, seek to acquire requirement, family preference categories, and immigration guidelines."
+        "name": "Child Status Protection Act (CSPA)"
       },
       "keywords": [
         "Child Status Protection Act",
+        "CSPA",
         "CSPA age-out protection",
         "CSPA age calculation",
-        "aging out immigration",
-        "USCIS CSPA",
-        "seek to acquire 1 year",
-        "family preference visa backlog",
-        "derivative child green card",
-        "immigrant visa bulletin",
-        "Trip Law"
+        "CSPA age",
+        "age-out protection",
+        "immigration age-out",
+        "CSPA immigration",
+        "family-based immigration",
+        "family immigration law",
+        "visa bulletin",
+        "seek to acquire",
+        "CSPA one-year rule",
+        "Green Card age-out protection",
+        "U.S. immigration law"
       ],
       "author": {
-        "@type": "Organization",
-        "name": "Trip Law"
+        "@type": "Person",
+        "name": "Hardam Tripathi",
+        "url": "https://www.trip-law.com/"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Trip Law",
+        "name": "Trip Law, P.A.",
         "url": "https://www.trip-law.com/",
         "logo": {
           "@type": "ImageObject",
@@ -387,14 +395,49 @@ const jsonLdSchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": faqItems.map(([question, answer]) => ({
-        "@type": "Question",
-        "name": question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": answer
+      "@id": "https://www.trip-law.com/blog/age-out-protection-under-the-child-status-protection-act#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What Is The Fastest Way To Know If CSPA Can Protect My Child?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check your category and the Visa Bulletin. Then compute CSPA age using approval minus filing days. If the result stays under 21, you may qualify if you act within one year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CSPA Automatically Protect My Child Without Any Action?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. CSPA can reduce your child’s age on paper. But you often must “seek to acquire” within one year of visa availability. Without that step, protection can be lost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can My Child Marry And Still Keep CSPA Protection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually no. Most CSPA-protected categories still require your child to be unmarried. Marriage often ends eligibility even if the CSPA age stays under 21. Confirm your exact category rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Visa Bulletin Chart Should I Use For CSPA Calculations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the chart that applies to your path. USCIS posts which chart to use for adjustment each month. For consular cases, NVC usually tracks final action availability. Save evidence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What If My Visa Date Becomes Current And Then Retrogresses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The first availability can start the one-year clock. Later retrogression may not pause it. You should act quickly once current. Keep copies of bulletin pages showing the current month."
+          }
         }
-      }))
+      ]
     }
   ]
 };

@@ -393,6 +393,7 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id": "https://www.trip-law.com/blog/perm-labor-certification-explained-for-beginners#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -409,52 +410,59 @@ const jsonLdSchema = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": PERM_LABOR_CERTIFICATION_EXPLAINED_FOR_BEGINNERS_ARTICLE_TITLE,
-          "item": PERM_LABOR_CERTIFICATION_EXPLAINED_FOR_BEGINNERS_CANONICAL_URL
+          "name": "PERM Labor Certification Explained for Beginners",
+          "item": "https://www.trip-law.com/blog/perm-labor-certification-explained-for-beginners"
         }
       ]
     },
     {
       "@type": "BlogPosting",
+      "@id": "https://www.trip-law.com/blog/perm-labor-certification-explained-for-beginners#blogposting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": PERM_LABOR_CERTIFICATION_EXPLAINED_FOR_BEGINNERS_CANONICAL_URL
+        "@id": "https://www.trip-law.com/blog/perm-labor-certification-explained-for-beginners"
       },
-      "headline": PERM_LABOR_CERTIFICATION_EXPLAINED_FOR_BEGINNERS_ARTICLE_TITLE,
-      "name": `${PERM_LABOR_CERTIFICATION_EXPLAINED_FOR_BEGINNERS_META_TITLE} | Trip Law`,
-      "description": PERM_LABOR_CERTIFICATION_EXPLAINED_FOR_BEGINNERS_META_DESCRIPTION,
-      "url": PERM_LABOR_CERTIFICATION_EXPLAINED_FOR_BEGINNERS_CANONICAL_URL,
-      "image": `https://www.trip-law.com${PERM_LABOR_CERTIFICATION_EXPLAINED_FOR_BEGINNERS_FEATURE_IMAGE}`,
+      "headline": "PERM Labor Certification Explained for Beginners",
+      "name": "Easy Guide For PERM Labor Certification 2026 | Trip Law",
+      "description": "Learn PERM Labor Certification basics in 2026, including the employer process, key requirements, and important steps for employment-based immigration.",
+      "url": "https://www.trip-law.com/blog/perm-labor-certification-explained-for-beginners",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.trip-law.com/assets/static-blogs/perm-labor-certification-explained-for-beginners.webp",
+        "caption": "PERM Labor Certification Explained for Beginners"
+      },
       "isPartOf": {
         "@type": "Blog",
-        "@id": "https://www.trip-law.com/blog"
+        "@id": "https://www.trip-law.com/blog#blog",
+        "name": "Trip Law Blog",
+        "url": "https://www.trip-law.com/blog"
       },
       "about": {
         "@type": "Thing",
-        "name": "PERM Labor Certification",
-        "description": "A comprehensive beginner guide to PERM Labor Certification for employment-based green cards in the United States, including DOL prevailing wage determination, mandatory recruitment, ETA Form 9089, audit triggers, and post-approval USCIS I-140 filing."
+        "name": "PERM Labor Certification"
       },
       "keywords": [
-        "PERM Labor Certification",
-        "PERM labor certification explained for beginners",
-        "employment based green card",
-        "EB-2 green card PERM",
-        "EB-3 green card PERM",
-        "Department of Labor PERM",
+        "PERM labor certification",
+        "PERM labor certification explained",
+        "PERM process",
+        "PERM application",
+        "employment-based green card",
+        "EB-2",
+        "EB-3",
+        "prevailing wage",
         "ETA Form 9089",
-        "prevailing wage determination",
-        "PERM recruitment steps",
-        "PERM audit triggers",
-        "employment visa attorney",
-        "Trip Law"
+        "PERM recruitment",
+        "PERM audit",
+        "labor certification"
       ],
       "author": {
-        "@type": "Organization",
-        "name": "Trip Law"
+        "@type": "Person",
+        "name": "Hardam Tripathi",
+        "url": "https://www.trip-law.com/"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Trip Law",
+        "name": "Trip Law, P.A.",
         "url": "https://www.trip-law.com/",
         "logo": {
           "@type": "ImageObject",
@@ -466,14 +474,57 @@ const jsonLdSchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": faqItems.map(([question, answer]) => ({
-        "@type": "Question",
-        "name": question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": answer
+      "@id": "https://www.trip-law.com/blog/perm-labor-certification-explained-for-beginners#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What Are The Biggest Mistakes Employers Make In PERM Cases?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Discrepancies create problems. Job advertisements must match core responsibilities and candidate requirements. Minor wording differences can trigger official audits. Employers should maintain identical role descriptions, ensuring wage requests match recruitment materials and Form ETA 9089."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Pay For PERM Recruitment Or Attorney Fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually no. U.S. labor regulations require employers to pay all PERM costs, including mandatory recruitment ads and PERM legal fees. Sponsored employees may only pay for later-stage filings like the I-485 when eligible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How Long Does PERM Labor Certification Take In Real Life?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timelines vary depending on prevailing wage determination times, mandatory recruitment periods, and DOL processing workloads. Many standard cases take several months, while DOL audits can add additional months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does PERM Approval Give Me Work Authorization Or Status?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. PERM approval is only a labor certification issued by the Department of Labor. It does not grant nonimmigrant status, lawful permanent residence, or employment authorization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What If A U.S. Worker Applies During Recruitment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Employers must evaluate U.S. job applicants honestly and objectively against the minimum job requirements. Qualified local applicants prevent the employer from proceeding with the PERM filing for that position."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can My Job Requirements Include Specific Tools Or Languages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but only if they are genuinely necessary for job performance. Rare software requirements or foreign language mandates increase audit risk and require the employer to document business necessity."
+          }
         }
-      }))
+      ]
     }
   ]
 };

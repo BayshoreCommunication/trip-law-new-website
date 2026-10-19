@@ -227,9 +227,9 @@ function TestVersionTable() {
 function MidCtaBanner() {
   return (
     <div className="my-10 bg-[#1A2B4A] px-6 py-8 text-center text-white">
-      <h3 className="text-[20px] font-bold uppercase leading-tight text-white md:text-[22px]">
+      <h2 className="text-[20px] font-bold uppercase leading-tight text-white md:text-[22px]">
         NEED GUIDANCE ON YOUR NATURALIZATION APPLICATION?
-      </h3>
+      </h2>
       <p className="mt-2 text-[15px] font-semibold text-[#C9A84C] md:text-[16px]">
         Contact Trip Law Today for Legal &amp; Process Clarity
       </p>

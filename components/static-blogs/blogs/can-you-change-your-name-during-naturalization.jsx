@@ -345,9 +345,140 @@ function BlogSidebar({ allBlogsData }) {
   );
 }
 
+const jsonLdSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.trip-law.com/blog/can-you-change-your-name-during-naturalization#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.trip-law.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.trip-law.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Can You Change Your Name During Naturalization?",
+          "item": "https://www.trip-law.com/blog/can-you-change-your-name-during-naturalization"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.trip-law.com/blog/can-you-change-your-name-during-naturalization#blogposting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.trip-law.com/blog/can-you-change-your-name-during-naturalization"
+      },
+      "headline": "Can You Change Your Name During Naturalization?",
+      "name": "Proven Guide To Change Your Name During Naturalization 2026 | Trip Law",
+      "description": "Learn how to change your name during naturalization in the USA, including the process, court requirements, and important steps to consider.",
+      "url": "https://www.trip-law.com/blog/can-you-change-your-name-during-naturalization",
+      "image": "https://www.trip-law.com/assets/static-blogs/can-you-change-your-name-during-naturalization.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Trip Law Blog",
+        "url": "https://www.trip-law.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Name Change During Naturalization"
+      },
+      "keywords": [
+        "name change during naturalization",
+        "change name during naturalization",
+        "naturalization name change",
+        "Form N-400 name change",
+        "legal name change",
+        "US naturalization",
+        "judicial oath ceremony",
+        "Certificate of Naturalization",
+        "US citizenship name change",
+        "USCIS name change"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Trip Law",
+        "url": "https://www.trip-law.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Trip Law",
+        "url": "https://www.trip-law.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.trip-law.com/assets/site-logo/trip-law-logo.png"
+        }
+      },
+      "datePublished": "2026-09-07",
+      "dateModified": "2026-09-07"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.trip-law.com/blog/can-you-change-your-name-during-naturalization#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can You Change Your First And Last Name During Naturalization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Applicants request name changes on Form N-400. You modify your full name during naturalization. A judge grants approval during the oath ceremony."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will USCIS Deny My Citizenship If I Request A Name Change?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A name change request alone should not cause denial. USCIS still reviews your eligibility. If you qualify, the name change is usually handled at oath."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can You Get A Same Day Oath If You Requested A Name Change?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes, but many offices cannot do same day oaths for name changes. A judge may be required. That can push your oath date to a later court ceremony."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do You Need A Lawyer To Change Your Name During Naturalization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually no. Most requests are simple. But you may want legal help if you have record issues, prior name changes, or any criminal or fraud concerns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Document Proves Your New Legal Name After Naturalization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your Certificate of Naturalization proves your new legal name. It is the main document agencies accept. You update Social Security records. You update DMV files. You update your passport."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 export default function CanYouChangeYourNameDuringNaturalization({ allBlogsData }) {
   return (
-    <section className="bg-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+      />
+      <section className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
           <article className="col-span-2 text-[#2C2C2C]">
@@ -652,6 +783,7 @@ export default function CanYouChangeYourNameDuringNaturalization({ allBlogsData 
           <BlogSidebar allBlogsData={allBlogsData} />
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

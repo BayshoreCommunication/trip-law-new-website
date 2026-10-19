@@ -470,89 +470,138 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      itemListElement: [
+      "@id": "https://www.trip-law.com/blog/concurrent-h-1b-employment-can-you-work-two-jobs#breadcrumb",
+      "itemListElement": [
         {
           "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.trip-law.com/",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.trip-law.com/",
         },
         {
           "@type": "ListItem",
-          position: 2,
-          name: "Blog",
-          item: "https://www.trip-law.com/blog",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.trip-law.com/blog",
         },
         {
           "@type": "ListItem",
-          position: 3,
-          name: CONCURRENT_H1B_EMPLOYMENT_CAN_YOU_WORK_TWO_JOBS_ARTICLE_TITLE,
-          item: CONCURRENT_H1B_EMPLOYMENT_CAN_YOU_WORK_TWO_JOBS_CANONICAL_URL,
+          "position": 3,
+          "name": "Concurrent H-1B Employment: Can You Work Two Jobs?",
+          "item": "https://www.trip-law.com/blog/concurrent-h-1b-employment-can-you-work-two-jobs",
         },
       ],
     },
     {
       "@type": "BlogPosting",
-      mainEntityOfPage: {
+      "@id": "https://www.trip-law.com/blog/concurrent-h-1b-employment-can-you-work-two-jobs#blogposting",
+      "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": CONCURRENT_H1B_EMPLOYMENT_CAN_YOU_WORK_TWO_JOBS_CANONICAL_URL,
+        "@id": "https://www.trip-law.com/blog/concurrent-h-1b-employment-can-you-work-two-jobs",
       },
-      headline: CONCURRENT_H1B_EMPLOYMENT_CAN_YOU_WORK_TWO_JOBS_ARTICLE_TITLE,
-      name: `${CONCURRENT_H1B_EMPLOYMENT_CAN_YOU_WORK_TWO_JOBS_META_TITLE} | Trip Law`,
-      description: CONCURRENT_H1B_EMPLOYMENT_CAN_YOU_WORK_TWO_JOBS_META_DESCRIPTION,
-      url: CONCURRENT_H1B_EMPLOYMENT_CAN_YOU_WORK_TWO_JOBS_CANONICAL_URL,
-      image: `https://www.trip-law.com${CONCURRENT_H1B_EMPLOYMENT_CAN_YOU_WORK_TWO_JOBS_FEATURE_IMAGE}`,
-      isPartOf: {
+      "headline": "Concurrent H-1B Employment: Can You Work Two Jobs?",
+      "name": "Smart Concurrent H-1B Employment Facts 2026 | Trip Law",
+      "description": "Learn how concurrent H-1B employment works, including requirements, employer obligations, and key rules for working in more than one H-1B job",
+      "url": "https://www.trip-law.com/blog/concurrent-h-1b-employment-can-you-work-two-jobs",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.trip-law.com/assets/static-blogs/concurrent-h-1b-employment-can-you-work-two-jobs.webp",
+        "caption": "Concurrent H-1B Employment: Can You Work Two Jobs?",
+      },
+      "isPartOf": {
         "@type": "Blog",
-        "@id": "https://www.trip-law.com/blog",
+        "@id": "https://www.trip-law.com/blog#blog",
+        "name": "Trip Law Blog",
+        "url": "https://www.trip-law.com/blog",
       },
-      about: {
+      "about": {
         "@type": "Thing",
-        name: "Concurrent H-1B Employment",
-        description:
-          "An authoritative overview of concurrent H-1B employment rules, detailing how nonimmigrant visa holders can legally work two jobs simultaneously through separate Form I-129 petitions, LCAs, prevailing wage requirements, and worksite compliance.",
+        "name": "Concurrent H-1B Employment",
       },
-      keywords: [
-        "Concurrent H-1B Employment Can You Work Two Jobs",
+      "keywords": [
         "concurrent H-1B employment",
-        "can you work two jobs on H-1B",
-        "working two jobs on H-1B visa",
+        "concurrent H-1B",
+        "H-1B two jobs",
+        "can you work two H-1B jobs",
+        "H-1B concurrent employment",
+        "H-1B second job",
+        "H-1B part-time job",
+        "H-1B employment authorization",
+        "H-1B petition",
+        "H-1B visa",
+        "H-1B compliance",
         "concurrent H-1B petition",
-        "part time concurrent H-1B",
-        "second H-1B job rules",
-        "concurrent H-1B LCA prevailing wage",
-        "H-1B moonlighting rules",
-        "H-1B transfer vs concurrent",
-        "USCIS concurrent H-1B approval",
-        "immigration lawyer H-1B concurrent",
-        "Trip Law immigration attorney",
       ],
-      author: {
-        "@type": "Organization",
-        name: "Trip Law",
+      "author": {
+        "@type": "Person",
+        "name": "Hardam Tripathi",
+        "url": "https://www.trip-law.com/",
       },
-      publisher: {
+      "publisher": {
         "@type": "Organization",
-        name: "Trip Law",
-        url: "https://www.trip-law.com/",
-        logo: {
+        "name": "Trip Law, P.A.",
+        "url": "https://www.trip-law.com/",
+        "logo": {
           "@type": "ImageObject",
-          url: "https://www.trip-law.com/assets/site-logo/trip-law-logo.png",
+          "url": "https://www.trip-law.com/assets/site-logo/trip-law-logo.png",
         },
       },
-      datePublished: "2026-09-27",
-      dateModified: "2026-09-27",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqItems.map(([question, answer]) => ({
-        "@type": "Question",
-        name: question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: answer,
+      "@id": "https://www.trip-law.com/blog/concurrent-h-1b-employment-can-you-work-two-jobs#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can You Work Two H-1B Jobs At The Same Time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can work two H-1B jobs. Each employer must file its own H-1B petition. You must follow each role’s pay, hours, and location terms.",
+          },
         },
-      })),
+        {
+          "@type": "Question",
+          "name": "Do You Need A New Lottery Pick For A Second H-1B Job?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Current H-1B status eliminates the lottery requirement. A concurrent petition bypasses new lottery draws. The case requires official USCIS approval.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Can Your Second H-1B Job Be Part-Time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Part-time concurrent H-1B is common. The employer must list hours and pay clearly. The LCA must match the part-time arrangement and location.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Can You Start The Second Job After Filing But Before Approval?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Workers avoid early start dates. Applicants await official USCIS approval. This delay reduces legal risk. Early employment triggers visa status problems.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What If Your First H-1B Employer Fires You?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You may stay in status if the second approved H-1B job continues. You must keep working under an active petition. Check your I-94 end date immediately.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Remote Work Change Concurrent H-1B Rules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Remote work can change the required LCA location. Your home address may count as a worksite. Multi-state remote work can require more filings.",
+          },
+        },
+      ],
     },
   ],
 };
