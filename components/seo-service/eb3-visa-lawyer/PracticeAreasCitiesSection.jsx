@@ -1,151 +1,215 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
+const practiceAreas = [
+  { name: 'Green Card', href: '/immigration-lawyer-lakeland-fl' },
+  { name: 'Green Card Through Marriage', href: '/immigration-lawyer-for-marriage-based-green-card' },
+  { name: 'Green Card Through Immediate Relative' },
+  { name: 'Green Card Through Consular Processing' },
+  { name: 'Naturalization & Citizenship', href: '/immigration-lawyer-for-citizenship-lakeland' },
+  { name: 'H1B Visa' },
+  { name: 'L-1 Visa' },
+  { name: 'O-1 Visa' },
+  { name: 'EB-1 Visa' },
+  { name: 'EB-2 Visa' },
+  { name: 'EB-3 Visa' },
+  { name: 'E2 Treaty Visa', href: '/e2-visa-lawyer-florida' },
+  { name: 'U Visa' },
+  { name: 'T Visa' },
+  { name: 'VAWA' },
+  { name: 'Asylum' },
+  { name: 'Bond Hearing' },
+  { name: 'Master Calendar Hearing' },
+  { name: 'Individual Hearing' },
+  { name: 'Waivers' },
+  { name: 'DUI Defense', href: '/lakeland-dui-defense-lawyer' },
+];
+
 const PracticeAreasCitiesSection = ({
   tagline = 'PRACTICE AREAS & LOCATIONS',
-  title = 'Immigration Cases We Handle Across Lakeland, FL',
-  description = 'We handle a wide range of immigration matters for individuals, families and businesses throughout Lakeland, FL. Our attorneys provide personalized legal guidance based on your immigration goals and circumstances.',
+  title = 'Practice Areas and Cities Trip Law Handles Across Florida',
+  description = 'Comprehensive legal services. Statewide representation. Local knowledge you can trust.',
   address = '1820 Florida Ave S, Ste. C, Lakeland, FL 33803',
   phone = '(863)-599-6735',
   email = 'info@trip-law.com',
-  employmentImmigration = [
-    'H1B Visa',
-    'L-1 Visa',
-    'O-1 Visa',
-    'EB-1 Visa',
-    'EB-2 Visa',
-    'EB-3 Visa',
-    'E2 Treaty Visa',
-  ],
-  familyHumanitarian = [
-    'Green Card',
-    'Green Card Through Marriage',
-    'Green Card Through Immediate Relative',
-    'Green Card Through Consular Processing',
-    'Naturalization & Citizenship',
-    'Asylum',
-    'U Visa',
-    'T Visa',
-    'VAWA',
-    'Deportation Defense (Bond, Master Calendar, Individual Hearings, Waivers)',
-  ],
-  cities = [
-    'Downtown Lakeland',
-    'Dixieland',
-    'Lake Hollingsworth',
-    'Cleveland Heights',
-    'Lake Morton',
-    'Beacon Hill',
-    'Grasslands',
-    'South Lake Morton',
-    'Southwest Lakeland',
-    'North Lakeland',
-    'East Lakeland',
-    'West Lakeland',
-    'Lakeland Highlands',
-    'Kathleen',
-    'Crystal Lake',
-    'Highland City',
-    'Bartow',
-    'Winter Haven',
-    'Plant City',
-    'Tampa',
-    'Orlando',
-    'Clearwater',
-    'St. Petersburg',
-    'Brandon',
-    'Riverview',
-    'Wesley Chapel',
-    'Sarasota',
-    'Fort Myers',
-    'Naples',
-    'Jacksonville',
-    'Miami',
-    'Fort Lauderdale',
-  ],
 }) => {
   return (
-    <section className="relative w-full py-16 lg:py-24 bg-[#0B1829] text-white overflow-hidden">
+    <section className="relative w-full py-16 lg:py-24 bg-[#FAFBFD] text-slate-800 overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
-          <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
+        
+        {/* Section Top Header */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="flex flex-col items-center text-center mb-14 sm:mb-16"
+        >
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase">
+              {tagline}
+            </span>
+            <div className="h-[2px] w-12 bg-red-700 rounded-full" />
+          </div>
+
+          <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1829] tracking-tight max-w-4xl leading-[1.18] mb-4 ${bitter.className}`}>
             {title}
           </h2>
-          <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
+
+          <p className="text-slate-600 text-base sm:text-lg font-normal max-w-2xl leading-relaxed">
             {description}
           </p>
+        </motion.div>
+
+        {/* Office Location & Practice Areas Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
+          
+          {/* Left Column: Practice Areas Grid (7 cols) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200 flex flex-col justify-between order-2 lg:order-1"
+          >
+            <div>
+              <h3 className={`text-xl sm:text-2xl font-bold text-[#0B1829] mb-6 flex items-center gap-3 ${bitter.className}`}>
+                <span className="w-2.5 h-6 bg-red-700 rounded-full inline-block flex-shrink-0" />
+                Immigration Cases We Handle Across Lakeland, FL
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {practiceAreas.map((area, idx) =>
+                  area.href ? (
+                    <Link
+                      key={idx}
+                      href={area.href}
+                      className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-red-50/50 transition-all duration-200 group"
+                    >
+                      <div className="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:bg-red-700 group-hover:text-white transition-colors">
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-xs sm:text-sm font-medium text-slate-700 group-hover:text-red-700 leading-snug">
+                        {area.name}
+                      </span>
+                    </Link>
+                  ) : (
+                    <div
+                      key={idx}
+                      className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100"
+                    >
+                      <div className="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-xs sm:text-sm font-medium text-slate-700 leading-snug">
+                        {area.name}
+                      </span>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Right Column: Contact Details Card (5 cols) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+            className="lg:col-span-5 bg-[#0B1829] text-white rounded-3xl p-6 sm:p-9 shadow-2xl border border-slate-800 flex flex-col justify-between order-1 lg:order-2"
+          >
+            <div>
+              <span className="text-xs font-bold text-red-400 uppercase tracking-widest bg-red-700/20 px-3.5 py-1 rounded-full border border-red-500/30 inline-block mb-4">
+                FLORIDA OFFICE LOCATION
+              </span>
+              <h3 className={`text-2xl sm:text-3xl font-bold text-white mb-6 ${bitter.className}`}>
+                Lakeland Main Office
+              </h3>
+
+              <div className="space-y-6 text-sm sm:text-base text-slate-200">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-red-400 flex-shrink-0">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-bold text-white mb-0.5">Address</div>
+                    <p className="text-slate-300 leading-snug">{address}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-red-400 flex-shrink-0">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-bold text-white mb-0.5">Phone</div>
+                    <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} className="text-slate-300 hover:text-red-400 transition-colors">
+                      {phone}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-red-400 flex-shrink-0">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-bold text-white mb-0.5">Email</div>
+                    <a href={`mailto:${email}`} className="text-slate-300 hover:text-red-400 transition-colors">
+                      {email}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Location Map */}
+              <div className="mt-6 rounded-2xl overflow-hidden border border-slate-700/80 h-[200px] w-full shadow-inner">
+                <iframe
+                  title="Trip Law Lakeland Office Location Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.5188612151624!2d-81.95662768493196!3d27.97805598268153!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd396b27e1d5eb%3A0x6b7fa579294e5e41!2s1820%20Florida%20Ave%20S%20ste%20c%2C%20Lakeland%2C%20FL%2033803!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+
+            <div className="pt-6 border-t border-slate-700/80 mt-6">
+              <Link
+                href="/appointment"
+                className="w-full inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-red-700 hover:bg-red-800 text-white font-bold text-sm uppercase rounded-xl transition-colors"
+              >
+                <span>Schedule Office Visit</span>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </Link>
+            </div>
+          </motion.div>
+
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="bg-[#091424] border border-slate-700/60 rounded-2xl p-6 sm:p-8">
-            <h3 className={`text-xl font-bold text-red-500 mb-4 ${bitter.className}`}>
-              Employment Based Immigration
-            </h3>
-            <ul className="flex flex-col gap-3">
-              {employmentImmigration.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-slate-300 text-sm sm:text-base">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="bg-[#091424] border border-slate-700/60 rounded-2xl p-6 sm:p-8">
-            <h3 className={`text-xl font-bold text-red-500 mb-4 ${bitter.className}`}>
-              Family & Humanitarian Cases
-            </h3>
-            <ul className="flex flex-col gap-3">
-              {familyHumanitarian.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-slate-300 text-sm sm:text-base">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="bg-[#091424] border border-slate-700/60 rounded-2xl p-6 sm:p-8">
-            <h3 className={`text-xl font-bold text-red-500 mb-4 ${bitter.className}`}>
-              Lakeland Neighborhoods & Areas We Serve
-            </h3>
-            <div className="flex flex-wrap gap-2 mb-6 max-h-[220px] overflow-y-auto custom-scrollbar">
-              {cities.map((city, idx) => (
-                <span key={idx} className="px-3 py-1 bg-slate-800 text-slate-200 rounded-full text-xs sm:text-sm border border-slate-700">
-                  {city}
-                </span>
-              ))}
-            </div>
-
-            <div className="border-t border-slate-800 pt-4 flex flex-col gap-2 text-xs sm:text-sm text-slate-300">
-              <div><strong className="text-white">Address:</strong> {address}</div>
-              <div><strong className="text-white">Phone:</strong> <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} className="hover:text-red-400">{phone}</a></div>
-              <div><strong className="text-white">Email:</strong> <a href={`mailto:${email}`} className="hover:text-red-400">{email}</a></div>
-            </div>
-
-            {/* Google Map Embed */}
-            <div className="mt-6 rounded-2xl overflow-hidden border border-slate-700/80 h-[200px] w-full shadow-inner">
-              <iframe
-                title="Trip Law Lakeland Office Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.5188612151624!2d-81.95662768493196!3d27.97805598268153!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd396b27e1d5eb%3A0x6b7fa579294e5e41!2s1820%20Florida%20Ave%20S%20ste%20c%2C%20Lakeland%2C%20FL%2033803!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full"
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
