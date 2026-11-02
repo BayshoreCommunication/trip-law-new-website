@@ -3,15 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   GREEN_CARD_RENEWAL_VS_REPLACEMENT_ARTICLE_TITLE,
-  GREEN_CARD_RENEWAL_VS_REPLACEMENT_CANONICAL_URL,
   GREEN_CARD_RENEWAL_VS_REPLACEMENT_FEATURE_IMAGE,
   GREEN_CARD_RENEWAL_VS_REPLACEMENT_FEATURE_IMAGE_ALT,
   GREEN_CARD_RENEWAL_VS_REPLACEMENT_FEATURE_IMAGE_CAPTION,
   GREEN_CARD_RENEWAL_VS_REPLACEMENT_FEATURE_IMAGE_DESCRIPTION,
   GREEN_CARD_RENEWAL_VS_REPLACEMENT_FEATURE_IMAGE_TITLE,
-  GREEN_CARD_RENEWAL_VS_REPLACEMENT_META_DESCRIPTION,
-  GREEN_CARD_RENEWAL_VS_REPLACEMENT_META_TITLE,
-  GREEN_CARD_RENEWAL_VS_REPLACEMENT_SLUG,
 } from "./greenCardRenewalVsReplacementMeta";
 import { getPublishedBlogsWithStatic } from "./staticBlogs";
 
@@ -351,7 +347,8 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      "@id": `${GREEN_CARD_RENEWAL_VS_REPLACEMENT_CANONICAL_URL}#breadcrumb`,
+      "@id":
+        "https://www.trip-law.com/blog/green-card-renewal-vs-replacement-whats-the-difference#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -368,23 +365,32 @@ const jsonLdSchema = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": GREEN_CARD_RENEWAL_VS_REPLACEMENT_ARTICLE_TITLE,
-          "item": GREEN_CARD_RENEWAL_VS_REPLACEMENT_CANONICAL_URL
+          "name": "Green Card Renewal Vs. Replacement: What's The Difference?",
+          "item":
+            "https://www.trip-law.com/blog/green-card-renewal-vs-replacement-whats-the-difference"
         }
       ]
     },
     {
       "@type": "BlogPosting",
-      "@id": `${GREEN_CARD_RENEWAL_VS_REPLACEMENT_CANONICAL_URL}#blogposting`,
+      "@id":
+        "https://www.trip-law.com/blog/green-card-renewal-vs-replacement-whats-the-difference#blogposting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": GREEN_CARD_RENEWAL_VS_REPLACEMENT_CANONICAL_URL
+        "@id":
+          "https://www.trip-law.com/blog/green-card-renewal-vs-replacement-whats-the-difference"
       },
-      "headline": GREEN_CARD_RENEWAL_VS_REPLACEMENT_ARTICLE_TITLE,
-      "name": GREEN_CARD_RENEWAL_VS_REPLACEMENT_META_TITLE,
-      "description": GREEN_CARD_RENEWAL_VS_REPLACEMENT_META_DESCRIPTION,
-      "image": `https://www.trip-law.com${GREEN_CARD_RENEWAL_VS_REPLACEMENT_FEATURE_IMAGE}`,
-      "url": GREEN_CARD_RENEWAL_VS_REPLACEMENT_CANONICAL_URL,
+      "headline": "Green Card Renewal Vs. Replacement: What's The Difference?",
+      "name": "Best Green Card Renewal vs Replacement Guide 2026 | Trip Law",
+      "description":
+        "Compare Green Card Renewal vs Replacement in 2026. Explore key differences, costs, and when to renew or replace your card.",
+      "url":
+        "https://www.trip-law.com/blog/green-card-renewal-vs-replacement-whats-the-difference",
+      "image": {
+        "@type": "ImageObject",
+        "url":
+          "https://www.trip-law.com/assets/static-blogs/green-card-renewal-vs-replacement-guide.webp"
+      },
       "isPartOf": {
         "@type": "Blog",
         "@id": "https://www.trip-law.com/blog#blog",
@@ -393,24 +399,25 @@ const jsonLdSchema = {
       },
       "about": {
         "@type": "Thing",
-        "name": "Green Card Renewal vs Replacement and Form I-90 Procedures"
+        "name": "Green Card Renewal and Replacement"
       },
       "keywords": [
         "green card renewal vs replacement",
-        "Form I-90 replacement",
-        "renew green card",
-        "replace lost green card",
-        "replace stolen green card",
-        "USCIS Form I-90",
-        "permanent resident card",
-        "green card expiration",
-        "Form I-90 filing fee",
-        "immigration lawyer Lakeland"
+        "Green Card renewal",
+        "Green Card replacement",
+        "Form I-90",
+        "replace lost Green Card",
+        "replace stolen Green Card",
+        "replace damaged Green Card",
+        "Green Card renewal fees",
+        "USCIS Green Card application",
+        "permanent resident card renewal",
+        "immigration lawyer",
+        "Trip Law"
       ],
       "author": {
         "@type": "Person",
-        "name": "Hardam Tripathi",
-        "url": "https://www.trip-law.com/"
+        "name": "Hardam Tripathi"
       },
       "publisher": {
         "@type": "Organization",
@@ -427,16 +434,93 @@ const jsonLdSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": `${GREEN_CARD_RENEWAL_VS_REPLACEMENT_CANONICAL_URL}#faq`,
-      "url": GREEN_CARD_RENEWAL_VS_REPLACEMENT_CANONICAL_URL,
-      "mainEntity": faqItems.map(([question, answer]) => ({
-        "@type": "Question",
-        "name": question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": answer
+      "@id":
+        "https://www.trip-law.com/blog/green-card-renewal-vs-replacement-whats-the-difference#faq",
+      "url":
+        "https://www.trip-law.com/blog/green-card-renewal-vs-replacement-whats-the-difference",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Green Card Renewal The Same As Replacement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Both processes differ. Renewal handles expiring cards. Replacement solves other issues. These situations include card loss. These issues include card theft. These problems involve physical damage. These cases involve printed errors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Form Do I Use For Green Card Renewal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Most permanent residents use Form I-90. USCIS uses this application for renewing regular Permanent Resident Cards. Always review current instructions before filing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Form Do I Use For Green Card Replacement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Most replacement requests use Form I-90. Your filing reason determines the supporting evidence required. USCIS provides specific instructions for each filing category."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Replace A Lost Green Card?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. USCIS allows permanent residents to request replacement. A lost Green Card does not automatically end permanent resident status. You should replace the missing document promptly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Replace A Stolen Green Card?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. A stolen Green Card can generally be replaced. Form I-90 provides the standard process. Keep records related to the theft when appropriate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Replace A Damaged Green Card?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. USCIS allows replacement of damaged cards. Your application should accurately describe the card's condition. Follow current USCIS evidence instructions carefully."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How Much Does Form I-90 Cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "USCIS currently lists $415 for online filing. Paper filing currently costs $465. Certain applicants qualify for fee exemptions. Some filers receive fee waivers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does A Green Card Expiration End Permanent Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Generally, no. Card expiration does not automatically terminate permanent resident status. However, you still need valid documentation proving your status."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Conditional Residents Renew Their Green Cards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Usually, no. Conditional residents follow different procedures. They generally must file Form I-751 or Form I-829. The correct form depends on their conditional status."
+          }
         }
-      }))
+      ]
     }
   ]
 };

@@ -3,15 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   SELECTIVE_SERVICE_REGISTRATION_ARTICLE_TITLE,
-  SELECTIVE_SERVICE_REGISTRATION_CANONICAL_URL,
   SELECTIVE_SERVICE_REGISTRATION_FEATURE_IMAGE,
   SELECTIVE_SERVICE_REGISTRATION_FEATURE_IMAGE_ALT,
   SELECTIVE_SERVICE_REGISTRATION_FEATURE_IMAGE_CAPTION,
   SELECTIVE_SERVICE_REGISTRATION_FEATURE_IMAGE_DESCRIPTION,
   SELECTIVE_SERVICE_REGISTRATION_FEATURE_IMAGE_TITLE,
-  SELECTIVE_SERVICE_REGISTRATION_META_DESCRIPTION,
-  SELECTIVE_SERVICE_REGISTRATION_META_TITLE,
-  SELECTIVE_SERVICE_REGISTRATION_SLUG,
 } from "./selectiveServiceRegistrationMeta";
 import { getPublishedBlogsWithStatic } from "./staticBlogs";
 
@@ -348,7 +344,8 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      "@id": `${SELECTIVE_SERVICE_REGISTRATION_CANONICAL_URL}#breadcrumb`,
+      "@id":
+        "https://www.trip-law.com/blog/selective-service-registration-and-us-citizenship-eligibility#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -365,23 +362,34 @@ const jsonLdSchema = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": SELECTIVE_SERVICE_REGISTRATION_ARTICLE_TITLE,
-          "item": SELECTIVE_SERVICE_REGISTRATION_CANONICAL_URL
+          "name":
+            "Selective Service Registration And U.S. Citizenship Eligibility",
+          "item":
+            "https://www.trip-law.com/blog/selective-service-registration-and-us-citizenship-eligibility"
         }
       ]
     },
     {
       "@type": "BlogPosting",
-      "@id": `${SELECTIVE_SERVICE_REGISTRATION_CANONICAL_URL}#blogposting`,
+      "@id":
+        "https://www.trip-law.com/blog/selective-service-registration-and-us-citizenship-eligibility#blogposting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": SELECTIVE_SERVICE_REGISTRATION_CANONICAL_URL
+        "@id":
+          "https://www.trip-law.com/blog/selective-service-registration-and-us-citizenship-eligibility"
       },
-      "headline": SELECTIVE_SERVICE_REGISTRATION_ARTICLE_TITLE,
-      "name": SELECTIVE_SERVICE_REGISTRATION_META_TITLE,
-      "description": SELECTIVE_SERVICE_REGISTRATION_META_DESCRIPTION,
-      "image": `https://www.trip-law.com${SELECTIVE_SERVICE_REGISTRATION_FEATURE_IMAGE}`,
-      "url": SELECTIVE_SERVICE_REGISTRATION_CANONICAL_URL,
+      "headline":
+        "Selective Service Registration And U.S. Citizenship Eligibility",
+      "name": "Crucial Selective Service Registration for U.S. 2026 | Trip Law",
+      "description":
+        "Learn how Selective Service Registration for U.S. citizenship can affect eligibility, including registration rules, exemptions, and naturalization considerations.",
+      "url":
+        "https://www.trip-law.com/blog/selective-service-registration-and-us-citizenship-eligibility",
+      "image": {
+        "@type": "ImageObject",
+        "url":
+          "https://www.trip-law.com/assets/static-blogs/selective-service-registration-citizenship-fl.webp"
+      },
       "isPartOf": {
         "@type": "Blog",
         "@id": "https://www.trip-law.com/blog#blog",
@@ -390,24 +398,25 @@ const jsonLdSchema = {
       },
       "about": {
         "@type": "Thing",
-        "name": "Selective Service Registration and Naturalization Law"
+        "name":
+          "Selective Service Registration and U.S. Citizenship Eligibility"
       },
       "keywords": [
-        "selective service registration",
+        "Selective Service registration",
+        "Selective Service and U.S. citizenship",
+        "Selective Service registration for immigrants",
         "U.S. citizenship eligibility",
-        "Form N-400 selective service",
-        "naturalization after 26",
-        "selective service requirement immigrants",
-        "military selective service act",
-        "status information letter 2026",
-        "good moral character",
-        "citizenship lawyer Lakeland",
-        "immigration attorney Florida"
+        "naturalization requirements",
+        "Form N-400",
+        "Selective Service age requirements",
+        "failure to register for Selective Service",
+        "Selective Service registration after age 26",
+        "immigration lawyer",
+        "Lakeland immigration attorney"
       ],
       "author": {
         "@type": "Person",
-        "name": "Hardam Tripathi",
-        "url": "https://www.trip-law.com/"
+        "name": "Hardam Tripathi"
       },
       "publisher": {
         "@type": "Organization",
@@ -424,16 +433,95 @@ const jsonLdSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": `${SELECTIVE_SERVICE_REGISTRATION_CANONICAL_URL}#faq`,
-      "url": SELECTIVE_SERVICE_REGISTRATION_CANONICAL_URL,
-      "mainEntity": faqItems.map(([question, answer]) => ({
-        "@type": "Question",
-        "name": question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": answer
+      "@id":
+        "https://www.trip-law.com/blog/selective-service-registration-and-us-citizenship-eligibility#faq",
+      "url":
+        "https://www.trip-law.com/blog/selective-service-registration-and-us-citizenship-eligibility",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Selective Service Registration Required For Citizenship?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Selective Service registration can be required for male immigrants. If registration applied to you, failing to register may affect naturalization. Your age affects the analysis. Your status changes this evaluation. Individual circumstances alter the outcome."
+          }
+        },
+        {
+          "@type": "Question",
+          "name":
+            "Does Selective Service Registration Guarantee U.S. Citizenship?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Registration never ensures citizenship. Naturalization demands multiple qualifications. USCIS checks applicant residence. Officers evaluate moral character. USCIS tests English skills. Officials review civics knowledge. USCIS enforces statutory requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Immigrants Register For Selective Service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes, many male immigrants can and must register. Eligible immigrants complete registration from ages 18 through 25. Immigration status decides exceptions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Register After Turning 26?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Generally, no. Selective Service accepts late registration only until age 26. After that point, you must address your circumstances differently."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What If I Forgot To Register?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Your response depends on your current age. Men under 26 should register immediately. Older applicants should document why registration did not occur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name":
+            "Does Selective Service Registration Mean I Join The Army?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "No, registration does not enlist you in the military. It places your information into the federal registry. A future draft would require additional government action."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Women Need Selective Service Registration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Current federal law requires registration for male persons. The Selective Service requires congressional action. Congress must change the law."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do undocumented immigrants need registration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "The rule usually covers men aged 18 to 25. Selective Service specifically includes undocumented men, except qualifying nonimmigrant visa holders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Changed With Status Information Letters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Selective Service ended status information letters on June 30 2026. Applicants should now verify registration and provide relevant supporting evidence."
+          }
         }
-      }))
+      ]
     }
   ]
 };
