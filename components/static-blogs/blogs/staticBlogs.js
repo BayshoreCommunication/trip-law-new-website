@@ -244,8 +244,34 @@ import {
   COMMON_REASONS_E2_DENIED_FEATURE_IMAGE_TITLE,
   COMMON_REASONS_E2_DENIED_SLUG,
 } from "./commonReasonsE2VisaApplicationsAreDeniedMeta";
+import {
+  L1_VS_E2_ARTICLE_DESCRIPTION,
+  L1_VS_E2_ARTICLE_TITLE,
+  L1_VS_E2_FEATURE_IMAGE,
+  L1_VS_E2_FEATURE_IMAGE_ALT,
+  L1_VS_E2_FEATURE_IMAGE_CAPTION,
+  L1_VS_E2_FEATURE_IMAGE_DESCRIPTION,
+  L1_VS_E2_FEATURE_IMAGE_TITLE,
+  L1_VS_E2_SLUG,
+} from "./l1VisaVsE2VisaWhichFitsYourBusinessMeta";
 
 export const staticBlogs = [
+  {
+    slug: L1_VS_E2_SLUG,
+    title: L1_VS_E2_ARTICLE_TITLE,
+    body: L1_VS_E2_ARTICLE_DESCRIPTION,
+    createdAt: "2026-11-22",
+    published: true,
+    featuredImage: {
+      image: {
+        url: L1_VS_E2_FEATURE_IMAGE,
+      },
+      altText: L1_VS_E2_FEATURE_IMAGE_ALT,
+      title: L1_VS_E2_FEATURE_IMAGE_TITLE,
+      description: L1_VS_E2_FEATURE_IMAGE_DESCRIPTION,
+      caption: L1_VS_E2_FEATURE_IMAGE_CAPTION,
+    },
+  },
   {
     slug: COMMON_REASONS_E2_DENIED_SLUG,
     title: COMMON_REASONS_E2_DENIED_ARTICLE_TITLE,
