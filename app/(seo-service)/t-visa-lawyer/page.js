@@ -3,40 +3,73 @@ import {
   EligibilitySection,
   PathwaysSection,
   DocumentsSection,
-  HighRiskCasesSection,
   DenialReasonsSection,
+  HighRiskCasesSection,
   ProcessTimelineSection,
-  PreparationSection,
   BenefitsSection,
-  FeesWaiverSection,
+  PreparationSection,
   WhyChooseUsSection,
-  ComparisonSection,
+  FeesWaiverSection,
   ProvenProcessSection,
-  TestimonialsSection,
+  ComparisonSection,
   PracticeAreasCitiesSection,
+  TestimonialsSection,
   FinalCtaSection,
   FaqSection,
+  T_VISA_IMAGE_METADATA,
 } from '@/components/seo-service/t-visa-lawyer';
 
+const CANONICAL_URL = 'https://www.trip-law.com/t-visa-lawyer';
+const META_TITLE = 'T Visa Lawyer Near Me | Human Trafficking Legal Help';
+const META_DESCRIPTION =
+  'Need a T Visa lawyer near me? Get confidential legal help to secure your humanitarian visa and protect your future. Speak with our attorney (863) 599-6735.';
+
+const {
+  ogFeature,
+  heroBg,
+  eligibilityPathwaysBg,
+  documentsDenialBg,
+  attorneyConsultation,
+  ctaOfficeBg,
+} = T_VISA_IMAGE_METADATA;
+
+const schemaImages = [
+  ['#og-image', ogFeature],
+  ['#courthouse-bg-image', heroBg],
+  ['#eligibility-backdrop-image', eligibilityPathwaysBg],
+  ['#documents-backdrop-image', documentsDenialBg],
+  ['#cta-attorney-image', attorneyConsultation],
+  ['#cta-office-bg-image', ctaOfficeBg],
+].map(([fragment, imgMeta]) => ({
+  '@type': 'ImageObject',
+  '@id': `${CANONICAL_URL}${fragment}`,
+  contentUrl: `https://www.trip-law.com${imgMeta.src}`,
+  url: `https://www.trip-law.com${imgMeta.src}`,
+  name: imgMeta.title,
+  caption: imgMeta.alt,
+  description: imgMeta.description,
+  width: imgMeta.width,
+  height: imgMeta.height,
+  encodingFormat: 'image/webp',
+}));
+
 export const metadata = {
-  title: 'T Visa Lawyer Near Me | Human Trafficking Legal Help',
-  description:
-    'Need a T Visa lawyer near me? Get confidential legal help to secure your humanitarian visa and protect your future. Speak with our attorney (863) 599-6735.',
+  title: META_TITLE,
+  description: META_DESCRIPTION,
   alternates: {
-    canonical: '/t-visa-lawyer',
+    canonical: CANONICAL_URL,
   },
   openGraph: {
-    title: 'T Visa Lawyer Near Me | Human Trafficking Legal Help',
-    description:
-      'Need a T Visa lawyer near me? Get confidential legal help to secure your humanitarian visa and protect your future. Speak with our attorney (863) 599-6735.',
-    url: '/t-visa-lawyer',
-    siteName: 'Trip Law Immigration Law Firm',
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+    url: CANONICAL_URL,
+    siteName: 'Trip Law',
     images: [
       {
-        url: '/assets/seo-service/t-visa-lawyer/og-image.webp',
-        width: 1200,
-        height: 630,
-        alt: 'T Visa Lawyer Near Me - Confidential Human Trafficking Legal Help at Trip Law',
+        url: `https://www.trip-law.com${ogFeature.src}`,
+        width: ogFeature.width,
+        height: ogFeature.height,
+        alt: ogFeature.alt,
         type: 'image/webp',
       },
     ],
@@ -45,15 +78,14 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'T Visa Lawyer Near Me | Human Trafficking Legal Help',
-    description:
-      'Need a T Visa lawyer near me? Get confidential legal help to secure your humanitarian visa and protect your future. Speak with our attorney (863) 599-6735.',
+    title: META_TITLE,
+    description: META_DESCRIPTION,
     images: [
       {
-        url: '/assets/seo-service/t-visa-lawyer/og-image.webp',
-        width: 1200,
-        height: 630,
-        alt: 'T Visa Lawyer Near Me - Confidential Human Trafficking Legal Help at Trip Law',
+        url: `https://www.trip-law.com${ogFeature.src}`,
+        width: ogFeature.width,
+        height: ogFeature.height,
+        alt: ogFeature.alt,
       },
     ],
   },
@@ -68,137 +100,138 @@ export const metadata = {
   },
 };
 
+const tVisaSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${CANONICAL_URL}#breadcrumb`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://www.trip-law.com/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'T Visa Lawyer Immigration Help for Survivors From Human Trafficking',
+          item: CANONICAL_URL,
+        },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${CANONICAL_URL}#webpage`,
+      url: CANONICAL_URL,
+      name: META_TITLE,
+      description: META_DESCRIPTION,
+      inLanguage: 'en-US',
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': 'https://www.trip-law.com/#website',
+        url: 'https://www.trip-law.com/',
+        name: 'Trip Law',
+      },
+      mainEntity: {
+        '@id': `${CANONICAL_URL}#legalservice`,
+      },
+      primaryImageOfPage: {
+        '@id': `${CANONICAL_URL}#og-image`,
+      },
+      breadcrumb: {
+        '@id': `${CANONICAL_URL}#breadcrumb`,
+      },
+    },
+    {
+      '@type': ['LegalService', 'Attorney'],
+      '@id': `${CANONICAL_URL}#legalservice`,
+      name: 'Trip Law',
+      url: CANONICAL_URL,
+      telephone: '+1-863-599-6735',
+      image: [
+        `https://www.trip-law.com${ogFeature.src}`,
+        `https://www.trip-law.com${attorneyConsultation.src}`,
+      ],
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '1820 Florida Ave S, Suite C',
+        addressLocality: 'Lakeland',
+        addressRegion: 'FL',
+        postalCode: '33803',
+        addressCountry: 'US',
+      },
+      founder: {
+        '@type': 'Person',
+        name: 'Hardam Tripathi',
+      },
+      serviceType: 'T Visa Lawyer Immigration Help for Survivors From Human Trafficking',
+      areaServed: {
+        '@type': 'Country',
+        name: 'United States',
+      },
+    },
+    ...schemaImages,
+    {
+      '@type': 'FAQPage',
+      '@id': `${CANONICAL_URL}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Must traffickers be arrested or convicted for T visa applications?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'No. USCIS does not require a trafficker to be arrested, charged or convicted for you to qualify for a T visa. Show you were a victim of severe trafficking and met law enforcement assistance rules.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is there an annual cap on principal T 1 nonimmigrant status grants?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Congress sets an annual limit of 5,000 principal T 1 visas per fiscal year. However, USCIS rarely hits this cap, meaning qualified applicants do not face long statutory waiting list delays.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can trafficking survivors apply even after leaving a trafficking situation?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. You can apply for T nonimmigrant status after escaping or leaving the trafficking environment. You must prove your current presence in the United States remains directly connected to past trafficking experience.',
+          },
+        },
+      ],
+    },
+  ],
+};
+
 export default function TVisaLawyerPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <HeroSection
-        locationTitle="T VISA LAWYER NEAR ME"
-        mainHeading="T Visa Lawyer for Human Trafficking Victims in Lakeland, Florida"
-        description="The United States Congress created the T nonimmigrant status (commonly called the T visa) to protect victims of severe human trafficking. Experiencing human trafficking is one of the most frightening things a person can go through. Many victims feel trapped because traffickers use threats, debt or violence to control them. At Trip Law, we understand that escaping and rebuilding your life takes courage. As your t visa lawyer near me, we will protect your rights and help you gain legal status in the U.S. We will guide you with compassion and treat your case with the utmost confidentiality."
-        ctaText="Book a confidential consultation today and our attorney will review your case safely."
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
-        consultationLink="/appointment"
-        eligibilityLink="tel:8635996735"
-        experienceYears={15}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tVisaSchema) }}
       />
-
-      <EligibilitySection
-        tagline="T VISA ELIGIBILITY CRITERIA"
-        title="Who Qualifies for a T Nonimmigrant Visa?"
-        description="Not every difficult work or personal situation qualifies for a T visa. Under 8 U.S.C. § 1101(a)(15)(T), an applicant must meet four legal requirements:"
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/eligibility-bg.png"
-      />
-
-      <PathwaysSection
-        tagline="FORMS OF HUMAN TRAFFICKING"
-        title="Pathways and Forms of Trafficking"
-        description="Federal law recognizes two main categories of severe trafficking under the Trafficking Victims Protection Act (TVPA). You can qualify under either category:"
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/pathways-bg.png"
-      />
-
-      <DocumentsSection
-        tagline="APPLICATION CHECKLIST"
-        titlePrefix="Documents and Evidence Needed to "
-        titleHighlight="Support Your T Visa Application"
-        description="Because traffickers operate in secret, gathering evidence can be difficult. USCIS applies an 'any credible evidence' standard for T visa cases. We work with you to assemble whatever proof is available to build a strong case:"
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/documents-bg.png"
-      />
-
-      <HighRiskCasesSection
-        badgeText="INADMISSIBILITY & WAIVERS"
-        title="Waivers for Inadmissibility: Overcoming Complex Background Issues"
-        description="Many trafficking victims were forced by their traffickers to commit acts that make them inadmissible to the U.S. under standard immigration rules. A generous waiver provision exists for T visa applicants under INA § 212(d)(13) to waive these grounds using Form I-192."
-      />
-
-      <DenialReasonsSection
-        badgeText="RISKS & AVOIDABLE PITFALLS"
-        title="Common Reasons T Visa Applications Face Delays or Denials"
-        description="Understanding common pitfalls helps you avoid delays, Requests for Evidence (RFEs) or denials from USCIS:"
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/denial-reasons-bg.png"
-      />
-
-      <ProcessTimelineSection
-        badgeText="USCIS TIMELINE"
-        title="T Visa Application Process and Processing Times"
-        subtitle="The T visa process requires several stages. Processing times can be long, but recent USCIS policy changes offer protections while you wait:"
-      />
-
-      <PreparationSection
-        tagline="HUMANITARIAN IMMIGRATION COMPARISON"
-        title="When to Apply for T Visa vs. U Visa, VAWA and Asylum"
-        description="Different humanitarian immigration options protect people in different legal circumstances."
-      />
-
-      <BenefitsSection
-        tagline="T VISA POST-APPROVAL BENEFITS"
-        title="Benefits and Immigration Options After Approval"
-        description="When your T nonimmigrant visa is approved, you will have some benefits for yourself and your family."
-      />
-
-      <FeesWaiverSection
-        tagline="USCIS FEES & APPLICATION COSTS"
-        title="T Visa Application Costs"
-        description="total cost depends on services required, forms involved and any additional expenses. USCIS fees and exemptions are changeable. Confirm current USCIS fee schedule."
-      />
-
-      <WhyChooseUsSection
-        tagline="WHY CHOOSE TRIP LAW"
-        title="Why Choose Hardam Tripathi as Your T Visa Lawyer"
-        description="At Trip Law, we understand how survivors of trafficking face extraordinary challenges. Our attorney approaches every T Visa case with a strong understanding of rules and regulations."
-      />
-
-      <ComparisonSection
-        tagline="COMPARISON TABLE"
-        title="Trip Law vs. Other Legal Firms"
-        subtitle="Service Feature Comparison for T Visa Representation"
-      />
-
-      <ProvenProcessSection
-        tagline="OUR LEGAL PROCESS"
-        title="What to Expect When You Hire Trip Law"
-        description="This timeline shows how our legal team works on your case. Exact processing dates depend on document readiness and USCIS review speed."
-      />
-
-      <TestimonialsSection
-        tagline="CLIENT EXPERIENCES"
-        title="What Clients Say About Trip Law"
-        description="Read genuine client reviews and experiences from individuals and families supported by Attorney Hardam Tripathi and the Trip Law team."
-      />
-
-      <PracticeAreasCitiesSection
-        tagline="OFFICE LOCATION & PRACTICE AREAS"
-        title="Our Office Location"
-        description="Main office of Trip Law in Lakeland, FL. Dedicated humanitarian and employment immigration legal support throughout Florida."
-        address="1820 Florida Ave S, Suite C, Lakeland, FL 33803"
-        phone="(863) 599-6735"
-        website="www.trip-law.com"
-        email="info@trip-law.com"
-      />
-
-      <FinalCtaSection
-        tagline="CONFIDENTIAL HUMANITARIAN CONSULTATION"
-        title="Do You Have a T Visa Lawyer Near Me?"
-        phone="(863) 599-6735"
-        email="info@trip-law.com"
-        website="www.trip-law.com"
-        address="1820 Florida Ave S, Suite C, Lakeland, FL 33803"
-        primaryBtnText="Call (863) 599-6735"
-        secondaryBtnText="Schedule Confidential Consultation"
-        consultationLink="/appointment"
-        rightImage="/assets/seo-service/trip-law.jpeg"
-        rightImageAlt="Contact Hardam Tripathi, T Visa Lawyer Near Me"
-        rightImageTitle="Contact Hardam Tripathi, T Visa Lawyer Near Me"
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png"
-      />
-
-      <FaqSection
-        tagline="T VISA LAWYER FREQUENTLY ASKED QUESTIONS"
-        title="Frequently Asked Questions About T Visa"
-        description="Common legal questions regarding human trafficking survivor eligibility, annual visa caps, and law enforcement cooperation requirements."
-        consultationLink="/appointment"
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
-      />
-    </main>
+      <main className="min-h-screen bg-white">
+        <HeroSection />
+        <EligibilitySection />
+        <PathwaysSection />
+        <DocumentsSection />
+        <DenialReasonsSection />
+        <HighRiskCasesSection />
+        <ProcessTimelineSection />
+        <BenefitsSection />
+        <PreparationSection />
+        <WhyChooseUsSection />
+        <FeesWaiverSection />
+        <ProvenProcessSection />
+        <ComparisonSection />
+        <PracticeAreasCitiesSection />
+        <TestimonialsSection />
+        <FinalCtaSection />
+        <FaqSection />
+      </main>
+    </>
   );
 }
-

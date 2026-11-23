@@ -1,9 +1,9 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { Bitter } from 'next/font/google';
+import { T_VISA_IMAGE_METADATA } from './tVisaImagesMeta';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
@@ -19,10 +19,10 @@ const NumberCounter = ({ target = 15, suffix = '+', duration = 1800 }) => {
     const end = parseInt(target, 10);
     if (start === end) return;
 
-    let totalMilSecs = duration;
-    let incrementTime = Math.max(Math.floor(totalMilSecs / end), 20);
+    const totalMilSecs = duration;
+    const incrementTime = Math.max(Math.floor(totalMilSecs / end), 20);
 
-    let timer = setInterval(() => {
+    const timer = setInterval(() => {
       start += 1;
       setCount(start);
       if (start >= end) clearInterval(timer);
@@ -33,29 +33,22 @@ const NumberCounter = ({ target = 15, suffix = '+', duration = 1800 }) => {
 
   return (
     <span ref={ref} className="tabular-nums">
-      {count}{suffix}
+      {count}
+      {suffix}
     </span>
   );
 };
 
-const HeroSection = ({
-  locationTitle = 'T VISA LAWYER IN FLORIDA',
-  mainHeading = 'T Visa Lawyer Immigration Help for Survivors From Human Trafficking',
-  description = 'Survivors from human trafficking carry invisible wounds of fear and exhaustion. For those victims, a humanitarian visa provides legal protection to heal. However they struggle with petitioning for strict eligibility rules and complex paperwork. T visa lawyer can help you secure legal status, work authorization and path to green card. If you need a trusted t visa lawyer near me, Attorney Hardam Tripathi provides responsive legal service throughout Florida and across the United States.',
-  bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
-  consultationLink = '/appointment',
-  consultationText = 'SCHEDULE CONSULTATION',
-  eligibilityLink = 'tel:(863)-599-6735',
-  eligibilityText = '(863)-599-6735',
-  experienceYears = 15,
-}) => {
+const HeroSection = ({ experienceYears = 15 }) => {
+  const { heroBg } = T_VISA_IMAGE_METADATA;
+
   return (
     <section className="relative w-full min-h-[700px] lg:min-h-[820px] flex items-center justify-center bg-slate-950 text-white overflow-hidden py-16 lg:py-28 mt-[70px]">
       <div className="absolute inset-0 z-0">
         <Image
-          src={bgImage}
-          alt="T Visa Lawyer Background"
-          title="T Visa Lawyer Immigration Help for Survivors From Human Trafficking"
+          src={heroBg.src}
+          alt={heroBg.alt}
+          title={heroBg.title}
           fill
           priority
           sizes="100vw"
@@ -68,83 +61,21 @@ const HeroSection = ({
 
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-          
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="lg:col-span-7 flex flex-col items-start text-left"
           >
-            <div className="flex flex-col items-start gap-2.5 mb-5">
-              <span className="text-red-700 font-bold text-xs sm:text-sm md:text-base tracking-widest uppercase">
-                {locationTitle}
-              </span>
-              <div className="h-[3px] w-16 bg-red-700 rounded-full" />
-            </div>
-
             <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.15] mb-6 ${bitter.className}`}>
-              {mainHeading}
+              T Visa Lawyer Immigration Help for Survivors From Human Trafficking
             </h1>
 
-            <p className="text-slate-200 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-3xl mb-10">
-              Survivors from human trafficking carry invisible wounds of fear and exhaustion. For those victims, a humanitarian visa provides legal protection to heal. However they struggle with petitioning for strict eligibility rules and complex paperwork.{' '}
-              <Link href="/t-visa-lawyer" className="text-red-400 font-semibold hover:underline">
-                T visa lawyer
-              </Link>{' '}
-              can help you secure legal status, work authorization and{' '}
-              <Link href="/immigration-lawyer-lakeland-fl" className="text-red-400 font-semibold hover:underline">
-                path to green card
-              </Link>
-              . If you need a trusted{' '}
-              <Link href="/t-visa-lawyer" className="text-red-400 font-semibold hover:underline">
-                t visa lawyer near me
-              </Link>
-              , Attorney Hardam Tripathi provides responsive legal service throughout Florida and across the United States.
+            <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
+
+            <p className="text-slate-200 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-3xl">
+              Survivors from human trafficking carry invisible wounds of fear and exhaustion. For those victims, a humanitarian visa provides legal protection to heal. However they struggle with petitioning for strict eligibility rules and complex paperwork. T visa lawyer can help you secure legal status, work authorization and path to green card. If you need a trusted t visa lawyer near me, Attorney Hardam Tripathi provides responsive legal service throughout Florida and across the United States.
             </p>
-
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 w-full sm:w-auto">
-              <Link
-                href={consultationLink}
-                className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-bold text-sm sm:text-base tracking-wider uppercase rounded-md sm:rounded-full shadow-xl shadow-red-900/30 transition-all duration-300 transform hover:-translate-y-0.5"
-              >
-                <svg
-                  className="w-5 h-5 text-white transition-transform duration-300 group-hover:scale-110"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                <span>{consultationText}</span>
-              </Link>
-
-              <Link
-                href={eligibilityLink}
-                className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent hover:bg-red-700/20 text-white border-2 border-red-700 hover:border-red-600 font-bold text-sm sm:text-base tracking-wider uppercase rounded-md sm:rounded-full transition-all duration-300 transform hover:-translate-y-0.5"
-              >
-                <svg
-                  className="w-5 h-5 text-red-700 group-hover:text-white transition-colors duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                <span>{eligibilityText}</span>
-              </Link>
-            </div>
           </motion.div>
 
           <motion.div
@@ -155,7 +86,6 @@ const HeroSection = ({
           >
             <div className="bg-[#091424]/95 backdrop-blur-xl border border-slate-700/70 hover:border-red-700/60 rounded-2xl p-6 sm:p-9 shadow-2xl shadow-black/80 transition-all duration-300">
               <div className="flex flex-col divide-y divide-slate-800/80">
-                
                 <div className="flex items-center gap-5 pb-6">
                   <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-red-700/10 border border-red-700/30">
                     <svg className="w-6 h-6 sm:w-7 sm:h-7 text-red-700" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +112,7 @@ const HeroSection = ({
                     </svg>
                   </div>
                   <span className="text-white font-medium text-base sm:text-lg tracking-wide">
-                    T Visa & Trafficking Relief
+                    T Visa &amp; Trafficking Relief
                   </span>
                 </div>
 
@@ -208,11 +138,9 @@ const HeroSection = ({
                     Nationwide U.S. Practice
                   </span>
                 </div>
-
               </div>
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>
@@ -220,4 +148,3 @@ const HeroSection = ({
 };
 
 export default HeroSection;
-

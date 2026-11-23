@@ -3,10 +3,11 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
+import { T_VISA_IMAGE_METADATA } from './tVisaImagesMeta';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultPathways = [
+const stages = [
   {
     title: 'Stage 1: Initial Eligibility Review and Case Assessment',
     desc: 'First, Attorney Hardam Tripathi reviews your specific situation. We check three primary criteria: details of your trafficking, your current presence in the U.S. and any urgent immigration threats. Prior removal orders, criminal records or past inconsistent filings require special attention. Our team identifies these critical issues immediately to protect you from deportation.',
@@ -25,7 +26,7 @@ const defaultPathways = [
   },
   {
     title: 'Stage 5: USCIS Review, Bona Fide Determination and Additional Evidence Requests',
-    desc: 'USCIS reviews your application for completeness and basic eligibility. Under current regulations, officers check your background results and your signed personal statement. If your case passes this step, you receive Bona Fide Determination (BFD). BFD can grant you deferred action and work permit. Yet it’s not final approval. USCIS may also issue a Request for Evidence (RFE). This step may pause your case until we reply.',
+    desc: "USCIS reviews your application for completeness and basic eligibility. Under current regulations, officers check your background results and your signed personal statement. If your case passes this step, you receive Bona Fide Determination (BFD). BFD can grant you deferred action and work permit. Yet it’s not final approval. USCIS may also issue a Request for Evidence (RFE). This step may pause your case until we reply.",
   },
   {
     title: 'Stage 6: Final Decision and Available Next Steps',
@@ -33,45 +34,39 @@ const defaultPathways = [
   },
 ];
 
-const PathwaysSection = ({
-  tagline = 'T-VISA APPLICATION STAGES',
-  title = 'How Our Attorney Helps With Your T Visa Application Process',
-  subtitle1 = 'The nonimmigrant visa process usually goes through 6 stages.',
-  bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/pathways-bg.png',
-  pathways = defaultPathways,
-}) => {
+const PathwaysSection = () => {
+  const { eligibilityPathwaysBg } = T_VISA_IMAGE_METADATA;
+
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#061224] text-white overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <Image
-          src={bgImage}
-          alt="Pathways Section Background"
+          src={eligibilityPathwaysBg.src}
+          alt={eligibilityPathwaysBg.alt}
+          title={eligibilityPathwaysBg.title}
           fill
           sizes="100vw"
-          quality={90}
-          className="object-cover object-center opacity-30"
+          quality={80}
+          className="object-cover object-center opacity-10"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#030914] via-[#061224]/90 to-[#030914]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#030914] via-[#061224]/92 to-[#030914]" />
       </div>
 
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            How Our Attorney Helps With Your T Visa Application Process
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            {subtitle1}
+            The nonimmigrant visa process usually goes through 6 stages.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {pathways.map((item, idx) => (
+          {stages.map((item, idx) => (
             <motion.div
-              key={idx}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -98,4 +93,3 @@ const PathwaysSection = ({
 };
 
 export default PathwaysSection;
-

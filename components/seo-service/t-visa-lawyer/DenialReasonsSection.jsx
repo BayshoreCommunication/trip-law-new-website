@@ -4,10 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
+import { T_VISA_IMAGE_METADATA } from './tVisaImagesMeta';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultReasons = [
+const reasons = [
   {
     title: 'Gaps or Inconsistencies in Personal Declaration',
     desc: 'Material contradictions, unexplained timeline differences or missing facts can cause trouble. These issues may lead USCIS to question your evidence and doubt your story. Severe trauma often affects your memory and recall over time. Because of this, you should prepare your statement with immense care. You must never feel pressure to provide artificial certainty about dates or events you do not fully remember.',
@@ -34,22 +35,19 @@ const defaultReasons = [
   },
 ];
 
-const DenialReasonsSection = ({
-  badgeText = 'T-VISA RISKS & COMMON PITFALLS',
-  title = 'Why T Visa Applications Get Denied or Rejected',
-  description = 'We have some cases where applicants get denied after self trying to apply for humanitarian visas. It usually happens when you hesitate to hire an immigration lawyer in the first phase. Even some of you might get confused by being rejected and being denied. Both differ based on eligibility. Having lawyers can help applicants identify appropriate responses.',
-  bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/denial-reasons-bg.png',
-  reasons = defaultReasons,
-}) => {
+const DenialReasonsSection = () => {
+  const { documentsDenialBg } = T_VISA_IMAGE_METADATA;
+
   return (
-    <section className="relative w-full py-16 lg:py-24 bg-[#F8FAFC] text-slate-800 overflow-hidden">
+    <section className="relative w-full py-16 lg:py-24 bg-[#FAFBFD] text-slate-800 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <Image
-          src={bgImage}
-          alt="Denial Reasons Background"
+          src={documentsDenialBg.src}
+          alt={documentsDenialBg.alt}
+          title={documentsDenialBg.title}
           fill
           sizes="100vw"
-          quality={90}
+          quality={80}
           className="object-cover object-center opacity-30"
         />
         <div className="absolute inset-0 bg-slate-50/75" />
@@ -57,17 +55,17 @@ const DenialReasonsSection = ({
 
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {badgeText}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            Why T Visa Applications Get Denied or Rejected
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            We have some cases where applicants get denied after self trying to apply for humanitarian visas. It usually happens when you hesitate to hire an{' '}
-            <Link href="/t-visa-lawyer" className="text-red-700 font-semibold hover:underline">
-              immigration lawyer
+            We have some cases where applicants get denied after self trying to apply for humanitarian visas. It usually happens when you hesitate to hire{' '}
+            <Link
+              href="/immigration-lawyer-lakeland-fl"
+              className="text-red-700 font-semibold underline decoration-red-700/40 hover:text-red-800"
+            >
+              an immigration lawyer
             </Link>{' '}
             in the first phase. Even some of you might get confused by being rejected and being denied. Both differ based on eligibility. Having lawyers can help applicants identify appropriate responses.
           </p>
@@ -76,7 +74,7 @@ const DenialReasonsSection = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map((item, idx) => (
             <motion.div
-              key={idx}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -104,4 +102,3 @@ const DenialReasonsSection = ({
 };
 
 export default DenialReasonsSection;
-

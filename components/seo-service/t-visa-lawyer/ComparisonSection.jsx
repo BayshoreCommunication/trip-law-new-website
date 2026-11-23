@@ -4,7 +4,7 @@ import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultRows = [
+const rows = [
   {
     feature: 'Trafficking Focus',
     tripLaw: 'Specialize in complex T visas and severe exploitation claim',
@@ -37,26 +37,15 @@ const defaultRows = [
   },
 ];
 
-const ComparisonSection = ({
-  tagline = 'COMPARISON TABLE',
-  title = 'Trip Law vs. Other Legal Firms',
-  subtitle = 'Service Feature Comparison for T Visa Representation',
-  rows = defaultRows,
-}) => {
+const ComparisonSection = () => {
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#F8FAFC] text-slate-800 overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            Trip Law vs. Other Legal Firms
           </h2>
-          <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
-          <p className="text-slate-600 text-base sm:text-lg font-semibold">
-            {subtitle}
-          </p>
+          <div className="h-[3px] w-20 bg-red-700 rounded-full" />
         </div>
 
         <div className="overflow-x-auto max-w-5xl mx-auto">
@@ -76,7 +65,7 @@ const ComparisonSection = ({
             </thead>
             <tbody className="divide-y divide-slate-200 text-sm sm:text-base">
               {rows.map((row, idx) => (
-                <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
+                <tr key={row.feature} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
                   <td className="py-4 px-6 font-bold text-[#0B1829]">
                     {row.feature}
                   </td>
@@ -100,4 +89,3 @@ const ComparisonSection = ({
 };
 
 export default ComparisonSection;
-
