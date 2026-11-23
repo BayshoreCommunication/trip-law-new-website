@@ -5,10 +5,10 @@ import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultCases = [
+const riskCases = [
   {
     title: 'Prior Deportation or Removal Orders',
-    desc: 'Active removal order and deportation can affect your immigration position. You may have to apply for discretionary waivers under INA § 212(d)(14). You can submit it with Form I 212 to ask for permission to reapply for admission. We review your history. We’ll suggest you bring copies of removal orders, hearing notices and prior applications. If you have any communication with immigration authorities, bring records of them too.',
+    desc: 'Active removal order and deportation can affect your immigration position. You may have to apply for discretionary waivers under INA § 212(d)(14). You can submit it with Form I 212 to ask for permission to reapply for admission.  We review your history. We’ll suggest you bring copies of removal orders, hearing notices and prior applications. If you have any communication with immigration authorities, bring records of them too.',
   },
   {
     title: 'Previous Immigration Violations or Unlawful Presence',
@@ -32,34 +32,24 @@ const defaultCases = [
   },
 ];
 
-const HighRiskCasesSection = ({
-  badgeText = 'COMPLEX CASES & WAIVERS',
-  title = 'Complex U Visa Cases and Legal Barriers We Handle',
-  description = 'Some cases require additional planning because an applicant has a prior removal order, limited evidence, difficult immigration history or family members with separate eligibility questions. These issues deserve individual review before a filing strategy is selected.',
-  cases = defaultCases,
-}) => {
+const HighRiskCasesSection = () => {
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#040B17] text-white overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {badgeText}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            Complex U Visa Cases and Legal Barriers We Handle
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            {description}
+            Some cases require additional planning because an applicant has a prior removal order, limited evidence, difficult immigration history or family members with separate eligibility questions. These issues deserve individual review before a filing strategy is selected.
           </p>
         </div>
 
-        {/* 6 Barrier Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {cases.map((item, idx) => (
+          {riskCases.map((item, idx) => (
             <motion.div
-              key={idx}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -86,4 +76,3 @@ const HighRiskCasesSection = ({
 };
 
 export default HighRiskCasesSection;
-

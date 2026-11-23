@@ -1,10 +1,11 @@
 'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultRows = [
+const rows = [
   {
     factor: 'U Visa Services',
     tripLaw: 'Complete end to end management including law enforcement advocacy and I 192 waiver filings.',
@@ -42,31 +43,18 @@ const defaultRows = [
   },
 ];
 
-const ComparisonSection = ({
-  tagline = 'SERVICE COMPARISON',
-  title = 'Trip Law vs. Other Legal Firms',
-  subtitle = 'Comparison Factor | Trip Law, P.A. Service Standard | Generic Legal Firm Standard',
-  rows = defaultRows,
-}) => {
+const ComparisonSection = () => {
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#F8FAFC] text-slate-800 overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            Trip Law vs. Other Legal Firms
           </h2>
-          <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
-          <p className="text-slate-600 text-base sm:text-lg font-semibold">
-            {subtitle}
-          </p>
+          <div className="h-[3px] w-20 bg-red-700 rounded-full" />
         </div>
 
-        {/* Comparison Table */}
-        <div className="overflow-x-auto max-w-6xl mx-auto">
+        <div className="hidden md:block overflow-x-auto max-w-6xl mx-auto">
           <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
             <thead>
               <tr className="bg-[#0B1829] text-white">
@@ -83,7 +71,7 @@ const ComparisonSection = ({
             </thead>
             <tbody className="divide-y divide-slate-200 text-sm sm:text-base">
               {rows.map((row, idx) => (
-                <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
+                <tr key={row.factor} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
                   <td className="py-4 px-6 font-bold text-[#0B1829]">
                     {row.factor}
                   </td>
@@ -101,10 +89,38 @@ const ComparisonSection = ({
             </tbody>
           </table>
         </div>
+
+        <div className="grid grid-cols-1 gap-4 md:hidden">
+          {rows.map((row, idx) => (
+            <motion.div
+              key={row.factor}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: idx * 0.05 }}
+              className="bg-white border border-slate-200 rounded-xl p-5 shadow-md space-y-3"
+            >
+              <div className={`font-bold text-[#0B1829] text-base ${bitter.className}`}>
+                {row.factor}
+              </div>
+              <div className="bg-red-50/60 border border-red-100 rounded-lg p-3 text-sm text-slate-900">
+                <div className="font-bold text-red-700 text-xs uppercase mb-1">
+                  Trip Law, P.A. Service Standard
+                </div>
+                {row.tripLaw}
+              </div>
+              <div className="bg-slate-50 border border-slate-100 rounded-lg p-3 text-sm text-slate-600">
+                <div className="font-bold text-slate-500 text-xs uppercase mb-1">
+                  Generic Legal Firm Standard
+                </div>
+                {row.generic}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
 export default ComparisonSection;
-

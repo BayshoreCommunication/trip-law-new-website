@@ -16,6 +16,7 @@ import TestimonialsSection from './TestimonialsSection';
 import PracticeAreasCitiesSection from './PracticeAreasCitiesSection';
 import FinalCtaSection from './FinalCtaSection';
 import FaqSection from './FaqSection';
+import { U_VISA_IMAGE_METADATA } from './uVisaImagesMeta';
 
 export {
   HeroSection,
@@ -36,7 +37,7 @@ export {
   PracticeAreasCitiesSection,
   FinalCtaSection,
   FaqSection,
+  U_VISA_IMAGE_METADATA,
 };
 
 export default HeroSection;
-
