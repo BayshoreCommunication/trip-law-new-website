@@ -1,10 +1,11 @@
 'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultFeeRows = [
+const feeRows = [
   {
     category: 'Initial Filing Fee',
     affirmative: '$100',
@@ -61,31 +62,21 @@ const defaultFeeRows = [
   },
 ];
 
-const FeesWaiverSection = ({
-  tagline = 'GOVERNMENT FEES & LEGAL COSTS',
-  title = 'Asylum Lawyer Fees and Application Costs',
-  description = 'Government fees change by law. Confirm current figures on the USCIS fee schedule before you file.',
-  feeRows = defaultFeeRows,
-}) => {
+const FeesWaiverSection = () => {
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#F8FAFC] text-slate-800 overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            Asylum Lawyer Fees and Application Costs
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            {description}
+            Government fees change by law. Confirm current figures on the USCIS fee schedule before you file.
           </p>
         </div>
 
-        {/* Fees Table */}
-        <div className="overflow-x-auto max-w-6xl mx-auto">
+        <div className="hidden md:block overflow-x-auto max-w-6xl mx-auto">
           <table className="w-full text-left border-collapse bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
             <thead>
               <tr className="bg-[#0B1829] text-white">
@@ -96,26 +87,26 @@ const FeesWaiverSection = ({
                   Affirmative Process (USCIS)
                 </th>
                 <th className="py-5 px-6 font-bold text-sm sm:text-base w-1/6">
-                  Defensive Process (Court / EOIR)
+                  Defensive Process (Immigration Court / EOIR)
                 </th>
                 <th className="py-5 px-6 font-bold text-sm sm:text-base w-5/12 text-slate-300">
-                  Crucial Financial Rules & Nuances
+                  Crucial Financial Rules &amp; Nuances
                 </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-200 text-sm sm:text-base">
               {feeRows.map((row, idx) => (
                 <tr
-                  key={idx}
+                  key={row.category}
                   className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}
                 >
                   <td className="py-4 px-6 font-bold text-[#0B1829]">
                     {row.category}
                   </td>
-                  <td className="py-4 px-6 text-slate-900 font-semibold whitespace-nowrap bg-red-50/40">
+                  <td className="py-4 px-6 text-slate-900 font-semibold bg-red-50/40">
                     {row.affirmative}
                   </td>
-                  <td className="py-4 px-6 text-slate-800 font-semibold whitespace-nowrap">
+                  <td className="py-4 px-6 text-slate-800 font-semibold">
                     {row.defensive}
                   </td>
                   <td className="py-4 px-6 text-slate-600 leading-relaxed">
@@ -126,10 +117,39 @@ const FeesWaiverSection = ({
             </tbody>
           </table>
         </div>
+
+        <div className="grid grid-cols-1 gap-4 md:hidden">
+          {feeRows.map((row, idx) => (
+            <motion.div
+              key={row.category}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: idx * 0.04 }}
+              className="bg-white border border-slate-200 rounded-xl p-5 shadow-md space-y-2"
+            >
+              <div className={`font-bold text-[#0B1829] text-base ${bitter.className}`}>
+                {row.category}
+              </div>
+              <div className="grid grid-cols-2 gap-2 text-xs">
+                <div className="bg-red-50/60 p-2 rounded">
+                  <span className="font-bold text-red-700 block">Affirmative Process (USCIS)</span>
+                  <span className="text-slate-900 font-semibold">{row.affirmative}</span>
+                </div>
+                <div className="bg-slate-50 p-2 rounded">
+                  <span className="font-bold text-slate-600 block">Defensive Process (Immigration Court / EOIR)</span>
+                  <span className="text-slate-800 font-semibold">{row.defensive}</span>
+                </div>
+              </div>
+              <p className="text-slate-600 text-xs leading-relaxed">
+                {row.rules}
+              </p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
 export default FeesWaiverSection;
-

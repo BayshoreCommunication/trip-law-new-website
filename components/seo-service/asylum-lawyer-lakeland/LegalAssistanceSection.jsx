@@ -5,7 +5,7 @@ import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultStages = [
+const stages = [
   {
     num: '1',
     title: 'Initial Consultation & Case Assessment',
@@ -38,34 +38,24 @@ const defaultStages = [
   },
 ];
 
-const LegalAssistanceSection = ({
-  tagline = 'CASE STAGES & ADVOCACY',
-  title = 'How Our Asylum Lawyer Helps With Your Case?',
-  description = 'Your asylum case moves through several stages. Each one has its own forms and deadlines. Clients from Lakeland, Polk County and across Central Florida come to us at different points. We start by learning what happened to you. Then we map every step ahead.',
-  stages = defaultStages,
-}) => {
+const LegalAssistanceSection = () => {
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#0B1829] text-white overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            How Our Asylum Lawyer Helps With Your Case?
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            {description}
+            Your asylum case moves through several stages. Each one has its own forms and deadlines. Clients from Lakeland, Polk County and across Central Florida come to us at different points. We start by learning what happened to you. Then we map every step ahead.
           </p>
         </div>
 
-        {/* 6 Stages Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {stages.map((item, idx) => (
             <motion.div
-              key={idx}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -92,4 +82,3 @@ const LegalAssistanceSection = ({
 };
 
 export default LegalAssistanceSection;
-

@@ -5,7 +5,7 @@ import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultComparison = [
+const comparison = [
   {
     factor: 'Legal standard',
     asylum: 'Well founded fear of persecution',
@@ -60,44 +60,33 @@ const assessmentBullets = [
   'We recommend the strongest combination of claims for your specific case.',
 ];
 
-const ReliefOptionsSection = ({
-  tagline = 'ALTERNATIVE FORMS OF PROTECTION',
-  title = 'Asylum vs. Withholding of Removal and Convention Against Torture Protection',
-  description = "Asylum isn't the only way to escape deportation to a dangerous country. Withholding of removal and protection under the Convention Against Torture are alternative types of relief, with a separate and distinct legal standard for each. Our lawyer considered all three options together, because one case often is eligible for more than one form of relief.",
-  comparison = defaultComparison,
-  assessmentPoints = assessmentBullets,
-}) => {
+const ReliefOptionsSection = () => {
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#030914] text-white overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        {/* Header */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            Asylum vs. Withholding of Removal and Convention Against Torture Protection
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            {description}
+            Asylum isn&apos;t the only way to escape deportation to a dangerous country. Withholding of removal and protection under the Convention Against Torture are alternative types of relief, with a separate and distinct legal standard for each. Our lawyer considered all three options together, because one case often is eligible for more than one form of relief.
           </p>
         </div>
 
-        {/* 3-Way Relief Comparison Table */}
-        <div className="overflow-x-auto rounded-2xl border border-slate-700/60 bg-[#091424] shadow-2xl mb-16">
+        <div className="hidden md:block overflow-x-auto rounded-2xl border border-slate-700/60 bg-[#091424] shadow-2xl mb-16">
           <table className="w-full text-left border-collapse min-w-[700px]">
             <thead>
               <tr className="border-b border-slate-700 bg-slate-900/80">
                 <th className="py-4 px-6 text-sm sm:text-base font-bold text-white w-1/4">Factor</th>
                 <th className="py-4 px-6 text-sm sm:text-base font-bold text-red-400 w-1/4">Asylum</th>
                 <th className="py-4 px-6 text-sm sm:text-base font-bold text-slate-300 w-1/4">Withholding of Removal</th>
-                <th className="py-4 px-6 text-sm sm:text-base font-bold text-slate-300 w-1/4">Convention Against Torture</th>
+                <th className="py-4 px-6 text-sm sm:text-base font-bold text-slate-300 w-1/4">Convention Against Torture (CAT)</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/80">
-              {comparison.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-800/40 transition-colors">
+              {comparison.map((row) => (
+                <tr key={row.factor} className="hover:bg-slate-800/40 transition-colors">
                   <td className="py-4 px-6 text-sm sm:text-base font-semibold text-white">
                     {row.factor}
                   </td>
@@ -116,7 +105,24 @@ const ReliefOptionsSection = ({
           </table>
         </div>
 
-        {/* How Our Immigration Attorney Assesses Possible Forms of Protection */}
+        <div className="grid grid-cols-1 gap-4 md:hidden mb-12">
+          {comparison.map((row, idx) => (
+            <motion.div
+              key={row.factor}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: idx * 0.04 }}
+              className="bg-[#091424] border border-slate-800 rounded-xl p-5 space-y-2.5"
+            >
+              <div className={`text-base font-bold text-white ${bitter.className}`}>{row.factor}</div>
+              <div className="text-xs text-red-400 font-semibold">Asylum: <span className="text-slate-200 font-normal">{row.asylum}</span></div>
+              <div className="text-xs text-slate-400 font-semibold">Withholding of Removal: <span className="text-slate-300 font-normal">{row.withholding}</span></div>
+              <div className="text-xs text-slate-400 font-semibold">Convention Against Torture (CAT): <span className="text-slate-300 font-normal">{row.cat}</span></div>
+            </motion.div>
+          ))}
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -125,21 +131,15 @@ const ReliefOptionsSection = ({
           className="bg-gradient-to-br from-[#0c1a2e] to-[#081220] border border-slate-700/80 rounded-2xl p-6 sm:p-10 shadow-xl"
         >
           <div className="max-w-3xl mb-8">
-            <span className="text-red-500 font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">
-              COMPREHENSIVE CASE EVALUATION
-            </span>
             <h3 className={`text-2xl sm:text-3xl font-bold text-white mb-3 ${bitter.className}`}>
               How Our Immigration Attorney Assesses Possible Forms of Protection
             </h3>
-            <p className="text-slate-300 text-base leading-relaxed">
-              Applying for protection involves life changing decisions. Trip Law approaches every case with careful analysis:
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-            {assessmentPoints.map((point, idx) => (
+            {assessmentBullets.map((point, idx) => (
               <div
-                key={idx}
+                key={point}
                 className="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-red-700/40 transition-colors"
               >
                 <div className="w-8 h-8 rounded-full bg-red-900/50 border border-red-700/60 flex items-center justify-center shrink-0 mt-0.5 text-red-400 font-bold text-sm">
@@ -158,4 +158,3 @@ const ReliefOptionsSection = ({
 };
 
 export default ReliefOptionsSection;
-

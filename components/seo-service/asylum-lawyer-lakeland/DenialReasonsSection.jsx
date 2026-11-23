@@ -1,13 +1,13 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
+import { ASYLUM_IMAGE_METADATA } from './asylumImagesMeta';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultReasons = [
+const reasons = [
   {
     title: 'Incomplete Forms',
     desc: 'The USCIS will also reject the Form I 589 if it is missing a signature, a question or a sure section. This rejection happens at the intake part of the procedure without review by the officer. The form is returned to the claimant, essentially at a loss of time, but the date filed remains intact if it is corrected immediately. All fields are double checked before case submission.',
@@ -34,48 +34,39 @@ const defaultReasons = [
   },
 ];
 
-const DenialReasonsSection = ({
-  badgeText = 'REJECTION & DENIAL RISKS',
-  title = 'Why Asylum Applications Get Rejected, Denied or Referred to Court',
-  description = 'Rejection means your case has been sent back to you by USCIS without processing. A denial means the case has been looked at by an officer or a judge and has been denied for merit. A referral means USCIS has denied your case and will refer your case for an immigration court hearing. Which steps to take next depend on the outcome and should be planned around the risk in your case.',
-  reasons = defaultReasons,
-  bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/denial-reasons-bg.png',
-}) => {
+const DenialReasonsSection = () => {
+  const { documentsDenialBg } = ASYLUM_IMAGE_METADATA;
+
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#F8FAFC] text-slate-800 overflow-hidden">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <Image
-          src={bgImage}
-          alt="Asylum Denial and Rejection Reasons Background"
+          src={documentsDenialBg.src}
+          alt={documentsDenialBg.alt}
+          title={documentsDenialBg.title}
           fill
           sizes="100vw"
-          quality={90}
-          className="object-cover object-center opacity-10"
+          quality={80}
+          className="object-cover object-center opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#F8FAFC]/90 via-[#F8FAFC]/95 to-[#F8FAFC]" />
+        <div className="absolute inset-0 bg-slate-50/75" />
       </div>
 
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {badgeText}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            Why Asylum Applications Get Rejected, Denied or Referred to Court
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            {description}
+            Rejection means your case has been sent back to you by USCIS without processing. A denial means the case has been looked at by an officer or a judge and has been denied for merit. A referral means USCIS has denied your case and will refer your case for an immigration court hearing. Which steps to take next depend on the outcome and should be planned around the risk in your case.
           </p>
         </div>
 
-        {/* 6 Reasons Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {reasons.map((item, idx) => (
             <motion.div
-              key={idx}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -96,21 +87,9 @@ const DenialReasonsSection = ({
             </motion.div>
           ))}
         </div>
-
-        {/* Protection Note */}
-        <div className="mt-12 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-md text-center max-w-4xl mx-auto">
-          <p className="text-slate-700 text-base leading-relaxed">
-            Prevent critical errors before filing. Our experienced{' '}
-            <Link href="/asylum-lawyer-lakeland" className="text-red-700 font-semibold hover:underline">
-              asylum lawyer in Lakeland
-            </Link>{' '}
-            rigorously cross-checks every date, declaration statement, and piece of country evidence to protect your case.
-          </p>
-        </div>
       </div>
     </section>
   );
 };
 
 export default DenialReasonsSection;
-

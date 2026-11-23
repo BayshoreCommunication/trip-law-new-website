@@ -19,6 +19,7 @@ import TestimonialsSection from './TestimonialsSection';
 import PracticeAreasCitiesSection from './PracticeAreasCitiesSection';
 import FinalCtaSection from './FinalCtaSection';
 import FaqSection from './FaqSection';
+import { ASYLUM_IMAGE_METADATA } from './asylumImagesMeta';
 
 export {
   HeroSection,
@@ -42,7 +43,7 @@ export {
   PracticeAreasCitiesSection,
   FinalCtaSection,
   FaqSection,
+  ASYLUM_IMAGE_METADATA,
 };
 
 export default HeroSection;
-

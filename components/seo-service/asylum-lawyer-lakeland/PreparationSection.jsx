@@ -5,7 +5,7 @@ import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultPrepCards = [
+const prepCards = [
   {
     title: 'Apply for Affirmative Asylum when',
     bullets: [
@@ -28,34 +28,24 @@ const defaultPrepCards = [
   },
 ];
 
-const PreparationSection = ({
-  tagline = 'AFFIRMATIVE VS DEFENSIVE',
-  title = 'When to Apply Affirmative vs. Defensive Asylum Processes',
-  description = 'There are two ways to apply for asylum. The way depends on your current status. In case there is no removal proceeding, you submit your application to USCIS. In case the removal proceeding starts, your application goes to the immigration judge. We check your current status and then apply for asylum in one way or another.',
-  cards = defaultPrepCards,
-}) => {
+const PreparationSection = () => {
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#F8FAFC] text-slate-800 overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            When to Apply Affirmative vs. Defensive Asylum Processes
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            {description}
+            There are two ways to apply for asylum. The way depends on your current status. In case there is no removal proceeding, you submit your application to USCIS. In case the removal proceeding starts, your application goes to the immigration judge. We check your current status and then apply for asylum in one way or another.
           </p>
         </div>
 
-        {/* 2 Process Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {cards.map((item, idx) => (
+          {prepCards.map((item, idx) => (
             <motion.div
-              key={idx}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -71,8 +61,8 @@ const PreparationSection = ({
                 </h3>
                 <div className="h-[2px] w-12 bg-red-700 rounded-full mb-5" />
                 <ul className="flex flex-col gap-3">
-                  {item.bullets.map((bullet, bIdx) => (
-                    <li key={bIdx} className="flex items-start gap-2.5">
+                  {item.bullets.map((bullet) => (
+                    <li key={bullet} className="flex items-start gap-2.5">
                       <span className="text-red-700 font-bold mt-0.5">•</span>
                       <span className="text-slate-700 text-sm sm:text-base leading-relaxed">
                         {bullet}
@@ -90,4 +80,3 @@ const PreparationSection = ({
 };
 
 export default PreparationSection;
-

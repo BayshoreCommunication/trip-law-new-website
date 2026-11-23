@@ -3,10 +3,11 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
+import { ASYLUM_IMAGE_METADATA } from './asylumImagesMeta';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultEvidence = [
+const evidenceItems = [
   {
     title: 'Personal Declaration and Timeline of Events',
     desc: "The personal statement or declaration, is a first hand account of the applicant's story, told in your own words. It should be written in order of events and starts with life in the home country and ends with the date of leaving. Names, places, dates and details of the people who were caused to suffer injury or threat must all be included. Immigration officers compare the statement with the applicant's interview and every detail must match up. We helped with this and double checked the dates against everything else.",
@@ -33,48 +34,39 @@ const defaultEvidence = [
   },
 ];
 
-const DocumentsSection = ({
-  tagline = 'EVIDENCE CHECKLIST',
-  title = 'What Evidence Can Support an Asylum Application?',
-  description = 'USCIS and immigration judges will compare your story with the documents confirming it. Our team will help you to collect records from your home country, from the USA and from third parties. Each piece of evidence will be categorized according to its relevance to your claim.',
-  evidenceItems = defaultEvidence,
-  bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/documents-bg.png',
-}) => {
+const DocumentsSection = () => {
+  const { documentsDenialBg } = ASYLUM_IMAGE_METADATA;
+
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#F8FAFC] text-slate-800 overflow-hidden">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <Image
-          src={bgImage}
-          alt="Asylum Evidence Background"
+          src={documentsDenialBg.src}
+          alt={documentsDenialBg.alt}
+          title={documentsDenialBg.title}
           fill
           sizes="100vw"
-          quality={90}
-          className="object-cover object-center opacity-10"
+          quality={80}
+          className="object-cover object-center opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#F8FAFC]/90 via-[#F8FAFC]/95 to-[#F8FAFC]" />
+        <div className="absolute inset-0 bg-slate-50/70" />
       </div>
 
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {title}
+            What Evidence Can Support an Asylum Application?
           </h2>
           <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            {description}
+            USCIS and immigration judges will compare your story with the documents confirming it. Our team will help you to collect records from your home country, from the USA and from third parties. Each piece of evidence will be categorized according to its relevance to your claim.
           </p>
         </div>
 
-        {/* Evidence Grid (6 Cards) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {evidenceItems.map((item, idx) => (
             <motion.div
-              key={idx}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -101,4 +93,3 @@ const DocumentsSection = ({
 };
 
 export default DocumentsSection;
-
