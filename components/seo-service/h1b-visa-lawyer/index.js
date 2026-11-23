@@ -5,17 +5,19 @@ import DocumentsSection from './DocumentsSection';
 import HighRiskCasesSection from './HighRiskCasesSection';
 import DenialReasonsSection from './DenialReasonsSection';
 import ProcessTimelineSection from './ProcessTimelineSection';
-import PreparationSection from './PreparationSection';
+import ProvenProcessSection from './ProvenProcessSection';
 import BenefitsSection from './BenefitsSection';
+import PreparationSection from './PreparationSection';
 import FeesWaiverSection from './FeesWaiverSection';
 import WhyChooseUsSection from './WhyChooseUsSection';
+import IndustryServicesSection from './IndustryServicesSection';
+import ExpectationsTimelineSection from './ExpectationsTimelineSection';
 import ComparisonSection from './ComparisonSection';
-import ProvenProcessSection from './ProvenProcessSection';
-import TestimonialsSection from './TestimonialsSection';
 import PracticeAreasCitiesSection from './PracticeAreasCitiesSection';
+import TestimonialsSection from './TestimonialsSection';
 import FinalCtaSection from './FinalCtaSection';
 import FaqSection from './FaqSection';
-import IndustryServicesSection from './IndustryServicesSection';
+import { H1B_IMAGE_METADATA } from './h1bImagesMeta';
 
 export {
   HeroSection,
@@ -25,17 +27,19 @@ export {
   HighRiskCasesSection,
   DenialReasonsSection,
   ProcessTimelineSection,
-  PreparationSection,
+  ProvenProcessSection,
   BenefitsSection,
+  PreparationSection,
   FeesWaiverSection,
   WhyChooseUsSection,
+  IndustryServicesSection,
+  ExpectationsTimelineSection,
   ComparisonSection,
-  ProvenProcessSection,
-  TestimonialsSection,
   PracticeAreasCitiesSection,
+  TestimonialsSection,
   FinalCtaSection,
   FaqSection,
-  IndustryServicesSection,
+  H1B_IMAGE_METADATA,
 };
 
 export default HeroSection;

@@ -3,10 +3,11 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
+import { H1B_IMAGE_METADATA } from './h1bImagesMeta';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const defaultDocuments = [
+const employerDocuments = [
   {
     title: 'EIN Confirmation Letter',
     desc: 'Every filing starts with proof the company exists. The IRS letter does that job. Keep the original on file, because USCIS asks for it again on renewals.',
@@ -43,6 +44,9 @@ const defaultDocuments = [
     title: 'Recruitment Records for H1B Dependent Employers',
     desc: 'Employers that rely heavily on H1B must show they tried to hire Americans first. Job postings, applicant lists and reasons for rejection prove that effort. Keep them ready, since audits can arrive years later.',
   },
+];
+
+const workerDocuments = [
   {
     title: 'Passport Copy and Current Immigration Papers',
     desc: 'Your passport proves who you are. Your I 94, I 20 or EAD shows where your status stands today. Copy every page with a stamp or visa.',
@@ -73,68 +77,114 @@ const defaultDocuments = [
   },
 ];
 
-const DocumentsSection = ({
-  tagline = 'APPLICATION CHECKLIST',
-  titlePrefix = 'Which Documents You Need for an ',
-  titleHighlight = 'H1B Visa Application',
-  description = 'Organized documents make the petition easier to review and harder to challenge. We collect documents from the employer and the worker before filing.',
-  bgImage = '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/documents-bg.png',
-  documents = defaultDocuments,
-}) => {
+const DocumentsSection = () => {
+  const { subtleWatermarkBg, documentsChecklist } = H1B_IMAGE_METADATA;
+
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#F8FAFC] text-slate-800 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <Image
-          src={bgImage}
-          alt="Documents Section Background"
+          src={subtleWatermarkBg.src}
+          alt={subtleWatermarkBg.alt}
+          title={subtleWatermarkBg.title}
           fill
           sizes="100vw"
-          quality={90}
+          quality={80}
           className="object-cover object-center opacity-40"
         />
         <div className="absolute inset-0 bg-slate-50/70" />
       </div>
 
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
-            {tagline}
-          </span>
-          <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
-            {titlePrefix}
-            <span className="text-red-700">{titleHighlight}</span>
-          </h2>
-          <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
-          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            {description}
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-14">
+          <div className="lg:col-span-7 flex flex-col items-start text-left">
+            <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
+              Documents Required for H1B Application
+            </h2>
+            <div className="h-[3px] w-20 bg-red-700 rounded-full mb-6" />
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+              A petition can become difficult even when the worker and position appear eligible. Missing records, inconsistent information and weak evidence can force USCIS to ask for more.
+            </p>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-slate-200 shadow-xl">
+              <Image
+                src={documentsChecklist.src}
+                alt={documentsChecklist.alt}
+                title={documentsChecklist.title}
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                quality={85}
+                className="object-cover object-center"
+              />
+            </div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {documents.map((doc, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: (idx % 6) * 0.08 }}
-              className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-red-700/10 border border-red-700/30 flex items-center justify-center text-red-700 font-bold">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
+        {/* Employer Documents */}
+        <div className="mb-14">
+          <h3 className={`text-xl sm:text-2xl md:text-3xl font-bold text-[#0B1829] mb-6 ${bitter.className}`}>
+            Documents Employer Needs to Gather
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {employerDocuments.map((doc, idx) => (
+              <motion.div
+                key={doc.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: (idx % 3) * 0.08 }}
+                className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-red-700/10 border border-red-700/30 flex items-center justify-center text-red-700 font-bold flex-shrink-0">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h4 className={`text-base sm:text-lg font-bold text-[#0B1829] leading-snug ${bitter.className}`}>
+                    {doc.title}
+                  </h4>
                 </div>
-                <h3 className={`text-base sm:text-lg font-bold text-[#0B1829] leading-snug ${bitter.className}`}>
-                  {doc.title}
-                </h3>
-              </div>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                {doc.desc}
-              </p>
-            </motion.div>
-          ))}
+                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  {doc.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Worker Documents */}
+        <div>
+          <h3 className={`text-xl sm:text-2xl md:text-3xl font-bold text-[#0B1829] mb-6 ${bitter.className}`}>
+            Documents Workers Needs to Gather
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {workerDocuments.map((doc, idx) => (
+              <motion.div
+                key={doc.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: (idx % 3) * 0.08 }}
+                className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-red-700/10 border border-red-700/30 flex items-center justify-center text-red-700 font-bold flex-shrink-0">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h4 className={`text-base sm:text-lg font-bold text-[#0B1829] leading-snug ${bitter.className}`}>
+                    {doc.title}
+                  </h4>
+                </div>
+                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  {doc.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

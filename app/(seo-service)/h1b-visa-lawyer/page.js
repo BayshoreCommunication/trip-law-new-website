@@ -6,37 +6,73 @@ import {
   HighRiskCasesSection,
   DenialReasonsSection,
   ProcessTimelineSection,
-  PreparationSection,
+  ProvenProcessSection,
   BenefitsSection,
+  PreparationSection,
   FeesWaiverSection,
   WhyChooseUsSection,
+  IndustryServicesSection,
+  ExpectationsTimelineSection,
   ComparisonSection,
-  ProvenProcessSection,
-  TestimonialsSection,
   PracticeAreasCitiesSection,
+  TestimonialsSection,
   FinalCtaSection,
   FaqSection,
+  H1B_IMAGE_METADATA,
 } from '@/components/seo-service/h1b-visa-lawyer';
 
+const CANONICAL_URL = 'https://www.trip-law.com/h1b-visa-lawyer';
+const META_TITLE = 'H1B Visa Lawyer for Employers and Foreign Workers';
+const META_DESCRIPTION =
+  'Trip Law offers H1B visa consulting for employers, foreign workers and dependents. Get petition guidance across industries and occupations.';
+
+const {
+  heroFeature,
+  heroBg,
+  documentsChecklist,
+  subtleWatermarkBg,
+  attorneyConsultation,
+  ctaOfficeBg,
+} = H1B_IMAGE_METADATA;
+
+const schemaImages = [
+  ['#hero-image', heroFeature],
+  ['#documents-image', documentsChecklist],
+  ['#cta-attorney-image', attorneyConsultation],
+  ['#courthouse-bg-image', heroBg],
+  ['#watermark-bg-image', subtleWatermarkBg],
+  ['#cta-office-bg-image', ctaOfficeBg],
+].map(([fragment, imgMeta]) => ({
+  '@type': 'ImageObject',
+  '@id': `${CANONICAL_URL}${fragment}`,
+  contentUrl: `https://www.trip-law.com${imgMeta.src}`,
+  url: `https://www.trip-law.com${imgMeta.src}`,
+  name: imgMeta.title,
+  caption: imgMeta.alt,
+  description: imgMeta.description,
+  width: imgMeta.width,
+  height: imgMeta.height,
+  encodingFormat: 'image/webp',
+}));
+
 export const metadata = {
-  title: 'H1B Visa Lawyer for Employers and Foreign Workers',
-  description:
-    'Trip Law offers H1B visa consulting for employers, foreign workers and dependents. Get petition guidance across industries and occupations.',
+  title: META_TITLE,
+  description: META_DESCRIPTION,
   alternates: {
-    canonical: '/h1b-visa-lawyer',
+    canonical: CANONICAL_URL,
   },
   openGraph: {
-    title: 'H1B Visa Lawyer for Employers and Foreign Workers',
-    description:
-      'Trip Law offers H1B visa consulting for employers, foreign workers and dependents. Get petition guidance across industries and occupations.',
-    url: '/h1b-visa-lawyer',
-    siteName: 'Trip Law Immigration Law Firm',
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+    url: CANONICAL_URL,
+    siteName: 'Trip Law',
     images: [
       {
-        url: '/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png',
-        width: 1200,
-        height: 630,
-        alt: 'H1B Visa Lawyer for Employment Based Immigration at Trip Law',
+        url: `https://www.trip-law.com${heroFeature.src}`,
+        width: heroFeature.width,
+        height: heroFeature.height,
+        alt: heroFeature.alt,
+        type: 'image/webp',
       },
     ],
     locale: 'en_US',
@@ -44,10 +80,16 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'H1B Visa Lawyer for Employers and Foreign Workers',
-    description:
-      'Trip Law offers H1B visa consulting for employers, foreign workers and dependents. Get petition guidance across industries and occupations.',
-    images: ['/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png'],
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+    images: [
+      {
+        url: `https://www.trip-law.com${heroFeature.src}`,
+        width: heroFeature.width,
+        height: heroFeature.height,
+        alt: heroFeature.alt,
+      },
+    ],
   },
   robots: {
     index: true,
@@ -60,138 +102,180 @@ export const metadata = {
   },
 };
 
+const h1bSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${CANONICAL_URL}#breadcrumb`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://www.trip-law.com/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'H1B Visa Lawyer for Employment Based Immigration',
+          item: CANONICAL_URL,
+        },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${CANONICAL_URL}#webpage`,
+      url: CANONICAL_URL,
+      name: META_TITLE,
+      description: META_DESCRIPTION,
+      inLanguage: 'en-US',
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': 'https://www.trip-law.com/#website',
+        url: 'https://www.trip-law.com/',
+        name: 'Trip Law',
+      },
+      mainEntity: {
+        '@id': `${CANONICAL_URL}#legalservice`,
+      },
+      primaryImageOfPage: {
+        '@id': `${CANONICAL_URL}#hero-image`,
+      },
+      breadcrumb: {
+        '@id': `${CANONICAL_URL}#breadcrumb`,
+      },
+    },
+    {
+      '@type': ['LegalService', 'Attorney'],
+      '@id': `${CANONICAL_URL}#legalservice`,
+      name: 'Trip Law',
+      url: CANONICAL_URL,
+      telephone: '+1-863-599-6735',
+      email: 'info@triplaw.com',
+      image: [
+        `https://www.trip-law.com${heroFeature.src}`,
+        `https://www.trip-law.com${attorneyConsultation.src}`,
+      ],
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '1820 Florida Ave S, Ste. C',
+        addressLocality: 'Lakeland',
+        addressRegion: 'FL',
+        postalCode: '33803',
+        addressCountry: 'US',
+      },
+      founder: {
+        '@type': 'Person',
+        name: 'Hardam Tripathi',
+      },
+      serviceType: 'H1B Visa Lawyer for Employment Based Immigration',
+      areaServed: {
+        '@type': 'Country',
+        name: 'United States',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.4',
+        reviewCount: '62',
+        bestRating: '5',
+        worstRating: '1',
+      },
+    },
+    ...schemaImages,
+    {
+      '@type': 'FAQPage',
+      '@id': `${CANONICAL_URL}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Can I change employers while on H1B?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: "Yes, AC21 portability lets you begin work once USCIS receives the new employer's petition. Your H1B status must be valid when the new petition is filed. Workers already counted against the cap skip the lottery when they change employers.",
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long can I stay in H1B status?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Six years in total, granted in increments of up to three years. Extensions beyond six years exist when a green card case is underway. Time spent outside the United States can be recaptured and added back later.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does H1B lead to a green card?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'H1B allows dual intent, so your employer can sponsor you while you work. Most cases run through PERM labor certification, an I 140 petition and adjustment of status. Wait times depend on your country of birth and your job category.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can my family come with me on H1B?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Spouses and unmarried children under age 21 qualify for H 4 dependent status. Children can attend school in the United States while the worker holds status. Some spouses qualify for work authorization after an I 140 approval or AC21 extension.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long is my H1B valid after approval?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'The I 797 shows your approved period, up to three years per petition. The visa stamp may differ in length because reciprocity rules vary by country. Your I 797 dates control how long you can work for the sponsoring employer.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can I work for two employers on H1B?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, you can work for two employers when each files a separate petition. Both petitions must disclose the other job and describe clearly distinct duties. Cap subject concurrent cases need careful timing because registration and selection rules still apply.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can I switch from F 1 to H1B?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, a selected registration lets the employer request a change of status here. Cap gap rules can extend your work authorization while the petition is pending.',
+          },
+        },
+      ],
+    },
+  ],
+};
+
 export default function H1bVisaLawyerPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <HeroSection
-        locationTitle="H1B VISA LAWYER IN FLORIDA"
-        mainHeading="H1B Visa Lawyer for Employment Based Immigration"
-        description="Every year more than 450,000 H1B petitions reach USCIS. Unfortunately about 3% of first time petitions get denied or rejected due to missing information or wrong fees like mistakes. On top of that, since July 10, 2026, a bad signature can cost you the whole fee. But when you hire an h1b visa lawyer, you reduce the chances of being on that denied list and get a better chance to be in the 85,000 visa cap. We make your filings a lot easier because we do the form work on your behalf. We represent both employers and foreign workers. We review eligibility, RFE response, approval and post approval support."
-        ctaText="Book a consultation today and we'll review your case within 24 hours."
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
-        consultationLink="/appointment"
-        consultationText="SCHEDULE CONSULTATION"
-        eligibilityLink="tel:(863)-599-6735"
-        eligibilityText="(863)-599-6735"
-        experienceYears={15}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(h1bSchema) }}
       />
-
-      <EligibilitySection
-        title="H1B Visa Requirements: Do You Qualify?"
-        description="Have you met every H1B requirement USCIS checks before it approves a petition? USCIS reviews the job, the degree, the wage and the employer behind the offer. Our h1b visa lawyer tests each requirement early, then builds the petition around them."
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/eligibility-bg.png"
-      />
-
-      <PathwaysSection
-        tagline="H1B VISA PROCESS STAGES"
-        title="How the H1B Visa Process Works"
-        subtitle1="An h1b case moves through 5 stages. Each stage has a different purpose. An error early in the process can create problems later."
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/pathways-bg.png"
-      />
-
-      <DocumentsSection
-        tagline="APPLICATION CHECKLIST"
-        titlePrefix="Which Documents You Need for an "
-        titleHighlight="H1B Visa Application"
-        description="Organized documents make the petition easier to review and harder to challenge. We collect documents from the employer and the worker before filing."
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/documents-bg.png"
-      />
-
-      <HighRiskCasesSection
-        badgeText="COMPLEX CASES WE HANDLE"
-        title="Complex H1B Cases We Handle"
-        description="Some H 1B cases are difficult. It’s because the employment structure, business history, prior immigration record or worker profile creates questions. Our h1b immigration lawyer Hardam Tripathi plans around each one from the first consultation."
-      />
-
-      <DenialReasonsSection
-        badgeText="H1B RISKS & PREVENTABLE MISTAKES"
-        title="Why H1B Applications Get Denied or Delayed"
-        description="One common problem we found is that petitions contain three different versions of the same job. It happens due to documents prepared separately by HR, the worker and legal counsel. Our h1b visa lawyer Hardam Tripathi screened each case for any problems below."
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/denial-reasons-bg.png"
-      />
-
-      <ProcessTimelineSection
-        badgeText="PROCESS TIMELINE"
-        title="H1B Processing Timeline"
-        subtitle="Timelines shift with USCIS workload, so we confirm current ranges at your consultation."
-      />
-
-      <PreparationSection
-        tagline="FILING DECISION GUIDE"
-        title="When to Apply For H1B Amendment vs. New Petition"
-        description="Changes to the job can require a new filing, so check before you act."
-      />
-
-      <BenefitsSection
-        tagline="H-1B STATUS & NEXT STEPS"
-        title="What to Expect After H1B Approval"
-        description="Approval triggers a short list of decisions about travel, start dates and long term plans."
-      />
-
-      <FeesWaiverSection
-        tagline="USCIS & DOL FEES"
-        title="H1B Costs and Government Fees"
-        description="Government fees depend on employer size and several apply to every petition. However if you have 50 or more employees in the U.S. and hold H 1B or L 1 visas, you owe an extra $4,000 under Public Law 114 113. It applies to initial filings and transfers. Plan for it in your budget before you file."
-      />
-
-      <WhyChooseUsSection
-        tagline="WHY CLIENTS CHOOSE TRIPLAW"
-        title="Why Employers and Foreign Workers Choose Hardam Tripathi as Their H1B Visa Lawyer"
-        description="US companies hire H1B workers in healthcare, technology, engineering, finance and education. Every case depends on the industry, the job and the deadline. We build each filing around those facts."
-      />
-
-      <ComparisonSection
-        title="Trip Law vs. Other Legal Firms"
-        subtitle="Compare your options on the points below, because each one affects the outcome."
-      />
-
-      <ProvenProcessSection
-        tagline="ATTORNEY-GUIDED PROCESS"
-        title="How Trip Law Handles Your H1B Case From Start to Finish"
-        description="We run every H1B case through seven steps, each with a clear deliverable."
-      />
-
-      <TestimonialsSection
-        tagline="LICENSED ATTORNEY ON EVERY CASE"
-        title="Trip Law Puts a Licensed Attorney on Every Florida Work Visa Case"
-        description="Trip Law maintains an unyielding commitment to direct legal supervision across all client cases. Lead Attorney Hardam Tripathi brings extensive legal experience gained within federal agencies. His qualifications include a Juris Doctorate, Policy Masters and Business Marketing degrees. Prior government service provides unique insight into federal regulatory compliance and enforcement practices. Assigning dedicated attorneys ensures accurate preparation and detailed evidence review for every petition. Florida businesses and foreign workers benefit from institutional legal knowledge and relentless advocacy."
-        testimonialsTitle="What Employers and Workers Say About Trip Law"
-      />
-
-      <PracticeAreasCitiesSection
-        tagline="PRACTICE AREAS & LOCATIONS"
-        title="Other Employment Visa Categories We Handle"
-        description="Comprehensive legal services. Statewide representation. Local knowledge you can trust."
-        address="1820 Florida Ave S, Ste. C, Lakeland, FL 33803"
-        phone="(863) 599 6735"
-        email="info@trip-law.com"
-      />
-
-      <FinalCtaSection
-        tagline="GET STARTED TODAY"
-        title="Start Your H1B Case With an Immigration Lawyer Today"
-        description="Employers can schedule a strategy call to plan registration, wage levels and filing dates. Workers can request an eligibility assessment covering status, travel, family and green card options. Call (863) 599 6735 or use the form and we'll respond within 24 Hours."
-        phone="(863)-599-6735"
-        email="info@trip-law.com"
-        website="www.trip-law.com"
-        address="1820 Florida Ave S, Ste. C, Lakeland, FL 33803"
-        consultationLink="/appointment"
-        employerBtnText="Schedule an Employer Strategy Call"
-        workerBtnText="Request a Worker Eligibility Assessment"
-        workerBtnLink="/appointment"
-        rightImage="/assets/seo-service/trip-law.jpeg"
-        rightImageAlt="Start Your H1B Process With Trip Law Today"
-        rightImageTitle="Start Your H1B Process With Trip Law Today"
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/cta-bg.png"
-      />
-
-      <FaqSection
-        tagline="H1B VISA LAWYER"
-        title="Frequently Asked Questions"
-        description="Answers to common questions about H1B specialty occupation visas, cap registration, job portability, and green card pathways."
-        consultationLink="/appointment"
-        bgImage="/assets/seo-service/immigration-lawyer-for-citizenship-lakeland/hero-bg.png"
-      />
-    </main>
+      <main className="min-h-screen bg-white">
+        <HeroSection />
+        <EligibilitySection />
+        <PathwaysSection />
+        <DocumentsSection />
+        <HighRiskCasesSection />
+        <DenialReasonsSection />
+        <ProcessTimelineSection />
+        <ProvenProcessSection />
+        <BenefitsSection />
+        <PreparationSection />
+        <FeesWaiverSection />
+        <WhyChooseUsSection />
+        <IndustryServicesSection />
+        <ExpectationsTimelineSection />
+        <ComparisonSection />
+        <PracticeAreasCitiesSection />
+        <TestimonialsSection />
+        <FinalCtaSection />
+        <FaqSection />
+      </main>
+    </>
   );
 }

@@ -1,139 +1,104 @@
 'use client';
 import React from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Bitter } from 'next/font/google';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
-const practiceAreas = [
-  { name: 'Green Card', href: '/immigration-lawyer-lakeland-fl' },
-  { name: 'Green Card Through Marriage', href: '/immigration-lawyer-for-marriage-based-green-card' },
-  { name: 'Green Card Through Immediate Relative' },
-  { name: 'Green Card Through Consular Processing' },
-  { name: 'Naturalization & Citizenship', href: '/immigration-lawyer-for-citizenship-lakeland' },
-  { name: 'H1B Visa', href: '/h1b-visa-lawyer' },
-  { name: 'L-1 Visa (Intracompany transfer)', href: '/immigration-lawyer-for-l1-visa' },
-  { name: 'O-1 Visa (Extraordinary ability)', href: '/immigration-lawyer-for-o1-visa' },
-  { name: 'EB-1 Visa', href: '/eb1-visa-lawyer-florida' },
-  { name: 'EB-2 Visa', href: '/eb2-green-card-lawyer' },
-  { name: 'EB-3 Visa', href: '/eb3-visa-lawyer' },
-  { name: 'E2 Treaty Visa', href: '/e2-visa-lawyer-florida' },
-  { name: 'PERM labor certification and I 140 petitions' },
-  { name: 'TN for Canadian and Mexican professionals under USMCA' },
-  { name: 'U Visa' },
-  { name: 'T Visa' },
-  { name: 'VAWA' },
-  { name: 'Asylum' },
-  { name: 'Bond Hearing' },
-  { name: 'Master Calendar Hearing' },
-  { name: 'Individual Hearing' },
-  { name: 'Waivers' },
-  { name: 'DUI Defense', href: '/lakeland-dui-defense-lawyer' },
+const employmentCategories = [
+  'L 1 (Intracompany transfer)',
+  'O 1 (Extraordinary ability)',
+  'EB 1, EB 2, EB 3 (Employment based green cards)',
+  'E 2 Treaty Investor',
+  'PERM labor certification and I 140 petitions',
+  'TN for Canadian and Mexican professionals under USMCA',
 ];
 
-const PracticeAreasCitiesSection = ({
-  tagline = 'PRACTICE AREAS & LOCATIONS',
-  title = 'Other Employment Visa Categories We Handle',
-  description = 'Comprehensive legal services. Statewide representation. Local knowledge you can trust.',
-  address = '1820 Florida Ave S, Ste. C, Lakeland, FL 33803',
-  phone = '(863) 599 6735',
-  email = 'info@trip-law.com',
-}) => {
+const PracticeAreasCitiesSection = () => {
   return (
     <section className="relative w-full py-16 lg:py-24 bg-[#FAFBFD] text-slate-800 overflow-hidden">
       <div className="relative z-10 w-full max-w-[1480px] mx-auto px-4 sm:px-6 md:px-10 lg:px-14">
-        
-        {/* Section Top Header */}
+        {/* Part 1: Other Employment Visa Categories We Handle */}
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="flex flex-col items-center text-center mb-14 sm:mb-16"
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="mb-16 sm:mb-20"
         >
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-red-700 font-bold text-xs sm:text-sm tracking-widest uppercase">
-              {tagline}
-            </span>
-            <div className="h-[2px] w-12 bg-red-700 rounded-full" />
+          <div className="flex flex-col items-center text-center mb-10 sm:mb-12">
+            <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight max-w-4xl leading-[1.2] mb-4 ${bitter.className}`}>
+              Other Employment Visa Categories We Handle
+            </h2>
+            <div className="h-[3px] w-20 bg-red-700 rounded-full" />
           </div>
 
-          <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1829] tracking-tight max-w-4xl leading-[1.18] mb-4 ${bitter.className}`}>
-            {title}
-          </h2>
-
-          <p className="text-slate-600 text-base sm:text-lg font-normal max-w-2xl leading-relaxed">
-            {description}
-          </p>
+          <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {employmentCategories.map((category) => (
+                <div
+                  key={category}
+                  className="flex items-center gap-3 p-3.5 sm:p-4 rounded-xl bg-slate-50 border border-slate-100"
+                >
+                  <div className="w-6 h-6 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-sm sm:text-base font-medium text-slate-700 leading-snug">
+                    {category}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
 
-        {/* Office Location & Practice Areas Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
-          
-          {/* Left Column: Practice Areas Grid (7 cols) */}
+        {/* Part 2: Our Office Location (Left: Map, Right: Location) */}
+        <div>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: -15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200 flex flex-col justify-between order-2 lg:order-1"
+            className="flex flex-col items-center text-center mb-10 sm:mb-12"
           >
-            <div>
-              <h3 className={`text-xl sm:text-2xl font-bold text-[#0B1829] mb-6 flex items-center gap-3 ${bitter.className}`}>
-                <span className="w-2.5 h-6 bg-red-700 rounded-full inline-block flex-shrink-0" />
-                Immigration Cases We Handle Across Lakeland, FL
-              </h3>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {practiceAreas.map((area, idx) =>
-                  area.href ? (
-                    <Link
-                      key={idx}
-                      href={area.href}
-                      className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-red-50/50 transition-all duration-200 group"
-                    >
-                      <div className="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:bg-red-700 group-hover:text-white transition-colors">
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="text-xs sm:text-sm font-medium text-slate-700 group-hover:text-red-700 leading-snug">
-                        {area.name}
-                      </span>
-                    </Link>
-                  ) : (
-                    <div
-                      key={idx}
-                      className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100"
-                    >
-                      <div className="w-5 h-5 rounded-full bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0">
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="text-xs sm:text-sm font-medium text-slate-700 leading-snug">
-                        {area.name}
-                      </span>
-                    </div>
-                  )
-                )}
-              </div>
-            </div>
+            <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1829] tracking-tight leading-[1.2] mb-4 ${bitter.className}`}>
+              Our Office Location
+            </h2>
+            <div className="h-[3px] w-20 bg-red-700 rounded-full" />
           </motion.div>
 
-          {/* Right Column: Contact Details Card (5 cols) */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-            className="lg:col-span-5 bg-[#0B1829] text-white rounded-3xl p-6 sm:p-9 shadow-2xl border border-slate-800 flex flex-col justify-between order-1 lg:order-2"
-          >
-            <div>
-              <span className="text-xs font-bold text-red-400 uppercase tracking-widest bg-red-700/20 px-3.5 py-1 rounded-full border border-red-500/30 inline-block mb-4">
-                FLORIDA OFFICE LOCATION
-              </span>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            {/* Left Column: Google Maps Embed Iframe (7 cols) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+              className="lg:col-span-7 rounded-3xl overflow-hidden shadow-2xl border border-slate-200 min-h-[350px] lg:min-h-[420px] relative order-2 lg:order-1"
+            >
+              <iframe
+                title="Trip Law Lakeland Office Location Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.5188612151624!2d-81.95662768493196!3d27.97805598268153!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd396b27e1d5eb%3A0x6b7fa579294e5e41!2s1820%20Florida%20Ave%20S%20ste%20c%2C%20Lakeland%2C%20FL%2033803!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: '380px' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              />
+            </motion.div>
+
+            {/* Right Column: Office Location Details Card (5 cols) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
+              className="lg:col-span-5 bg-[#0B1829] text-white rounded-3xl p-6 sm:p-9 shadow-2xl border border-slate-800 flex flex-col justify-center order-1 lg:order-2"
+            >
               <h3 className={`text-2xl sm:text-3xl font-bold text-white mb-6 ${bitter.className}`}>
                 Lakeland Main Office
               </h3>
@@ -147,8 +112,9 @@ const PracticeAreasCitiesSection = ({
                     </svg>
                   </div>
                   <div>
-                    <div className="font-bold text-white mb-0.5">Address</div>
-                    <p className="text-slate-300 leading-snug">{address}</p>
+                    <p className="text-slate-200 text-base leading-relaxed">
+                      1820 Florida Ave S, Ste. C, Lakeland, FL 33803
+                    </p>
                   </div>
                 </div>
 
@@ -159,10 +125,9 @@ const PracticeAreasCitiesSection = ({
                     </svg>
                   </div>
                   <div>
-                    <div className="font-bold text-white mb-0.5">Phone</div>
-                    <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} className="text-slate-300 hover:text-red-400 transition-colors">
-                      {phone}
-                    </a>
+                    <p className="text-slate-200 text-base leading-relaxed">
+                      Phone: (863) 599 6735
+                    </p>
                   </div>
                 </div>
 
@@ -173,45 +138,21 @@ const PracticeAreasCitiesSection = ({
                     </svg>
                   </div>
                   <div>
-                    <div className="font-bold text-white mb-0.5">Email</div>
-                    <a href={`mailto:${email}`} className="text-slate-300 hover:text-red-400 transition-colors">
-                      {email}
-                    </a>
+                    <p className="text-slate-200 text-base leading-relaxed">
+                      Email:{' '}
+                      <a
+                        href="mailto:info@triplaw.com"
+                        className="text-red-400 hover:underline font-medium"
+                      >
+                        info@triplaw.com
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
-
-              {/* Location Map */}
-              <div className="mt-6 rounded-2xl overflow-hidden border border-slate-700/80 h-[200px] w-full shadow-inner">
-                <iframe
-                  title="Trip Law Lakeland Office Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.5188612151624!2d-81.95662768493196!3d27.97805598268153!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd396b27e1d5eb%3A0x6b7fa579294e5e41!2s1820%20Florida%20Ave%20S%20ste%20c%2C%20Lakeland%2C%20FL%2033803!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="w-full h-full"
-                />
-              </div>
-            </div>
-
-            <div className="pt-6 border-t border-slate-700/80 mt-6">
-              <Link
-                href="/appointment"
-                className="w-full inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-red-700 hover:bg-red-800 text-white font-bold text-sm uppercase rounded-xl transition-colors"
-              >
-                <span>Schedule Office Visit</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </Link>
-            </div>
-          </motion.div>
-
+            </motion.div>
+          </div>
         </div>
-
       </div>
     </section>
   );
