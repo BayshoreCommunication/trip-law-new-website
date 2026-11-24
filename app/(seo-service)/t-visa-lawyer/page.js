@@ -18,6 +18,7 @@ import {
   FaqSection,
   T_VISA_IMAGE_METADATA,
 } from '@/components/seo-service/t-visa-lawyer';
+import ScheduleConsultationCta from '@/components/shared/ScheduleConsultationCta';
 
 const CANONICAL_URL = 'https://www.trip-law.com/t-visa-lawyer';
 const META_TITLE = 'T Visa Lawyer Near Me | Human Trafficking Legal Help';
@@ -218,15 +219,19 @@ export default function TVisaLawyerPage() {
         <EligibilitySection />
         <PathwaysSection />
         <DocumentsSection />
+        <ScheduleConsultationCta />
         <DenialReasonsSection />
         <HighRiskCasesSection />
         <ProcessTimelineSection />
+        <ScheduleConsultationCta />
         <BenefitsSection />
         <PreparationSection />
         <WhyChooseUsSection />
+        <ScheduleConsultationCta />
         <FeesWaiverSection />
         <ProvenProcessSection />
         <ComparisonSection />
+        <ScheduleConsultationCta />
         <PracticeAreasCitiesSection />
         <TestimonialsSection />
         <FinalCtaSection />

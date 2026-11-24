@@ -22,6 +22,7 @@ import {
   FaqSection,
   ASYLUM_IMAGE_METADATA,
 } from '@/components/seo-service/asylum-lawyer-lakeland';
+import ScheduleConsultationCta from '@/components/shared/ScheduleConsultationCta';
 
 const CANONICAL_URL = 'https://www.trip-law.com/asylum-lawyer-lakeland';
 const META_TITLE = 'Asylum Lawyer Lakeland, FL | Trip Law';
@@ -263,18 +264,23 @@ export default function AsylumLawyerLakelandPage() {
         <EligibilitySection />
         <LegalAssistanceSection />
         <PathwaysSection />
+        <ScheduleConsultationCta />
         <DocumentsSection />
         <PreparationSection />
         <ApplicationProcessSection />
+        <ScheduleConsultationCta />
         <InterviewHearingPrepSection />
         <DenialReasonsSection />
         <HighRiskCasesSection />
+        <ScheduleConsultationCta />
         <ProcessTimelineSection />
         <BenefitsSection />
         <ReliefOptionsSection />
+        <ScheduleConsultationCta />
         <FeesWaiverSection />
         <WhyChooseUsSection />
         <ProvenProcessSection />
+        <ScheduleConsultationCta />
         <ComparisonSection />
         <PracticeAreasCitiesSection />
         <TestimonialsSection />

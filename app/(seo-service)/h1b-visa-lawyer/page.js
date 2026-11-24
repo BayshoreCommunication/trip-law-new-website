@@ -20,6 +20,7 @@ import {
   FaqSection,
   H1B_IMAGE_METADATA,
 } from '@/components/seo-service/h1b-visa-lawyer';
+import ScheduleConsultationCta from '@/components/shared/ScheduleConsultationCta';
 
 const CANONICAL_URL = 'https://www.trip-law.com/h1b-visa-lawyer';
 const META_TITLE = 'H1B Visa Lawyer for Employers and Foreign Workers';
@@ -260,18 +261,23 @@ export default function H1bVisaLawyerPage() {
         <EligibilitySection />
         <PathwaysSection />
         <DocumentsSection />
+        <ScheduleConsultationCta />
         <HighRiskCasesSection />
         <DenialReasonsSection />
         <ProcessTimelineSection />
+        <ScheduleConsultationCta />
         <ProvenProcessSection />
         <BenefitsSection />
         <PreparationSection />
+        <ScheduleConsultationCta />
         <FeesWaiverSection />
         <WhyChooseUsSection />
         <IndustryServicesSection />
+        <ScheduleConsultationCta />
         <ExpectationsTimelineSection />
         <ComparisonSection />
         <PracticeAreasCitiesSection />
+        <ScheduleConsultationCta />
         <TestimonialsSection />
         <FinalCtaSection />
         <FaqSection />

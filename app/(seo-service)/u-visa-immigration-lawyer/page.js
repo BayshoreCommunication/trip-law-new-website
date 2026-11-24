@@ -19,6 +19,7 @@ import {
   FaqSection,
   U_VISA_IMAGE_METADATA,
 } from '@/components/seo-service/u-visa-immigration-lawyer';
+import ScheduleConsultationCta from '@/components/shared/ScheduleConsultationCta';
 
 const CANONICAL_URL = 'https://www.trip-law.com/u-visa-immigration-lawyer';
 const META_TITLE = 'U Visa Immigration Lawyer Near Me';
@@ -228,15 +229,19 @@ export default function UVisaImmigrationLawyerPage() {
         <EligibilitySection />
         <PathwaysSection />
         <ApplicationProcessSection />
+        <ScheduleConsultationCta />
         <DocumentsSection />
         <DenialReasonsSection />
         <HighRiskCasesSection />
+        <ScheduleConsultationCta />
         <ProcessTimelineSection />
         <BenefitsSection />
         <PreparationSection />
+        <ScheduleConsultationCta />
         <FeesWaiverSection />
         <WhyChooseUsSection />
         <ProvenProcessSection />
+        <ScheduleConsultationCta />
         <ComparisonSection />
         <PracticeAreasCitiesSection />
         <TestimonialsSection />
